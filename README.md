@@ -1,45 +1,48 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+# Buildit Custom Fabricator for Making Great Living Style Guides
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+## Quick Start
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+1. Clone the repo
+2. Install [Homebrew](https://brew.sh)
+3. Optionally, install [Yarn](https://yarnpkg.com/lang/en/docs/install/)
 
----
+To run app:
 
-## Edit a file
+```shell
+$ yarn start
+```
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+## Documentation
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+### Styles and Sass
 
----
+To customize styles, update JSON in ```src/data```. These will build Sass variables in ```src/toolkit/styles/partials/_imported-variables```. Treat ```_imported-variables``` as read-only because can changes will be overwritten.
 
-## Create a file
+There are two folders within ```src/assets``` (```/fabricator``` and ```/toolkit```) containing ```*.scss``` files and partials. ```/fabricator``` is for the style guide UI (name-spaced with f-), whereas ```/toolikit``` is for custom styles unique to the individual guide. Most work will be completed within ```/toolikit```. For new atoms, create a new ```_*.scss``` file in ```/partials``` and import it into ```toolkit.scss```.
 
-Next, you’ll add a new file to this repository.
+In the JSON file ```colors.json```, you can add additional colors to appear in the color palette specimen and Sass variables. However, adding heading styles or breakpoints (as opposed to changing sizes) will require some work within tookit partials and specimens. The default project is preloaded with Bootstrap defaults.
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
+### Atomic Design
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+Within ```src/materials``` you will find folders for atoms, molecules, and organisms. Adding a new elemnent is as easy adding an *.html file to the respective folder. Molecules and organisms can import lower level elements using handlebars import sytax:
 
----
+```handlebars
+<!-- import button.html template -->
+{{> button}}
+```
 
-## Clone a repository
+### [For more information on Fabricator, read the official docs →](http://fbrctr.github.io/docs)
 
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
+## Demo
 
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
+### [Default Fabricator Instance →](http://fbrctr.github.io/demo)
 
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+## Credits
+
+Created by [Luke Askew](http://twitter.com/lukeaskew).
+
+Logo by [Abby Putinski](https://abbyputinski.com/)
+
+## License
+
+[The MIT License (MIT)](http://opensource.org/licenses/mit-license.php)
