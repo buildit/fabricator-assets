@@ -1,0 +1,11 @@
+<h2 class="f-section__heading">Breakpoints</h2>
+
+<div class="f-breakpoints">
+  {{#each breakpoints}}
+      <div class="f-breakpoint">
+        <div class="f-breakpoint__name">${{@key}}</div>
+        <div class="f-breakpoint__size" style="width:{{this}}">{{this}}</div>
+      </div>
+  {{/each}}
+</div>
+  

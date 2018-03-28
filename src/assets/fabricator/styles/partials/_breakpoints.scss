@@ -1,0 +1,29 @@
+.f-breakpoints {
+	margin-bottom: 1rem;
+}
+
+.f-breakpoint {
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 100%;
+	font-weight: 700;
+	font-size: 1.125em;
+	padding: 1em 0;
+	margin-bottom: 1rem;
+  box-sizing: border-box;
+
+	@media (min-width: 60em) {
+		flex-basis: 13em;
+	}
+
+	&__size {
+		font-weight: 400;
+		padding: 1rem;
+		max-width: 100%;
+		background-color: color(light);
+	}
+
+	&__name {
+		margin-bottom: .5em;
+	}
+}

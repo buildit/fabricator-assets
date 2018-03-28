@@ -1,0 +1,14 @@
+.table {
+  border: $border;
+  border-collapse: collapse;
+  
+  td, th {
+    border: $border;
+    padding: .5em;
+  }
+
+  thead, tfoot {
+    text-align: left;
+    background-color: $light;
+  }
+}

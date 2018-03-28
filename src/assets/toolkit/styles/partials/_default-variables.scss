@@ -1,0 +1,29 @@
+$font-family: -apple-system, BlinkMacSystemFont, system-ui, Roboto, Segoe UI, Helvetica Neue, Lucida Grande, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !default;
+
+// Default Color Palette (from Bootstrap)
+$primary: #007bff !default;
+$secondary: #6c757d !default;
+$sucess: #28a745 !default;
+$danger: #dc3545 !default;
+$warning: #fd7e14 !default;
+$info: #17a2b8 !default;
+$light: #f8f9fa!default;
+$dark: #343a40 !default;
+$white: #fff !default;
+
+// Responsive Breakpoints (from Bootstrap)
+$small: 36rem !default;
+$medium: 48rem !default;
+$large: 64rem !default;
+$ex-large: 75rem  !default;
+
+$border-width: .0625rem !default;
+$border-color: $dark !default;
+
+$h1: 2.5rem;
+$h2: 2rem;
+$h3: 1.75rem;
+$h4: 1.5rem;
+$h5: 1.25rem;
+$h6: 1rem;
+

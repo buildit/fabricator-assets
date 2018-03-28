@@ -1,0 +1,23 @@
+// Toolkit styles
+@import 'partials/variables';
+@import 'partials/functions';
+@import 'partials/mixins';
+
+*, 
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+  box-sizing: border-box;
+}
+
+@import 'partials/button';
+@import 'partials/form';
+@import 'partials/select';
+@import 'partials/table';
+@import 'partials/typography';
