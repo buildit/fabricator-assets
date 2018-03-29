@@ -1,21 +1,38 @@
-.input {  
-  input {
-    border: .0625rem solid currentColor;
-    border-radius: 0;
-    color: $dark;
-    display: block;
-    font-size: 1em;
-    outline: none;
-    padding: .5em .5em .5em 2em;
-    width: 100%;
-    cursor: pointer;
-    background-color: white;
-    background-position: left .75em center;
-    background-repeat: no-repeat;
-    background-size: 1em;
+/*todo style the input animation
+*/
 
-    &:focus {
-      outline: .0625rem solid $primary;
-    }
+.input { 
+
+	label {
+		position: absolute;
+		left: 10px ;
+		top: 45%;
+	}
+
+
+  input {
+	border: .0625rem solid currentColor;
+	border-radius: 0;
+	color: $dark;
+	display: block;
+	font-size: 1em;
+	outline: none;
+	padding: .5em .5em .5em 2em;
+	width: 100%;
+
+
+	cursor: pointer;
+	background-color: white;
+	background-position: left .75em center;
+	background-repeat: no-repeat;
+	background-size: 1em;
+
+	&:focus {
+		outline: .0625rem solid $primary;
+
+		~ label { 
+			position: relative;
+		 }
+	}
   }
 }
