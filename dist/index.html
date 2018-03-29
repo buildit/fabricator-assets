@@ -166,46 +166,23 @@
 
 <pre class="language-markup"><code class="language-markup">&lt;script src=&quot;assets/toolkit/scripts/toolkit.js&quot;&gt;&lt;/script&gt;</code></pre>
 
-<h2 class="f-section__heading">Color</h2>
 
-<div class="f-color-chips">
+{{#if colors}}
+	<h2 class="f-section__heading">Color</h2>
+
+	<div class="f-color-chips">
+
+		{{#each colors}}
+
 		<div class="f-color-chip">
-			<div class="f-color-chip__name">$primary</div>
-			<div class="f-color-chip__color">#007bff</div>
+			<div class="f-color-chip__name">{{@index}}</div>
+			<div class="f-color-chip__color">{{this}}</div>
 		</div>
-		<div class="f-color-chip">
-			<div class="f-color-chip__name">$secondary</div>
-			<div class="f-color-chip__color">#6c757d</div>
-		</div>
-		<div class="f-color-chip">
-			<div class="f-color-chip__name">$success</div>
-			<div class="f-color-chip__color">#28a745</div>
-		</div>
-		<div class="f-color-chip">
-			<div class="f-color-chip__name">$danger</div>
-			<div class="f-color-chip__color">#dc3545</div>
-		</div>
-		<div class="f-color-chip">
-			<div class="f-color-chip__name">$warning</div>
-			<div class="f-color-chip__color">#fd7e14</div>
-		</div>
-		<div class="f-color-chip">
-			<div class="f-color-chip__name">$info</div>
-			<div class="f-color-chip__color">#17a2b8</div>
-		</div>
-		<div class="f-color-chip">
-			<div class="f-color-chip__name">$light</div>
-			<div class="f-color-chip__color">#f8f9fa</div>
-		</div>
-		<div class="f-color-chip">
-			<div class="f-color-chip__name">$dark</div>
-			<div class="f-color-chip__color">#343a40</div>
-		</div>
-		<div class="f-color-chip">
-			<div class="f-color-chip__name">$white</div>
-			<div class="f-color-chip__color">#fff</div>
-		</div>
-</div>
+		{{/each}}
+	</div> <!--end colors-->
+{{/if}}
+
+
 <h2 class="f-section__heading">Typography</h2>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam enim sunt sapiente molestias, sed dicta inventore consectetur beatae asperiores, aliquid laboriosam animi, praesentium repudiandae et, quam saepe sint cupiditate reiciendis.</p>
