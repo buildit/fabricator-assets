@@ -50,3 +50,4 @@ Logo by [Abby Putinski](https://abbyputinski.com/)
 ## Jason's Notes
 
 toolkit.scss is the "global.scss " file. TODO. Change the name. 
+To make an new atom: src/materials .... tada
