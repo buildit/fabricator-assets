@@ -46,3 +46,7 @@ Logo by [Abby Putinski](https://abbyputinski.com/)
 ## License
 
 [The MIT License (MIT)](http://opensource.org/licenses/mit-license.php)
+
+## Jason's Notes
+
+toolkit.scss is the "global.scss " file. TODO. Change the name. 
