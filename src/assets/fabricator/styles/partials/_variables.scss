@@ -50,3 +50,6 @@ $menu-width: map-get($settings, menu-width);
 @mixin border-box {
 	box-sizing: border-box;
 }
+
+$brand: "#01A982";
+$darken:rgba(0,0,0,0.15);
