@@ -1,6 +1,8 @@
 .f-controls {
 	@include clearfix;
 	@include border-box;
+	background-color: #000000;
+	padding: 1rem;
 
 	.f-control {
 		display: block;
