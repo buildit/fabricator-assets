@@ -1,25 +1,89 @@
+
+//Black
 @font-face {
     font-family: 'Metric';
-    src: url("/assets/toolkit/fonts/MetricHPE-Web-Black.eot") format('eot'),
-    url('/assets/toolkit/fonts/MetricHPE-Web-Black.woff') format('woff'),
-    url('/assets/toolkit/fonts/MetricHPE-Web-BlackItalic.eot') format('eot'),
-    url('/assets/toolkit/fonts/MetricHPE-Web-BlackItalic.woff') format('woff'),
-    url('/assets/toolkit/fonts/MetricHPE-Web-Bold.eot') format('eot'),
-    url('/assets/toolkit/fonts/MetricHPE-Web-Bold.woff') format('woff'),
-    url('/assets/toolkit/fonts/MetricHPE-Web-BoldItalic.eot') format('eot'),
-    url('/assets/toolkit/fonts/MetricHPE-Web-BoldItalic.eot') format('eot'),
-    url('/assets/toolkit/fonts/MetricHPE-Web-Light.eot') format('eot');
+    font-style: normal;
+    font-weight: 800;
+    src: url('/assets/toolkit/fonts/MetricHPE-Web-Black.woff') format('woff');
+}
+//Black Italic
+@font-face {
+    font-family: 'Metric';
+    font-style: italic;
+    font-weight: 800;
+    src: url('/assets/toolkit/fonts/MetricHPE-Web-BlackItalic.woff') format('woff');
+}
+
+//Bold
+@font-face {
+    font-family: 'Metric';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/assets/toolkit/fonts/MetricHPE-Web-Bold.woff') format('woff');
+}
+
+//Bold Italic
+@font-face {
+    font-family: 'Metric';
+    font-style: italic;
+    font-weight: 600;
+    src: url('/assets/toolkit/fonts/MetricHPE-Web-SemiBold.woff') format('woff');
+}
+
+//SemiBold
+@font-face {
+    font-family: 'Metric';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/assets/toolkit/fonts/MetricHPE-Web-Semibold.woff') format('woff');
+}
+
+//SemiBold Italic
+@font-face {
+    font-family: 'Metric';
+    font-style: italic;
+    font-weight: 700;
+    src: url('/assets/toolkit/fonts/MetricHPE-Web-SemiboldItalic.woff') format('woff');
+}
+
+//Regular
+@font-face {
+    font-family: 'Metric';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/toolkit/fonts/MetricHPE-Web-Regular.woff') format('woff');
+}
+
+//Regular Italic
+@font-face {
+    font-family: 'Metric';
+    font-style: italic;
+    font-weight: 400;
+    src: url('/assets/toolkit/fonts/MetricHPE-Web-RegularItalic.woff') format('woff');
+}
+//Thin
+@font-face {
+    font-family: 'Metric';
+    font-style: normal;
+    font-weight: 200;
+    src: url('/assets/toolkit/fonts/MetricHPE-Web-Thin.woff') format('woff');
+}
+
+//Thin Italic
+@font-face {
+    font-family: 'Metric';
+    font-style: italic;
+    font-weight: 200;
+    src: url('/assets/toolkit/fonts/MetricHPE-Web-ThinItalic.woff') format('woff');
 }
 
 
-@font-face {
-    font-family: "Open Sans";
-    src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
-         url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
-  }
+//TODO 100 thin, light 200 , 400 normal, 600 bold, black 800
 
 body {
     font-family: 'Metric', serif !important;
+    font-style: normal;
+    font-weight: 400;
   }
 
 // Default Color Palette (from Bootstrap)
