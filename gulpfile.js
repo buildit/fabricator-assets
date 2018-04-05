@@ -44,11 +44,11 @@ const config = {
       watch: 'src/assets/toolkit/scripts/**/*'
     }
   },
-  images: {
+  fonts: {
     toolkit: {
-      src: ['src/assets/toolkit/images/**/*', 'src/favicon.ico'],
-      dest: 'dist/assets/toolkit/images',
-      watch: 'src/assets/toolkit/images/**/*'
+      src: ['src/assets/toolkit/fonts/**/*'],
+      dest: 'dist/assets/toolkit/fonts',
+      watch: 'src/assets/toolkit/fonts/**/*'
     }
   },
   templates: {
@@ -146,6 +146,13 @@ gulp.task('images', ['favicon'], () => {
     .pipe(gulp.dest(config.images.toolkit.dest));
 });
 
+// fonts
+gulp.task('fonts', () => {
+  return gulp
+    .src(config.fonts.toolkit.src)
+    .pipe(gulp.dest(config.fonts.toolkit.dest));
+ });
+
 gulp.task('favicon', () => {
   return gulp.src('src/favicon.ico').pipe(gulp.dest(config.dest));
 });
@@ -186,6 +193,9 @@ gulp.task('serve', () => {
 
   gulp.task('images:watch', ['images'], browserSync.reload);
   gulp.watch(config.images.toolkit.watch, ['images:watch']);
+
+  gulp.task('fonts:watch', ['fonts'], browserSync.reload);
+  gulp.watch(config.fonts.toolkit.watch, ['fonts:watch']);
 });
 
 // default build task
@@ -196,6 +206,7 @@ gulp.task('default', ['clean'], () => {
     'styles',
     'scripts',
     'images',
+    'fonts',
     'assembler'
   ];
 

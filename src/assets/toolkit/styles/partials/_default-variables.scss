@@ -1,4 +1,26 @@
-$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-face {
+    font-family: 'Metric';
+    src: url("/assets/toolkit/fonts/MetricHPE-Web-Black.eot") format('eot'),
+    url('/assets/toolkit/fonts/MetricHPE-Web-Black.woff') format('woff'),
+    url('/assets/toolkit/fonts/MetricHPE-Web-BlackItalic.eot') format('eot'),
+    url('/assets/toolkit/fonts/MetricHPE-Web-BlackItalic.woff') format('woff'),
+    url('/assets/toolkit/fonts/MetricHPE-Web-Bold.eot') format('eot'),
+    url('/assets/toolkit/fonts/MetricHPE-Web-Bold.woff') format('woff'),
+    url('/assets/toolkit/fonts/MetricHPE-Web-BoldItalic.eot') format('eot'),
+    url('/assets/toolkit/fonts/MetricHPE-Web-BoldItalic.eot') format('eot'),
+    url('/assets/toolkit/fonts/MetricHPE-Web-Light.eot') format('eot');
+}
+
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+         url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+  }
+
+body {
+    font-family: 'Metric', serif !important;
+  }
 
 // Default Color Palette (from Bootstrap)
 $primary: #007bff !default;
