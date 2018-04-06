@@ -33,6 +33,7 @@
 
 .f-control {
 	@include border-box;
+	box-shadow: inset 0 0.25rem 0 0 (#444444);
 	display: inline-block;
 	cursor: pointer;
 	margin-left: 0.66rem;
@@ -48,6 +49,7 @@
 		use {
 			fill: #444444;
 		}
+
 	}
 }
 
