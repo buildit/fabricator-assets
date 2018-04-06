@@ -77,9 +77,8 @@
     src: url('/assets/toolkit/fonts/MetricHPE-Web-ThinItalic.woff') format('woff');
 }
 
-
 body {
-    font-family: "Metric",Arial,sans-serif;
+    font-family: "Metric", Arial, sans-serif !important;
     font-style: normal;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
