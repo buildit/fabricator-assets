@@ -1,0 +1,16 @@
+.breakpoint-debug {
+    background-color: teal;
+
+    @include respond-to ('small') {
+        background-color:red;
+    }
+    @include respond-to ('medium') {
+        background-color: blue;
+    }
+    @include respond-to ('large' ) {
+        background-color: yellow;
+    }
+    @include respond-to ('ex-large') {
+        background-color: lime;
+    }
+}
