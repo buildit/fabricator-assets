@@ -1,14 +1,5 @@
-.header {
-    .header .hp_logo {
-        float: left;
-        margin-top: 8px;
+nav {
+    @include section-padding;
+    background-color: $dark-grey-1;
 
-        @include 
-    }
-
-    .header_container {
-    height: 95px !important;
-    width: 95% !important;
-    max-width: 1425px;
-    }
 }

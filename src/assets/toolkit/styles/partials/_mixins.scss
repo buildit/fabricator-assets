@@ -26,3 +26,25 @@ $breakpoints: (
         + "Please make sure it is defined in `$breakpoints` map.";
   }
 }
+
+@mixin section_padding($type:'') {
+	padding: 1rem;
+
+	@include respond-to ('small') {
+		padding: 2rem;
+  }
+  
+  @include respond-to ('large') {
+    padding: 4rem;
+  }
+
+  @include respond-to ('ex-large') {
+    padding: 6rem;
+  }
+
+	@if ($type== 'slim-bottom') {
+    padding: 0 0.5rem;
+    
+  }
+    
+}
