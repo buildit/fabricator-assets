@@ -31,15 +31,15 @@ $breakpoints: (
 	padding: 1rem;
 
 	@include respond-to ('small') {
-		padding: 2rem;
+		padding: 1.2rem;
   }
   
   @include respond-to ('large') {
-    padding: 4rem;
+    padding: 1.3rem;
   }
 
   @include respond-to ('ex-large') {
-    padding: 6rem;
+    padding: 1.4rem;
   }
 
 	@if ($type== 'slim-bottom') {
@@ -47,4 +47,17 @@ $breakpoints: (
     
   }
     
+}
+
+@mixin greybox ($type:'')  {
+  background-color: $light-grey-1;
+  display: inline-block;
+  margin-right: 1rem;
+  height: 40px; 
+  width: 100px;
+
+  @if ($type== 'omega') {
+    margin-right: 0;
+    
+  }
 }

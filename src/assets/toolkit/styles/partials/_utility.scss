@@ -14,3 +14,7 @@
         background-color: lime;
     }
 }
+
+.greybox {
+    @include greybox();
+}
