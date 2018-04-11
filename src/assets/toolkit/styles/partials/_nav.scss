@@ -4,8 +4,12 @@ nav {
 
     a {
         color: $white;
+        padding-right: 1rem;
+
+
     }
 
+    //todo research gotchas in flex
     width: 100%;
 
     span {
