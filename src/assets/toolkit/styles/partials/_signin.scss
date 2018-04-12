@@ -7,6 +7,10 @@
     background-color: $dark-grey-4;
     color: $white;
 
+    h2 {
+        padding: $bootstrap-padding;
+    }
+
      ul {
          margin: 0;
          padding: 0;
