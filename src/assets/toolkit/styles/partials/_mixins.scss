@@ -50,7 +50,7 @@ $breakpoints: (
 }
 
 @mixin greybox ($type:'')  {
-  background-color: $light-grey-1;
+  background-color: $light-grey-4;
   display: inline-block;
   margin-right: 1rem;
   height: 40px; 
