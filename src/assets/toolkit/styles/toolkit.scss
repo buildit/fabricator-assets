@@ -6,6 +6,14 @@
 @import 'partials/headlines';
 @import 'partials/nav';
 @import 'partials/signin';
+@import 'partials/button';
+@import 'partials/form';
+@import 'partials/select';
+@import 'partials/input';
+@import 'partials/table';
+@import 'partials/typography';
+@import 'partials/radio';
+
 *, 
 *::before,
 *::after {
@@ -18,11 +26,4 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
   box-sizing: border-box;
-}
-
-@import 'partials/button';
-@import 'partials/form';
-@import 'partials/select';
-@import 'partials/input';
-@import 'partials/table';
-@import 'partials/typography';
+} 

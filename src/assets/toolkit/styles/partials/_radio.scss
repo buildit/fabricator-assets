@@ -1,0 +1,31 @@
+.radio-button-span {
+    background-color: inherit;
+    border: 2px solid $brand;
+    border-radius: 24px;
+    color: $brand;
+    display: inline-block;
+    margin-right: 12px;
+    position: relative;
+    vertical-align: middle;
+    
+    width: 24px;
+    height: 24px;
+
+    &:after {
+        content: "";
+        background-color: $brand;
+        border-radius: 12px;
+        display: block;
+        height: 10px;
+        width: 10px;
+        
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+
+    &:hover {
+        border: 2px solid $black;
+    }
+}
