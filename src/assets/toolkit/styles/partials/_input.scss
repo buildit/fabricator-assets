@@ -3,25 +3,30 @@
 
 .input { 
 	
-  input {
+  input, select {
 		border: 1px solid $light-grey-4;
 		border-radius: 0;
-		color: $dark;
+		color: $dark-grey-3;
 		display: block;
-		font-size: 1em;
+		font-size: 1rem;
+		font-weight: 600;
+		height: 48px;
+		line-height: 1.5;
 		outline: none;
-		padding: .5em .5em .5em 2em;
+		padding: 5px 24px;
+		transition: transition;
 		width: 100%;
 
-
+		
 		cursor: pointer;
 		background-color: white;
-		background-position: left .75em center;
 		background-repeat: no-repeat;
 		background-size: 1em;
 
 		&:focus {
+			border: 1px solid $light-1;
 			outline: none;
+			transition: $transition;
 		}
   }
 }
