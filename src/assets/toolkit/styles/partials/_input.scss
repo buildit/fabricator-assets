@@ -4,7 +4,7 @@
 .input { 
 	
   input {
-		border: .0625rem solid currentColor;
+		border: 1px solid $light-grey-4;
 		border-radius: 0;
 		color: $dark;
 		display: block;
@@ -21,7 +21,7 @@
 		background-size: 1em;
 
 		&:focus {
-			outline: .0625rem solid $primary;
+			outline: none;
 		}
   }
 }
