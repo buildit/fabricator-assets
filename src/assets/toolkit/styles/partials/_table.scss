@@ -1,14 +1,24 @@
 .table {
-  border: $border;
   border-collapse: collapse;
+  max-width: 100%;
+  width: 100%;
   
-  td, th {
-    border: $border;
-    padding: .5em;
-  }
-
-  thead, tfoot {
+  th {
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    font-weight: 100;
+    padding: 11px 12px;
     text-align: left;
-    background-color: $light;
+
+    &:first-child {
+      padding-left: 24px;
+    }
+  }
+  td {
+    padding: 11px 12px;
+    text-align: left;
+
+    &:first-child {
+      padding-left: 24px;
+    }
   }
 }
