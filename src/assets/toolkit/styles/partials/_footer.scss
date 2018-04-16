@@ -1,4 +1,22 @@
 .footer-wrapper {
     @include section_padding('footer');
     background-color: $light-grey-1;
+
+    h3 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.27777778;
+        padding-bottom: 18px;
+        text-transform: uppercase;
+    }
+
+    //from HPE
+    .footer-col {
+        max-width: 185px;
+        flex: 1 1 20%;
+    }
+
+    ul {
+        margin: 0;
+    }
 }
