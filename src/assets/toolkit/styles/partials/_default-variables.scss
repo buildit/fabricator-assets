@@ -34,7 +34,7 @@
 @font-face {
     font-family: 'Metric';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     src: url('/assets/toolkit/fonts/MetricHPE-Web-Semibold.woff') format('woff');
 }
 
@@ -42,7 +42,7 @@
 @font-face {
     font-family: 'Metric';
     font-style: italic;
-    font-weight: 700;
+    font-weight: 500;
     src: url('/assets/toolkit/fonts/MetricHPE-Web-SemiboldItalic.woff') format('woff');
 }
 
@@ -84,6 +84,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; 
     box-sizing: border-box;
+
+    //investigate the ovverride 
+    margin: 0;
   }
 
 // Default Color Palette (from Bootstrap)
