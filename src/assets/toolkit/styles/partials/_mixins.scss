@@ -50,6 +50,10 @@ $breakpoints: (
     
 }
 
+@mixin section_margin ($type:'') {
+  margin: 5rem 0;
+}
+
 @mixin greybox ($type:'')  {
   background-color: $light-grey-4;
   display: inline-block;
@@ -85,3 +89,4 @@ $breakpoints: (
     clear: both;
   }
 }
+
