@@ -5,6 +5,7 @@
 
     .social-links {
         @include button ();
+        font-size: 1rem;
         width: 45%;
 
         &:first-child {
