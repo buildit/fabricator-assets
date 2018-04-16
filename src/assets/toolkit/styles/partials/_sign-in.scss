@@ -1,0 +1,18 @@
+.sign-in {
+    button {
+        width: 100%;
+    }
+
+    .social-links {
+        @include button ();
+        width: 45%;
+
+        &:first-child {
+            float: left;
+        }
+
+        &:last-child {
+            float: right;
+        }
+    }
+}
