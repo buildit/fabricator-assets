@@ -40,10 +40,11 @@ $breakpoints: (
 
   @include respond-to ('ex-large') {
     padding: 2.4rem;
+    
   }
 
-	@if ($type== 'slim-bottom') {
-    padding: 0 0.5rem;
+	@if ($type== 'nav') {
+    padding: 0 1rem;
     
   }
     
