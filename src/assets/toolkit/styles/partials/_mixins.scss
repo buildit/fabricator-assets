@@ -76,3 +76,11 @@ $breakpoints: (
   text-transform: uppercase;
   transition: 0.1s ease-in-out;
 }
+
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
