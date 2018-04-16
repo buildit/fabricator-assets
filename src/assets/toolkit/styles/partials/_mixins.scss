@@ -47,11 +47,16 @@ $breakpoints: (
     padding: 0 1rem;
     
   }
+
+  @if ($type== 'footer') {
+    padding: 0 3.125rem;
+    
+  }
     
 }
 
 @mixin section_margin ($type:'') {
-  margin: 5rem 0;
+  margin: 5rem auto;
 }
 
 @mixin greybox ($type:'')  {

@@ -1,3 +1,4 @@
 .footer-wrapper {
+    @include section_padding('footer');
     background-color: $light-grey-1;
 }
