@@ -1,36 +1,37 @@
-nav {
-    @include section_padding('nav');
-    //todo research gotchas in flex
-    width: 100%;
-    
-    //from HPE.com
-    background-color: $white;
-    height: 85px;
-    max-width: 1530px;
+.hpe-header {
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+}
 
-    .logo, .nav-links {
-        display: inline-block;
+$nav-padding: 30px;
+
+.hpe-nav {
+  background-color: $white;
+
+  &__link {
+    background: none;
+    border: 0;
+    color: $dark-grey-1;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 0 $nav-padding 0 0;
+    text-decoration: none;
+
+    &--icon {
+        font-size: 1rem;
     }
+  }
 
-    //todo better centering techniqu
-    .logo {
-        margin-top: -20px;
-    }
+  &__tools, 
+  &__main {
+    display: inline-block;
+  }
 
-    span {
-        @include greybox();
-    }
-
-    .nav-links {
-        color: $dark-grey-1;
-        float: right;
-        margin-top: -8px;
-
-        a {
-            color: $dark-grey-1;
-            font-size: 20px;
-            padding-right: 1rem;
-            text-decoration: none;
-        }
-    }
+  &__tools {
+    border-left: 1px solid $dark-grey-1;
+    padding-left: $nav-padding;
+  }
 }
