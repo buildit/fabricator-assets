@@ -63,4 +63,11 @@
             height: 20px;
         }
     }
+
+    .language {
+        @include clearfix();
+        float: right;
+        margin-top: 5rem;
+        text-transform: uppercase;
+    }
 }
