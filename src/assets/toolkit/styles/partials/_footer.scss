@@ -12,10 +12,10 @@
 
     //from HPE
     .footer-col {
-        max-width: 185px;
-        flex: 1 1 20%;
+      
     }
 
+    //sitemap
     ul {
         margin: 0;
         padding: 0;
@@ -24,7 +24,7 @@
             list-style: none;
 
             a {
-                color: #000;
+                color: $dark-grey-1;
                 display: block;
                 font-size: 16px;
                 line-height: 1.25;
@@ -34,8 +34,33 @@
         }
     }
 
+    //social icons
     .social {
-        text-indent: -9999px;
+        display: inline-block;
+        margin-right: 24px;
 
+        &:hover {
+            &:before {
+                content: '';
+                cursor: pointer;
+                background-color: $dark-grey-3;
+                display: block;
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+
+        &:before {
+            content: '';
+            background-color: $dark-grey-1;
+            display: block;
+            width: 20px;
+            height: 20px;
+        }
     }
 }
