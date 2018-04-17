@@ -44,7 +44,7 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	var _this = this;
 	
 	__webpack_require__(1);
 	
@@ -52,7 +52,7 @@
 	 * Global `fabricator` object
 	 * @namespace
 	 */
-	var fabricator = window.fabricator = {};
+	const fabricator = window.fabricator = {};
 	
 	/**
 	 * Default options
@@ -78,8 +78,8 @@
 	fabricator.test = {};
 	
 	// test for sessionStorage
-	fabricator.test.sessionStorage = function () {
-	  var test = '_f';
+	fabricator.test.sessionStorage = (() => {
+	  const test = '_f';
 	  try {
 	    sessionStorage.setItem(test, test);
 	    sessionStorage.removeItem(test);
@@ -87,7 +87,7 @@
 	  } catch (e) {
 	    return false;
 	  }
-	}();
+	})();
 	
 	// create storage object if it doesn't exist; store options
 	if (fabricator.test.sessionStorage) {
@@ -109,19 +109,19 @@
 	 * Get current option values from session storage
 	 * @return {Object}
 	 */
-	fabricator.getOptions = function () {
+	fabricator.getOptions = () => {
 	  return fabricator.test.sessionStorage ? JSON.parse(sessionStorage.fabricator) : fabricator.options;
 	};
 	
 	/**
 	 * Build color chips
 	 */
-	fabricator.buildColorChips = function () {
+	fabricator.buildColorChips = () => {
 	
-	  var chips = document.querySelectorAll('.f-color-chip');
+	  const chips = document.querySelectorAll('.f-color-chip');
 	
-	  for (var i = chips.length - 1; i >= 0; i--) {
-	    var color = chips[i].querySelector('.f-color-chip__color').innerHTML;
+	  for (let i = chips.length - 1; i >= 0; i--) {
+	    const color = chips[i].querySelector('.f-color-chip__color').innerHTML;
 	    chips[i].style.borderTopColor = color;
 	    chips[i].style.borderBottomColor = color;
 	  }
@@ -132,26 +132,26 @@
 	/**
 	 * Add `f-active` class to active menu item
 	 */
-	fabricator.setActiveItem = function () {
+	fabricator.setActiveItem = () => {
 	
 	  /**
 	   * Match the window location with the menu item, set menu item as active
 	   */
-	  var setActive = function setActive() {
+	  const setActive = () => {
 	
 	    // get current file and hash without first slash
-	    var loc = window.location.pathname + window.location.hash;
-	    var current = loc.replace(/(^\/)([^#]+)?(#[\w\-\.]+)?$/ig, function (match, slash, file, hash) {
+	    const loc = window.location.pathname + window.location.hash;
+	    const current = loc.replace(/(^\/)([^#]+)?(#[\w\-\.]+)?$/ig, (match, slash, file, hash) => {
 	      return (file || '') + (hash || '').split('.')[0];
 	    }) || 'index.html';
 	
 	    // find the current section in the items array
-	    for (var i = fabricator.dom.menuItems.length - 1; i >= 0; i--) {
+	    for (let i = fabricator.dom.menuItems.length - 1; i >= 0; i--) {
 	
-	      var item = fabricator.dom.menuItems[i];
+	      const item = fabricator.dom.menuItems[i];
 	
 	      // get item href without first slash
-	      var href = item.getAttribute('href').replace(/^\//g, '');
+	      const href = item.getAttribute('href').replace(/^\//g, '');
 	
 	      if (href === current) {
 	        item.classList.add('f-active');
@@ -172,14 +172,14 @@
 	 * Click handler to primary menu toggle
 	 * @return {Object} fabricator
 	 */
-	fabricator.menuToggle = function () {
+	fabricator.menuToggle = () => {
 	
 	  // shortcut menu DOM
-	  var toggle = fabricator.dom.menuToggle;
-	  var options = fabricator.getOptions();
+	  const toggle = fabricator.dom.menuToggle;
+	  const options = fabricator.getOptions();
 	
 	  // toggle classes on certain elements
-	  var toggleClasses = function toggleClasses() {
+	  const toggleClasses = () => {
 	    options.menu = !fabricator.dom.root.classList.contains('f-menu-active');
 	    fabricator.dom.root.classList.toggle('f-menu-active');
 	
@@ -189,25 +189,25 @@
 	  };
 	
 	  // toggle classes on ctrl + m press
-	  document.onkeydown = function (e) {
+	  document.onkeydown = e => {
 	    if (e.ctrlKey && e.keyCode === 'M'.charCodeAt(0)) {
 	      toggleClasses();
 	    }
 	  };
 	
 	  // toggle classes on click
-	  toggle.addEventListener('click', function () {
+	  toggle.addEventListener('click', () => {
 	    toggleClasses();
 	  });
 	
 	  // close menu when clicking on item (for collapsed menu view)
-	  var closeMenu = function closeMenu() {
+	  const closeMenu = () => {
 	    if (!window.matchMedia(fabricator.options.mq).matches) {
 	      toggleClasses();
 	    }
 	  };
 	
-	  for (var i = 0; i < fabricator.dom.menuItems.length; i++) {
+	  for (let i = 0; i < fabricator.dom.menuItems.length; i++) {
 	    fabricator.dom.menuItems[i].addEventListener('click', closeMenu);
 	  }
 	
@@ -218,24 +218,24 @@
 	 * Handler for preview and code toggles
 	 * @return {Object} fabricator
 	 */
-	fabricator.allItemsToggles = function () {
+	fabricator.allItemsToggles = () => {
 	
-	  var itemCache = {
+	  const itemCache = {
 	    labels: document.querySelectorAll('[data-f-toggle="labels"]'),
 	    notes: document.querySelectorAll('[data-f-toggle="notes"]'),
 	    code: document.querySelectorAll('[data-f-toggle="code"]')
 	  };
 	
-	  var toggleAllControls = document.querySelectorAll('.f-controls [data-f-toggle-control]');
-	  var options = fabricator.getOptions();
+	  const toggleAllControls = document.querySelectorAll('.f-controls [data-f-toggle-control]');
+	  const options = fabricator.getOptions();
 	
 	  // toggle all
-	  var toggleAllItems = function toggleAllItems(type, value) {
+	  const toggleAllItems = (type, value) => {
 	
-	    var button = document.querySelector('.f-controls [data-f-toggle-control=' + type + ']');
-	    var items = itemCache[type];
+	    const button = document.querySelector(`.f-controls [data-f-toggle-control=${type}]`);
+	    const items = itemCache[type];
 	
-	    for (var i = 0; i < items.length; i++) {
+	    for (let i = 0; i < items.length; i++) {
 	      if (value) {
 	        items[i].classList.remove('f-item-hidden');
 	      } else {
@@ -258,13 +258,13 @@
 	    }
 	  };
 	
-	  for (var i = 0; i < toggleAllControls.length; i++) {
+	  for (let i = 0; i < toggleAllControls.length; i++) {
 	
-	    toggleAllControls[i].addEventListener('click', function (e) {
+	    toggleAllControls[i].addEventListener('click', e => {
 	
 	      // extract info from target node
-	      var type = e.currentTarget.getAttribute('data-f-toggle-control');
-	      var value = e.currentTarget.className.indexOf('f-active') < 0;
+	      const type = e.currentTarget.getAttribute('data-f-toggle-control');
+	      const value = e.currentTarget.className.indexOf('f-active') < 0;
 	
 	      // toggle the items
 	      toggleAllItems(type, value);
@@ -272,7 +272,7 @@
 	  }
 	
 	  // persist toggle options from page to page
-	  Object.keys(options.toggles).forEach(function (key) {
+	  Object.keys(options.toggles).forEach(key => {
 	    toggleAllItems(key, options.toggles[key]);
 	  });
 	
@@ -282,18 +282,18 @@
 	/**
 	 * Handler for single item code toggling
 	 */
-	fabricator.singleItemToggle = function () {
+	fabricator.singleItemToggle = () => {
 	
-	  var itemToggleSingle = document.querySelectorAll('.f-item-group [data-f-toggle-control]');
+	  const itemToggleSingle = document.querySelectorAll('.f-item-group [data-f-toggle-control]');
 	
 	  // toggle single
-	  var toggleSingleItemCode = function toggleSingleItemCode(e) {
-	    var group = e.currentTarget.parentNode.parentNode.parentNode;
-	    var type = e.currentTarget.getAttribute('data-f-toggle-control');
-	    group.querySelector('[data-f-toggle=' + type + ']').classList.toggle('f-item-hidden');
+	  const toggleSingleItemCode = e => {
+	    const group = e.currentTarget.parentNode.parentNode.parentNode;
+	    const type = e.currentTarget.getAttribute('data-f-toggle-control');
+	    group.querySelector(`[data-f-toggle=${type}]`).classList.toggle('f-item-hidden');
 	  };
 	
-	  for (var i = 0; i < itemToggleSingle.length; i++) {
+	  for (let i = 0; i < itemToggleSingle.length; i++) {
 	    itemToggleSingle[i].addEventListener('click', toggleSingleItemCode);
 	  }
 	
@@ -303,20 +303,20 @@
 	/**
 	 * Automatically select code when code block is clicked
 	 */
-	fabricator.bindCodeAutoSelect = function () {
+	fabricator.bindCodeAutoSelect = () => {
 	
-	  var codeBlocks = document.querySelectorAll('.f-item-code');
+	  const codeBlocks = document.querySelectorAll('.f-item-code');
 	
-	  var select = function select(block) {
-	    var selection = window.getSelection();
-	    var range = document.createRange();
+	  const select = block => {
+	    const selection = window.getSelection();
+	    const range = document.createRange();
 	    range.selectNodeContents(block.querySelector('code'));
 	    selection.removeAllRanges();
 	    selection.addRange(range);
 	  };
 	
-	  for (var i = codeBlocks.length - 1; i >= 0; i--) {
-	    codeBlocks[i].addEventListener('click', select.bind(undefined, codeBlocks[i]));
+	  for (let i = codeBlocks.length - 1; i >= 0; i--) {
+	    codeBlocks[i].addEventListener('click', select.bind(_this, codeBlocks[i]));
 	  }
 	};
 	
@@ -324,15 +324,15 @@
 	 * Open/Close menu based on session var.
 	 * Also attach a media query listener to close the menu when resizing to smaller screen.
 	 */
-	fabricator.setInitialMenuState = function () {
+	fabricator.setInitialMenuState = () => {
 	
 	  // root element
-	  var root = document.querySelector('html');
+	  const root = document.querySelector('html');
 	
-	  var mq = window.matchMedia(fabricator.options.mq);
+	  const mq = window.matchMedia(fabricator.options.mq);
 	
 	  // if small screen
-	  var mediaChangeHandler = function mediaChangeHandler(list) {
+	  const mediaChangeHandler = list => {
 	    if (!list.matches) {
 	      root.classList.remove('f-menu-active');
 	    } else {
@@ -359,8 +359,6 @@
 /* 1 */
 /***/ (function(module, exports) {
 
-	'use strict';
-	
 	/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript */
 	self = typeof window !== 'undefined' ? window // if in browser
 	: typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope ? self // if in worker
@@ -380,7 +378,7 @@
 	
 		var _ = self.Prism = {
 			util: {
-				encode: function encode(tokens) {
+				encode: function (tokens) {
 					if (tokens instanceof Token) {
 						return new Token(tokens.type, _.util.encode(tokens.content), tokens.alias);
 					} else if (_.util.type(tokens) === 'Array') {
@@ -390,12 +388,12 @@
 					}
 				},
 	
-				type: function type(o) {
+				type: function (o) {
 					return Object.prototype.toString.call(o).match(/\[object (\w+)\]/)[1];
 				},
 	
 				// Deep clone a language definition (e.g. to extend it)
-				clone: function clone(o) {
+				clone: function (o) {
 					var type = _.util.type(o);
 	
 					switch (type) {
@@ -421,7 +419,7 @@
 			},
 	
 			languages: {
-				extend: function extend(id, redef) {
+				extend: function (id, redef) {
 					var lang = _.util.clone(_.languages[id]);
 	
 					for (var key in redef) {
@@ -440,7 +438,7 @@
 	    * @param insert Object with the key/value pairs to insert
 	    * @param root The object that contains `inside`. If equal to Prism.languages, it can be omitted.
 	    */
-				insertBefore: function insertBefore(inside, before, insert, root) {
+				insertBefore: function (inside, before, insert, root) {
 					root = root || _.languages;
 					var grammar = root[inside];
 	
@@ -487,7 +485,7 @@
 				},
 	
 				// Traverse a language definition with Depth First Search
-				DFS: function DFS(o, callback, type) {
+				DFS: function (o, callback, type) {
 					for (var i in o) {
 						if (o.hasOwnProperty(i)) {
 							callback.call(o, i, o[i], type || i);
@@ -502,7 +500,7 @@
 				}
 			},
 	
-			highlightAll: function highlightAll(async, callback) {
+			highlightAll: function (async, callback) {
 				var elements = document.querySelectorAll('code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code');
 	
 				for (var i = 0, element; element = elements[i++];) {
@@ -510,7 +508,7 @@
 				}
 			},
 	
-			highlightElement: function highlightElement(element, async, callback) {
+			highlightElement: function (element, async, callback) {
 				// Find language
 				var language,
 				    grammar,
@@ -587,12 +585,12 @@
 				}
 			},
 	
-			highlight: function highlight(text, grammar, language) {
+			highlight: function (text, grammar, language) {
 				var tokens = _.tokenize(text, grammar);
 				return Token.stringify(_.util.encode(tokens), language);
 			},
 	
-			tokenize: function tokenize(text, grammar, language) {
+			tokenize: function (text, grammar, language) {
 				var Token = _.Token;
 	
 				var strarr = [text];
@@ -680,7 +678,7 @@
 			hooks: {
 				all: {},
 	
-				add: function add(name, callback) {
+				add: function (name, callback) {
 					var hooks = _.hooks.all;
 	
 					hooks[name] = hooks[name] || [];
@@ -688,7 +686,7 @@
 					hooks[name].push(callback);
 				},
 	
-				run: function run(name, env) {
+				run: function (name, env) {
 					var callbacks = _.hooks.all[name];
 	
 					if (!callbacks || !callbacks.length) {

@@ -55,6 +55,7 @@
   },
   "dependencies": {
     "gulp-json-to-sass": "^0.0.4",
-    "gulp-merge-json": "^1.2.1"
+    "gulp-merge-json": "^1.2.1",
+    "lazy-debug-legacy": "^0.0.1"
   }
 }
