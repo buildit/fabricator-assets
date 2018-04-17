@@ -64,10 +64,43 @@
         }
     }
 
-    .language {
+    .language-wrapper {
         @include clearfix();
+        margin: 5rem 0;
+        width: 100%;
+    }
+
+    .language {
+        display: inline-block;
         float: right;
-        margin-top: 5rem;
         text-transform: uppercase;
+    }
+
+    //todo look into BS padding removal patterns
+    .legal-links-wrapper {
+        padding: 0;
+
+        ul {
+            float: right;
+
+            li {
+                display: inline-block;
+                font-size: 1.125rem;
+                line-height: 0;
+
+                &:after {
+                    content: '|';
+                    margin: 0 5px 0 4px;
+                }
+
+                &:last-of-type {
+                    &:after {
+                        content: '';
+                        margin: 0;
+                    }
+                }
+            }
+        }
+       
     }
 }
