@@ -1,9 +1,10 @@
 .hpe-header {
-  padding: 0 6.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 85px;
+  margin: 0 auto;
+  max-width: $ex-large;
 }
 
 $nav-padding: 1.875rem;
@@ -28,14 +29,38 @@ $nav-padding: 1.875rem;
   &__tools, 
   &__main {
     display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__main {
+    flex: 0 0 33rem;
+    overflow: hidden;
+
+    .hpe-nav__link:not(:last-of-type) {
+      display: none;
+
+      @include respond-to(large) {
+        display: inline-block;
+      }    
+    }
   }
 
   &__tools {
     border-left: 1px solid $dark-grey-1;
-    padding: 0 $nav-padding;
+    padding: 0 0 0 $nav-padding;
     height: 2.125rem;
   }
 }
+
+.hpe-nav__main {
+  display: none;
+  
+  @include respond-to(small) {
+    display: inline-block;
+  }
+}
+
+
 
 .hpe-contact {
   font-weight: 600;
