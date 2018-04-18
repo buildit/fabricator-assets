@@ -17,8 +17,19 @@
 
 </head>
 <body>
-
-		<!-- fabricator icons -->
+	<svg role="image" style="display: none;">
+	  <defs>
+	      <symbol id="icon-search" viewBox="0 0 24 24">
+	          <path d="M15,15 L22,22 L15,15 Z M9.5,17 C13.6421356,17 17,13.6421356 17,9.5 C17,5.35786438 13.6421356,2 9.5,2 C5.35786438,2 2,5.35786438 2,9.5 C2,13.6421356 5.35786438,17 9.5,17 Z"></path>
+	      </symbol>
+	      <symbol id="icon-cart" viewBox="0 0 24 24">
+	          <path d="M5,5 L22,5 L20,14 L7,14 L4,2 L0,2 M7,14 L8,18 L21,18 M19,23 C18.4475,23 18,22.5525 18,22 C18,21.4475 18.4475,21 19,21 C19.5525,21 20,21.4475 20,22 C20,22.5525 19.5525,23 19,23 Z M9,23 C8.4475,23 8,22.5525 8,22 C8,21.4475 8.4475,21 9,21 C9.5525,21 10,21.4475 10,22 C10,22.5525 9.5525,23 9,23 Z"></path>
+	      </symbol>
+	      <symbol id="icon-user" viewBox="0 0 24 24">
+	          <path d="M8,24 L8,19 M16,24 L16,19 M3,24 L3,19 C3,14.0294373 7.02943725,11 12,11 C16.9705627,11 21,14.0294373 21,19 L21,24 M12,11 C14.7614237,11 17,8.76142375 17,6 C17,3.23857625 14.7614237,1 12,1 C9.23857625,1 7,3.23857625 7,6 C7,8.76142375 9.23857625,11 12,11 Z"></path>      
+	      </symbol>
+	  </defs>
+	</svg>		<!-- fabricator icons -->
 		<svg style="display: none;">
 			<symbol id="f-icon-code" viewBox="0 0 512 512">
 				<path d="M377.3 121.3l-40.5 40.4 94.4 94.3-94.4 94.3 40.5 40.4L512 256zM134.7 121.3L0 256l134.7 134.7 40.5-40.4L80.8 256l94.4-94.3zM281.8 103.8zM230.183 408.16l-29.233-7.97 80.85-296.484 29.234 7.972z"/>
@@ -88,6 +99,9 @@
 						</li>
 						<li>
 							<a href="atoms.html#headlines">Headlines</a>
+						</li>
+						<li>
+							<a href="atoms.html#icons">Icons</a>
 						</li>
 						<li>
 							<a href="atoms.html#lists">Lists</a>
@@ -525,9 +539,21 @@
 			<a class="hpe-nav__link" href="#">Shop</a>
 		</div>
 		<div class="hpe-nav__tools">
-			<button class="hpe-nav__link hpe-nav__link--icon">a</button>
-			<a href="" class="hpe-nav__link hpe-nav__link--icon hpe-nav__link--active ">a</a>
-			<a href="" class="hpe-nav__link hpe-nav__link--icon">a</a>
+			<button class="hpe-nav__link hpe-nav__link--icon">
+        <svg class="icon">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+      </button>
+			<a href="" class="hpe-nav__link hpe-nav__link--icon hpe-active ">
+          <svg class="icon">
+              <use xlink:href="#icon-cart"></use>
+            </svg>    
+      </a>
+			<a href="" class="hpe-nav__link hpe-nav__link--icon">
+          <svg class="icon">
+              <use xlink:href="#icon-user"></use>
+            </svg>
+      </a>
 			<a href="" class="hpe-nav__link hpe-contact">contact</a>
 		</div>
 	</nav>
@@ -551,9 +577,21 @@
 			&lt;a class&#x3D;&quot;hpe-nav__link&quot; href&#x3D;&quot;#&quot;&gt;Shop&lt;/a&gt;
 		&lt;/div&gt;
 		&lt;div class&#x3D;&quot;hpe-nav__tools&quot;&gt;
-			&lt;button class&#x3D;&quot;hpe-nav__link hpe-nav__link--icon&quot;&gt;a&lt;/button&gt;
-			&lt;a href&#x3D;&quot;&quot; class&#x3D;&quot;hpe-nav__link hpe-nav__link--icon hpe-nav__link--active &quot;&gt;a&lt;/a&gt;
-			&lt;a href&#x3D;&quot;&quot; class&#x3D;&quot;hpe-nav__link hpe-nav__link--icon&quot;&gt;a&lt;/a&gt;
+			&lt;button class&#x3D;&quot;hpe-nav__link hpe-nav__link--icon&quot;&gt;
+        &lt;svg class&#x3D;&quot;icon&quot;&gt;
+          &lt;use xlink:href&#x3D;&quot;#icon-search&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+      &lt;/button&gt;
+			&lt;a href&#x3D;&quot;&quot; class&#x3D;&quot;hpe-nav__link hpe-nav__link--icon hpe-active &quot;&gt;
+          &lt;svg class&#x3D;&quot;icon&quot;&gt;
+              &lt;use xlink:href&#x3D;&quot;#icon-cart&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;    
+      &lt;/a&gt;
+			&lt;a href&#x3D;&quot;&quot; class&#x3D;&quot;hpe-nav__link hpe-nav__link--icon&quot;&gt;
+          &lt;svg class&#x3D;&quot;icon&quot;&gt;
+              &lt;use xlink:href&#x3D;&quot;#icon-user&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+      &lt;/a&gt;
 			&lt;a href&#x3D;&quot;&quot; class&#x3D;&quot;hpe-nav__link hpe-contact&quot;&gt;contact&lt;/a&gt;
 		&lt;/div&gt;
 	&lt;/nav&gt;
@@ -604,6 +642,53 @@
 &lt;h4 class&#x3D;&quot;hpe-headline hpe-headline--small hpe-headline--strong&quot;&gt;Small Headline&lt;/h4&gt;
 &lt;h4 class&#x3D;&quot;hpe-headline hpe-headline--small hpe-headline--black hpe-headline--caps&quot;&gt;Small Headline&lt;/h4&gt;
 &lt;h4 class&#x3D;&quot;hpe-headline hpe-headline--small&quot;&gt;Small Headline&lt;/h4&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="icons">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Icons</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-preview">
+	<svg role="image" style="display: none;">
+  <defs>
+      <symbol id="icon-search" viewBox="0 0 24 24">
+          <path d="M15,15 L22,22 L15,15 Z M9.5,17 C13.6421356,17 17,13.6421356 17,9.5 C17,5.35786438 13.6421356,2 9.5,2 C5.35786438,2 2,5.35786438 2,9.5 C2,13.6421356 5.35786438,17 9.5,17 Z"></path>
+      </symbol>
+      <symbol id="icon-cart" viewBox="0 0 24 24">
+          <path d="M5,5 L22,5 L20,14 L7,14 L4,2 L0,2 M7,14 L8,18 L21,18 M19,23 C18.4475,23 18,22.5525 18,22 C18,21.4475 18.4475,21 19,21 C19.5525,21 20,21.4475 20,22 C20,22.5525 19.5525,23 19,23 Z M9,23 C8.4475,23 8,22.5525 8,22 C8,21.4475 8.4475,21 9,21 C9.5525,21 10,21.4475 10,22 C10,22.5525 9.5525,23 9,23 Z"></path>
+      </symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24">
+          <path d="M8,24 L8,19 M16,24 L16,19 M3,24 L3,19 C3,14.0294373 7.02943725,11 12,11 C16.9705627,11 21,14.0294373 21,19 L21,24 M12,11 C14.7614237,11 17,8.76142375 17,6 C17,3.23857625 14.7614237,1 12,1 C9.23857625,1 7,3.23857625 7,6 C7,8.76142375 9.23857625,11 12,11 Z"></path>      
+      </symbol>
+  </defs>
+</svg>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;svg role&#x3D;&quot;image&quot; style&#x3D;&quot;display: none;&quot;&gt;
+  &lt;defs&gt;
+      &lt;symbol id&#x3D;&quot;icon-search&quot; viewBox&#x3D;&quot;0 0 24 24&quot;&gt;
+          &lt;path d&#x3D;&quot;M15,15 L22,22 L15,15 Z M9.5,17 C13.6421356,17 17,13.6421356 17,9.5 C17,5.35786438 13.6421356,2 9.5,2 C5.35786438,2 2,5.35786438 2,9.5 C2,13.6421356 5.35786438,17 9.5,17 Z&quot;&gt;&lt;/path&gt;
+      &lt;/symbol&gt;
+      &lt;symbol id&#x3D;&quot;icon-cart&quot; viewBox&#x3D;&quot;0 0 24 24&quot;&gt;
+          &lt;path d&#x3D;&quot;M5,5 L22,5 L20,14 L7,14 L4,2 L0,2 M7,14 L8,18 L21,18 M19,23 C18.4475,23 18,22.5525 18,22 C18,21.4475 18.4475,21 19,21 C19.5525,21 20,21.4475 20,22 C20,22.5525 19.5525,23 19,23 Z M9,23 C8.4475,23 8,22.5525 8,22 C8,21.4475 8.4475,21 9,21 C9.5525,21 10,21.4475 10,22 C10,22.5525 9.5525,23 9,23 Z&quot;&gt;&lt;/path&gt;
+      &lt;/symbol&gt;
+      &lt;symbol id&#x3D;&quot;icon-user&quot; viewBox&#x3D;&quot;0 0 24 24&quot;&gt;
+          &lt;path d&#x3D;&quot;M8,24 L8,19 M16,24 L16,19 M3,24 L3,19 C3,14.0294373 7.02943725,11 12,11 C16.9705627,11 21,14.0294373 21,19 L21,24 M12,11 C14.7614237,11 17,8.76142375 17,6 C17,3.23857625 14.7614237,1 12,1 C9.23857625,1 7,3.23857625 7,6 C7,8.76142375 9.23857625,11 12,11 Z&quot;&gt;&lt;/path&gt;      
+      &lt;/symbol&gt;
+  &lt;/defs&gt;
+&lt;/svg&gt;</code></pre>
 </div>
 
 

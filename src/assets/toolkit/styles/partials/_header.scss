@@ -23,22 +23,6 @@ $nav-padding: 1.875rem;
     &--icon {
         font-size: 1rem;
     }
-
-    &--active {
-      position: relative;
-
-      &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: -.25em;
-        display: block;
-        background: $brand;
-        height: .25em;
-        width: .25em;
-        border-radius: 50%;
-      }
-    }
   }
 
   &__tools, 
@@ -63,3 +47,20 @@ $nav-padding: 1.875rem;
   display: inline-block;
   padding: .5em .5em 1em;
 }
+
+.hpe-active {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -.25em;
+    right: -.25em;
+    display: block;
+    background: $brand;
+    height: .25em;
+    width: .25em;
+    border-radius: 50%;
+  }
+}
+
