@@ -1,0 +1,5 @@
+<svg class="svg-icon-lib" aria-hidden="true" style="position: absolute;" data-enabled xmlns="http://www.w3.org/2000/svg">
+<symbol id="icon-cart" viewBox="0 0 24 24"><title>icon-cart</title><path d="M5 5h17l-2 9H7L4 2H0m7 12l1 4h13m-2 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM9 23a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></symbol>
+<symbol id="icon-search" viewBox="0 0 24 24"><title>icon-search</title><path d="M15 15l7 7-7-7zm-5.5 2a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15z"/></symbol>
+<symbol id="icon-user" viewBox="0 0 24 24"><title>icon-user</title><path d="M8 24v-5m8 5v-5M3 24v-5c0-4.97 4.03-8 9-8s9 3.03 9 8v5m-9-13a5 5 0 1 0 0-10 5 5 0 0 0 0 10z"/></symbol>
+</svg>

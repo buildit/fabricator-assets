@@ -15,6 +15,8 @@ const sourcemaps = require('gulp-sourcemaps');
 const webpack = require('webpack');
 const merge = require('gulp-merge-json');
 const jsonToSass = require('gulp-json-to-sass');
+const svgSymbols = require('gulp-svg-symbols');
+const svgmin = require('gulp-svgmin');
 
 // configuration
 const config = {
@@ -146,6 +148,29 @@ gulp.task('images', ['favicon'], () => {
     .pipe(gulp.dest(config.images.toolkit.dest));
 });
 
+// icons
+gulp.task('sprites', function () {
+  return gulp.src('src/assets/toolkit/icons/*.svg')
+  .pipe(svgmin())  
+  .pipe(svgSymbols(
+      {        
+        slug: function (name) { return `icon-${name}`; },
+        title: 'icon-%f',
+        svgAttrs: {
+          class: 'svg-icon-lib',
+          'aria-hidden': 'true',
+          style: 'position: absolute;',
+          'data-enabled': true,  
+        },
+        templates: [
+          'default-svg',
+          // path.join(__dirname, `src/assets/toolkit/icons/template.html`)
+        ]
+      }
+    ))
+    .pipe(gulp.dest('src/assets/toolkit'));
+});
+
 // fonts
 gulp.task('fonts', () => {
   return gulp
@@ -191,7 +216,7 @@ gulp.task('serve', () => {
     ['scripts:watch']
   );
 
-  gulp.task('images:watch', ['images'], browserSync.reload);
+  gulp.task('images:watch', ['images', 'sprites'], browserSync.reload);
   gulp.watch(config.images.toolkit.watch, ['images:watch']);
 
   gulp.task('fonts:watch', ['fonts'], browserSync.reload);
@@ -206,6 +231,7 @@ gulp.task('default', ['clean'], () => {
     'styles',
     'scripts',
     'images',
+    'sprites',
     'fonts',
     'assembler'
   ];
