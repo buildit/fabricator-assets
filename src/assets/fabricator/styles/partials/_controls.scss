@@ -46,9 +46,21 @@
 		height: 0.875rem;
 
 		use {
-			fill: #444444;
+			fill: #cccccc;
 		}
 
+	}
+
+	.f-menu-toggle {
+		svg {
+			width: 0.875rem;
+			height: 0.875rem;
+	
+			use {
+				fill: #444444;
+			}
+	
+		}
 	}
 }
 
