@@ -22,7 +22,6 @@
     border-top: 1px solid $dark-grey-3;
     margin-top: 1rem;
     padding-top: 1rem;
-
 }  
        
 .hpe-signin-social-links {
@@ -80,4 +79,8 @@
             list-style: none;
          }
      }
+}
+
+.hpe-aside-headline {
+    @include headline-aside('signup');
 }

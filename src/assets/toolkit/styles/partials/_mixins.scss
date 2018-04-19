@@ -106,6 +106,8 @@ $breakpoints: (
   }
 }
 
+
+//to be refactored
 $transparent: rgba(255, 255, 255, 0.9);
 
 @mixin headline($type:'') {
@@ -117,9 +119,15 @@ $transparent: rgba(255, 255, 255, 0.9);
       content: '';
       background-color: $brand;
       display: block;
-      margin-top: 40px;
+      margin-top: 20px;
       height: 5px;
       width: 80px;
     }
+  }
+}
+@mixin headline-aside($type:'') {
+  @if ($type== 'signup') {
+    font-size: 30px;
+    font-weight: 600;
   }
 }
