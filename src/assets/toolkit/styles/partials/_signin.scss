@@ -10,6 +10,9 @@
 .hpe-signin-form {
     background-color: $transparent;
 }
+.hpe-signin-form-title {
+    @include headline('signup');
+}
     
  .hpe-sigin-button {
     width: 100%;
@@ -62,6 +65,7 @@
     //custom gutter 
     margin-left: 2%;
     background-color: $transparent;
+    padding: $bootstrap-padding;
 
     //custom bootstrap width due to custom gutter 
     -ms-flex: 0 0 64.666667%;
