@@ -29,10 +29,12 @@ button, input {
   &--strong {
     font-weight: 600;
   }  
-}
 
-//todo reset partial (too atmoic for use) comitting to raise question on Zeplin versus style
-body {
-  font-size: 21px;
-  font-weight: 300;
+  &--black {
+    font-weight: 900;
+  }  
+
+  &--caps {
+    text-transform: uppercase;
+  }
 }
