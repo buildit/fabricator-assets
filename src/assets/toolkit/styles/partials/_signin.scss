@@ -9,6 +9,11 @@
 //sigin form
 .hpe-signin-form {
     background-color: $transparent;
+
+    //todo pass in hanlebars var or
+    button {
+        width: 100%;
+    }
 }
 .hpe-signin-form-title {
     @include headline('signup');
@@ -22,7 +27,15 @@
     border-top: 1px solid $dark-grey-3;
     margin-top: 1rem;
     padding-top: 1rem;
-}  
+}
+
+.hpe-social-linkedin {
+    background-color: $linkedin-brand;
+}
+
+.hpe-social-google {
+    background-color: $google-brand;
+}
        
 .hpe-signin-social-links {
     @include clearfix();
@@ -36,24 +49,20 @@
     
     &:last-child {
         float: right;
-
     }
 }
 .hpe-signin-already-have-account {
     text-align: center;
 
      a {
+        border-bottom: 1px solid $dark-grey-1;
         color: $black;
         display: inline-block;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 1.25rem;
          margin: 3rem auto;
         text-align: center;
         text-decoration: none;
-
-         &:hover {
-                padding-bottom: 5px;
-        }
     }
         
 }
@@ -83,4 +92,12 @@
 
 .hpe-aside-headline {
     @include headline-aside('signup');
+}
+
+//set as global
+.hpe-social-linkedin {
+    background-color: $linkedin-brand;
+}
+.hpe-social-google {
+    background-color: $google-brand;
 }
