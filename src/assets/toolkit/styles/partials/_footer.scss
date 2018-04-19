@@ -1,106 +1,106 @@
-.footer-wrapper {
+.hpe-footer-wrapper {
     @include section_padding('footer');
-    background-color: $light-grey-1;
+    background-color: $light-grey-1;   
+}
 
-    h3 {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 1.27777778;
-        padding-bottom: 18px;
-        text-transform: uppercase;
-    }
+//footer titles for cols //h3
+.hpe-footer-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.27777778;
+    padding-bottom: 18px;
+    text-transform: uppercase;
+}
 
-    //from HPE
-    .footer-col {
-      
-    }
+//sitemap list //ul
+.hpe-footer-sitemap-list-wrapper {
+    margin: 0;
+    padding: 0;
+}
 
-    //sitemap
-    ul {
-        margin: 0;
-        padding: 0;
+//sitemap ul //li
+.hpe-footer-sitemap-list-item {
+    list-style: none;
+}
+//ul //li //a
+.hpe-footer-sitemap-list-item-link {
+    color: $dark-grey-1;
+    display: block;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
 
-        li {
-            list-style: none;
+//footer social icons
+.hpe-footer-sitemap-list-item-social {
+    display: inline-block;
+    margin-right: 24px;
 
-            a {
-                color: $dark-grey-1;
-                display: block;
-                font-size: 16px;
-                line-height: 1.25;
-                margin-bottom: 8px;
-                text-decoration: none;
-            }
-        }
-    }
-
-    //social icons
-    .social {
-        display: inline-block;
-        margin-right: 24px;
-
-        &:hover {
-            &:before {
-                content: '';
-                cursor: pointer;
-                background-color: $dark-grey-3;
-                display: block;
-                width: 20px;
-                height: 20px;
-            }
-        }
-
-        &:last-child {
-            margin-right: 0;
-        }
-
-
+    &:hover {
         &:before {
             content: '';
-            background-color: $dark-grey-1;
+            cursor: pointer;
+            background-color: $dark-grey-3;
             display: block;
             width: 20px;
             height: 20px;
         }
     }
 
-    .language-wrapper {
-        @include clearfix();
-        margin: 5rem 0;
-        width: 100%;
+    &:last-child {
+        margin-right: 0;
     }
 
-    .language {
-        display: inline-block;
-        float: right;
-        text-transform: uppercase;
+    //placeholder for greyboxing
+    &:before {
+        content: '';
+        background-color: $dark-grey-1;
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+//localization
+.hpe-footer-language-wrapper {
+    @include clearfix();
+    margin: 5rem 0;
+    width: 100%;
+}
+
+//language displayed
+.hpe-footer-language-wrapper-language {
+    display: inline-block;
+    float: right;
+    text-transform: uppercase;
+}
+
+//legal wrapper
+.hpe-footer-legal-links-wrapper {
+    padding: 0;
+}
+
+//legal wrapper list
+.hpe-footer-legal-links-list {
+    float: right;
+}
+
+//legal wrapper list item
+.hpe-footer-legal-links-list-item {
+    display: inline-block;
+    font-size: 1.125rem;
+    line-height: 0;
+
+    &:after {
+        content: '|';
+        margin: 0 5px 0 4px;
     }
 
-    //todo look into BS padding removal patterns
-    .legal-links-wrapper {
-        padding: 0;
-
-        ul {
-            float: right;
-
-            li {
-                display: inline-block;
-                font-size: 1.125rem;
-                line-height: 0;
-
-                &:after {
-                    content: '|';
-                    margin: 0 5px 0 4px;
-                }
-
-                &:last-of-type {
-                    &:after {
-                        content: '';
-                        margin: 0;
-                    }
-                }
-            }
+    &:last-of-type {
+        &:after {
+            content: '';
+            margin: 0;
         }
-       
     }
 }

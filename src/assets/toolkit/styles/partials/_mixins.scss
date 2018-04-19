@@ -27,43 +27,36 @@ $breakpoints: (
   }
 }
 
-// @mixin section_padding($type:'') {
-// 	padding: 1rem;
+@mixin section_padding($type:'') {
+	padding: 1rem;
 
-// 	@include respond-to ('small') {
-// 		padding: 2rem;
-//   }
+	// @include respond-to ('small') {
+	// 	padding: 2rem;
+  // }
   
-//   @include respond-to ('large') {
-//     padding: 2.2rem;
-//   }
+  // @include respond-to ('large') {
+  //   padding: 2.2rem;
+  // }
 
-//   @include respond-to ('ex-large') {
-//     padding: 2.4rem;
+  // @include respond-to ('ex-large') {
+  //   padding: 2.4rem;
     
-//   }
+  // }
 
-// 	@if ($type== 'nav') {
-//     padding: 0 1rem;
+	// @if ($type== 'nav') {
+  //   padding: 0 1rem;
     
-//   }
+  // }
 
-//   @if ($type== 'footer') {
-//     padding: 0 3.125rem;
+  @if ($type== 'footer') {
+    padding: 0;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    padding-left: 0;
+    padding-right: 0;
     
-//   }
+  }
     
-// }
-
-//todo section pattern mixin 
-@mixin section_padding ($type:'') {
-
-    @if ($type=='signin') {
-
-      @include respond-to ('large') {
-        padding: 8.75rem 13.75rem;
-      }
-    }
 }
 
 @mixin section_margin ($type:'') {
@@ -106,28 +99,3 @@ $breakpoints: (
   }
 }
 
-
-//to be refactored
-$transparent: rgba(255, 255, 255, 0.9);
-
-@mixin headline($type:'') {
-  @if ($type== 'signup') {
-    font-weight: 900;
-    font-size: 3.125rem;  
-
-    &:after {
-      content: '';
-      background-color: $brand;
-      display: block;
-      margin-top: 20px;
-      height: 5px;
-      width: 80px;
-    }
-  }
-}
-@mixin headline-aside($type:'') {
-  @if ($type== 'signup') {
-    font-size: 30px;
-    font-weight: 600;
-  }
-}
