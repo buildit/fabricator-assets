@@ -109,7 +109,17 @@ $breakpoints: (
 $transparent: rgba(255, 255, 255, 0.9);
 
 @mixin headline($type:'') {
-  @if ($type== 'form') {
-    font-size: $headline--signup;  
+  @if ($type== 'signup') {
+    font-weight: 900;
+    font-size: 3.125rem;  
+
+    &:after {
+      content: '';
+      background-color: $brand;
+      display: block;
+      margin-top: 40px;
+      height: 5px;
+      width: 80px;
+    }
   }
 }
