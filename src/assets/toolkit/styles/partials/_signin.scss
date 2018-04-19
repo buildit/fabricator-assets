@@ -1,8 +1,12 @@
 .hpe-signin-wrapper {
     @include section_padding('signin');
+    background-image: url("images/signin-bg-large@2x.png");
+    background-size: cover;
     background-color: pink;
 }
 
+
+//sigin form
 .hpe-signin-form {
     background-color: $transparent;
 }
@@ -52,14 +56,17 @@
         
 }
 
+//aside
 .hpe-signin-support {
     
-    margin-left: 02%; /* <- your value here */
-     
+    //custom gutter 
+    margin-left: 2%;
+    background-color: $transparent;
 
-    @include section_padding('signin');
-    background-color: $dark-grey-4;
-    color: $white;
+    //custom bootstrap width due to custom gutter 
+    -ms-flex: 0 0 64.666667%;
+    flex: 0 0 64.666667%;
+    max-width: 64.666667%;
 
      ul {
          margin: 0;

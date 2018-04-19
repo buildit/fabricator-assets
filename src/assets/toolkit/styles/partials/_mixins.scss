@@ -61,7 +61,7 @@ $breakpoints: (
     @if ($type=='signin') {
 
       @include respond-to ('large') {
-        padding: 8.75rem 13.75rem;
+        padding: 4.75rem 5.75rem;
       }
     }
 }
@@ -105,6 +105,4 @@ $breakpoints: (
     clear: both;
   }
 }
-
-$transparent: rgba(255, 255, 255, 0.9);
 
