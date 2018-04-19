@@ -1,0 +1,93 @@
+.hpe-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  margin: 0 auto;
+  max-width: $ex-large;
+}
+
+$nav-padding: 1.875rem;
+
+.hpe-nav {
+  background-color: $white;
+
+  &__link {
+    background: none;
+    border: 0;
+    color: $dark-grey-1;
+    font-weight: 200;
+    font-size: 1.25em;
+    margin: 0 $nav-padding 0 0;
+    text-decoration: none;
+    vertical-align: middle;
+
+    &--icon {
+        font-size: 1rem;
+    }
+  }
+
+  &__tools, 
+  &__main {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__main {
+    flex: 0 0 33rem;
+    overflow: hidden;
+
+    .hpe-nav__link:not(:last-of-type) {
+      display: none;
+
+      @include respond-to(large) {
+        display: inline-block;
+      }    
+    }
+  }
+
+  &__tools {
+    border-left: 1px solid $dark-grey-1;
+    padding: 0 0 0 $nav-padding;
+    height: 2.125rem;
+  }
+}
+
+.hpe-nav__main {
+  display: none;
+  
+  @include respond-to(small) {
+    display: inline-block;
+  }
+}
+
+
+
+.hpe-contact {
+  font-weight: 600;
+  font-size: .9375rem;
+  text-transform: uppercase;
+  background: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2282%22%20height%3D%2240%22%3E%3Cpath%20stroke%3D%22%2301A982%22%20stroke-width%3D%222%22%20d%3D%22M1%201v26h23v10.583L34.568%2027H81V1H1z%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  display: inline-block;
+  padding: .5em .5em 1em;
+  margin-right: 0;
+}
+
+.hpe-active {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -.25em;
+    right: -.25em;
+    display: block;
+    background: $brand;
+    height: .25em;
+    width: .25em;
+    border-radius: 50%;
+  }
+}
+

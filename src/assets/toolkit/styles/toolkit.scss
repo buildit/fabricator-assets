@@ -4,8 +4,7 @@
 @import 'partials/mixins';
 @import 'partials/utility';
 @import 'partials/fonts';
-@import 'partials/headlines';
-@import 'partials/nav';
+@import 'partials/header';
 @import 'partials/signin';
 @import 'partials/button';
 @import 'partials/form';
@@ -16,6 +15,7 @@
 @import 'partials/radio';
 @import 'partials/list';
 @import 'partials/footer';
+@import 'partials/icons';
 
 *, 
 *::before,
@@ -29,4 +29,5 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
   box-sizing: border-box;
+  margin: 0;
 } 
