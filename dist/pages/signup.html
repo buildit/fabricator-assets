@@ -68,9 +68,9 @@
         </div>
       </nav>
     </header>
-    <div class="hpe-signin-wrapper row" style="background-image: url(/assets/toolkit/images/signin-bg-large@2x.png)";>
-    
-        <div class="col-4 hpe-signin-form">
+    <div class="hpe-signin-wrapper row" style="background-image: url(/assets/toolkit/images/signin-bg-large@2x.png)" ;>
+      <div class="col-md-5">
+        <div class="hpe-signin-form">
           <h1 class="hpe-signin-form-title">Create your account</h1>
     
           <form action="" class="form">
@@ -90,189 +90,203 @@
           		</div>	</div>
           	<button class="hpe-button">Submit</button></form>
           <div class="hpe-signin-social">
-              <span class="hpe-signin-social-links hpe-social-linkedin">Linkedin</span>
-              <span class="hpe-signin-social-links hpe-social-google">Google</span>
+            <span class="hpe-signin-social-links hpe-social-linkedin">Linkedin</span>
+            <span class="hpe-signin-social-links hpe-social-google">Google</span>
           </div>
     
           <div class="hpe-signin-already-have-account">
-              <a href="#">Already have an account? </a>
+            <a href="#">Already have an account? </a>
           </div>
         </div>
+      </div>
+      <div class="col-md-7">
+        <!-- We want to keep grid seperate from the colored boxes because Bootstrap grid usees padding for gutters. Our semi-transparent box goes inside the grid container. -->
+        <div class="hpe-signin-support">
+          <h2 class="hpe-aside-headline hpe-headline--strong">Benefits of creating an HP account </h2>
+          <div class="row">
+            <div class="col-md-6">
+              <ul>
+                <li>
+                  <h3>Manage orders </h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis
+                    vel turpis. Maecenas aliquet faucibus tristique.</p>
+                </li>
+                <li>
+                  <h3>Store content</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis
+                    vel turpis. Maecenas aliquet faucibus tristique.</p>
+                </li>
+                <li>
+                  <h3>Personalized updates</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis
+                    vel turpis. Maecenas aliquet faucibus tristique.</p>
+                </li>
+              </ul>
+            </div>
     
-        <div class="hpe-signin-support ">
-            <h2 class="hpe-aside-headline">Benefits of creating an HP account </h2>
-            <div class="row">
-              <div class="col-md"> 
-                <ul>
+            <div class="col-md-6">
+              <ul>
+                <li>
+                  <h3>Get support</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis
+                    vel turpis. Maecenas aliquet faucibus tristique.</p>
+                </li>
+                <li>
+                  <h3>Manage your account</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis
+                    vel turpis. Maecenas aliquet faucibus tristique.</p>
+                </li>
+                <li>
+                  <h3>Exclusive content</h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis.
+                  Maecenas aliquet faucibus tristique.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--end row-->
+      </div>
+      <!--end col-->
+    </div>
+    <!-- end row-->
+    <footer class="hpe-footer-wrapper row">
+      <div class="hpe-footer row">
+          <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-4">
+                  <h3>Company</h3>
+                  <ul class="hpe-footer-sitemap-list-wrapper">
                     <li>
-                      <h3>Manage orders </h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.</p>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">About HPE </a>
                     </li>
                     <li>
-                      <h3>Store content</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.</p>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Accessibility </a>
                     </li>
                     <li>
-                      <h3>Personalized updates</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.</p>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Careers</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Contact Us</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Corporate Responsibility</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Hewlett Packard Labs</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Investor Relations</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Leadership</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Public Policy</a>
+                    </li>
+                  </ul>
+                  <h3>News & Events</h3>
+                  <ul class="hpe-footer-sitemap-list-wrapper">
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Newsroom</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Discover</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Events</a>
                     </li>
                   </ul>
                 </div>
-    
-                <div class="col-md"> 
-                  <ul>
-                      <li>
-                        <h3>Get support</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.</p>
-                      </li>
-                      <li>
-                        <h3>Manage your account</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.</p>
-                      </li>
-                      <li>
-                        <h3>Exclusive content</h3>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.
-                      </li>
+                <div class="col-md-4">
+                  <h3>Support</h3>
+                  <ul class="hpe-footer-sitemap-list-wrapper">
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Product Support </a>
+                    </li>
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Software & Drivers</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Warranty Check</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Enhanced Support Services</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Education and Training</a>
+                    </li>
                   </ul>
+                  <h3>Communities</h3>
+                  <ul class="hpe-footer-sitemap-list-wrapper">
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">HPE Blogs and Forum</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <h3>Customer Resources</h3>
+                  <ul class="hpe-footer-sitemap-list-wrapper">
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">How to Buy</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Online Stores</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Executive Briefing Center</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Look Up Old HP.com URL</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Email Signup</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hpe-footer-sitemap-list-item-link">Login</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div><!--end row-->
-        </div><!--end col-->
-      </div><!-- end row-->
-    <footer class="hpe-footer-wrapper row">
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col-md-4">
-            <h3>Company</h3>
-            <ul class="hpe-footer-sitemap-list-wrapper">
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">About HPE </a>
-              </li>
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Accessibility </a>
-              </li>
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Careers</a>
-              </li>
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Contact Us</a>
-              </li>
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Corporate Responsibility</a>
-              </li>
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Hewlett Packard Labs</a>
-              </li>
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Investor Relations</a>
-              </li>
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Leadership</a>
-              </li>
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Public Policy</a>
-              </li>
-            </ul>
-            <h3>News & Events</h3>
-            <ul class="hpe-footer-sitemap-list-wrapper">
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Newsroom</a>
-              </li>
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Discover</a>
-              </li>
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Events</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h3>Support</h3>
-            <ul class="hpe-footer-sitemap-list-wrapper">
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Product Support </a>
-              </li>
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Software & Drivers</a>
-              </li>
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Warranty Check</a>
-              </li>
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Enhanced Support Services</a>
-              </li>
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Education and Training</a>
-              </li>
-            </ul>
-            <h3>Communities</h3>
-            <ul class="hpe-footer-sitemap-list-wrapper">
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">HPE Blogs and Forum</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h3>Customer Resources</h3>
-            <ul class="hpe-footer-sitemap-list-wrapper">
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">How to Buy</a>
-              </li>
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Online Stores</a>
-              </li>
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Executive Briefing Center</a>
-              </li>
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Look Up Old HP.com URL</a>
-              </li>
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Email Signup</a>
-              </li>
-              <li>
-                <a href="#" class="hpe-footer-sitemap-list-item-link">Login</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <h3>Follow HPE</h3>
-        <ul class="hpe-footer-sitemap-list-wrapper">
-          <li class="hpe-footer-sitemap-list-item-social">
-            <a href="#" class="hpe-footer-sitemap-list-item-link"></a>
-          </li>
-          <li class="hpe-footer-sitemap-list-item-social">
-            <a href="#" class="hpe-footer-sitemap-list-item-link"></a>
-          </li>
-          <li class="hpe-footer-sitemap-list-item-social">
-            <a href="#" class="hpe-footer-sitemap-list-item-link"></a>
-          </li>
-          <li class="hpe-footer-sitemap-list-item-social">
-            <a href="#" class="hpe-footer-sitemap-list-item-link"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-12">
-        <div class="language-wrapper">
-          <span class="language">Untited States (EN)</span>
-        </div>
-      </div>
-    
-      <div class="col-md-12">
-        <div class="legal-copy">
-          <div id="hf-copyright">
-            © Copyright 2018 Hewlett Packard Enterprise Development LP
-          </div>
-        </div>
-        <div class="hpe-footer-legal-links-wrapper">
-          <ul class="hpe-footer-sitemap-list-wrapper legal-link">
-            <li>Privacy</li>
-            <li>Terms of Use</li>
-            <li>Ad Choices & Cookies</li>
-            <li>Sitemap</li>
-          </ul>
-        </div>
+            </div>
+            <div class="col-md-6">
+              <h3>Follow HPE</h3>
+              <ul class="hpe-footer-sitemap-list-wrapper">
+                <li class="hpe-footer-sitemap-list-item-social">
+                  <a href="#" class="hpe-footer-sitemap-list-item-link"></a>
+                </li>
+                <li class="hpe-footer-sitemap-list-item-social">
+                  <a href="#" class="hpe-footer-sitemap-list-item-link"></a>
+                </li>
+                <li class="hpe-footer-sitemap-list-item-social">
+                  <a href="#" class="hpe-footer-sitemap-list-item-link"></a>
+                </li>
+                <li class="hpe-footer-sitemap-list-item-social">
+                  <a href="#" class="hpe-footer-sitemap-list-item-link"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-12">
+              <div class="language-wrapper">
+                <span class="language">Untited States (EN)</span>
+              </div>
+            </div>
+        
+            <div class="col-md-12">
+              <div class="legal-copy">
+                <div id="hf-copyright">
+                  © Copyright 2018 Hewlett Packard Enterprise Development LP
+                </div>
+              </div>
+              <div class="hpe-footer-legal-links-wrapper">
+                <ul class="hpe-footer-legal-links-list">
+                  <li class="hpe-footer-legal-links-list-item">Privacy</li> 
+                  <li class="hpe-footer-legal-links-list-item">Terms of Use</li>
+                  <li class="hpe-footer-legal-links-list-item">Ad Choices & Cookies</li>
+                  <li class="hpe-footer-legal-links-list-item">Sitemap</li>
+                </ul>
+              </div>
+            </div>
       </div>
     </footer>
 </div>

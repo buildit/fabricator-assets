@@ -1,56 +1,68 @@
-<div class="hpe-signin-wrapper row" style="background-image: url(/assets/toolkit/images/signin-bg-large@2x.png)";>
-
-    <div class="col-4 hpe-signin-form">
+<div class="hpe-signin-wrapper row" style="background-image: url(/assets/toolkit/images/signin-bg-large@2x.png)" ;>
+  <div class="col-md-5">
+    <div class="hpe-signin-form">
       <h1 class="hpe-signin-form-title">Create your account</h1>
 
       {{>form}}
 
       <div class="hpe-signin-social">
-          <span class="hpe-signin-social-links hpe-social-linkedin">Linkedin</span>
-          <span class="hpe-signin-social-links hpe-social-google">Google</span>
+        <span class="hpe-signin-social-links hpe-social-linkedin">Linkedin</span>
+        <span class="hpe-signin-social-links hpe-social-google">Google</span>
       </div>
 
       <div class="hpe-signin-already-have-account">
-          <a href="#">Already have an account? </a>
+        <a href="#">Already have an account? </a>
       </div>
     </div>
+  </div>
+  <div class="col-md-7">
+    <!-- We want to keep grid seperate from the colored boxes because Bootstrap grid usees padding for gutters. Our semi-transparent box goes inside the grid container. -->
+    <div class="hpe-signin-support">
+      <h2 class="hpe-aside-headline hpe-headline--strong">Benefits of creating an HP account </h2>
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <li>
+              <h3>Manage orders </h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis
+                vel turpis. Maecenas aliquet faucibus tristique.</p>
+            </li>
+            <li>
+              <h3>Store content</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis
+                vel turpis. Maecenas aliquet faucibus tristique.</p>
+            </li>
+            <li>
+              <h3>Personalized updates</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis
+                vel turpis. Maecenas aliquet faucibus tristique.</p>
+            </li>
+          </ul>
+        </div>
 
-    <div class="hpe-signin-support ">
-        <h2 class="hpe-aside-headline">Benefits of creating an HP account </h2>
-        <div class="row">
-          <div class="col-md"> 
-            <ul>
-                <li>
-                  <h3>Manage orders </h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.</p>
-                </li>
-                <li>
-                  <h3>Store content</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.</p>
-                </li>
-                <li>
-                  <h3>Personalized updates</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.</p>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-md"> 
-              <ul>
-                  <li>
-                    <h3>Get support</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.</p>
-                  </li>
-                  <li>
-                    <h3>Manage your account</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.</p>
-                  </li>
-                  <li>
-                    <h3>Exclusive content</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.
-                  </li>
-              </ul>
-          </div>
-        </div><!--end row-->
-    </div><!--end col-->
-  </div><!-- end row-->
+        <div class="col-md-6">
+          <ul>
+            <li>
+              <h3>Get support</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis
+                vel turpis. Maecenas aliquet faucibus tristique.</p>
+            </li>
+            <li>
+              <h3>Manage your account</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis
+                vel turpis. Maecenas aliquet faucibus tristique.</p>
+            </li>
+            <li>
+              <h3>Exclusive content</h3>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis.
+              Maecenas aliquet faucibus tristique.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--end row-->
+  </div>
+  <!--end col-->
+</div>
+<!-- end row-->
