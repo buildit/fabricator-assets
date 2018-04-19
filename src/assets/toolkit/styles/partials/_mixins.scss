@@ -30,26 +30,30 @@ $breakpoints: (
 @mixin section_padding($type:'') {
 	padding: 1rem;
 
-	@include respond-to ('small') {
-		padding: 2rem;
-  }
+	// @include respond-to ('small') {
+	// 	padding: 2rem;
+  // }
   
-  @include respond-to ('large') {
-    padding: 2.2rem;
-  }
+  // @include respond-to ('large') {
+  //   padding: 2.2rem;
+  // }
 
-  @include respond-to ('ex-large') {
-    padding: 2.4rem;
+  // @include respond-to ('ex-large') {
+  //   padding: 2.4rem;
     
-  }
+  // }
 
-	@if ($type== 'nav') {
-    padding: 0 1rem;
+	// @if ($type== 'nav') {
+  //   padding: 0 1rem;
     
-  }
+  // }
 
   @if ($type== 'footer') {
-    padding: 0 3.125rem;
+    padding: 0;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    padding-left: 0;
+    padding-right: 0;
     
   }
     
