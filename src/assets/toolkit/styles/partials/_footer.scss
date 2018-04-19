@@ -1,6 +1,6 @@
 .hpe-footer-wrapper {
-    @include section_padding('footer');
-    background-color: $light-grey-1;   
+    // @include section_padding('footer');
+    background-color: $light-grey-1;
 }
 
 //footer titles for cols //h3
@@ -16,11 +16,12 @@
 .hpe-footer-sitemap-list-wrapper {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 //sitemap ul //li
 .hpe-footer-sitemap-list-item {
-    list-style: none;
+    
 }
 //ul //li //a
 .hpe-footer-sitemap-list-item-link {
@@ -71,8 +72,6 @@
 
 //language displayed
 .hpe-footer-language-wrapper-language {
-    display: inline-block;
-    float: right;
     text-transform: uppercase;
 }
 

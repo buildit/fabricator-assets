@@ -1,5 +1,5 @@
 .hpe-signin-wrapper {
-    @include section_padding('signin');
+    // @include section_padding('signin');
     background-image: url("images/signin-bg-large@2x.png");
     background-size: cover;
     background-color: pink;
@@ -16,7 +16,7 @@
     }
 }
 .hpe-signin-form-title {
-    @include headline('signup');
+    // @include headline('signup');
 }
     
  .hpe-sigin-button {
@@ -39,7 +39,7 @@
        
 .hpe-signin-social-links {
     @include clearfix();
-    @include button ();
+    // @include button ();
     font-size: 1rem;
     width: 45%;
     
@@ -91,7 +91,7 @@
 }
 
 .hpe-aside-headline {
-    @include headline-aside('signup');
+    // @include headline-aside('signup');
 }
 
 //set as global
