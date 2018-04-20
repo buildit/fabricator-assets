@@ -2,8 +2,10 @@
     background-image: url("images/signin-bg-large@2x.png");
     background-size: cover;
 
+    padding: 1rem;
+
     @include respond-to ('large') {
-        padding: 8.75rem 13.75rem;
+        padding: 8rem 5rem;
     }
 }
 //sigin form

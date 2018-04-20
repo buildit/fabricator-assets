@@ -4,7 +4,7 @@
 .input { 
 	
   input, select, textarea {
-		background: rgba(0,0,0,0.1);
+		background: rgba(255,255,255,0.1);
 		border: none;
 		border-bottom: 1px solid $light-grey-4;
 		border-radius: 0;
@@ -16,17 +16,9 @@
 		line-height: 1.5;
 		margin-bottom: 1rem;
 		outline: none;
-		padding: 5px 24px;
+		padding: 5px 0px;
 		transition: transition;
 		width: 100%;
-
-		//
-		-webkit-appearance: none;
-
-		cursor: pointer;
-		background-color: white;
-		background-repeat: no-repeat;
-		background-size: 1em;
 
 		&:focus {
 			border-bottom: 1px solid $light-1;

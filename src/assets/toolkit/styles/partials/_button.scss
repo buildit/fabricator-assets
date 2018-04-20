@@ -26,6 +26,8 @@
   }
 }
 
+//sign in buttons
+
 .hpe-sigin-button {
   width: 100%;
 }
@@ -43,31 +45,75 @@
   color: $white;
   font-size: $hpe-font-size-med;
   padding: $button-padding;
+  position: relative;
   text-align: center;
   width: 38%;
   
   &:first-child {
       float: left;
+      width: 50%;
   }
   
   &:last-child {
       float: right;
+      width: 50%;
   }
+
   span {
-    border: 1px solid $white;
     display: inline-block;
     width: 70%;
   }
+  
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  svg {
+    height: 30px;
+
+    position: absolute;
+    left: 10px;
+    top: 8px;
+  }
 }
 
-.htp-sigin-social-button-icon {
-  border-right: 1px solid $white;
-}
+// .htp-sigin-social-button-icon {
+//   border-right: 1px solid $white;
+// }
 
 //set as global
 .hpe-social-linkedin {
   background-color: $linkedin-brand;
+
+  svg {
+
+    &:before {
+      content: '';
+      border-right: 1px solid $white;
+      display: block;
+      padding-right: 10px;
+    }
+  }
 }
+
 .hpe-social-google {
   background-color: $google-brand;
+
+    svg {
+      // display: block;
+      // z-index: 2;
+
+      // &:before {
+      //   content: '';
+      //   display: block;
+      //   background-color: $white;
+      //   padding: 10px;
+      //   z-index: 1;
+      // }
+
+    }
 }
