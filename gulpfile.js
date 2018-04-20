@@ -58,7 +58,7 @@ const config = {
     toolkit: {
       src: ['src/assets/toolkit/icons/**/*.svg'],
       dest: 'dist/assets/toolkit/image',
-      partial: 'src/materials/atoms',
+      partial: 'src/materials/atoms/icons',
       watch: 'src/assets/toolkit/icons/**/*'
     }
   },
@@ -180,7 +180,8 @@ gulp.task('icons', function () {
         },
         templates: [
           'default-svg',
-          path.join(__dirname, `src/assets/toolkit/icons/icons.html`)
+          path.join(__dirname, `src/assets/toolkit/icons/icons-symbol-library.html`),
+          path.join(__dirname, `src/assets/toolkit/icons/icons-library.html`),
         ]
       }
     ))

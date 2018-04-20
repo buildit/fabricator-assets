@@ -12,8 +12,19 @@
 .icon {
   height: 1em;
   width: 1em;
-  fill: none;
-  stroke-width: 2;
+  fill: transparent;
   stroke: currentColor;
+  stroke-width: 2;
   vertical-align: baseline;
+
+  &--inline {
+    position: relative;
+    bottom: -.125em;
+  }
+
+  &--filled {
+    fill: currentColor;
+    stroke: transparent;
+    stroke-width: 0;
+  }
 }
