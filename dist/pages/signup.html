@@ -17,18 +17,11 @@
 
 </head>
 <body>
-	<svg role="image" style="display: none;">
-	  <defs>
-	      <symbol id="icon-search" viewBox="0 0 24 24">
-	          <path d="M15,15 L22,22 L15,15 Z M9.5,17 C13.6421356,17 17,13.6421356 17,9.5 C17,5.35786438 13.6421356,2 9.5,2 C5.35786438,2 2,5.35786438 2,9.5 C2,13.6421356 5.35786438,17 9.5,17 Z"></path>
-	      </symbol>
-	      <symbol id="icon-cart" viewBox="0 0 24 24">
-	          <path d="M5,5 L22,5 L20,14 L7,14 L4,2 L0,2 M7,14 L8,18 L21,18 M19,23 C18.4475,23 18,22.5525 18,22 C18,21.4475 18.4475,21 19,21 C19.5525,21 20,21.4475 20,22 C20,22.5525 19.5525,23 19,23 Z M9,23 C8.4475,23 8,22.5525 8,22 C8,21.4475 8.4475,21 9,21 C9.5525,21 10,21.4475 10,22 C10,22.5525 9.5525,23 9,23 Z"></path>
-	      </symbol>
-	      <symbol id="icon-user" viewBox="0 0 24 24">
-	          <path d="M8,24 L8,19 M16,24 L16,19 M3,24 L3,19 C3,14.0294373 7.02943725,11 12,11 C16.9705627,11 21,14.0294373 21,19 L21,24 M12,11 C14.7614237,11 17,8.76142375 17,6 C17,3.23857625 14.7614237,1 12,1 C9.23857625,1 7,3.23857625 7,6 C7,8.76142375 9.23857625,11 12,11 Z"></path>      
-	      </symbol>
-	  </defs>
+	<svg class="svg-icon-lib" aria-hidden="true" style="position: absolute;" data-enabled xmlns="http://www.w3.org/2000/svg">
+	<symbol id="icon-cart" viewBox="0 0 24 24"><title>icon-cart</title><path d="M5 5h17l-2 9H7L4 2H0m7 12l1 4h13m-2 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM9 23a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></symbol>
+	<symbol id="icon-search" viewBox="0 0 24 24"><title>icon-search</title><path d="M15 15l7 7-7-7zm-5.5 2a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15z"/></symbol>
+	<symbol id="icon-social-linkedin-option" viewBox="0 0 24 24"><title>icon-social-linkedin-option</title><path fill-rule="evenodd" d="M22.037 22h-4.152v-6.496c0-1.55-.026-3.542-2.157-3.542-2.16 0-2.49 1.688-2.49 3.43V22H9.09V8.64h3.98v1.827h.058c.553-1.05 1.908-2.158 3.928-2.158 4.204 0 4.98 2.766 4.98 6.364V22zM4.409 6.816A2.407 2.407 0 0 1 2 4.407a2.408 2.408 0 1 1 2.41 2.408zM6.486 22H2.33V8.64h4.156V22z"/></symbol>
+	<symbol id="icon-user" viewBox="0 0 24 24"><title>icon-user</title><path d="M8 24v-5m8 5v-5M3 24v-5c0-4.97 4.03-8 9-8s9 3.03 9 8v5m-9-13a5 5 0 1 0 0-10 5 5 0 0 0 0 10z"/></symbol>
 	</svg>
 
 	<div class="container-fluid">
@@ -41,32 +34,29 @@
     </svg></div>
       <nav class="hpe-nav">
         <div class="hpe-nav__main">
-            <a class="hpe-nav__link" href="#">Products & Solutions</a>
-            <a class="hpe-nav__link" href="#">Services</a>
-            <a class="hpe-nav__link" href="#">Support</a>
-            <a class="hpe-nav__link" href="#">Insights</a>
-            <a class="hpe-nav__link" href="#">Shop</a>
+          <a class="hpe-nav__link" href="#">Products & Solutions</a>
+          <a class="hpe-nav__link" href="#">Services</a>
+          <a class="hpe-nav__link" href="#">Support</a>
+          <a class="hpe-nav__link" href="#">Insights</a>
+          <a class="hpe-nav__link" href="#">Shop</a>
         </div>
         <div class="hpe-nav__tools">
           <button class="hpe-nav__link hpe-nav__link--icon">
             <svg class="icon">
               <use xlink:href="#icon-search"></use>
-            </svg>
-          </button>
-          <a  href="" class="hpe-nav__link hpe-nav__link--icon hpe-active ">
-              <svg class="icon">
-                  <use xlink:href="#icon-cart"></use>
-                </svg>    
-          </a>
-          <a  href="" class="hpe-nav__link hpe-nav__link--icon">
-              <svg class="icon">
-                  <use xlink:href="#icon-user"></use>
-                </svg>
-          </a>
-          <a  href="" class="hpe-nav__link hpe-contact">contact</a>
+            </svg>      </button>
+          <a href="" class="hpe-nav__link hpe-nav__link--icon hpe-active ">
+            <svg class="icon">
+              <use xlink:href="#icon-cart"></use>
+            </svg>      </a>
+          <a href="" class="hpe-nav__link hpe-nav__link--icon">
+            <svg class="icon">
+              <use xlink:href="#icon-user"></use>
+            </svg>      </a>
+          <a href="" class="hpe-nav__link hpe-contact">contact</a>
         </div>
       </nav>
-    </svg>
+      </svg>
     </header>
     <div class="container sign-in-wrapper">
       <div class="row">
