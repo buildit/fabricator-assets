@@ -9,7 +9,7 @@
   width: 1px !important;
 }
 
-.icon {
+.hpe-icon {
   height: 1em;
   width: 1em;
   fill: transparent;
@@ -20,6 +20,7 @@
   &--inline {
     position: relative;
     bottom: -.125em;
+    margin-right: .25em;
   }
 
   &--filled {
