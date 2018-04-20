@@ -47,7 +47,6 @@
 	/**
 	 * Toolkit JavaScript
 	 */
-	"use strict";
 
 /***/ })
 /******/ ]);

@@ -2,29 +2,24 @@
   <div class="logo">{{> logos.logo-light }}</div>
   <nav class="hpe-nav">
     <div class="hpe-nav__main">
-        <a class="hpe-nav__link" href="#">Products & Solutions</a>
-        <a class="hpe-nav__link" href="#">Services</a>
-        <a class="hpe-nav__link" href="#">Support</a>
-        <a class="hpe-nav__link" href="#">Insights</a>
-        <a class="hpe-nav__link" href="#">Shop</a>
+      <a class="hpe-nav__link" href="#">Products & Solutions</a>
+      <a class="hpe-nav__link" href="#">Services</a>
+      <a class="hpe-nav__link" href="#">Support</a>
+      <a class="hpe-nav__link" href="#">Insights</a>
+      <a class="hpe-nav__link" href="#">Shop</a>
     </div>
     <div class="hpe-nav__tools">
       <button class="hpe-nav__link hpe-nav__link--icon">
-        <svg class="icon">
-          <use xlink:href="#icon-search"></use>
-        </svg>
+        {{> icons.icon icon="search"}}
       </button>
-      <a  href="" class="hpe-nav__link hpe-nav__link--icon hpe-active ">
-          <svg class="icon">
-              <use xlink:href="#icon-cart"></use>
-            </svg>    
+      <a href="" class="hpe-nav__link hpe-nav__link--icon hpe-active ">
+        {{> icons.icon icon="cart"}}
       </a>
-      <a  href="" class="hpe-nav__link hpe-nav__link--icon">
-          <svg class="icon">
-              <use xlink:href="#icon-user"></use>
-            </svg>
+      <a href="" class="hpe-nav__link hpe-nav__link--icon">
+        {{> icons.icon icon="user"}}
       </a>
-      <a  href="" class="hpe-nav__link hpe-contact">contact</a>
+      <a href="" class="hpe-nav__link hpe-contact">contact</a>
     </div>
   </nav>
+  </svg>
 </header>
