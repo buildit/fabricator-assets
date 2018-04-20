@@ -14,7 +14,7 @@
   min-width: 120px;
   max-width: 384px;
   transition: 0.1s ease-in-out;
-  padding: 6px 22px;
+  padding: $button-padding;
 
   &--secondary {
     background-color: transparent;

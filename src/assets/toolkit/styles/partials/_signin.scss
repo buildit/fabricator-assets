@@ -36,6 +36,9 @@
 
 .hpe-social-linkedin {
     background-color: $linkedin-brand;
+    color: $white;
+    font-size: $hpe-font-size-med;
+    padding: $button-padding;
 }
 
 .hpe-social-google {
@@ -44,7 +47,8 @@
        
 .hpe-signin-social-links {
     @include clearfix();
-    // @include button ();
+    color: $white;
+    text-align: center;
     font-size: 1rem;
     width: 45%;
     
@@ -56,6 +60,7 @@
         float: right;
     }
 }
+
 .hpe-signin-already-have-account {
     text-align: center;
 
@@ -80,12 +85,6 @@
     background-color: $transparent;
     height: 100%;
     padding: 20px;
-
-
-    //custom bootstrap width due to custom gutter 
-    // -ms-flex: 0 0 64.666667%;
-    // flex: 0 0 64.666667%;
-    //max-width: 64.666667%;
 
      ul {
          margin: 0;
