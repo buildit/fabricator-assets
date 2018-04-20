@@ -25,3 +25,50 @@
     box-shadow: 0px 0px 0px 2px #01a982;
   }
 }
+
+    
+.hpe-sigin-button {
+  width: 100%;
+}
+
+.hpe-social-linkedin {
+  background-color: $linkedin-brand;
+}
+
+.hpe-social-google {
+  background-color: $google-brand;
+}
+     
+.hpe-signin-social-button {
+  @include clearfix();
+  color: $white;
+  font-size: $hpe-font-size-med;
+  padding: $button-padding;
+  text-align: center;
+  width: 38%;
+  
+  &:first-child {
+      float: left;
+  }
+  
+  &:last-child {
+      float: right;
+  }
+  span {
+    border: 1px solid $white;
+    display: inline-block;
+    width: 70%;
+  }
+}
+
+.htp-sigin-social-button-icon {
+  border-right: 1px solid $white;
+}
+
+//set as global
+.hpe-social-linkedin {
+  background-color: $linkedin-brand;
+}
+.hpe-social-google {
+  background-color: $google-brand;
+}

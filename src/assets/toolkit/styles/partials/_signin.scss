@@ -6,67 +6,29 @@
         padding: 8.75rem 13.75rem;
     }
 }
-
-
 //sigin form
 .hpe-signin-form {
     background-color: $transparent;
     height: 100%;
     padding: 20px;
 
-    //todo pass in hanlebars var or
     button {
         width: 100%;
     }
 }
+
 .hpe-signin-form-title {
     font-size: 3.125rem;
     line-height: .9;
-}
-    
- .hpe-sigin-button {
-    width: 100%;
-}
 
-.hpe-signin-social {
-    border-top: 1px solid $dark-grey-3;
-    margin-top: 1rem;
-    padding-top: 1rem;
-}
-
-.hpe-social-linkedin {
-    background-color: $linkedin-brand;
-    color: $white;
-    font-size: $hpe-font-size-med;
-    padding: $button-padding;
-}
-
-.hpe-social-google {
-    background-color: $google-brand;
-}
-       
-.hpe-signin-social-button {
-    @include clearfix();
-    color: $white;
-    text-align: center;
-    font-size: 1rem;
-    width: 45%;
-    
-    &:first-child {
-        float: left;
+    &:after {
+        content: '';
+        background-color: $brand;
+        display: block;
+        margin-top: 20px;
+        height: 5px;
+        width: 80px;
     }
-    
-    &:last-child {
-        float: right;
-    }
-}
-
-//set as global
-.hpe-social-linkedin {
-    background-color: $linkedin-brand;
-}
-.hpe-social-google {
-    background-color: $google-brand;
 }
 
 .hpe-signin-already-have-account {
@@ -78,11 +40,18 @@
         display: inline-block;
         font-weight: 500;
         font-size: 1.25rem;
-         margin: 3rem auto;
+        margin: 3rem auto;
         text-align: center;
         text-decoration: none;
     }
         
+}
+
+//social
+.hpe-signin-social {
+    border-top: 1px solid $light-grey-5;
+    margin-top: 1rem;
+    padding-top: 1rem;
 }
 
 //aside
@@ -102,8 +71,4 @@
             list-style: none;
          }
      }
-}
-
-.hpe-aside-headline {
-    // @include headline-aside('signup');
 }
