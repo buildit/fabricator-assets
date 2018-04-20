@@ -1,0 +1,14 @@
+---
+notes: |
+  Add icon name: ```{{> icons.icon icon='search'}}```
+  
+  Add icon class (for filled icons: ```{{> icons.icon icon='platform-google' className='hpe-icon--filled'}}```
+---
+
+{{#if className}}
+  <svg class="hpe-icon {{ className }}">
+{{else}}
+  <svg class="hpe-icon">
+{{/if}}
+  <use xlink:href="#icon-{{ icon }}"></use>
+</svg>

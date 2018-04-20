@@ -15,6 +15,9 @@ const sourcemaps = require('gulp-sourcemaps');
 const webpack = require('webpack');
 const merge = require('gulp-merge-json');
 const jsonToSass = require('gulp-json-to-sass');
+const svgSymbols = require('gulp-svg-symbols');
+const svgmin = require('gulp-svgmin');
+const path = require(`path`);
 
 // configuration
 const config = {
@@ -42,6 +45,21 @@ const config = {
       src: './src/assets/toolkit/scripts/toolkit.js',
       dest: 'dist/assets/toolkit/scripts',
       watch: 'src/assets/toolkit/scripts/**/*'
+    }
+  },
+  images: {
+    toolkit: {
+      src: ['src/assets/toolkit/image/**/*'],
+      dest: 'dist/assets/toolkit/image',
+      watch: 'src/assets/toolkit/images/**/*'
+    }
+  },
+  icons: {
+    toolkit: {
+      src: ['src/assets/toolkit/icons/**/*.svg'],
+      dest: 'dist/assets/toolkit/image',
+      partial: 'src/materials/atoms/icons',
+      watch: 'src/assets/toolkit/icons/**/*'
     }
   },
   fonts: {
@@ -146,6 +164,31 @@ gulp.task('images', ['favicon'], () => {
     .pipe(gulp.dest(config.images.toolkit.dest));
 });
 
+// icons
+gulp.task('icons', function () {
+  return gulp.src(config.icons.toolkit.src)
+  .pipe(svgmin())  
+  .pipe(svgSymbols(
+      {        
+        slug: function (name) { return `icon-${name}`; },
+        title: 'icon-%f',
+        svgAttrs: {
+          class: 'svg-icon-lib',
+          'aria-hidden': 'true',
+          style: 'position: absolute;',
+          'data-enabled': true,  
+        },
+        templates: [
+          'default-svg',
+          path.join(__dirname, `src/assets/toolkit/icons/icons-symbol-library.html`),
+          path.join(__dirname, `src/assets/toolkit/icons/icons-library.html`),
+        ]
+      }
+    ))
+    .pipe(gulpif( /[.]svg$/, gulp.dest(config.icons.toolkit.dest)))
+    .pipe(gulpif( /[.]html$/, gulp.dest(config.icons.toolkit.partial)));
+});
+
 // fonts
 gulp.task('fonts', () => {
   return gulp
@@ -194,6 +237,9 @@ gulp.task('serve', () => {
   gulp.task('images:watch', ['images'], browserSync.reload);
   gulp.watch(config.images.toolkit.watch, ['images:watch']);
 
+  gulp.task('icons:watch', ['icons'], browserSync.reload);
+  gulp.watch(config.icons.toolkit.watch, ['icons:watch']);
+
   gulp.task('fonts:watch', ['fonts'], browserSync.reload);
   gulp.watch(config.fonts.toolkit.watch, ['fonts:watch']);
 });
@@ -203,6 +249,7 @@ gulp.task('default', ['clean'], () => {
   // define build tasks
   const tasks = [
     'jsonsass',
+    'icons',
     'styles',
     'scripts',
     'images',
@@ -211,7 +258,7 @@ gulp.task('default', ['clean'], () => {
   ];
 
   // run build
-  runSequence('json', 'jsonsass', tasks, () => {
+  runSequence('json', 'jsonsass', 'icons', tasks, () => {
     if (config.dev) {
       gulp.start('serve');
     }

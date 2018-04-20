@@ -1,8 +1,31 @@
-.icon {
+.svg-icon-lib {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+}
+
+.hpe-icon {
   height: 1em;
   width: 1em;
-  fill: none;
-  stroke-width: 2;
+  fill: transparent;
   stroke: currentColor;
+  stroke-width: 2;
   vertical-align: baseline;
+
+  &--inline {
+    position: relative;
+    bottom: -.125em;
+    margin-right: .25em;
+  }
+
+  &--filled {
+    fill: currentColor;
+    stroke: transparent;
+    stroke-width: 0;
+  }
 }

@@ -1,0 +1,17 @@
+---
+notes: |
+  This is a built file. Don't edit.
+---
+
+<section class="f-icon-library">
+  <% _.forEach( icons, function( icon ){
+    %>
+      <p>
+        <svg class="hpe-icon <%= icon.svg.originalAttributes.class ? `${icon.svg.originalAttributes.class} ` : '' %>hpe-icon--inline">
+          <use xlink:href="#icon-<%= icon.svg.name %>"></use>
+        </svg>
+        <span><%= icon.svg.name %></span>
+      </p>
+    <% }); %>  
+</section>
+  
