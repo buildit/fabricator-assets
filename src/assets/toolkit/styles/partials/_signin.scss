@@ -45,7 +45,7 @@
     background-color: $google-brand;
 }
        
-.hpe-signin-social-links {
+.hpe-signin-social-button {
     @include clearfix();
     color: $white;
     text-align: center;
@@ -59,6 +59,14 @@
     &:last-child {
         float: right;
     }
+}
+
+//set as global
+.hpe-social-linkedin {
+    background-color: $linkedin-brand;
+}
+.hpe-social-google {
+    background-color: $google-brand;
 }
 
 .hpe-signin-already-have-account {
@@ -98,12 +106,4 @@
 
 .hpe-aside-headline {
     // @include headline-aside('signup');
-}
-
-//set as global
-.hpe-social-linkedin {
-    background-color: $linkedin-brand;
-}
-.hpe-social-google {
-    background-color: $google-brand;
 }
