@@ -4,8 +4,12 @@
 
     padding: 1rem;
 
-    @include respond-to ('large') {
+    @include respond-to ('medium') {
         padding: 8rem 5rem;
+    }
+
+    @include respond-to ('large') {
+        padding: 8rem 12rem;
     }
 }
 //sigin form

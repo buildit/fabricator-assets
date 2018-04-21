@@ -34,10 +34,12 @@
 
 .hpe-social-linkedin {
   background-color: $linkedin-brand;
+  min-height: 40px;
 }
 
 .hpe-social-google {
   background-color: $google-brand;
+  min-height: 40px;
 }
      
 .hpe-signin-social-button {
@@ -81,10 +83,6 @@
   }
 }
 
-// .htp-sigin-social-button-icon {
-//   border-right: 1px solid $white;
-// }
-
 //set as global
 .hpe-social-linkedin {
   background-color: $linkedin-brand;
@@ -103,6 +101,7 @@
 .hpe-social-google {
   background-color: $google-brand;
 
+    //todo there's an issue with x:link svg styles
     svg {
       // display: block;
       // z-index: 2;

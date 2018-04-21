@@ -6,12 +6,12 @@
   input, select, textarea {
 		background: rgba(255,255,255,0.1);
 		border: none;
-		border-bottom: 1px solid $light-grey-4;
+		border-bottom: 1px solid $dark-grey-1;
 		border-radius: 0;
 		color: $dark-grey-1;
 		display: block;
 		font-size: 1rem;
-		font-weight: 600;
+		font-weight: 400;
 		height: 48px;
 		line-height: 1.5;
 		margin-bottom: 1rem;
@@ -25,14 +25,13 @@
 			outline: none;
 			transition: $transition;
 		}
-
-
   }
 }
 
-//vendor prefixes (research can I use)
+//todo, find a library for this
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 	color: $dark-grey-1;
+
   }
   ::-moz-placeholder { /* Firefox 19+ */
 	color: $dark-grey-1;
