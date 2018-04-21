@@ -27,9 +27,29 @@ $breakpoints: (
   }
 }
 
-@mixin section_padding($type:'') {
-	padding: 1rem;
+// @mixin section_padding($type:'') {
+// 	padding: 1rem;
 
+// 	@include respond-to ('small') {
+// 		padding: 2rem;
+//   }
+  
+//   @include respond-to ('large') {
+//     padding: 2.2rem;
+//   }
+
+//   @include respond-to ('ex-large') {
+//     padding: 2.4rem;
+    
+//   }
+
+// 	@if ($type== 'nav') {
+//     padding: 0 1rem;
+    
+//   }
+
+//   @if ($type== 'footer') {
+//     padding: 0 3.125rem;
 	// @include respond-to ('small') {
 	// 	padding: 2rem;
   // }
@@ -48,48 +68,57 @@ $breakpoints: (
     
   // }
 
-  @if ($type== 'footer') {
-    padding: 0;
-    padding-top: 3.125rem;
-    padding-bottom: 3.125rem;
-    padding-left: 0;
-    padding-right: 0;
+  // @if ($type== 'footer') {
+  //   padding: 0;
+  //   padding-top: 3.125rem;
+  //   padding-bottom: 3.125rem;
+  //   padding-left: 0;
+  //   padding-right: 0;
     
-  }
+//   }
     
-}
+// }
 
-@mixin section_margin ($type:'') {
-  margin: 5rem auto;
-}
+// todo section pattern mixin 
+// @mixin section_padding ($type:'') {
 
-@mixin greybox ($type:'')  {
-  background-color: $light-grey-4;
-  display: inline-block;
-  margin-right: 1rem;
-  height: 40px; 
-  width: 100px;
+//     @if ($type=='signin') {
 
-  @if ($type== 'omega') {
-    margin-right: 0;
+     
+//     }
+// }
+
+// @mixin section_margin ($type:'') {
+//   margin: 5rem auto;
+// }
+
+// @mixin greybox ($type:'')  {
+//   background-color: $light-grey-4;
+//   display: inline-block;
+//   margin-right: 1rem;
+//   height: 40px; 
+//   width: 100px;
+
+//   @if ($type== 'omega') {
+//     margin-right: 0;
     
-  }
-}
+//   }
+// }
 
-@mixin button ($type:''){
-  background-color: #01A982;
-  border: 0;
-  color: #ffffff;
-  cursor: pointer;
-  font-size: 1.1875rem;
-  font-weight: 600;
-  letter-spacing: 0.04167em;
-  line-height: 24px;
-  padding: 6px 22px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.1s ease-in-out;
-}
+// @mixin button ($type:''){
+//   background-color: #01A982;
+//   border: 0;
+//   color: #ffffff;
+//   cursor: pointer;
+//   font-size: 1.1875rem;
+//   font-weight: 600;
+//   letter-spacing: 0.04167em;
+//   line-height: 24px;
+//   padding: 6px 22px;
+//   text-align: center;
+//   text-transform: uppercase;
+//   transition: 0.1s ease-in-out;
+// }
 
 @mixin clearfix() {
   &::after {
@@ -99,3 +128,27 @@ $breakpoints: (
   }
 }
 
+
+//to be refactored
+
+// @mixin headline($type:'') {
+//   @if ($type== 'signup') {
+//     font-weight: 900;
+//     font-size: 3.125rem;  
+
+//     &:after {
+//       content: '';
+//       background-color: $brand;
+//       display: block;
+//       margin-top: 20px;
+//       height: 5px;
+//       width: 80px;
+//     }
+//   }
+// }
+// @mixin headline-aside($type:'') {
+//   @if ($type== 'signup') {
+//     font-size: 30px;
+//     font-weight: 600;
+//   }
+// }

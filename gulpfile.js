@@ -69,6 +69,13 @@ const config = {
       watch: 'src/assets/toolkit/fonts/**/*'
     }
   },
+  images: {
+    toolkit: {
+      src: ['src/assets/toolkit/images/**/*'],
+      dest: 'dist/assets/toolkit/images',
+      watch: 'src/assets/toolkit/images/**/*'
+    }
+  },
   templates: {
     watch: 'src/**/*.{html,md,json,yml}'
   },

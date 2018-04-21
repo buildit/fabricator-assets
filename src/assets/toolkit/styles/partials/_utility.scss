@@ -16,7 +16,7 @@
 }
 
 .greybox {
-    @include greybox();
+    // @include greybox();
 }
 
 //hidden content for screenreaders
@@ -37,4 +37,9 @@
 
 .hpe-no-margin {
     margin: 0px;
+}
+
+.hpe-grid-adjust-padding {
+    padding-left: 0;
+    padding-right: 0;
 }

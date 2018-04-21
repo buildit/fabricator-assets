@@ -28,13 +28,15 @@ button, input {
   
   &--strong {
     font-weight: 600;
-  }
-  
+  }  
+
   &--black {
     font-weight: 900;
-  }
+  }  
 
   &--caps {
     text-transform: uppercase;
   }
 }
+
+$hpe-font-size-med:	0.9375rem;

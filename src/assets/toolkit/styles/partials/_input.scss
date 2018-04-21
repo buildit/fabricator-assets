@@ -4,30 +4,41 @@
 .input { 
 	
   input, select, textarea {
-		border: 1px solid $light-grey-4;
+		background: rgba(255,255,255,0.1);
+		border: none;
+		border-bottom: 1px solid $dark-grey-1;
 		border-radius: 0;
-		color: $dark-grey-3;
+		color: $dark-grey-1;
 		display: block;
 		font-size: 1rem;
-		font-weight: 600;
+		font-weight: 400;
 		height: 48px;
 		line-height: 1.5;
 		margin-bottom: 1rem;
 		outline: none;
-		padding: 5px 24px;
+		padding: 5px 0px;
 		transition: transition;
 		width: 100%;
 
-		
-		cursor: pointer;
-		background-color: white;
-		background-repeat: no-repeat;
-		background-size: 1em;
-
 		&:focus {
-			border: 1px solid $light-1;
+			border-bottom: 1px solid $light-1;
 			outline: none;
 			transition: $transition;
 		}
   }
 }
+
+//todo, find a library for this
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: $dark-grey-1;
+
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+	color: $dark-grey-1;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+	color: $dark-grey-1;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+	color: $dark-grey-1;
+  }
