@@ -77,18 +77,28 @@
 }
 
 //language displayed
-.hpe-footer-language-wrapper-language {
+.hpe-language-content {
+    float: right;
     text-transform: uppercase;
 }
 
 //legal wrapper
 .hpe-footer-legal-links-wrapper {
+    float: right;
     padding: 0;
+    text-align: right;
+    width: 50%;
+}
+
+.hpe-legal-copyright {
+    float: left;
+    width: 50%;
 }
 
 //legal wrapper list
 .hpe-footer-legal-links-list {
-    float: right;
+    margin: 0;
+    padding: 0;
 }
 
 //legal wrapper list item
