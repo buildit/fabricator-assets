@@ -9,6 +9,10 @@
     }
 
     @include respond-to ('large') {
+        padding: 8rem 10rem;
+    }
+
+    @include respond-to ('ex-large') {
         padding: 8rem 12rem;
     }
 }
