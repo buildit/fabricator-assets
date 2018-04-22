@@ -1,0 +1,43 @@
+
+//ul
+.hpe-breadcrumbs-list {
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+//li
+.hpe-breadcrumbs-listitem {
+    display: inline-block;
+    padding-right: 3px;
+
+    a {
+        color: $dark-grey-4;
+        display: inline-block;
+        text-decoration: none;
+
+        &:hover {
+            color: $dark-grey-1;
+        }
+    }
+
+    &:after {
+        content: "/";
+        color: $dark-grey-4;
+        display: inline-block;
+        padding-left: 3px;
+    }
+
+    &:last-of-type {
+
+        &:after {
+            content: "";
+        }
+    }
+}
+
+.hpe-breadcrumbs-listitem--current {
+    color: $dark-grey-1;
+    display: inline-block;
+    text-decoration: none;
+}
