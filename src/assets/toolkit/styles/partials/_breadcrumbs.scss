@@ -1,0 +1,13 @@
+
+//ul
+.hpe-breadcrumbs {
+    color: $dark-grey-4;
+
+    &:after {
+        content: "/"
+    }
+}
+
+.hpe-breadcrumb--current {
+    
+}
