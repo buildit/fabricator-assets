@@ -1,12 +1,21 @@
 .hpe-support-wrapper {
     background-color: $light-grey-1;
+    box-shadow: 0 4px 6px $light-grey-2;
+
 }
 .hpe-support-content {
     max-width: 75rem;
     margin: 0 auto;
+    padding: 4.5625rem;
     width: 100%;
 }
 
 .hpe-support-content--p--strong {
     font-weight: 600;
+}
+.hpe-support-bgimage {
+    background-image: url("/assets/toolkit/images/support@2x.png");
+    background-size: cover;
+    min-height: 600px;
+    height: 600px;
 }
