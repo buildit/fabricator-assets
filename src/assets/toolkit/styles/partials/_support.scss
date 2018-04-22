@@ -6,8 +6,11 @@
 .hpe-support-content {
     max-width: 75rem;
     margin: 0 auto;
-    padding: 4.5625rem;
+    padding: 4.5625rem 0;
     width: 100%;
+}
+.hpe-support-content--p {
+    padding-bottom: 1.75rem;
 }
 
 .hpe-support-content--p--strong {
