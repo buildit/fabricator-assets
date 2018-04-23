@@ -273,12 +273,12 @@
 					</span>
 				</div>
 			</div><div class="f-item-preview">
-	<button class="hpe-signin-social-button hpe-social-google">  <svg class="hpe-icon hpe-icon--filled">
+	<button class="hpe-signin-social-button hpe-social-google hpe-button-reset">  <svg class="hpe-icon hpe-icon--filled">
   <use xlink:href="#icon-platform-google-color"></use>
 </svg><span>Sign in with Google</span></button>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class&#x3D;&quot;hpe-signin-social-button hpe-social-google&quot;&gt;  &lt;svg class&#x3D;&quot;hpe-icon hpe-icon--filled&quot;&gt;
+	<pre><code class="language-markup">&lt;button class&#x3D;&quot;hpe-signin-social-button hpe-social-google hpe-button-reset&quot;&gt;  &lt;svg class&#x3D;&quot;hpe-icon hpe-icon--filled&quot;&gt;
   &lt;use xlink:href&#x3D;&quot;#icon-platform-google-color&quot;&gt;&lt;/use&gt;
 &lt;/svg&gt;&lt;span&gt;Sign in with Google&lt;/span&gt;&lt;/button&gt;</code></pre>
 </div>
@@ -296,12 +296,12 @@
 					</span>
 				</div>
 			</div><div class="f-item-preview">
-	<button class="hpe-signin-social-button hpe-social-linkedin">  <svg class="hpe-icon hpe-icon--filled">
+	<button class="hpe-signin-social-button hpe-social-linkedin hpe-button-reset">  <svg class="hpe-icon hpe-icon--filled">
   <use xlink:href="#icon-social-linkedin-option"></use>
 </svg><span>Sign in with Linkedin</span></button>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class&#x3D;&quot;hpe-signin-social-button hpe-social-linkedin&quot;&gt;  &lt;svg class&#x3D;&quot;hpe-icon hpe-icon--filled&quot;&gt;
+	<pre><code class="language-markup">&lt;button class&#x3D;&quot;hpe-signin-social-button hpe-social-linkedin hpe-button-reset&quot;&gt;  &lt;svg class&#x3D;&quot;hpe-icon hpe-icon--filled&quot;&gt;
   &lt;use xlink:href&#x3D;&quot;#icon-social-linkedin-option&quot;&gt;&lt;/use&gt;
 &lt;/svg&gt;&lt;span&gt;Sign in with Linkedin&lt;/span&gt;&lt;/button&gt;</code></pre>
 </div>
@@ -1374,30 +1374,36 @@
 			</span>
 		</div>
 	</div><div class="f-item-preview">
-	<div class="hpe-support-content">
-	<div class="row">
-		<div class="col-md-6">
-			<h1 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-section-title">This is support</h1>
-			<p class="hpe-support-content--p">
-				Get advice,answers, and solutions when you need them. For general questions,
-				<span class="hpe-support-content--p--strong">call us at +1(650)687-5817. </span>
-			</p>
-		</div>
-	</div>
-	<div class="row">
-		<!-- bg image cover-->
-		<div class="col-md-6 hpe-support-bgimage hpe-support-tile-wrapper grid-adjust-padding">
+	<div class="hpe-support-wrapper row">
+	<div class="hpe-support-content container">
+		<div class="row">
+			<div class="col-md-6">
+				<h1 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-section-title hpe-support-adjust">This is support</h1>
+				<p class="hpe-support-content--p">
+					Get advice,answers, and solutions when you need them. For general questions,
+					<span class="hpe-support-content--p--strong">call us at +1(650)687-5817. </span>
+				</p>
+			</div>
 		</div>
 
-		<div class="col-md-6 test">
-			<div class="foo">
+		<!-- bg image cover-->
+		<div class="row">
+			<div class="col-md-6">
+				<div class="hpe-support-bgimage"></div>
+			</div>
+
+			<div class="col-md-6 test">
 				<div class="row">
-					<div class="col-md-6 one"></div>
-					<div class="col-md-6 two"></div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 one"></div>
-					<div class="col-md-6 two"></div>
+					<div class="faux-margin">
+
+
+						<div class="col-md-6 one"></div>
+						<div class="col-md-6 two"></div>
+
+
+						<div class="col-md-6 one"></div>
+						<div class="col-md-6 two"></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -1405,30 +1411,36 @@
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class&#x3D;&quot;hpe-support-content&quot;&gt;
-	&lt;div class&#x3D;&quot;row&quot;&gt;
-		&lt;div class&#x3D;&quot;col-md-6&quot;&gt;
-			&lt;h1 class&#x3D;&quot;hpe-headline hpe-headline--black hpe-headline--caps hpe-section-title&quot;&gt;This is support&lt;/h1&gt;
-			&lt;p class&#x3D;&quot;hpe-support-content--p&quot;&gt;
-				Get advice,answers, and solutions when you need them. For general questions,
-				&lt;span class&#x3D;&quot;hpe-support-content--p--strong&quot;&gt;call us at +1(650)687-5817. &lt;/span&gt;
-			&lt;/p&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class&#x3D;&quot;row&quot;&gt;
-		&lt;!-- bg image cover--&gt;
-		&lt;div class&#x3D;&quot;col-md-6 hpe-support-bgimage hpe-support-tile-wrapper grid-adjust-padding&quot;&gt;
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;hpe-support-wrapper row&quot;&gt;
+	&lt;div class&#x3D;&quot;hpe-support-content container&quot;&gt;
+		&lt;div class&#x3D;&quot;row&quot;&gt;
+			&lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+				&lt;h1 class&#x3D;&quot;hpe-headline hpe-headline--black hpe-headline--caps hpe-section-title hpe-support-adjust&quot;&gt;This is support&lt;/h1&gt;
+				&lt;p class&#x3D;&quot;hpe-support-content--p&quot;&gt;
+					Get advice,answers, and solutions when you need them. For general questions,
+					&lt;span class&#x3D;&quot;hpe-support-content--p--strong&quot;&gt;call us at +1(650)687-5817. &lt;/span&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
 		&lt;/div&gt;
 
-		&lt;div class&#x3D;&quot;col-md-6 test&quot;&gt;
-			&lt;div class&#x3D;&quot;foo&quot;&gt;
+		&lt;!-- bg image cover--&gt;
+		&lt;div class&#x3D;&quot;row&quot;&gt;
+			&lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+				&lt;div class&#x3D;&quot;hpe-support-bgimage&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+
+			&lt;div class&#x3D;&quot;col-md-6 test&quot;&gt;
 				&lt;div class&#x3D;&quot;row&quot;&gt;
-					&lt;div class&#x3D;&quot;col-md-6 one&quot;&gt;&lt;/div&gt;
-					&lt;div class&#x3D;&quot;col-md-6 two&quot;&gt;&lt;/div&gt;
-				&lt;/div&gt;
-				&lt;div class&#x3D;&quot;row&quot;&gt;
-					&lt;div class&#x3D;&quot;col-md-6 one&quot;&gt;&lt;/div&gt;
-					&lt;div class&#x3D;&quot;col-md-6 two&quot;&gt;&lt;/div&gt;
+					&lt;div class&#x3D;&quot;faux-margin&quot;&gt;
+
+
+						&lt;div class&#x3D;&quot;col-md-6 one&quot;&gt;&lt;/div&gt;
+						&lt;div class&#x3D;&quot;col-md-6 two&quot;&gt;&lt;/div&gt;
+
+
+						&lt;div class&#x3D;&quot;col-md-6 one&quot;&gt;&lt;/div&gt;
+						&lt;div class&#x3D;&quot;col-md-6 two&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
 				&lt;/div&gt;
 			&lt;/div&gt;
 		&lt;/div&gt;

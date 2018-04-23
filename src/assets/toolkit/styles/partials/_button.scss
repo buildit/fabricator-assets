@@ -25,6 +25,16 @@
   }
 }
 
+.hpe-button-reset {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
 //sign in buttons
 
 .hpe-sigin-button {
@@ -99,19 +109,4 @@
 
 .hpe-social-google {
   background-color: $google-brand;
-
-    //todo there's an issue with x:link svg styles
-    svg {
-      // display: block;
-      // z-index: 2;
-
-      // &:before {
-      //   content: '';
-      //   display: block;
-      //   background-color: $white;
-      //   padding: 10px;
-      //   z-index: 1;
-      // }
-
-    }
 }

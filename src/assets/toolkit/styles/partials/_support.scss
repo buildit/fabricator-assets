@@ -1,14 +1,10 @@
 .hpe-support-wrapper {
-    background-color: $light-grey-1;
+    background-color: teal;
     box-shadow: 0 4px 6px $light-grey-2;
+    padding: 0;
 
 }
-.hpe-support-content {
-    max-width: 75rem;
-    margin: 0 auto;
-    padding: 4.5625rem 0;
-    width: 100%;
-}
+
 .hpe-support-content--p {
     padding-bottom: 1.75rem;
 }
@@ -34,6 +30,10 @@
     height: 500px;
 }
 
+.faux-margin {
+    margin-left: 10px;
+}
+
 .one {
 background-color: pink;
 height: 100px;
@@ -46,4 +46,9 @@ margin-bottom: 2%;
     height: 100px;
     margin-left: 2%;
     margin-bottom: 2%;
+}
+
+.hpe-support-adjust {
+    margin: 0 auto;
+    max-width: $ex-large;
 }
