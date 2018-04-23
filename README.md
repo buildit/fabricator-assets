@@ -16,7 +16,7 @@ $ yarn start
 
 ### Styles and Sass
 
-To customize styles, update JSON in ```src/data```. These will build Sass variables in ```src/toolkit/styles/partials/_imported-variables```. Treat ```_imported-variables``` as read-only because can changes will be overwritten.
+To customize styles, update JSON in ```src/data```. These will build Sass variables in ```src/toolkit/styles/partials/_imported-variables``` (through a temp ```src/data/buld/variables.json```). Treat ```_imported-variables``` and ```variables.json``` as read-only because can changes will be overwritten. Do all JSON -> variable work in the JSON files directly in data.
 
 There are two folders within ```src/assets``` (```/fabricator``` and ```/toolkit```) containing ```*.scss``` files and partials. ```/fabricator``` is for the style guide UI (name-spaced with f-), whereas ```/toolikit``` is for custom styles unique to the individual guide. Most work will be completed within ```/toolikit```. For new atoms, create a new ```_*.scss``` file in ```/partials``` and import it into ```toolkit.scss```.
 

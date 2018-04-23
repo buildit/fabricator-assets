@@ -1,5 +1,5 @@
-@import 'default-variables';
-@import 'import-variables';
+@import 'build/default-variables';
+@import 'build/import-variables';
 
 $border: $border-width solid $border-color;
 $transition-time: 0.1s ease-in-out;

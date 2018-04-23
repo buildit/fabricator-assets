@@ -80,8 +80,11 @@ const config = {
     watch: 'src/**/*.{html,md,json,yml}'
   },
   dest: 'dist',
-  jsonVariables: 'src/data/build/variables.json',
-  sassVariables: 'src/assets/toolkit/styles/partials/_import-variables.scss'
+  variables: {
+    jsonVariables: 'src/data/build/variables.json',
+    sassVariables: 'src/assets/toolkit/styles/partials/build/_import-variables.scss',
+    partials: 'src/assets/toolkit/styles/partials/'  
+  }
 };
 
 // clean
@@ -120,15 +123,15 @@ gulp.task('json', () => {
 
 gulp.task('jsonsass', () => {
   return gulp
-    .src([config.jsonVariables, config.sassVariables])
+    .src([config.variables.sassVariables])
     .pipe(
       jsonToSass({
-        jsonPath: config.jsonVariables,
-        scssPath: config.sassVariables,
+        jsonPath: config.variables.jsonVariables,
+        scssPath: config.variables.sassVariables,
         ignoreJsonErrors: true
       })
     )
-    .pipe(gulp.dest('src/assets/toolkit/styles/partials/'));
+    .pipe(gulpif( /[.]scss$/, gulp.dest(config.variables.partials)));
 });
 
 // styles
