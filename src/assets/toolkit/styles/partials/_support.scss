@@ -23,21 +23,32 @@
 
 .hpe-support-tiles-wrapper {
     background-color: $white;
-    padding-left: 50%;
-    position: relative;
-    clear: both;
+
+    @include respond-to('medium') {
+        padding-left: 50%;
+        position: relative;
+        clear: both;
+    }
 }
 
 //bg image
 .hpe-support-bgimage {
-    background-image: url("/assets/toolkit/images/support@2x.png");
-    background-size: cover;
+
+    //display only for desktop
+    display: none;
+
+    @include respond-to('medium') {
+        display: block;
+        background-image: url("/assets/toolkit/images/support@2x.png");
+        background-size: cover;
+       
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
    
-    height: 100%;
-    width: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 //tiles
@@ -50,16 +61,20 @@
     display: inline-block;
     font-size: $hpe-font-size-med-large;
     font-weight: 300;
+    padding: 3rem;
     text-align: center;
     text-transform: uppercase;
+    text-align: center;
+
     height: 50%;
     width: 50%;
-   
-    padding: 5rem;
-    text-align: center;
 
     //inline-block whitespace removal
     margin-right: -4px;
+    
+    @include respond-to('large') {
+        padding: 5rem;
+    }
 }
 
 .hpe-support-tile-icon {
