@@ -1,5 +1,8 @@
-@import 'default-variables';
-@import 'import-variables';
+// Don't add variables to these partials. They are designed to work with JSON to Sass build process.
+// @import 'build/default-variables';
+@import 'build/import-variables';
+
+// Carry on These variables can not be touched...
 
 $border: $border-width solid $border-color;
 $transition-time: 0.1s ease-in-out;
