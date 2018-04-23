@@ -54,6 +54,12 @@
 //tiles
 .hpe-support-tile-container {
     clear: both;
+    //offsetting border on mobile
+    margin-left: -10px;
+
+    @include respond-to ('medium') {
+        margin-left: 0;
+    }
 }
 
 .hpe-support-tile {
