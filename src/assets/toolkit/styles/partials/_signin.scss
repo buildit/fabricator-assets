@@ -67,11 +67,13 @@
 //aside
 .hpe-signin-support {
     
-    //custom gutter 
-    margin-left: 10px;
+    //custom gutter
     background-color: $transparent;
     height: 100%;
     padding: 20px;
+    @include respond-to('medium') {
+        margin-left: 10px;
+    }
 
      ul {
          margin: 0;
