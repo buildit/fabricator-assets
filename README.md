@@ -31,6 +31,9 @@ Within ```src/materials``` you will find folders for atoms, molecules, and organ
 {{> button}}
 ```
 
+### SVG Icons
+Add individual icons to a file.svg in ```src/assets/toolkit/icons```. Icons will get built into symbol library and icon library. The file name will become the id for referencing the icon.
+
 ### [For more information on Fabricator, read the official docs →](http://fbrctr.github.io/docs)
 
 ## Demo

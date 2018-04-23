@@ -59,7 +59,11 @@ const config = {
       src: ['src/assets/toolkit/icons/**/*.svg'],
       dest: 'dist/assets/toolkit/image',
       partial: 'src/materials/atoms/icons',
-      watch: 'src/assets/toolkit/icons/**/*'
+      watch: 'src/assets/toolkit/icons/**/*',
+      templates: {
+        symbolsLibrary: 'src/views/layouts/includes/f-icons-symbol-library.html',
+        iconLibrary: 'src/views/layouts/includes/f-icons-library.html'
+      }
     }
   },
   fonts: {
@@ -190,11 +194,15 @@ gulp.task('icons', function () {
         },
         templates: [
           'default-svg',
-          path.join(__dirname, `src/assets/toolkit/icons/icons-symbol-library.html`),
-          path.join(__dirname, `src/assets/toolkit/icons/icons-library.html`),
+          path.join(__dirname, config.icons.toolkit.templates.symbolsLibrary),
+          path.join(__dirname, config.icons.toolkit.templates.iconLibrary),
         ]
       }
     ))
+    .pipe(rename(function (path) {
+      path.basename = path.basename.replace('f-', '');
+      return path;
+    }))
     .pipe(gulpif( /[.]svg$/, gulp.dest(config.icons.toolkit.dest)))
     .pipe(gulpif( /[.]html$/, gulp.dest(config.icons.toolkit.partial)));
 });
