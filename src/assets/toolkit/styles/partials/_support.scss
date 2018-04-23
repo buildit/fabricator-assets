@@ -40,24 +40,16 @@
     left: 0;
 }
 //tiles
-.hpe-tile-container {
+.hpe-support-tile-container {
     clear: both;
-    .one {
-        background-color: pink;
-        display: inline-block;
-        height: 50%;
-        width: 49%;
-       
-        padding: 4rem;
-        text-align: center;
-    }
-    
-    .two {
-        background-color: teal;
-        display: inline-block;
-        height: 50%;
-        width: 49.9%;
-        padding: 4rem;
-        text-align: center;
-    }
+}
+
+.hpe-support-tile {
+    background-color: $white;
+    display: inline-block;
+    height: 50%;
+    width: 49%;
+   
+    padding: 4rem;
+    text-align: center;
 }
