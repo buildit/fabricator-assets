@@ -38,6 +38,8 @@
 //sign in buttons
 
 .hpe-sigin-button {
+  padding-left: 56px;
+  position: relative;
   width: 100%;
 }
 
@@ -69,11 +71,6 @@
       float: right;
       width: 50%;
   }
-
-  span {
-    display: inline-block;
-    width: 70%;
-  }
   
   &:hover {
     cursor: pointer;
@@ -81,14 +78,6 @@
 
   &:focus {
     outline: 0;
-  }
-
-  svg {
-    height: 30px;
-
-    position: absolute;
-    left: 10px;
-    top: 8px;
   }
 }
 
@@ -107,6 +96,31 @@
   }
 }
 
+// button text
+.hpe-button-social-text {
+  width: 70%;
+}
+
 .hpe-social-google {
   background-color: $google-brand;
+
+  svg {
+    height: 30px;
+    position: absolute;
+    left: 10px;
+    top: 4px;
+  }
+}
+
+//background image for svg
+.hpe-button-bg--google {
+  background-color: $white;
+  border-radius: 3px;
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
