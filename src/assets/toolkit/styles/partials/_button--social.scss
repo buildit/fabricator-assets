@@ -9,13 +9,9 @@
 // button text
 .hpe-button-social-text {
     display: inline-block;
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 34px;
     width: 70%;
-
-    @include respond-to ('medium'){
-      font-size: 14px;
-    }
 }
 
   //social button layout
@@ -84,19 +80,20 @@
       height: 30px;
       position: absolute;
       left: 10px;
-      top: 4px;
+      top: 2px;
     }
   }
   
   //background image for Linkedin svg
-  .hpe-button-bg--google {
-    background-color: $white;
-    border-radius: 3px;
-    display: inline-block;
-    height: 36px;
-    width: 36px;
-  
-    position: absolute;
-    top: 5px;
-    left: 5px;
+  .hpe-button-bg--linkedin {
+    &:after {
+      content: '';
+      height: 100%;
+      width: 1px;
+      background-color:#d8d8d8;
+
+      position: absolute;
+      top: 0;
+      left: 40px;
+    }
   }
