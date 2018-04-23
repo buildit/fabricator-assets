@@ -46,17 +46,19 @@
 
 .hpe-support-tile {
     background-color: $white;
-
     display: inline-block;
     font-size: $hpe-font-size-med-large;
     font-weight: 300;
     text-align: center;
     text-transform: uppercase;
     height: 50%;
-    width: 49%;
+    width: 50%;
    
     padding: 5rem;
     text-align: center;
+
+    //inline-block whitespace removal
+    margin-right: -4px;
 }
 
 .hpe-support-tile-icon {
@@ -66,6 +68,11 @@
         stroke: $brand;
         fill: $brand;
     }
+}
+
+.hpe-support-tile-copy {
+    display: inline-block;
+    padding-top: 0.5rem;
 }
 
 .hpe-support-tile-border-bottom {
