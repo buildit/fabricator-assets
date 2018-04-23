@@ -1,16 +1,13 @@
 .hpe-support-wrapper {
-    background-color: teal;
+    background-color: $light-grey-1;
     box-shadow: 0 4px 6px $light-grey-2;
     padding: $section-padding-support;
-}
+    position: relative;
 
-.hpe-support-adjust {
-    margin: 0 auto;
-    max-width: $ex-large;
+    height: 100%;
 }
 
 //typography
-
 .hpe-support-tile-wrapper {
     background-color: $white;
     height: 100px;
@@ -23,34 +20,44 @@
 .hpe-support-content--p--strong {
     font-weight: 600;
 }
+
+.hpe-support-tiles-wrapper {
+    background-color: $white;
+    padding-left: 50%;
+    position: relative;
+    clear: both;
+}
+
+//bg image
 .hpe-support-bgimage {
     background-image: url("/assets/toolkit/images/support@2x.png");
     background-size: cover;
-    min-height: 600px;
-    height: 600px; 
+   
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-
-//tiles 
-.hpe-support-tiles {
-    background-color: $white;
-    height: 500px;
-}
-
-.one {
-    background-color: pink;
-    height: 100px;
-    margin-left: 2%;
-    margin-bottom: 2%;
-    flex: 1;
-}
-
-.two {
-    background-color: teal;
-    height: 100px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
-
-.faux-margin {
-    display: flex;
+//tiles
+.hpe-tile-container {
+    clear: both;
+    .one {
+        background-color: pink;
+        display: inline-block;
+        height: 50%;
+        width: 49%;
+       
+        padding: 4rem;
+        text-align: center;
+    }
+    
+    .two {
+        background-color: teal;
+        display: inline-block;
+        height: 50%;
+        width: 49.9%;
+        padding: 4rem;
+        text-align: center;
+    }
 }
