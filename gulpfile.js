@@ -49,15 +49,15 @@ const config = {
   },
   images: {
     toolkit: {
-      src: ['src/assets/toolkit/image/**/*'],
-      dest: 'dist/assets/toolkit/image',
+      src: ['src/assets/toolkit/images/**/*'],
+      dest: 'dist/assets/toolkit/images',
       watch: 'src/assets/toolkit/images/**/*'
     }
   },
   icons: {
     toolkit: {
       src: ['src/assets/toolkit/icons/**/*.svg'],
-      dest: 'dist/assets/toolkit/image',
+      dest: 'dist/assets/toolkit/images',
       partial: 'src/materials/atoms/icons',
       watch: 'src/assets/toolkit/icons/**/*',
       templates: {
