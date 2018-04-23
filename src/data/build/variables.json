@@ -1,6 +1,4 @@
 {
-	"border-width": ".0625rem",
-	"border-color": "$dark",
 	"small": "36rem",
 	"medium": "48rem",
 	"large": "64rem",
@@ -35,5 +33,7 @@
 	"h3": "1.5rem",
 	"h4": "1.125rem",
 	"h5": "1rem",
-	"darken": "rgba(0,0,0,0.15)"
+	"darken": "rgba(0,0,0,0.15)",
+	"border-width": ".0625rem",
+	"border-color": "$dark-grey-2"
 }

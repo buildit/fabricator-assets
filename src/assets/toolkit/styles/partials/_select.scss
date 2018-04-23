@@ -4,7 +4,7 @@
     -moz-appearance: none;
     border: .0625rem solid currentColor;
     border-radius: 0;
-    color: $dark;
+    color: $border-color;
     display: block;
     font-size: 1em;
     outline: none;
@@ -22,7 +22,7 @@
     }
 
     &:focus {
-      outline: .0625rem solid $primary;
+      outline: .0625rem solid $brand;
     }
   }
 }
