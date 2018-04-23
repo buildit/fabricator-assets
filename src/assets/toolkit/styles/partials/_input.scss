@@ -3,6 +3,7 @@
 
 .hpe-input {
 	position: relative;
+  margin-bottom: 2rem;
 
   input,
   select,
@@ -15,7 +16,6 @@
     display: block;
     font-size: 1rem;
     font-weight: 400;
-		margin-bottom: 2rem;
     outline: none;
     padding: 1rem 0 .5em;
     transition: transition;
@@ -45,10 +45,21 @@
 	}
 
 	&--error {
-		input, textarea {
-			border-color: $critical;
+    margin-bottom: 0;
+    
+    input, textarea {
+      border-color: $critical;
+      
+      &:focus {
+        border-color: $critical;
+      }
 		}
-	}
+  }
+  
+  &__error-message {
+    color: $critical;
+    margin: .75em 0 2rem;
+  }
 }
 
 ::-webkit-input-placeholder {

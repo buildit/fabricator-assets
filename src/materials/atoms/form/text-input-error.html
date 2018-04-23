@@ -1,7 +1,8 @@
 {{!-- Parameters: id, text --}}
 
 {{#if text }}
-	{{> form.input id=id text=text type="text" class="hpe-input--eror" }}	
+	{{> form.input id=id text=text type="text" class="hpe-input--error" }}	
 {{ else }}
-	{{> form.input id=id text="Text Input (Error)" type="text" class="hpe-input--eror" }}
+	{{> form.input id=id text="Text Input (Error)" type="text" class="hpe-input--error" }}
 {{/if}}
+<p class="hpe-input__error-message">Error Message</p>
