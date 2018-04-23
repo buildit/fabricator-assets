@@ -46,6 +46,7 @@
 
 .hpe-support-tile {
     background-color: $white;
+
     display: inline-block;
     font-size: $hpe-font-size-med-large;
     font-weight: 300;
@@ -54,6 +55,23 @@
     height: 50%;
     width: 49%;
    
-    padding: 4rem;
+    padding: 5rem;
     text-align: center;
+}
+
+.hpe-support-tile-icon {
+    display: block;
+
+    svg {
+        stroke: $brand;
+        fill: $brand;
+    }
+}
+
+.hpe-support-tile-border-bottom {
+    border-bottom: 10px solid $light-grey-1;
+}
+
+.hpe-support-tile-border-left {
+    border-left: 10px solid $light-grey-1;
 }
