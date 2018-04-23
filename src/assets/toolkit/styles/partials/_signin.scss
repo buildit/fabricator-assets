@@ -5,11 +5,11 @@
     padding: 1rem;
 
     @include respond-to ('medium') {
-        padding: 8rem 5rem;
+        padding: 3rem 2rem;
     }
 
     @include respond-to ('large') {
-        padding: 8rem 10rem;
+        padding: 7rem 8rem;
     }
 
     @include respond-to ('ex-large') {

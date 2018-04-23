@@ -1,6 +1,6 @@
 //sign in buttons
-
 .hpe-sigin-button {
+  min-height: 180px;
     padding-left: 56px;
     position: relative;
     width: 100%;
@@ -8,27 +8,34 @@
   
 // button text
 .hpe-button-social-text {
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 34px;
     width: 70%;
+
+    @include respond-to ('medium'){
+      font-size: 14px;
+    }
 }
 
   //social button layout
   .hpe-signin-social-button {
     @include clearfix();
     color: $white;
-    font-size: $hpe-font-size-med;
+
     padding: $button-padding;
     position: relative;
     text-align: center;
-    width: 38%;
+    width: inherit;
     
     &:first-child {
         float: left;
-        width: 50%;
+        width: 48%;
     }
     
     &:last-child {
         float: right;
-        width: 50%;
+        width: 48%;
     }
     
     &:hover {
@@ -46,16 +53,27 @@
     min-height: 40px;
   
     svg {
-  
-      &:before {
-        content: '';
-        border-right: 1px solid $white;
-        display: block;
-        padding-right: 10px;
-      }
+      height: 30px;
+
+      position: absolute;
+      left: 10px;
+      top: 6px;
+      width: 20px;
     }
   }
+
+  //background image for Linkedin svg
+  .hpe-button-bg--google {
+    background-color: $white;
+    border-radius: 3px;
+    display: inline-block;
+    height: 36px;
+    width: 36px;
   
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
 
   //GOOGLE
   .hpe-social-google {
@@ -70,7 +88,7 @@
     }
   }
   
-  //background image for svg
+  //background image for Linkedin svg
   .hpe-button-bg--google {
     background-color: $white;
     border-radius: 3px;
