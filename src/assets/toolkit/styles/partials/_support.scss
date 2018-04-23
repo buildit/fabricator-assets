@@ -17,13 +17,13 @@
     font-weight: 600;
 }
 .hpe-support-bgimage {
-    background-image: url("/assets/toolkit/images/support@2x.png");
+    background-image: url("/assets/toolkit/images/signin-bg-large@2x.png");
     background-size: cover;
     min-height: 600px;
     height: 600px; 
 }
 
-.hpe-support-squares {
+.hpe-support-tile-wrapper {
     background-color: $white;
     border: 1px solid lime;
     height: 100px;
