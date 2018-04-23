@@ -1,8 +1,19 @@
 .hpe-support-wrapper {
     background-color: teal;
     box-shadow: 0 4px 6px $light-grey-2;
-    padding: 0;
+    padding: $section-padding-support;
+}
 
+.hpe-support-adjust {
+    margin: 0 auto;
+    max-width: $ex-large;
+}
+
+//typography
+
+.hpe-support-tile-wrapper {
+    background-color: $white;
+    height: 100px;
 }
 
 .hpe-support-content--p {
@@ -13,42 +24,33 @@
     font-weight: 600;
 }
 .hpe-support-bgimage {
-    background-image: url("/assets/toolkit/images/signin-bg-large@2x.png");
+    background-image: url("/assets/toolkit/images/support@2x.png");
     background-size: cover;
     min-height: 600px;
     height: 600px; 
 }
 
-.hpe-support-tile-wrapper {
-    background-color: $white;
-    border: 1px solid lime;
-    height: 100px;
-}
-
-.test {
+//tiles 
+.hpe-support-tiles {
     background-color: $white;
     height: 500px;
 }
 
-.faux-margin {
-    margin-left: 10px;
-}
-
 .one {
-background-color: pink;
-height: 100px;
-margin-left: 2%;
-margin-bottom: 2%;
+    background-color: pink;
+    height: 100px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    flex: 1;
 }
 
 .two {
     background-color: teal;
     height: 100px;
-    margin-left: 2%;
-    margin-bottom: 2%;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
-.hpe-support-adjust {
-    margin: 0 auto;
-    max-width: $ex-large;
+.faux-margin {
+    display: flex;
 }
