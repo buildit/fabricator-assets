@@ -1,0 +1,7 @@
+{{!-- Parameters: id, text --}}
+
+{{#if text }}
+	{{> form.input id=id text=text type="text" class="hpe-input--eror" }}	
+{{ else }}
+	{{> form.input id=id text="Text Input (Error)" type="text" class="hpe-input--eror" }}
+{{/if}}
