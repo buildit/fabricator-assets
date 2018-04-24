@@ -1,6 +1,6 @@
 .hpe-footer-wrapper {
-    // @include section_padding('footer');
     background-color: $light-grey-1;
+    padding: 11.875rem 10px;
 }
 
 .hpe-footer {
@@ -12,8 +12,9 @@
 //footer titles for cols //h3
 .hpe-footer-title {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.27777778;
+    margin-top: 0;
     padding-bottom: 18px;
     text-transform: uppercase;
 }
