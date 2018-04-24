@@ -1,0 +1,9 @@
+<label for="{{name}}" class="hpe-radio-button">
+	<input type="radio" id="{{name}}" name="{{group}}" class="hpe-radio-button__input" value="off">
+	<span class="hpe-radio-button__control"></span>
+	{{#if text}}
+	<span class="hpe-radio-button__label">{{text}}</span>
+	{{ else }}
+	<span class="hpe-radio-button__label">Choice</span>
+	{{/if}}
+</label>
