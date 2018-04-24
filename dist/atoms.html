@@ -90,9 +90,6 @@
 							<a href="atoms.html#buttons">Buttons</a>
 						</li>
 						<li>
-							<a href="atoms.html#checkbox">Checkbox</a>
-						</li>
-						<li>
 							<a href="atoms.html#footer">Footer</a>
 						</li>
 						<li>
@@ -118,12 +115,6 @@
 						</li>
 						<li>
 							<a href="atoms.html#password">Password</a>
-						</li>
-						<li>
-							<a href="atoms.html#radio">Radio</a>
-						</li>
-						<li>
-							<a href="atoms.html#select">Select</a>
 						</li>
 						<li>
 							<a href="atoms.html#table">Table</a>
@@ -280,33 +271,6 @@
 </div>
 
 		</div>
-
-</div>
-
-
-<div class="f-item-group" id="checkbox">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Checkbox</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-	</div><div class="f-item-preview">
-	<label>
-	<input type="checkbox" /> Checkbox
-</label>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;label&gt;
-	&lt;input type&#x3D;&quot;checkbox&quot; /&gt; Checkbox
-&lt;/label&gt;</code></pre>
-</div>
-
 
 </div>
 
@@ -619,6 +583,94 @@
 	<div class="f-item-heading-group">
 		<h2 class="f-item-heading" data-f-toggle="labels">Form</h2>
 	</div>
+		<div class="f-item-group" id="form.checkbox-group">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Checkbox Group</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<label class="hpe-check-box " for="cb1">
+	<span>
+		<input type="checkbox" id="cb1" tabindex="0" class="hpe-check-box__input" name="cb1" value="on">
+		<span class="hpe-check-box__control">
+			
+		</span>
+	</span>
+	<span class="hpe-check-box__label">Choice 1</span>
+</label>
+<label class="hpe-check-box hpe-check-box--toggle" for="cb2">
+	<span>
+		<input type="checkbox" id="cb2" tabindex="0" class="hpe-check-box__input" name="cb2" value="on">
+		<span class="hpe-check-box__control">
+			
+		</span>
+	</span>
+	<span class="hpe-check-box__label">Choice 2</span>
+</label>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;label class&#x3D;&quot;hpe-check-box &quot; for&#x3D;&quot;cb1&quot;&gt;
+	&lt;span&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;cb1&quot; tabindex&#x3D;&quot;0&quot; class&#x3D;&quot;hpe-check-box__input&quot; name&#x3D;&quot;cb1&quot; value&#x3D;&quot;on&quot;&gt;
+		&lt;span class&#x3D;&quot;hpe-check-box__control&quot;&gt;
+			
+		&lt;/span&gt;
+	&lt;/span&gt;
+	&lt;span class&#x3D;&quot;hpe-check-box__label&quot;&gt;Choice 1&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class&#x3D;&quot;hpe-check-box hpe-check-box--toggle&quot; for&#x3D;&quot;cb2&quot;&gt;
+	&lt;span&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;cb2&quot; tabindex&#x3D;&quot;0&quot; class&#x3D;&quot;hpe-check-box__input&quot; name&#x3D;&quot;cb2&quot; value&#x3D;&quot;on&quot;&gt;
+		&lt;span class&#x3D;&quot;hpe-check-box__control&quot;&gt;
+			
+		&lt;/span&gt;
+	&lt;/span&gt;
+	&lt;span class&#x3D;&quot;hpe-check-box__label&quot;&gt;Choice 2&lt;/span&gt;
+&lt;/label&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="form.checkbox">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Checkbox</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<label class="hpe-check-box " for="">
+	<span>
+		<input type="checkbox" id="" tabindex="0" class="hpe-check-box__input" name="" value="on">
+		<span class="hpe-check-box__control">
+			
+		</span>
+	</span>
+	<span class="hpe-check-box__label"></span>
+</label>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;label class&#x3D;&quot;hpe-check-box &quot; for&#x3D;&quot;&quot;&gt;
+	&lt;span&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;&quot; tabindex&#x3D;&quot;0&quot; class&#x3D;&quot;hpe-check-box__input&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;on&quot;&gt;
+		&lt;span class&#x3D;&quot;hpe-check-box__control&quot;&gt;
+			
+		&lt;/span&gt;
+	&lt;/span&gt;
+	&lt;span class&#x3D;&quot;hpe-check-box__label&quot;&gt;&lt;/span&gt;
+&lt;/label&gt;</code></pre>
+</div>
+
+		</div>
 		<div class="f-item-group" id="form.input">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Input</h3>
@@ -665,6 +717,134 @@
 	<pre><code class="language-markup">&lt;div class&#x3D;&quot;hpe-input &quot;&gt;
 	&lt;label for&#x3D;&quot;password-input&quot; class&#x3D;&quot;hpe-input__label&quot;&gt;Password input&lt;/label&gt;
 	&lt;input type&#x3D;password id&#x3D;&quot;password-input&quot; /&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="form.radio-group">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Radio Group</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<label for="radio1" class="hpe-radio-button">
+	<input type="radio" id="radio1" name="radiogroup" class="hpe-radio-button__input" value="off">
+	<span class="hpe-radio-button__control"></span>
+	<span class="hpe-radio-button__label">Choice</span>
+</label>
+<label for="radio2" class="hpe-radio-button">
+	<input type="radio" id="radio2" name="radiogroup" class="hpe-radio-button__input" value="off">
+	<span class="hpe-radio-button__control"></span>
+	<span class="hpe-radio-button__label">Choice</span>
+</label>
+<label for="radio3" class="hpe-radio-button">
+	<input type="radio" id="radio3" name="radiogroup" class="hpe-radio-button__input" value="off">
+	<span class="hpe-radio-button__control"></span>
+	<span class="hpe-radio-button__label">Choice</span>
+</label>
+<label for="radio4" class="hpe-radio-button">
+	<input type="radio" id="radio4" name="radiogroup" class="hpe-radio-button__input" value="off">
+	<span class="hpe-radio-button__control"></span>
+	<span class="hpe-radio-button__label">Choice</span>
+</label>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;label for&#x3D;&quot;radio1&quot; class&#x3D;&quot;hpe-radio-button&quot;&gt;
+	&lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;radio1&quot; name&#x3D;&quot;radiogroup&quot; class&#x3D;&quot;hpe-radio-button__input&quot; value&#x3D;&quot;off&quot;&gt;
+	&lt;span class&#x3D;&quot;hpe-radio-button__control&quot;&gt;&lt;/span&gt;
+	&lt;span class&#x3D;&quot;hpe-radio-button__label&quot;&gt;Choice&lt;/span&gt;
+&lt;/label&gt;
+&lt;label for&#x3D;&quot;radio2&quot; class&#x3D;&quot;hpe-radio-button&quot;&gt;
+	&lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;radio2&quot; name&#x3D;&quot;radiogroup&quot; class&#x3D;&quot;hpe-radio-button__input&quot; value&#x3D;&quot;off&quot;&gt;
+	&lt;span class&#x3D;&quot;hpe-radio-button__control&quot;&gt;&lt;/span&gt;
+	&lt;span class&#x3D;&quot;hpe-radio-button__label&quot;&gt;Choice&lt;/span&gt;
+&lt;/label&gt;
+&lt;label for&#x3D;&quot;radio3&quot; class&#x3D;&quot;hpe-radio-button&quot;&gt;
+	&lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;radio3&quot; name&#x3D;&quot;radiogroup&quot; class&#x3D;&quot;hpe-radio-button__input&quot; value&#x3D;&quot;off&quot;&gt;
+	&lt;span class&#x3D;&quot;hpe-radio-button__control&quot;&gt;&lt;/span&gt;
+	&lt;span class&#x3D;&quot;hpe-radio-button__label&quot;&gt;Choice&lt;/span&gt;
+&lt;/label&gt;
+&lt;label for&#x3D;&quot;radio4&quot; class&#x3D;&quot;hpe-radio-button&quot;&gt;
+	&lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;radio4&quot; name&#x3D;&quot;radiogroup&quot; class&#x3D;&quot;hpe-radio-button__input&quot; value&#x3D;&quot;off&quot;&gt;
+	&lt;span class&#x3D;&quot;hpe-radio-button__control&quot;&gt;&lt;/span&gt;
+	&lt;span class&#x3D;&quot;hpe-radio-button__label&quot;&gt;Choice&lt;/span&gt;
+&lt;/label&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="form.radio">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Radio</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<label for="" class="hpe-radio-button">
+	<input type="radio" id="" name="" class="hpe-radio-button__input" value="off">
+	<span class="hpe-radio-button__control"></span>
+	<span class="hpe-radio-button__label">Choice</span>
+</label>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;label for&#x3D;&quot;&quot; class&#x3D;&quot;hpe-radio-button&quot;&gt;
+	&lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;&quot; name&#x3D;&quot;&quot; class&#x3D;&quot;hpe-radio-button__input&quot; value&#x3D;&quot;off&quot;&gt;
+	&lt;span class&#x3D;&quot;hpe-radio-button__control&quot;&gt;&lt;/span&gt;
+	&lt;span class&#x3D;&quot;hpe-radio-button__label&quot;&gt;Choice&lt;/span&gt;
+&lt;/label&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="form.select">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Select</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>This is a custom styled select box. <a href="google.com">It supports HTML</a></p>
+
+</div>
+<div class="f-item-preview">
+	<div class="select input">
+	<select name="select1" id="select1">
+		<option value="1">Option 1</option>
+		<option value="2">Option 2</option>
+		<option value="3">Option 3</option>
+		<option value="4">Option 4</option>
+		<option value="5">Option 5</option>
+	</select>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;select input&quot;&gt;
+	&lt;select name&#x3D;&quot;select1&quot; id&#x3D;&quot;select1&quot;&gt;
+		&lt;option value&#x3D;&quot;1&quot;&gt;Option 1&lt;/option&gt;
+		&lt;option value&#x3D;&quot;2&quot;&gt;Option 2&lt;/option&gt;
+		&lt;option value&#x3D;&quot;3&quot;&gt;Option 3&lt;/option&gt;
+		&lt;option value&#x3D;&quot;4&quot;&gt;Option 4&lt;/option&gt;
+		&lt;option value&#x3D;&quot;5&quot;&gt;Option 5&lt;/option&gt;
+	&lt;/select&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -1347,101 +1527,6 @@
 	<pre><code class="language-markup">&lt;div class&#x3D;&quot;input&quot;&gt;
 	&lt;label for&#x3D;&quot;password&quot;&gt;Password&lt;/label&gt;
 	&lt;input aria-describedby&#x3D;&quot;password-validation&quot; aria-disabled&#x3D;&quot;false&quot; class&#x3D;&quot;c-form-field-text c-form-field-text-password__input&quot; data-qa-input-text&#x3D;&quot;true&quot; id&#x3D;&quot;password&quot; name&#x3D;&quot;password&quot; required&#x3D;&quot;&quot; type&#x3D;&quot;password&quot; value&#x3D;&quot;&quot;&gt;
-&lt;/div&gt;</code></pre>
-</div>
-
-
-</div>
-
-
-<div class="f-item-group" id="radio">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Radio</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-	</div><div class="f-item-preview">
-	<span class="radio-button-span"></span>
-
-<label>
-	<input type="radio" name="groupName" id="radio1" /> Radio 1
-</label>
-
-<label>
-	<input type="radio" name="groupName" id="radio2" /> Radio 2
-</label>
-
-<label>
-	<input type="radio" name="groupName" id="radio3" /> Radio 3
-</label>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;span class&#x3D;&quot;radio-button-span&quot;&gt;&lt;/span&gt;
-
-&lt;label&gt;
-	&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio1&quot; /&gt; Radio 1
-&lt;/label&gt;
-
-&lt;label&gt;
-	&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio2&quot; /&gt; Radio 2
-&lt;/label&gt;
-
-&lt;label&gt;
-	&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio3&quot; /&gt; Radio 3
-&lt;/label&gt;</code></pre>
-</div>
-
-
-</div>
-
-
-<div class="f-item-group" id="select">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Select</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>This is a custom styled select box. <a href="google.com">It supports HTML</a></p>
-
-</div>
-<div class="f-item-preview">
-	<div class="select input">
-	<select name="select1" id="select1">
-		<option value="1">Option 1</option>
-		<option value="2">Option 2</option>
-		<option value="3">Option 3</option>
-		<option value="4">Option 4</option>
-		<option value="5">Option 5</option>
-	</select>
-</div>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class&#x3D;&quot;select input&quot;&gt;
-	&lt;select name&#x3D;&quot;select1&quot; id&#x3D;&quot;select1&quot;&gt;
-		&lt;option value&#x3D;&quot;1&quot;&gt;Option 1&lt;/option&gt;
-		&lt;option value&#x3D;&quot;2&quot;&gt;Option 2&lt;/option&gt;
-		&lt;option value&#x3D;&quot;3&quot;&gt;Option 3&lt;/option&gt;
-		&lt;option value&#x3D;&quot;4&quot;&gt;Option 4&lt;/option&gt;
-		&lt;option value&#x3D;&quot;5&quot;&gt;Option 5&lt;/option&gt;
-	&lt;/select&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
