@@ -46,6 +46,10 @@
 
 	&--error {
     margin-bottom: 0;
+
+    .hpe-input__error-message {
+      display: block;
+    }
     
     input, textarea {
       border-color: $critical;
@@ -59,6 +63,7 @@
   &__error-message {
     color: $critical;
     margin: .75em 0 2rem;
+    display: none;
   }
 }
 
