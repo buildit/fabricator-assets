@@ -15,6 +15,8 @@
 .hpe-breadcrumbs-listitem {
     display: inline-block;
     padding-right: 3px;
+    margin: 0 auto;
+    max-width: $ex-large;
 
     a {
         color: $dark-grey-4;

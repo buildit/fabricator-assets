@@ -45,27 +45,11 @@
     margin-right: 24px;
 
     &:hover {
-        &:before {
-            content: '';
-            cursor: pointer;
-            background-color: $dark-grey-3;
-            display: block;
-            width: 20px;
-            height: 20px;
-        }
+        
     }
 
     &:last-child {
         margin-right: 0;
-    }
-
-    //placeholder for greyboxing
-    &:before {
-        content: '';
-        background-color: $dark-grey-1;
-        display: block;
-        width: 20px;
-        height: 20px;
     }
 }
 
