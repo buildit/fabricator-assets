@@ -1,0 +1,7 @@
+{{!-- Parameters: id, text --}}
+
+{{#if text }}
+	{{> form.input id=id text=text type="text" }}	
+{{ else }}
+	{{> form.input id=id text="Password input" type="text" }}
+{{/if}}

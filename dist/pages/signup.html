@@ -14,7 +14,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap-grid.css">
 	<link rel="stylesheet" href="../assets/toolkit/styles/toolkit.css">
 	<!-- /toolkit styles -->
-
+	
+	<!-- jQuery -->
+	<script   src="http://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
 </head>
 <body>
 	<svg class="svg-icon-lib" aria-hidden="true" style="position: absolute;" data-enabled xmlns="http://www.w3.org/2000/svg">
@@ -74,20 +76,26 @@
     
           <form action="" class="form">
           	<div class="form-input">
-          		<div class="input">
-          			<label for="textInput" class="sr-only"
-          			>Hiden Label</label>
-          			<input type="text" id="textInput"  placeholder="Create a username"/>
-          		</div>		<div class="input">
-          			<label for="textInput" class="sr-only"
-          			>Hiden Label</label>
-          			<input type="text" id="textInput"  placeholder="Create a password"/>
-          		</div>		<div class="input">
-          			<label for="textInput" class="sr-only"
-          			>Hiden Label</label>
-          			<input type="text" id="textInput"  placeholder="Repeat password"/>
-          		</div>	</div>
-          	<button class="hpe-button foo">Create account</button></form>
+          		
+          			
+          			<div class="hpe-input ">
+          					<label for="username" class="hpe-input__label">Create a username</label>
+          					<input type=text id="username"/>
+          				<p class="hpe-input__error-message"></p>
+          			</div>		
+          			
+          			<div class="hpe-input ">
+          					<label for="password" class="hpe-input__label">Create a password</label>
+          					<input type=password id="password"/>
+          				<p class="hpe-input__error-message"></p>
+          			</div>		
+          			
+          			<div class="hpe-input ">
+          					<label for="repeat-password" class="hpe-input__label">Repeat password</label>
+          					<input type=password id="repeat-password"/>
+          				<p class="hpe-input__error-message"></p>
+          			</div>	</div>
+          	<button class="hpe-button ">Create Account</button></form>
           <div class="hpe-signin-social">
             <button class="hpe-signin-social-button hpe-social-linkedin hpe-button-reset">
         <span class="hpe-button-bg--linkedin">  <svg class="hpe-icon hpe-icon--filled">
