@@ -1,0 +1,110 @@
+.hpe-support-wrapper {
+    background-color: $light-grey-1;
+    box-shadow: 0 4px 6px $light-grey-2;
+    padding: $section-padding-support;
+    position: relative;
+    height: 100%;
+}
+.hpe-support-content {
+    max-width: 75rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+//typography
+.hpe-support-tile-wrapper {
+    background-color: $white;
+    height: 100px;
+}
+
+.hpe-support-content--p {
+    padding-bottom: 1.75rem;
+}
+
+.hpe-support-content--p--strong {
+    font-weight: 600;
+}
+
+.hpe-support-tiles-wrapper {
+    background-color: $white;
+
+    @include respond-to('medium') {
+        padding-left: 50%;
+        position: relative;
+        clear: both;
+    }
+}
+
+//bg image
+.hpe-support-bgimage {
+
+    //display only for desktop
+    display: none;
+
+    @include respond-to('medium') {
+        display: block;
+        background-image: url("/assets/toolkit/images/support@2x.png");
+        background-size: cover;
+       
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+   
+}
+
+//tiles
+.hpe-support-tile-container {
+    clear: both;
+    //offsetting border on mobile
+    margin-left: -10px;
+
+    @include respond-to ('medium') {
+        margin-left: 0;
+    }
+}
+
+.hpe-support-tile {
+    background-color: $white;
+    display: inline-block;
+    font-size: $hpe-font-size-med-large;
+    font-weight: 300;
+    padding: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+
+    height: 50%;
+    width: 50%;
+
+    //inline-block whitespace removal
+    margin-right: -4px;
+    
+    @include respond-to('large') {
+        padding: 5rem;
+    }
+}
+
+.hpe-support-tile-icon {
+    display: block;
+
+    svg {
+        stroke: $brand;
+        fill: $brand;
+    }
+}
+
+.hpe-support-tile-copy {
+    display: inline-block;
+    padding-top: 0.5rem;
+}
+
+.hpe-support-tile-border-bottom {
+    border-bottom: 10px solid $light-grey-1;
+}
+
+.hpe-support-tile-border-left {
+    border-left: 10px solid $light-grey-1;
+}

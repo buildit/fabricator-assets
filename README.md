@@ -52,6 +52,6 @@ Logo by [Abby Putinski](https://abbyputinski.com/)
 
 ## Jason's Notes
 
-toolkit.scss is the "global.scss " file. TODO. Change the name. 
-To make an new atom: src/materials .... tada
-if there's a bug. the json doesn't build. To fix add "build > variables > variables.json .... just add an blank object." Zac's latest should solve this. Todo. Pester Zac
+toolkit.scss is the "global.scss " file.
+
+if there's a bug. the json doesn't build. To fix add "build > variables > variables.json .... just add an blank object."

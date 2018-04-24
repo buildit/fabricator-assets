@@ -5,11 +5,11 @@
     padding: 1rem;
 
     @include respond-to ('medium') {
-        padding: 8rem 5rem;
+        padding: 3rem 2rem;
     }
 
     @include respond-to ('large') {
-        padding: 8rem 10rem;
+        padding: 7rem 8rem;
     }
 
     @include respond-to ('ex-large') {
@@ -27,7 +27,7 @@
     }
 }
 
-.hpe-signin-form-title {
+.hpe-section-title {
     font-size: 3.125rem;
     line-height: .9;
 
@@ -67,11 +67,13 @@
 //aside
 .hpe-signin-support {
     
-    //custom gutter 
-    margin-left: 2%;
+    //custom gutter
     background-color: $transparent;
     height: 100%;
     padding: 20px;
+    @include respond-to('medium') {
+        margin-left: 10px;
+    }
 
      ul {
          margin: 0;

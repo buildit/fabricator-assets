@@ -1,0 +1,99 @@
+//sign in buttons
+.hpe-sigin-button {
+  min-height: 180px;
+    padding-left: 56px;
+    position: relative;
+    width: 100%;
+  }
+  
+// button text
+.hpe-button-social-text {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 34px;
+    width: 70%;
+}
+
+  //social button layout
+  .hpe-signin-social-button {
+    @include clearfix();
+    color: $white;
+
+    padding: $button-padding;
+    position: relative;
+    text-align: center;
+    width: inherit;
+    
+    &:first-child {
+        float: left;
+        width: 48%;
+    }
+    
+    &:last-child {
+        float: right;
+        width: 48%;
+    }
+    
+    &:hover {
+      cursor: pointer;
+    }
+  
+    &:focus {
+      outline: 0;
+    }
+  }
+  
+  //LINKEDIN
+  .hpe-social-linkedin {
+    background-color: $linkedin-brand;
+    min-height: 40px;
+  
+    svg {
+      height: 30px;
+
+      position: absolute;
+      left: 10px;
+      top: 6px;
+      width: 20px;
+    }
+  }
+
+  //background image for Google svg
+  .hpe-button-bg--google {
+    background-color: $white;
+    border-radius: 3px;
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+  
+    position: absolute;
+    top: 4px;
+    left: 4px;
+  }
+
+  //GOOGLE
+  .hpe-social-google {
+    background-color: $google-brand;
+    min-height: 40px;
+  
+    svg {
+      height: 30px;
+      position: absolute;
+      left: 10px;
+      top: 4px;
+    }
+  }
+  
+  //background image for Linkedin svg
+  .hpe-button-bg--linkedin {
+    &:after {
+      content: '';
+      height: 100%;
+      width: 1px;
+      background-color:#d8d8d8;
+
+      position: absolute;
+      top: 0;
+      left: 40px;
+    }
+  }

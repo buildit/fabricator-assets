@@ -1,13 +1,12 @@
 <div class="hpe-signin-wrapper row" style="background-image: url(/assets/toolkit/images/signin-bg-large@2x.png)" ;>
   <div class="col-md-5 hpe-grid-adjust-padding ">
     <div class="hpe-signin-form">
-      <h1 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-signin-form-title">Create your account</h1>
+      <h1 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-section-title">Create your account</h1>
 
       {{>form text="Create account"}}
 
       <div class="hpe-signin-social">
-        {{> buttons.button--signin-linkedin}}
-        {{> buttons.button--signin-google}}
+        {{> buttons.button--signin-linkedin}} {{> buttons.button--signin-google}}
       </div>
 
       <div class="hpe-signin-already-have-account">
@@ -66,3 +65,16 @@
   <!--end col-->
 </div>
 <!-- end row-->
+
+<div class="hpe-breadcrumbs-wrapper row">
+  {{> breadcrumbs }}
+</div>
+
+
+{{> support }}
+
+
+<div class="hpe-breadcrumbs-wrapper row">
+  <div class="col-sm-12"></div>
+  {{> breadcrumbs }}
+</div>
