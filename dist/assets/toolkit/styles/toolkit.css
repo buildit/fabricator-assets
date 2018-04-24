@@ -213,17 +213,14 @@ button, input {
     height: 5px;
     width: 80px; }
 
-.hpe-signin-already-have-account {
-  text-align: center; }
-  .hpe-signin-already-have-account a {
-    border-bottom: 1px solid #333333;
-    color: #000000;
-    display: inline-block;
-    font-weight: 500;
-    font-size: 1.25rem;
-    margin: 3rem auto;
-    text-align: center;
-    text-decoration: none; }
+.hpe-signin-already-have-account a {
+  border-bottom: 1px solid #333333;
+  color: #000000;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin: 2rem auto;
+  text-decoration: none; }
 
 .hpe-signin-social {
   border-top: 0.0625rem solid #cccccc;
@@ -282,6 +279,8 @@ button, input {
 
 .hpe-button-social-text {
   display: inline-block;
+  line-height: normal;
+  font-weight: 600;
   font-size: 14px;
   margin-left: 34px;
   width: 70%; }
@@ -581,7 +580,8 @@ button, input {
       border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
 
 .hpe-footer-wrapper {
-  background-color: #F6F6F6; }
+  background-color: #F6F6F6;
+  padding: 11.875rem 0 2.5rem 0; }
 
 .hpe-footer {
   max-width: 75rem;
@@ -590,9 +590,10 @@ button, input {
 
 .hpe-footer-title {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.27777778;
-  padding-bottom: 18px;
+  margin: 0;
+  padding: 0.9375rem 0;
   text-transform: uppercase; }
 
 .hpe-footer-sitemap-list-wrapper {
@@ -603,7 +604,7 @@ button, input {
 .hpe-footer-sitemap-list-item-link {
   color: #333333;
   display: block;
-  font-size: 16px;
+  font-size: 1.12rem;
   line-height: 1.25;
   margin-bottom: 8px;
   text-decoration: none; }
@@ -678,6 +679,7 @@ button, input {
     stroke-width: 0; }
 
 .hpe-breadcrumbs-inner {
+  height: 40px;
   max-width: 75rem;
   margin: 0 auto;
   width: 100%; }
@@ -685,7 +687,7 @@ button, input {
 .hpe-breadcrumbs-list {
   list-style: none;
   margin: 0;
-  padding: 1rem 0; }
+  padding: 0.75rem 0; }
 
 .hpe-breadcrumbs-listitem {
   display: inline-block;
@@ -713,7 +715,6 @@ button, input {
 
 .hpe-support-wrapper {
   background-color: #F6F6F6;
-  box-shadow: 0 4px 6px #eeeeee;
   padding: 4.6875rem 0;
   position: relative;
   height: 100%; }
@@ -728,7 +729,7 @@ button, input {
   height: 100px; }
 
 .hpe-support-content--p {
-  padding-bottom: 1.75rem; }
+  padding-bottom: 0.625rem; }
 
 .hpe-support-content--p--strong {
   font-weight: 600; }

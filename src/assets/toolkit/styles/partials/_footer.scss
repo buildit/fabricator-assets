@@ -1,6 +1,6 @@
 .hpe-footer-wrapper {
-    // @include section_padding('footer');
     background-color: $light-grey-1;
+    padding: 11.875rem 0 2.5rem 0;
 }
 
 .hpe-footer {
@@ -12,9 +12,10 @@
 //footer titles for cols //h3
 .hpe-footer-title {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.27777778;
-    padding-bottom: 18px;
+    margin: 0;
+    padding: 0.9375rem 0;
     text-transform: uppercase;
 }
 
@@ -33,7 +34,7 @@
 .hpe-footer-sitemap-list-item-link {
     color: $dark-grey-1;
     display: block;
-    font-size: 16px;
+    font-size: 1.12rem;
     line-height: 1.25;
     margin-bottom: 8px;
     text-decoration: none;
