@@ -6,10 +6,10 @@
   margin-bottom: 2rem;
 
   input,
-  select,
   textarea {
-    background: rgba(255, 255, 255, 0.1);
-    border: none;
+    font-family: $font-family;
+    background: none;
+    border: 0;
     border-bottom: $border-width solid $dark-grey-1;
     border-radius: 0;
     color: $dark-grey-1;
