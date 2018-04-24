@@ -3,8 +3,12 @@
     box-shadow: 0 4px 6px $light-grey-2;
     padding: $section-padding-support;
     position: relative;
-
     height: 100%;
+}
+.hpe-support-content {
+    max-width: 75rem;
+    margin: 0 auto;
+    width: 100%;
 }
 
 //typography
