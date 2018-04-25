@@ -34,7 +34,7 @@
 .hpe-footer-sitemap-list-item-link {
     color: $dark-grey-1;
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     line-height: 1.25;
     margin-bottom: 8px;
     text-decoration: none;
@@ -63,13 +63,23 @@
 
 //language displayed
 .hpe-language-content {
+    display: inline-block;
     font-size: 1.375rem;
+    font-weight: 300;
     float: right;
+    padding-left: 38px;
+    position: relative;
     text-transform: uppercase;
 
     svg {
-        margin-top: 2px;
+        left: 0;
+        position: absolute;
+        top: 2px;
     }
+}
+
+.hpe-language-content-text {
+    font-size: 1rem;
 }
 
 //legal wrapper
@@ -82,6 +92,7 @@
 
 .hpe-legal-copyright {
     float: left;
+    font-size: 1.125rem;
     width: 50%;
 }
 
