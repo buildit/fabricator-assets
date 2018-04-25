@@ -104,3 +104,16 @@
         }
     }
 }
+
+.hpe-footer-logo {
+    padding: 2rem 0;
+    text-align: center;
+
+    svg {
+        width: 4rem;
+        height: 4rem;
+
+        fill: $brand;
+        stroke: 0;
+    }
+}

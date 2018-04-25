@@ -39,4 +39,16 @@ button, input {
   }
 }
 
-$hpe-font-size-med:	0.9375rem;
+.hpe-section-title {
+  font-size: 3.125rem;
+  line-height: .9;
+
+  &:after {
+      content: '';
+      background-color: $brand;
+      display: block;
+      margin-top: 17px;
+      height: 5px;
+      width: 80px;
+  }
+}
