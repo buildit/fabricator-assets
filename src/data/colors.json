@@ -18,5 +18,7 @@
 	"dark-grey-2" : "#444444",
 	"dark-grey-3" : "#555555",
 	"dark-grey-4" : "#666666",
-	"black" : "#000000"
+	"black" : "#000000",
+	"linkedin-brand": "#0077b5",
+  "google-brand": "#4285f4"
 }

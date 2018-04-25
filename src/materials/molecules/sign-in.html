@@ -1,74 +1,62 @@
-<div class="hpe-signin-wrapper row" style="background-image: url(/assets/toolkit/images/signin-bg-large@2x.png)" ;>
-  <div class="col-md-5 hpe-grid-adjust-padding ">
-    <div class="hpe-signin-form">
-      <h1 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-section-title">Create your account</h1>
+<div class="hpe-signin__wrapper row" style="background-image: url(/assets/toolkit/images/signin-bg-large@2x.png)" ;>
+  <div class="hpe-signin__content row">
+    <div class="col-md-5">
+      <div class="hpe-signin__section">
+        <h1 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-signin__title">Create your account</h1>
+        {{> brand-rule }} {{>form text="Create account" class="hpe-signin__button"}}
 
-      {{>form text="Create account"}}
-
-      <div class="hpe-signin-social">
-        {{> buttons.button--signin-linkedin}} {{> buttons.button--signin-google}}
-      </div>
-
-      <div class="hpe-signin-already-have-account">
-        <a href="#">Already have an account?</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-7 hpe-grid-adjust-padding">
-    <!-- We want to keep grid seperate from the colored boxes because Bootstrap grid usees padding for gutters. Our semi-transparent box goes inside the grid container. -->
-    <div class="hpe-signin-support">
-      <h2 class="hpe-aside-headline hpe-headline--strong">Benefits of creating an HP account </h2>
-      <div class="row">
-        <div class="col-md-6">
-          <ul>
-            <li>
-              <h3>Manage orders </h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis
-                vel turpis. Maecenas aliquet faucibus tristique.</p>
-            </li>
-            <li>
-              <h3>Store content</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis
-                vel turpis. Maecenas aliquet faucibus tristique.</p>
-            </li>
-            <li>
-              <h3>Personalized updates</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis
-                vel turpis. Maecenas aliquet faucibus tristique.</p>
-            </li>
-          </ul>
+        <div class="hpe-signin__social">
+          {{> buttons.button--signin-linkedin}} {{> buttons.button--signin-google}}
         </div>
 
-        <div class="col-md-6">
-          <ul>
-            <li>
-              <h3>Get support</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis
-                vel turpis. Maecenas aliquet faucibus tristique.</p>
-            </li>
-            <li>
-              <h3>Manage your account</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis
-                vel turpis. Maecenas aliquet faucibus tristique.</p>
-            </li>
-            <li>
-              <h3>Exclusive content</h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis.
-              Maecenas aliquet faucibus tristique.
-            </li>
-          </ul>
+        <div class="hpe-signin__already-have-account">
+          <a href="#">Already have an account?</a>
         </div>
       </div>
     </div>
-    <!--end row-->
+    <aside class="col-md-7">
+      <div class="hpe-signin__section">
+        <h2 class="hpe-aside-headline hpe-headline--strong hpe-signin__support-title">Benefits of creating an HP account</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="hpe-signin__support">
+              <li>
+                <h3 class="hpe-headline hpe-signin__subheader">Manage orders </h3>
+                <p class="hpe-signin__description">Immediate access to up-to-date order and shipping status, quotes and shared orders</p>
+              </li>
+              <li>
+                <h3 class="hpe-headline hpe-signin__subheader">Store content</h3>
+                <p class="hpe-signin__description">Access any white papers, presentations, manuals and specifications easily from here.</p>
+              </li>
+              <li>
+                <h3 class="hpe-headline hpe-signin__subheader">Personalized updates</h3>
+                <p class="hpe-signin__description">Get targeted updates to help you managed your orders and install base, and schedule maintenance</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6">
+            <ul class="hpe-signin__support">
+              <li>
+                <h3 class="hpe-headline hpe-signin__subheader">Get support</h3>
+                <p class="hpe-signin__description">Get 24/7 access to targeted support services, and the ability to track your support tickets</p>
+              </li>
+              <li>
+                <h3 class="hpe-headline hpe-signin__subheader">Manage your account</h3>
+                <p class="hpe-signin__description">Get access to all HP-wide account and profile settings from a single, easy-to-reach location</p>
+              </li>
+              <li>
+                <h3 class="hpe-headline hpe-signin__subheader">Exclusive content</h3>
+                <p class="hpe-signin__description">Get useful content, training courses, media and information available nowhere else</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </aside>
   </div>
-  <!--end col-->
-</div>
-<!-- end row-->
-
-<div class="hpe-breadcrumbs-wrapper row">
-  {{> breadcrumbs }}
 </div>
 
+{{> breadcrumbs }}
 
 {{> support }}
