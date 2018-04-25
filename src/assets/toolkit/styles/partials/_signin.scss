@@ -62,7 +62,15 @@
     border-top: $border-width solid $light-grey-4;
     margin-top: 2rem;
     padding-top: 2rem;
+    display: flex;
+
+    button {
+      flex: 1 1 45%;
+
+      &:first-of-type {
+        margin-right: 1rem;
+      }
+    }
   }  
 }
 
-//social

@@ -1,101 +1,46 @@
-//sign in buttons
-.hpe-sigin-button {
-  min-height: 180px;
-    padding-left: 56px;
-    position: relative;
-    width: 100%;
+.hpe-button--social {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  min-width: 0;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-align: center;
+  border: 0;
+
+  &--linkedin {
+    background-color: $linkedin-brand;
   }
-  
-// button text
-.hpe-button-social-text {
-    display: inline-block;
-    line-height: normal;
-    font-weight: 600;
-    font-size: 14px;
-    margin-left: 34px;
-    width: 70%;
+
+  &--google {
+    background-color: $google-brand;
+  }
+
+  &:hover {
+    box-shadow: none;
+  }
 }
 
-  //social button layout
-  .hpe-signin-social-button {
-    @include clearfix();
-    color: $white;
-
-    padding: $button-padding;
-    position: relative;
-    text-align: center;
-    width: inherit;
-    
-    &:first-child {
-        float: left;
-        width: 48%;
-    }
-    
-    &:last-child {
-        float: right;
-        width: 48%;
-    }
-    
-    &:hover {
-      cursor: pointer;
-    }
+.hpe-button__social-icon {
+  flex: 0 0 2.5rem;
+  height: 2.5rem;
+  font-size: 1.25rem;
+  border-right: $border-width solid $white;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
-    &:focus {
-      outline: 0;
-    }
+  .hpe-button--social--google & {
+    background-color: white;
+    margin: 0.125rem;
+    border-radius: 0.125rem;
+    height: 2.25rem;
   }
-  
-  //LINKEDIN
-  .hpe-social-linkedin {
-    background-color: $linkedin-brand;
-    min-height: 40px;
-  
-    svg {
-      height: 30px;
+}
 
-      position: absolute;
-      left: 10px;
-      top: 6px;
-      width: 20px;
-    }
-  }
-
-  //background image for Google svg
-  .hpe-button-bg--google {
-    background-color: $white;
-    border-radius: 3px;
-    display: inline-block;
-    height: 36px;
-    width: 36px;
-  
-    position: absolute;
-    top: 4px;
-    left: 4px;
-  }
-
-  //GOOGLE
-  .hpe-social-google {
-    background-color: $google-brand;
-    min-height: 40px;
-  
-    svg {
-      height: 30px;
-      position: absolute;
-      left: 10px;
-      top: 4px;
-    }
-  }
-  
-  //background image for Linkedin svg
-  .hpe-button-bg--linkedin {
-    &:after {
-      content: '';
-      height: 100%;
-      width: 1px;
-      background-color:#d8d8d8;
-
-      position: absolute;
-      top: 0;
-      left: 40px;
-    }
-  }
+.hpe-button__social-label {
+  line-height: 1;
+  padding: 0.325rem 1rem;
+}
