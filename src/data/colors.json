@@ -18,5 +18,6 @@
 	"dark-grey-2" : "#444444",
 	"dark-grey-3" : "#555555",
 	"dark-grey-4" : "#666666",
-	"black" : "#000000"
+	"black" : "#000000",
+	"icon-hover-grey": "#707070"
 }

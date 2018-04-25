@@ -38,16 +38,16 @@
     line-height: 1.25;
     margin-bottom: 8px;
     text-decoration: none;
+
+    &:hover {
+        color: $icon-hover-grey;
+    }
 }
 
 //footer social icons
 .hpe-footer-sitemap-list-item-social {
     display: inline-block;
     margin-right: 24px;
-
-    &:hover {
-        
-    }
 
     &:last-child {
         margin-right: 0;
