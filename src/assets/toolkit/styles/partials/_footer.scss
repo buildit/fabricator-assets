@@ -106,14 +106,14 @@
 }
 
 .hpe-footer-logo {
-    padding: 2rem 0;
+    padding-top: 2.5rem;
     text-align: center;
 
     svg {
-        width: 4rem;
-        height: 4rem;
+        width: 86px;
+        height: 26px;
 
         fill: $brand;
-        stroke: 0;
+        stroke: none;
     }
 }
