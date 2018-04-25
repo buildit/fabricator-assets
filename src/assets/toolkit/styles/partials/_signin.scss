@@ -25,6 +25,12 @@
   &__section {
     background-color: $transparent;
     padding: 1.5rem;
+    height: 100%;
+    margin-bottom: 1rem;
+
+    @include respond-to(large) {
+      margin-bottom: 0;
+    }
   }
 
   //aside
@@ -58,17 +64,30 @@
     }
   }
   
+  &__button {
+    max-width: auto;
+    width: 100%;
+  }
+
   &__social {
     border-top: $border-width solid $light-grey-4;
     margin-top: 2rem;
     padding-top: 2rem;
-    display: flex;
+
+    @include respond-to(large) {
+      display: flex;
+    }
 
     button {
       flex: 1 1 45%;
 
       &:first-of-type {
-        margin-right: 1rem;
+        margin-bottom: 1rem;
+
+        @include respond-to(large) {
+          margin-bottom: 0;
+          margin-right: 1rem;
+        }
       }
     }
   }  
