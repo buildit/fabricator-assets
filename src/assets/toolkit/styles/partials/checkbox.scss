@@ -1,0 +1,78 @@
+$double-border: $border-width * 2;
+
+.hpe-check-box {
+  white-space: nowrap;
+
+  &__input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    &:checked + .hpe-check-box__control {
+      background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%3E%0D%0A%20%20%3Cpolygon%20fill%3D%22%2301A982%22%20points%3D%226.018%208.449%2012.656%200%2016%202.628%206.264%2015.019%200%208.172%203.138%205.301%22%2F%3E%0D%0A%3C%2Fsvg%3E%0D%0A");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 1em;
+    }
+  }
+
+  &__control {
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.75em;
+    vertical-align: middle;
+    background-color: inherit;
+    border: $double-border solid $dark-grey-4;
+    color: $brand;
+    border-radius: 0;
+  }
+
+  &__label {
+    display: inline-block;
+    vertical-align: middle;
+    color: $dark-grey-4;
+    white-space: normal;
+    margin-right: 1.5em;
+    word-break: break-word;
+  }
+
+  &--toggle {
+    .hpe-check-box__control {
+      width: 3em;
+      height: 1.5em;
+      border-radius: 1.5rem;
+      background-color: rgba(51, 51, 51, 0.2);
+      border: none;
+      transition: background-color 0.3s;
+
+      &::after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: $double-border * -1;
+        left: 0;
+        width: 1.75em;
+        height: 1.75em;
+        background-color: $white;
+        border: $double-border solid $dark-grey-4;
+        border-radius: 50%;
+        transition: margin-left 0.3s;
+      }
+    }
+
+    .hpe-check-box__input:checked + .hpe-check-box__control {
+      background-color: $brand;
+      background-image: none;
+
+      &::after {
+        content: " ";
+        background-color: $white;
+        border-color: $black;
+        margin-left: 1.5em;
+      }
+    }    
+  }
+}

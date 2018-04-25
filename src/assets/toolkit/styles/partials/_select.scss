@@ -1,14 +1,16 @@
 .select {  
   select {
+    font-family: $font-family;
     -webkit-appearance: none;
     -moz-appearance: none;
-    border: .0625rem solid currentColor;
+    border: 0;
+    border-bottom: $border-width solid $dark-grey-4;
     border-radius: 0;
-    color: $border-color;
+    color: $dark-grey-1;
     display: block;
-    font-size: 1em;
+    font-size: 1rem;
     outline: none;
-    padding: .5em .5em .5em 2em;
+    padding: .5em 0;
     width: 100%;
     cursor: pointer;
     background-color: white;
@@ -17,12 +19,9 @@
     background-repeat: no-repeat;
     background-size: 1em;
 
-    &:before {
-      
-    }
-
     &:focus {
-      outline: .0625rem solid $brand;
+      border-bottom-color: $brand;
+      outline: none;
     }
   }
 }

@@ -1,0 +1,31 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing ssh...
+      - apt-get -y update
+      - apt-get -y install openssh-client
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - echo Build started on `date`
+  post_build:
+    commands:
+      - echo Build completed on `date`
+
+#     Get the private key of the EC2 webserver from S3 bucket
+      - mkdir ~/.ssh
+      - chmod 400 ~/.ssh
+      - aws s3 sync s3://${SSH_KEY_S3_BUCKET} ~
+      - mv ~/${SSH_KEY_FILE} ~/.ssh/id_rsa
+      - chmod 400 ~/.ssh/*
+
+      - ip addr show
+      - scp -o 'stricthostkeychecking=no' -r dist ec2-user@${WEB_SERVER_IP}:~
+      - ssh -o 'stricthostkeychecking=no' ec2-user@${WEB_SERVER_IP} 'sudo cp -r ~/dist/* /usr/share/nginx/html'
+artifacts:
+  files:
+    - dist/**/*
