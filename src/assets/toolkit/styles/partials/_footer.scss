@@ -107,12 +107,16 @@
 
 .hpe-footer-logo {
     padding-top: 2.5rem;
-    text-align: center;
+    text-align: center; 
+}
+
+.hpe-footer-logo-link {
+    text-decoration: none;
 
     svg {
         width: 86px;
         height: 26px;
-
+    
         fill: $brand;
         stroke: none;
     }
