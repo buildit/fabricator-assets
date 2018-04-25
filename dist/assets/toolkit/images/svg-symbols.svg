@@ -1,4 +1,5 @@
 <svg class="svg-icon-lib" aria-hidden="true" style="position: absolute;" data-enabled xmlns="http://www.w3.org/2000/svg">
+<symbol id="icon-brand-mark" viewBox="0 0 86 25"><title>icon-brand-mark</title><path fill="none" d="M2.5 2.5h81v20h-81z"/></symbol>
 <symbol id="icon-cart" viewBox="0 0 24 24"><title>icon-cart</title><path d="M5 5h17l-2 9H7L4 2H0m7 12l1 4h13m-2 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM9 23a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></symbol>
 <symbol id="icon-contact" viewBox="0 0 24 24"><title>icon-contact</title><path fill="none" d="M1 2h21v16h-8l-8 4v-4H1V2zm5 8h1v1H6v-1zm5 0h1v1h-1v-1zm5 0h1v1h-1v-1z"/></symbol>
 <symbol id="icon-host-maintenance" viewBox="0 0 24 24"><title>icon-host-maintenance</title><path fill="none" d="M14 23l6-6m1-3a2 2 0 1 0 2 2M17 4h1v1h-1V4zm-7 19H3V1h18v10M3 13h14M3 18h10M3 8h18"/></symbol>
