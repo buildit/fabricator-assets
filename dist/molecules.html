@@ -89,6 +89,9 @@
 					<a href="atoms.html" class="f-menu__heading">Atoms</a>
 					<ul>
 						<li>
+							<a href="atoms.html#brand-rule">Brand Rule</a>
+						</li>
+						<li>
 							<a href="atoms.html#breadcrumbs">Breadcrumbs</a>
 						</li>
 						<li>
@@ -270,98 +273,93 @@
 			</span>
 		</div>
 	</div><div class="f-item-preview">
-	<div class="hpe-signin-wrapper row" style="background-image: url(/assets/toolkit/images/signin-bg-large@2x.png)" ;>
-	<div class="col-md-5 hpe-grid-adjust-padding ">
-		<div class="hpe-signin-form">
-			<h1 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-section-title">Create your account</h1>
+	<div class="hpe-signin__wrapper row" style="background-image: url(/assets/toolkit/images/signin-bg-large@2x.png)" ;>
+	<div class="hpe-signin__content row">
+		<div class="col-md-5">
+			<div class="hpe-signin__section">
+				<h1 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-signin__title">Create your account</h1>
+				<hr class="hpe-brand-rule">
+				<form action="" class="form">
+					<div class="form-input">
 
-			<form action="" class="form">
-				<div class="form-input">
 
+						<div class="hpe-input ">
+							<label for="username" class="hpe-input__label">Create a username</label>
+							<input type=text id="username" />
+							<p class="hpe-input__error-message"></p>
+						</div>
 
-					<div class="hpe-input ">
-						<label for="username" class="hpe-input__label">Create a username</label>
-						<input type=text id="username" />
-						<p class="hpe-input__error-message"></p>
+						<div class="hpe-input ">
+							<label for="password" class="hpe-input__label">Create a password</label>
+							<input type=password id="password" />
+							<p class="hpe-input__error-message"></p>
+						</div>
+
+						<div class="hpe-input ">
+							<label for="repeat-password" class="hpe-input__label">Repeat password</label>
+							<input type=password id="repeat-password" />
+							<p class="hpe-input__error-message"></p>
+						</div>
 					</div>
+					<button class="hpe-button ">Create Account</button></form>
+				<div class="hpe-signin__social">
+					<button class="hpe-signin-social-button hpe-social-linkedin hpe-button-reset">
+              <span class="hpe-button-bg--linkedin">  <svg class="hpe-icon hpe-icon--filled">
+            <use xlink:href="#icon-social-linkedin-option"></use>
+          </svg></span>
+              <span class="hpe-button-social-text">Sign in with <br/>Linkedin</span>
+          </button> <button class="hpe-signin-social-button hpe-social-google hpe-button-reset">
+              <span class="hpe-button-bg--google">  <svg class="hpe-icon hpe-icon--filled">
+            <use xlink:href="#icon-platform-google-color"></use>
+          </svg></span>
+              <span class="hpe-button-social-text">Sign in with <br/>Google</span>
+          </button> </div>
 
-					<div class="hpe-input ">
-						<label for="password" class="hpe-input__label">Create a password</label>
-						<input type=password id="password" />
-						<p class="hpe-input__error-message"></p>
-					</div>
-
-					<div class="hpe-input ">
-						<label for="repeat-password" class="hpe-input__label">Repeat password</label>
-						<input type=password id="repeat-password" />
-						<p class="hpe-input__error-message"></p>
-					</div>
+				<div class="hpe-signin__already-have-account">
+					<a href="#">Already have an account?</a>
 				</div>
-				<button class="hpe-button ">Create Account</button></form>
-			<div class="hpe-signin-social">
-				<button class="hpe-signin-social-button hpe-social-linkedin hpe-button-reset">
-    <span class="hpe-button-bg--linkedin">  <svg class="hpe-icon hpe-icon--filled">
-  <use xlink:href="#icon-social-linkedin-option"></use>
-</svg></span>
-    <span class="hpe-button-social-text">Sign in with <br/>Linkedin</span>
-</button> <button class="hpe-signin-social-button hpe-social-google hpe-button-reset">
-    <span class="hpe-button-bg--google">  <svg class="hpe-icon hpe-icon--filled">
-  <use xlink:href="#icon-platform-google-color"></use>
-</svg></span>
-    <span class="hpe-button-social-text">Sign in with <br/>Google</span>
-</button>
-			</div>
-
-			<div class="hpe-signin-already-have-account">
-				<a href="#">Already have an account?</a>
 			</div>
 		</div>
-	</div>
-	<div class="col-md-7 hpe-grid-adjust-padding">
-		<!-- We want to keep grid seperate from the colored boxes because Bootstrap grid usees padding for gutters. Our semi-transparent box goes inside the grid container. -->
-		<div class="hpe-signin-support">
-			<h2 class="hpe-aside-headline hpe-headline--strong">Benefits of creating an HP account </h2>
+		<aside class="col-md-7 hpe-signin__section">
+			<h2 class="hpe-aside-headline hpe-headline--strong hpe-sign__support-title">Benefits of creating an HP account</h2>
 			<div class="row">
 				<div class="col-md-6">
-					<ul>
+					<ul class="hpe-signin__support">
 						<li>
-							<h3>Manage orders </h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.</p>
+							<h3 class="hpe-headline hpe-signin__subheader">Manage orders </h3>
+							<p class="hpe-signin__description">Immediate access to up-to-date order and shipping status, quotes and shared orders</p>
 						</li>
 						<li>
-							<h3>Store content</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.</p>
+							<h3 class="hpe-headline hpe-signin__subheader">Store content</h3>
+							<p class="hpe-signin__description">Access any white papers, presentations, manuals and specifications easily from here.</p>
 						</li>
 						<li>
-							<h3>Personalized updates</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.</p>
+							<h3 class="hpe-headline hpe-signin__subheader">Personalized updates</h3>
+							<p class="hpe-signin__description">Get targeted updates to help you managed your orders and install base, and schedule maintenance</p>
 						</li>
 					</ul>
 				</div>
 
 				<div class="col-md-6">
-					<ul>
+					<ul class="hpe-signin__support">
 						<li>
-							<h3>Get support</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.</p>
+							<h3 class="hpe-headline hpe-signin__subheader">Get support</h3>
+							<p class="hpe-signin__description">Get 24/7 access to targeted support services, and the ability to track your support tickets</p>
 						</li>
 						<li>
-							<h3>Manage your account</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.</p>
+							<h3 class="hpe-headline hpe-signin__subheader">Manage your account</h3>
+							<p class="hpe-signin__description">Get access to all HP-wide account and profile settings from a single, easy-to-reach location</p>
 						</li>
 						<li>
-							<h3>Exclusive content</h3>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.
+							<h3 class="hpe-headline hpe-signin__subheader">Exclusive content</h3>
+							<p class="hpe-signin__description">Get useful content, training courses, media and information available nowhere else</p>
 						</li>
 					</ul>
 				</div>
 			</div>
-		</div>
-		<!--end row-->
+		</aside>
 	</div>
-	<!--end col-->
 </div>
-<!-- end row-->
 
 <div class="hpe-breadcrumbs-wrapper row">
 	<div class="col-sm-12">
@@ -380,7 +378,6 @@
 		</div>
 	</div>
 </div>
-
 
 <div class="hpe-support-wrapper row">
 	<div class="col-sm-12">
@@ -424,98 +421,93 @@
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class&#x3D;&quot;hpe-signin-wrapper row&quot; style&#x3D;&quot;background-image: url(/assets/toolkit/images/signin-bg-large@2x.png)&quot; ;&gt;
-	&lt;div class&#x3D;&quot;col-md-5 hpe-grid-adjust-padding &quot;&gt;
-		&lt;div class&#x3D;&quot;hpe-signin-form&quot;&gt;
-			&lt;h1 class&#x3D;&quot;hpe-headline hpe-headline--black hpe-headline--caps hpe-section-title&quot;&gt;Create your account&lt;/h1&gt;
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;hpe-signin__wrapper row&quot; style&#x3D;&quot;background-image: url(/assets/toolkit/images/signin-bg-large@2x.png)&quot; ;&gt;
+	&lt;div class&#x3D;&quot;hpe-signin__content row&quot;&gt;
+		&lt;div class&#x3D;&quot;col-md-5&quot;&gt;
+			&lt;div class&#x3D;&quot;hpe-signin__section&quot;&gt;
+				&lt;h1 class&#x3D;&quot;hpe-headline hpe-headline--black hpe-headline--caps hpe-signin__title&quot;&gt;Create your account&lt;/h1&gt;
+				&lt;hr class&#x3D;&quot;hpe-brand-rule&quot;&gt;
+				&lt;form action&#x3D;&quot;&quot; class&#x3D;&quot;form&quot;&gt;
+					&lt;div class&#x3D;&quot;form-input&quot;&gt;
 
-			&lt;form action&#x3D;&quot;&quot; class&#x3D;&quot;form&quot;&gt;
-				&lt;div class&#x3D;&quot;form-input&quot;&gt;
 
+						&lt;div class&#x3D;&quot;hpe-input &quot;&gt;
+							&lt;label for&#x3D;&quot;username&quot; class&#x3D;&quot;hpe-input__label&quot;&gt;Create a username&lt;/label&gt;
+							&lt;input type&#x3D;text id&#x3D;&quot;username&quot; /&gt;
+							&lt;p class&#x3D;&quot;hpe-input__error-message&quot;&gt;&lt;/p&gt;
+						&lt;/div&gt;
 
-					&lt;div class&#x3D;&quot;hpe-input &quot;&gt;
-						&lt;label for&#x3D;&quot;username&quot; class&#x3D;&quot;hpe-input__label&quot;&gt;Create a username&lt;/label&gt;
-						&lt;input type&#x3D;text id&#x3D;&quot;username&quot; /&gt;
-						&lt;p class&#x3D;&quot;hpe-input__error-message&quot;&gt;&lt;/p&gt;
+						&lt;div class&#x3D;&quot;hpe-input &quot;&gt;
+							&lt;label for&#x3D;&quot;password&quot; class&#x3D;&quot;hpe-input__label&quot;&gt;Create a password&lt;/label&gt;
+							&lt;input type&#x3D;password id&#x3D;&quot;password&quot; /&gt;
+							&lt;p class&#x3D;&quot;hpe-input__error-message&quot;&gt;&lt;/p&gt;
+						&lt;/div&gt;
+
+						&lt;div class&#x3D;&quot;hpe-input &quot;&gt;
+							&lt;label for&#x3D;&quot;repeat-password&quot; class&#x3D;&quot;hpe-input__label&quot;&gt;Repeat password&lt;/label&gt;
+							&lt;input type&#x3D;password id&#x3D;&quot;repeat-password&quot; /&gt;
+							&lt;p class&#x3D;&quot;hpe-input__error-message&quot;&gt;&lt;/p&gt;
+						&lt;/div&gt;
 					&lt;/div&gt;
+					&lt;button class&#x3D;&quot;hpe-button &quot;&gt;Create Account&lt;/button&gt;&lt;/form&gt;
+				&lt;div class&#x3D;&quot;hpe-signin__social&quot;&gt;
+					&lt;button class&#x3D;&quot;hpe-signin-social-button hpe-social-linkedin hpe-button-reset&quot;&gt;
+              &lt;span class&#x3D;&quot;hpe-button-bg--linkedin&quot;&gt;  &lt;svg class&#x3D;&quot;hpe-icon hpe-icon--filled&quot;&gt;
+            &lt;use xlink:href&#x3D;&quot;#icon-social-linkedin-option&quot;&gt;&lt;/use&gt;
+          &lt;/svg&gt;&lt;/span&gt;
+              &lt;span class&#x3D;&quot;hpe-button-social-text&quot;&gt;Sign in with &lt;br/&gt;Linkedin&lt;/span&gt;
+          &lt;/button&gt; &lt;button class&#x3D;&quot;hpe-signin-social-button hpe-social-google hpe-button-reset&quot;&gt;
+              &lt;span class&#x3D;&quot;hpe-button-bg--google&quot;&gt;  &lt;svg class&#x3D;&quot;hpe-icon hpe-icon--filled&quot;&gt;
+            &lt;use xlink:href&#x3D;&quot;#icon-platform-google-color&quot;&gt;&lt;/use&gt;
+          &lt;/svg&gt;&lt;/span&gt;
+              &lt;span class&#x3D;&quot;hpe-button-social-text&quot;&gt;Sign in with &lt;br/&gt;Google&lt;/span&gt;
+          &lt;/button&gt; &lt;/div&gt;
 
-					&lt;div class&#x3D;&quot;hpe-input &quot;&gt;
-						&lt;label for&#x3D;&quot;password&quot; class&#x3D;&quot;hpe-input__label&quot;&gt;Create a password&lt;/label&gt;
-						&lt;input type&#x3D;password id&#x3D;&quot;password&quot; /&gt;
-						&lt;p class&#x3D;&quot;hpe-input__error-message&quot;&gt;&lt;/p&gt;
-					&lt;/div&gt;
-
-					&lt;div class&#x3D;&quot;hpe-input &quot;&gt;
-						&lt;label for&#x3D;&quot;repeat-password&quot; class&#x3D;&quot;hpe-input__label&quot;&gt;Repeat password&lt;/label&gt;
-						&lt;input type&#x3D;password id&#x3D;&quot;repeat-password&quot; /&gt;
-						&lt;p class&#x3D;&quot;hpe-input__error-message&quot;&gt;&lt;/p&gt;
-					&lt;/div&gt;
+				&lt;div class&#x3D;&quot;hpe-signin__already-have-account&quot;&gt;
+					&lt;a href&#x3D;&quot;#&quot;&gt;Already have an account?&lt;/a&gt;
 				&lt;/div&gt;
-				&lt;button class&#x3D;&quot;hpe-button &quot;&gt;Create Account&lt;/button&gt;&lt;/form&gt;
-			&lt;div class&#x3D;&quot;hpe-signin-social&quot;&gt;
-				&lt;button class&#x3D;&quot;hpe-signin-social-button hpe-social-linkedin hpe-button-reset&quot;&gt;
-    &lt;span class&#x3D;&quot;hpe-button-bg--linkedin&quot;&gt;  &lt;svg class&#x3D;&quot;hpe-icon hpe-icon--filled&quot;&gt;
-  &lt;use xlink:href&#x3D;&quot;#icon-social-linkedin-option&quot;&gt;&lt;/use&gt;
-&lt;/svg&gt;&lt;/span&gt;
-    &lt;span class&#x3D;&quot;hpe-button-social-text&quot;&gt;Sign in with &lt;br/&gt;Linkedin&lt;/span&gt;
-&lt;/button&gt; &lt;button class&#x3D;&quot;hpe-signin-social-button hpe-social-google hpe-button-reset&quot;&gt;
-    &lt;span class&#x3D;&quot;hpe-button-bg--google&quot;&gt;  &lt;svg class&#x3D;&quot;hpe-icon hpe-icon--filled&quot;&gt;
-  &lt;use xlink:href&#x3D;&quot;#icon-platform-google-color&quot;&gt;&lt;/use&gt;
-&lt;/svg&gt;&lt;/span&gt;
-    &lt;span class&#x3D;&quot;hpe-button-social-text&quot;&gt;Sign in with &lt;br/&gt;Google&lt;/span&gt;
-&lt;/button&gt;
-			&lt;/div&gt;
-
-			&lt;div class&#x3D;&quot;hpe-signin-already-have-account&quot;&gt;
-				&lt;a href&#x3D;&quot;#&quot;&gt;Already have an account?&lt;/a&gt;
 			&lt;/div&gt;
 		&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class&#x3D;&quot;col-md-7 hpe-grid-adjust-padding&quot;&gt;
-		&lt;!-- We want to keep grid seperate from the colored boxes because Bootstrap grid usees padding for gutters. Our semi-transparent box goes inside the grid container. --&gt;
-		&lt;div class&#x3D;&quot;hpe-signin-support&quot;&gt;
-			&lt;h2 class&#x3D;&quot;hpe-aside-headline hpe-headline--strong&quot;&gt;Benefits of creating an HP account &lt;/h2&gt;
+		&lt;aside class&#x3D;&quot;col-md-7 hpe-signin__section&quot;&gt;
+			&lt;h2 class&#x3D;&quot;hpe-aside-headline hpe-headline--strong hpe-sign__support-title&quot;&gt;Benefits of creating an HP account&lt;/h2&gt;
 			&lt;div class&#x3D;&quot;row&quot;&gt;
 				&lt;div class&#x3D;&quot;col-md-6&quot;&gt;
-					&lt;ul&gt;
+					&lt;ul class&#x3D;&quot;hpe-signin__support&quot;&gt;
 						&lt;li&gt;
-							&lt;h3&gt;Manage orders &lt;/h3&gt;
-							&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.&lt;/p&gt;
+							&lt;h3 class&#x3D;&quot;hpe-headline hpe-signin__subheader&quot;&gt;Manage orders &lt;/h3&gt;
+							&lt;p class&#x3D;&quot;hpe-signin__description&quot;&gt;Immediate access to up-to-date order and shipping status, quotes and shared orders&lt;/p&gt;
 						&lt;/li&gt;
 						&lt;li&gt;
-							&lt;h3&gt;Store content&lt;/h3&gt;
-							&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.&lt;/p&gt;
+							&lt;h3 class&#x3D;&quot;hpe-headline hpe-signin__subheader&quot;&gt;Store content&lt;/h3&gt;
+							&lt;p class&#x3D;&quot;hpe-signin__description&quot;&gt;Access any white papers, presentations, manuals and specifications easily from here.&lt;/p&gt;
 						&lt;/li&gt;
 						&lt;li&gt;
-							&lt;h3&gt;Personalized updates&lt;/h3&gt;
-							&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.&lt;/p&gt;
+							&lt;h3 class&#x3D;&quot;hpe-headline hpe-signin__subheader&quot;&gt;Personalized updates&lt;/h3&gt;
+							&lt;p class&#x3D;&quot;hpe-signin__description&quot;&gt;Get targeted updates to help you managed your orders and install base, and schedule maintenance&lt;/p&gt;
 						&lt;/li&gt;
 					&lt;/ul&gt;
 				&lt;/div&gt;
 
 				&lt;div class&#x3D;&quot;col-md-6&quot;&gt;
-					&lt;ul&gt;
+					&lt;ul class&#x3D;&quot;hpe-signin__support&quot;&gt;
 						&lt;li&gt;
-							&lt;h3&gt;Get support&lt;/h3&gt;
-							&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.&lt;/p&gt;
+							&lt;h3 class&#x3D;&quot;hpe-headline hpe-signin__subheader&quot;&gt;Get support&lt;/h3&gt;
+							&lt;p class&#x3D;&quot;hpe-signin__description&quot;&gt;Get 24/7 access to targeted support services, and the ability to track your support tickets&lt;/p&gt;
 						&lt;/li&gt;
 						&lt;li&gt;
-							&lt;h3&gt;Manage your account&lt;/h3&gt;
-							&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.&lt;/p&gt;
+							&lt;h3 class&#x3D;&quot;hpe-headline hpe-signin__subheader&quot;&gt;Manage your account&lt;/h3&gt;
+							&lt;p class&#x3D;&quot;hpe-signin__description&quot;&gt;Get access to all HP-wide account and profile settings from a single, easy-to-reach location&lt;/p&gt;
 						&lt;/li&gt;
 						&lt;li&gt;
-							&lt;h3&gt;Exclusive content&lt;/h3&gt;
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante eros, porttitor eget auctor nec, convallis vel turpis. Maecenas aliquet faucibus tristique.
+							&lt;h3 class&#x3D;&quot;hpe-headline hpe-signin__subheader&quot;&gt;Exclusive content&lt;/h3&gt;
+							&lt;p class&#x3D;&quot;hpe-signin__description&quot;&gt;Get useful content, training courses, media and information available nowhere else&lt;/p&gt;
 						&lt;/li&gt;
 					&lt;/ul&gt;
 				&lt;/div&gt;
 			&lt;/div&gt;
-		&lt;/div&gt;
-		&lt;!--end row--&gt;
+		&lt;/aside&gt;
 	&lt;/div&gt;
-	&lt;!--end col--&gt;
 &lt;/div&gt;
-&lt;!-- end row--&gt;
 
 &lt;div class&#x3D;&quot;hpe-breadcrumbs-wrapper row&quot;&gt;
 	&lt;div class&#x3D;&quot;col-sm-12&quot;&gt;
@@ -534,7 +526,6 @@
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
-
 
 &lt;div class&#x3D;&quot;hpe-support-wrapper row&quot;&gt;
 	&lt;div class&#x3D;&quot;col-sm-12&quot;&gt;

@@ -1,84 +1,68 @@
-.hpe-signin-wrapper {
-    background-image: url("images/signin-bg-large@2x.png");
+.hpe-signin {
+  &__wrapper {
     background-size: cover;
+    padding: 9rem 0;
+  }
 
-    padding: 1rem;
+  &__content {
+    max-width: $large;
+    margin: auto;
+  }
 
-    @include respond-to ('medium') {
-        padding: 3rem 2rem;
-    }
+  &__subheader {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+  }
 
-    @include respond-to ('large') {
-        padding: 7rem 8rem;
-    }
+  &__description {
+    margin: 0 0 1em;
+    font-weight: 100;
+    font-size: 1.25rem;
+    line-height: 1.25;
+  }
 
-    @include respond-to ('ex-large') {
-        padding: 8rem 12rem;
-    }
-}
-//sigin form
-.hpe-signin-form {
+  &__section {
     background-color: $transparent;
-    height: 100%;
-    padding: 20px;
+    padding: 1.5rem;
+  }
 
-    button {
-        width: 100%;
-    }
-}
+  //aside
+  &__support {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
-.hpe-section-title {
+  &__title {
     font-size: 3.125rem;
-    line-height: .9;
+    line-height: 0.9;
+    margin-bottom: 1.5rem;
+  }
 
-    &:after {
-        content: '';
-        background-color: $brand;
-        display: block;
-        margin-top: 20px;
-        height: 5px;
-        width: 80px;
+  &__support-title {
+    margin: 0 0 4rem;
+    font-size: 1.875rem;
+  }
+  
+  &__already-have-account {
+    text-align: center;
+    margin: 2rem auto;
+
+    a {
+      border-bottom: $border-width solid currentColor;
+      color: $black;
+      font-weight: 500;
+      font-size: 1.25rem;
+      text-decoration: none;
     }
-}
-
-.hpe-signin-already-have-account {
-
-     a {
-        border-bottom: 1px solid $dark-grey-1;
-        color: $black;
-        display: inline-block;
-        font-weight: 500;
-        font-size: 1.25rem;
-        margin: 2rem auto;
-        text-decoration: none;
-    }
-        
-}
-
-//social
-.hpe-signin-social {
+  }
+  
+  &__social {
     border-top: $border-width solid $light-grey-4;
     margin-top: 2rem;
     padding-top: 2rem;
+  }  
 }
 
-//aside
-.hpe-signin-support {
-    
-    //custom gutter
-    background-color: $transparent;
-    height: 100%;
-    padding: 20px;
-    @include respond-to('medium') {
-        margin-left: 10px;
-    }
-
-     ul {
-         margin: 0;
-         padding: 0;
-
-         li {
-            list-style: none;
-         }
-     }
-}
+//social
