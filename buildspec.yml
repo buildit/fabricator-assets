@@ -20,7 +20,7 @@ phases:
       - mkdir ~/.ssh
       - chmod 400 ~/.ssh
       - aws s3 sync s3://${SSH_KEY_S3_BUCKET} ~
-      - mv ~/key.pem ~/.ssh/id_rsa
+      - mv ~/${SSH_KEY_FILE} ~/.ssh/id_rsa
       - chmod 400 ~/.ssh/*
 
       - ip addr show
