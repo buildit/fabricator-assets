@@ -44,6 +44,8 @@
 /* 0 */
 /***/ (function(module, exports) {
 
+	"use strict";
+	
 	$(".hpe-input input").focus(function () {
 	  $(this).parent().addClass("hpe-input--active");
 	});
