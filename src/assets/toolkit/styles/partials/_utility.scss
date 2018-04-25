@@ -44,9 +44,28 @@
     padding-right: 0;
 }
 
-// //debug
-// .container-outline {
-//     @include respond-to('ex-large'){
-//         padding-left: 0;
-//     }
-// }
+.hpe-account-hero {
+    background-image: url("images/signin-bg-large@2x.png");
+    background-size: cover;
+    
+    padding: 1rem;
+    
+    @include respond-to ('medium') {
+        padding: 3rem 2rem;
+    }
+    
+    @include respond-to ('large') {
+        padding: 7rem 8rem;
+    }
+    
+    @include respond-to ('ex-large') {
+        padding: 8rem 12rem;
+    }
+}
+
+//password box
+.hpe-account-hero-content {
+    background-color: $transparent;
+    height: 100%;
+    padding: 20px;
+}
