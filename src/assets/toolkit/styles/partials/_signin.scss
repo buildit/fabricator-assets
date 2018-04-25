@@ -27,20 +27,6 @@
     }
 }
 
-.hpe-section-title {
-    font-size: 3.125rem;
-    line-height: .9;
-
-    &:after {
-        content: '';
-        background-color: $brand;
-        display: block;
-        margin-top: 20px;
-        height: 5px;
-        width: 80px;
-    }
-}
-
 .hpe-signin-already-have-account {
 
      a {
@@ -57,7 +43,7 @@
 
 //social
 .hpe-signin-social {
-    border-top: $border-width solid $light-grey-4;
+    border-top: 1px solid $light-grey-5;
     margin-top: 2rem;
     padding-top: 2rem;
 }

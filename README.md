@@ -54,4 +54,8 @@ Logo by [Abby Putinski](https://abbyputinski.com/)
 
 toolkit.scss is the "global.scss " file.
 
-if there's a bug. the json doesn't build. To fix add "build > variables > variables.json .... just add an blank object."
+If there's an issue rendering a page:
+"build > variables > variables.json .... just add an blank object."
+
+If there's a syntax error and a page will not render: 
+remove html from offending file, restart build, and then add back the corrected markup

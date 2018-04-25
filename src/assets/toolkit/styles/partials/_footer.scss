@@ -34,20 +34,20 @@
 .hpe-footer-sitemap-list-item-link {
     color: $dark-grey-1;
     display: block;
-    font-size: 1.12rem;
+    font-size: 1.25rem;
     line-height: 1.25;
     margin-bottom: 8px;
     text-decoration: none;
+
+    &:hover {
+        color: $icon-hover-grey;
+    }
 }
 
 //footer social icons
 .hpe-footer-sitemap-list-item-social {
     display: inline-block;
     margin-right: 24px;
-
-    &:hover {
-        
-    }
 
     &:last-child {
         margin-right: 0;
@@ -63,8 +63,23 @@
 
 //language displayed
 .hpe-language-content {
+    display: inline-block;
+    font-size: 1.375rem;
+    font-weight: 300;
     float: right;
+    padding-left: 38px;
+    position: relative;
     text-transform: uppercase;
+
+    svg {
+        left: 0;
+        position: absolute;
+        top: 2px;
+    }
+}
+
+.hpe-language-content-text {
+    font-size: 1rem;
 }
 
 //legal wrapper
@@ -77,6 +92,7 @@
 
 .hpe-legal-copyright {
     float: left;
+    font-size: 1.125rem;
     width: 50%;
 }
 
@@ -102,5 +118,22 @@
             content: '';
             margin: 0;
         }
+    }
+}
+
+.hpe-footer-logo {
+    padding-top: 2.5rem;
+    text-align: center; 
+}
+
+.hpe-footer-logo-link {
+    text-decoration: none;
+
+    svg {
+        width: 86px;
+        height: 26px;
+    
+        fill: $brand;
+        stroke: none;
     }
 }
