@@ -128,7 +128,7 @@ gulp.task('json', () => {
 
 gulp.task('jsonsass', () => {
   return gulp
-    .src([config.variables.sassVariables])
+    .src([config.variables.jsonVariables, config.variables.sassVariables])
     .pipe(
       jsonToSass({
         jsonPath: config.variables.jsonVariables,

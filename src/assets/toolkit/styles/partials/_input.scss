@@ -7,7 +7,7 @@
 
   input,
   textarea {
-    font-family: $font-family;
+    font-family: inherit;
     background: none;
     border: 0;
     border-bottom: $border-width solid $dark-grey-1;

@@ -30,7 +30,7 @@
 }
 
 body {
-  font-family: "Metric";
+  font-family: $font-family;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
