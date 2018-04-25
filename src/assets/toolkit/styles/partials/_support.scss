@@ -70,7 +70,7 @@
     display: inline-block;
     font-size: $hpe-font-size-med-large;
     font-weight: 300;
-    padding: 3rem;
+    padding: 4.2rem;
     text-align: center;
     text-transform: uppercase;
     text-align: center;
@@ -82,7 +82,7 @@
     margin-right: -4px;
     
     @include respond-to('large') {
-        padding: 5rem;
+        padding:  6.2rem;
     }
 }
 
