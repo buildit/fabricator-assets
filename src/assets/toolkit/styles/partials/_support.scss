@@ -87,12 +87,9 @@
 }
 
 .hpe-support-tile-icon {
+    color: $brand;
     display: block;
-
-    svg {
-        stroke: $brand;
-        fill: $brand;
-    }
+    font-size: 4rem;
 }
 
 .hpe-support-tile-copy {
