@@ -6,7 +6,6 @@
 
 $border: $border-width solid $border-color;
 $transition-time: 0.1s ease-in-out;
-$bootstrap-padding: 15px 15px;
 $transition: all 0.2s ease-in-out;
 $transparent:rgba(255, 255, 255, 0.9);
 $bootstrap-padding: 0 15px;
@@ -18,7 +17,3 @@ $google-brand: #4285f4;
 
 //buttons
 $button-padding: 6px 22px;
-
-//todo resolove variable paths: this needs to be moved
-$light-grey-5: #cccccc;
-$dark-grey-5: #888888;

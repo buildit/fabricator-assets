@@ -42,7 +42,6 @@
 }
 
 .hpe-signin-already-have-account {
-    text-align: center;
 
      a {
         border-bottom: 1px solid $dark-grey-1;
@@ -50,8 +49,7 @@
         display: inline-block;
         font-weight: 500;
         font-size: 1.25rem;
-        margin: 3rem auto;
-        text-align: center;
+        margin: 2rem auto;
         text-decoration: none;
     }
         
@@ -59,9 +57,9 @@
 
 //social
 .hpe-signin-social {
-    border-top: 1px solid $light-grey-5;
-    margin-top: 1rem;
-    padding-top: 1rem;
+    border-top: $border-width solid $light-grey-4;
+    margin-top: 2rem;
+    padding-top: 2rem;
 }
 
 //aside

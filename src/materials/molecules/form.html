@@ -1,8 +1,8 @@
 <form action="" class="form">
 	<div class="form-input">
-		{{> text-input text="Create a username"}}
-		{{> text-input text="Create a password"}}
-		{{> text-input text="Repeat password"}}
+		{{> form.text-input text="Create a username" id="username"}}
+		{{> form.password text="Create a password" id="password" type="password"}}
+		{{> form.password text="Repeat password" id="repeat-password" type="password"}}
 	</div>
-	{{> buttons.button class="foo"}}
+	{{> buttons.button text="Create Account"}}
 </form>

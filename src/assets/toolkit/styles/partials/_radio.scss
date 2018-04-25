@@ -1,31 +1,58 @@
-.radio-button-span {
-    background-color: inherit;
-    border: 2px solid $brand;
-    border-radius: 24px;
-    color: $brand;
+.hpe-radio-button {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+
+  &__label {
     display: inline-block;
-    margin-right: 12px;
-    position: relative;
     vertical-align: middle;
-    
-    width: 24px;
-    height: 24px;
+    color: $dark-grey-4;
+    white-space: normal;
+    margin-right: 1.5em;
+    word-break: break-word;
+  }
 
-    &:after {
-        content: "";
-        background-color: $brand;
-        border-radius: 12px;
-        display: block;
-        height: 10px;
-        width: 10px;
-        
-        position: absolute;
-        top: 5px;
-        left: 5px;
+  &__control {
+    position: relative;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.75em;
+    vertical-align: middle;
+    background-color: inherit;
+    color: #017b5f;
+    border: 2px solid #666;
+    border-radius: 24px;
+  }
+
+  &__input {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 11px 23px;
+    border: $border-width solid rgba(0, 0, 0, 0.15);
+    border-radius: 0px;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+
+    &:checked + .hpe-radio-button__control::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0.3125em;
+      left: 0.3125em;
+      width: 0.625em;
+      height: 0.625em;
+      background-color: #01a982;
+      border-radius: 100%;
     }
-
-
-    &:hover {
-        border: 2px solid $black;
-    }
+  }
 }

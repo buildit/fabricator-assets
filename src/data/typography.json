@@ -1,6 +1,6 @@
 {
   "font-family":
-    "Metric, Helvetica Neue, Lucida Grande, Helvetica, Arial, sans-serif",
+    "Metric, -apple-system, BlinkMacSystemFont, system-ui, Roboto, Segoe UI, Helvetica Neue, Lucida Grande, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol",
   "h1": "3rem",
   "h2": "2.25rem",
   "h3": "1.5rem",

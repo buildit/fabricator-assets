@@ -1,6 +1,5 @@
 .hpe-support-wrapper {
     background-color: $light-grey-1;
-    box-shadow: 0 4px 6px $light-grey-2;
     padding: $section-padding-support;
     position: relative;
     height: 100%;
@@ -18,7 +17,7 @@
 }
 
 .hpe-support-content--p {
-    padding-bottom: 1.75rem;
+    padding-bottom: 0.625rem;
 }
 
 .hpe-support-content--p--strong {
