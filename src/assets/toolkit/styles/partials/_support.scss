@@ -83,8 +83,12 @@
     margin-right: -4px;
     
     @include respond-to('large') {
-        padding:  6.2rem;
+        // padding:  6.2rem;
     }
+}
+
+.hpe-support-tile-links {
+    color: $dark-grey-1;
 }
 
 .hpe-support-tile-icon {
