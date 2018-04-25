@@ -1,6 +1,10 @@
 .hpe-footer {
   background-color: $light-grey-1;
-  padding: 11.5rem 0 2.5rem;
+  padding: 2.5rem 0;
+
+  @include respond-to(medium) {
+    padding: 11.5rem 0 2.5rem;
+  }
 
   &__content {
     width: 100%;
@@ -48,37 +52,47 @@
   &__language {
     margin: 1.5rem 0;
     width: 100%;
-    text-align: right;
     text-transform: uppercase;
     font-weight: 200;
     color: $dark-grey-4;
+
+    @include respond-to(medium) {
+      text-align: right;
+    }
   }
 
   &__copyright {
     flex: 1 1 50%;
   }
-  
+
   &__legal {
     font-size: 1.125rem;
-    display: flex;
-    justify-content: space-between;
+
+    @include respond-to(medium) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__legal-list {
     list-style: none;
-    margin: 0;
+    margin: 1rem 0 0;
     padding: 0;
+
+    @include respond-to(medium) {
+      margin-top: 0;
+    }
   }
-  
+
   &__legal-item {
     display: inline-block;
     color: $dark-grey-1;
-    
+
     &:not(:last-child) {
       margin-right: 1rem;
     }
   }
-  
+
   &__mark {
     padding: 1.5rem 0 0;
     text-align: center;
