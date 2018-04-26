@@ -13,6 +13,10 @@
     margin: auto;
   }
 
+  &__form:first-child:last-child {
+    margin: auto;
+  }
+
   &__subheader {
     font-size: 1.25rem;
     margin-bottom: 0.25rem;
@@ -55,8 +59,10 @@
     font-size: 1.875rem;
   }
   
-  &__already-have-account {
+  &__links {
     margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
 
     a {
       border-bottom: $border-width solid currentColor;
