@@ -14,7 +14,7 @@ const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const webpack = require('webpack');
 const merge = require('gulp-merge-json');
-const jsonToSass = require('gulp-json-to-sass');
+const jsonToSass = require('gulp-json-sass');
 const svgSymbols = require('gulp-svg-symbols');
 const svgmin = require('gulp-svgmin');
 const path = require(`path`);
@@ -128,16 +128,19 @@ gulp.task('json', () => {
 
 gulp.task('jsonsass', () => {
   return gulp
-    .src([config.variables.jsonVariables, config.variables.sassVariables])
+    .src([config.variables.jsonVariables])
     .pipe(
       jsonToSass({
-        jsonPath: config.variables.jsonVariables,
-        scssPath: config.variables.sassVariables,
+        sass: false,
         ignoreJsonErrors: true
       })
     )
-    .pipe(gulpif( /[.]scss$/, gulp.dest(config.variables.partials)))
-    .pipe(gulpif( /[.]json$/, gulp.dest(config.variables.dataBuild)));
+    // .pipe(concat('_import-variables.scss'))
+    .pipe(rename(function (path) {
+      path.basename = '_import-variables';
+      return path;
+    }))
+    .pipe(gulp.dest(config.variables.partials));
 });
 
 // styles
@@ -270,10 +273,10 @@ gulp.task('default', ['clean'], () => {
   const tasks = [
     'jsonsass',
     'icons',
-    'styles',
     'scripts',
     'images',
     'fonts',
+    'styles',
     'assembler'
   ];
 
