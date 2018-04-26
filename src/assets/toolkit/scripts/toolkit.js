@@ -9,3 +9,7 @@ $(".hpe-input input").focusout(function(){
     $(this).parent().removeClass("hpe-input--active");
   }
 });
+
+$('.hpe-nav__menu').click(function(){
+  $(this).toggleClass('hpe-nav__menu--active');
+});

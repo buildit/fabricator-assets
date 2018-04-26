@@ -1,9 +1,8 @@
 .hpe-button {
   background-color: $brand;
-  border: 2px solid $brand;
-  border-radius: 0px;
+  border: $double-border solid $brand;
+  border-radius: 0;
   color: $white;
-  font-size: 19px;
   font-size: 1.1875rem;
   line-height: 24px;
   letter-spacing: 0.04167em;
@@ -11,7 +10,7 @@
   cursor: pointer;
   text-align: center;
   outline: none;
-  min-width: 120px;
+  min-width: 7.5rem;
   transition: 0.1s ease-in-out;
   padding: $button-padding;
 
@@ -21,6 +20,24 @@
   }
 
   &:hover {
-    box-shadow: 0px 0px 0px 2px #01a982;
+    box-shadow: 0 0 0 $double-border $brand;
   }
+
+  &--plain {
+    width: auto;
+    height: auto;
+    min-width: 0;
+    max-width: none;
+    text-align: inherit;
+    font-weight: inherit;
+    color: $dark-grey-1;
+    padding: 0;
+    border: 0;
+    background: none;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+  
 }

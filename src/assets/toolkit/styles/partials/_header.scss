@@ -1,17 +1,37 @@
 .hpe-header {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   height: 85px;
   margin: 0 auto;
   max-width: $ex-large;
-  padding: 0 $bootstrap-gutter;
+  padding: 0;
+
+  @include respond-to(medium) {
+    padding: 0 $bootstrap-gutter;
+  }
+
+  .hpe-logo {
+    width: 5.5rem;
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+
+    @include respond-to(small) {
+      width: 8rem;
+    }
+  }
 }
 
-$nav-padding: 1.875rem;
+$nav-padding: 1rem;
 
 .hpe-nav {
   background-color: $white;
+  display: flex;
+  align-items: center;
 
   &__link {
     background: none;
@@ -24,18 +44,15 @@ $nav-padding: 1.875rem;
     vertical-align: middle;
 
     &--icon {
-        font-size: 1rem;
+      font-size: 1rem;
+      padding: 0;
+      position: relative;
+      bottom: -.125rem;
     }
   }
 
-  &__tools, 
   &__main {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  &__main {
-    flex: 0 0 33rem;
+    flex: 0 0 auto;
     overflow: hidden;
 
     .hpe-nav__link:not(:last-of-type) {
@@ -43,50 +60,143 @@ $nav-padding: 1.875rem;
 
       @include respond-to(large) {
         display: inline-block;
-      }    
+      }
     }
   }
 
   &__tools {
-    border-left: 1px solid $dark-grey-1;
-    padding: 0 0 0 $nav-padding;
+    border-right: $border-width solid $dark-grey-1;
+    padding: 0;
     height: 2.125rem;
+    display: flex;
+    align-items: center;
   }
-}
 
-.hpe-nav__main {
-  display: none;
-  
-  @include respond-to(small) {
-    display: inline-block;
+  &__main {
+    @include respond-to(small) {
+      display: inline-block;
+    }
   }
-}
 
-.hpe-contact {
-  font-weight: 600;
-  font-size: .9375rem;
-  text-transform: uppercase;
-  background: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2282%22%20height%3D%2240%22%3E%3Cpath%20stroke%3D%22%2301A982%22%20stroke-width%3D%222%22%20d%3D%22M1%201v26h23v10.583L34.568%2027H81V1H1z%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E") no-repeat;
-  background-size: contain;
-  background-position: center bottom;
-  display: inline-block;
-  padding: .5em .5em 1em;
-  margin-right: 0;
+  &__menu {
+    position: relative;
+    align-self: center;
+    margin-left: 1rem;
+
+    &-label {
+      position: relative;
+      display: none;
+
+      @include respond-to(small) {
+        display: inline-block;
+      }
+
+      &--active,
+      &--inacgtive {
+        position: absolute;
+        left: 0;
+        transition: opacity .1s linear;
+      }
+      
+      &--active {
+        opacity: 0;
+      }
+    }
+  }
 }
 
 .hpe-active {
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
-    top: -.25em;
-    right: -.25em;
+    top: -0.25em;
+    right: -0.25em;
     display: block;
     background: $brand;
-    height: .25em;
-    width: .25em;
+    height: 0.25em;
+    width: 0.25em;
     border-radius: 50%;
   }
 }
 
+.hf-hmb-icon {
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: -$double-border;
+  width: 1.125rem;
+  height: 1.125rem;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.hf-line {
+  background: $brand;
+  width: 1.375rem;
+  height: $double-border;
+  display: block;
+  position: absolute;
+  transition: top 0.4s 0.4s ease-in-out, bottom 0.4s 0.4s ease-in-out,
+    transform 0.4s ease-in-out, opacity 1ms 0.4s ease-in-out;
+
+  &:first-child {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  &:nth-child(2) {
+    top: 0.5rem;
+    opacity: 1;
+  }
+
+  &:last-of-type {
+    bottom: 0;
+    transform: rotate(0);
+  }
+}
+
+.hpe-nav__menu--active {
+  .hf-line {
+    &:first-child {
+      top: .5rem;
+      transform: rotate(-45deg);
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+    }
+
+    &:last-of-type {
+      bottom: .5rem;
+      transform: rotate(45deg);
+    }
+  }
+
+  .hpe-nav__menu-label--inactive {
+    opacity: 0;
+  }
+
+  .hpe-nav__menu-label--active {
+    opacity: 1;
+  }
+}
+
+.hpe-nav__responsive {
+  .hpe-responsive {    
+    &--small {
+      @include respond-to(medium) {
+        display: none;
+      }
+    }
+  
+    &--large {
+      display: none;
+
+      @include respond-to(medium) {
+        display: inline-block;
+      }
+    }
+  }  
+}
