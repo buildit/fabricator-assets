@@ -5,8 +5,10 @@
 // Carry on These variables can not be touched...
 
 $border: $border-width solid $border-color;
-$transition-time: 0.1s ease-in-out;
-$transition: all 0.2s ease-in-out;
+$transition--fast: 0.1s;
+$transition--medium: 0.2s;
+$transition--normal: 0.3s;
+$transition--slow: 0.4s;
 $transparent:rgba(255, 255, 255, 0.9);
 $bootstrap-gutter: 0.9375rem;
 $double-border: $border-width * 2;

@@ -56,9 +56,13 @@ $header-height: 5.3125rem;
     font-weight: 200;
     border: 0;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     padding: 1rem 0;
     height: $header-height;
+
+    @include respond-to(small) {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -179,8 +183,8 @@ $header-height: 5.3125rem;
   height: $double-border;
   display: block;
   position: absolute;
-  transition: top 0.4s 0.4s ease-in-out, bottom 0.4s 0.4s ease-in-out,
-    transform 0.4s ease-in-out, opacity 1ms 0.4s ease-in-out;
+  transition: top $transition--slow ease-in-out, bottom $transition--slow ease-in-out,
+    transform $transition--slow ease-in-out, opacity $transition--slow ease-in-out;
 
   &:first-child {
     top: 0;
