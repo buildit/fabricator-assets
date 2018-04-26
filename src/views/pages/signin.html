@@ -1,0 +1,39 @@
+<div class="container-fluid">
+
+    {{> header }}
+
+    <div class="hpe-signin__wrapper row" style="background-image: url(/assets/toolkit/images/signin-bg-large@2x.png)" ;>
+        <div class="hpe-signin__content row">
+          <div class="col-md-8 hpe-signin__form">
+            <div class="hpe-signin__section">
+              <h1 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-signin__title">Sign in to your account</h1>
+                {{> brand-rule }} 
+
+                <form action="" class="form">
+                    <div class="form-input">
+                        {{> form.text-input text="username" id="username"}}
+                        {{> form.password text="password" id="password" type="password"}}
+                    </div>
+                    {{> buttons.button text="Sign in" class="hpe-signin__button" }}
+                </form>                
+
+              <div class="hpe-signin__social">
+                {{> buttons.button--signin-linkedin}} {{> buttons.button--signin-google}}
+              </div>
+      
+              <div class="hpe-signin__links">
+                <a href="#">Forgot your password</a>
+                <a href="#">New user?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    {{> breadcrumbs }}
+    
+    {{> support }}
+    
+    {{> footer}}
+
+</div>
