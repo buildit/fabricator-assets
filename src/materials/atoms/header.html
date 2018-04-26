@@ -1,4 +1,7 @@
 <header class="hpe-header row">
+  <section class="hpe-header__search">
+    <input type="search" class="hpe-header__search-input" placeholder="Search HPE Marketplace">
+  </section>
   <div class="hpe-logo">{{> logos.logo-light }}</div>
   <nav class="hpe-nav">
     <div class="hpe-nav__main">
@@ -13,7 +16,7 @@
       </a>
     </div>
     <div class="hpe-nav__tools">
-      <button class="hpe-nav__link hpe-nav__link--icon">
+      <button class="hpe-nav__link hpe-nav__link--icon hpe-nav__search">
         {{> icons.icon icon="search"}}
       </button>
       <a href="" class="hpe-nav__link hpe-nav__link--icon hpe-active ">
