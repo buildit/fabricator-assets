@@ -124,6 +124,7 @@ $header-height: 5.3125rem;
     align-self: center;
     margin-left: 1rem;
     z-index: 2;
+    flex: 0 0 auto;
 
     &-label {
       position: relative;
@@ -133,10 +134,10 @@ $header-height: 5.3125rem;
         display: inline-block;
       }
 
-      &--active,
-      &--inacgtive {
+      &--inactive {
         position: absolute;
         left: 0;
+        top: 0;
         transition: opacity .1s linear;
       }
       
@@ -172,7 +173,6 @@ $header-height: 5.3125rem;
 .hf-hmb-icon {
   display: inline-block;
   position: relative;
-  left: 0;
   top: -$double-border;
   width: 1.125rem;
   height: 1.125rem;
