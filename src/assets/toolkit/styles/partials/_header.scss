@@ -17,7 +17,7 @@ $header-height: 5.3125rem;
   }
 
   .hpe-logo {
-    width: 5.5rem;
+    width: 6.5rem;
 
     svg {
       width: 100%;
@@ -33,7 +33,7 @@ $header-height: 5.3125rem;
     position: absolute;
     background: $white;
     height: $header-height;
-    width: calc(100% - #{4rem + $border-width - $bootstrap-gutter});
+    width: calc(100% - #{4rem - ($border-width * 4) - $bootstrap-gutter});
     right: 200%;
     padding: 0 $bootstrap-gutter;
     z-index: 1;
@@ -44,7 +44,7 @@ $header-height: 5.3125rem;
     }
 
     @include respond-to(medium) {
-      width: calc(100% - #{8rem + $border-width});
+      width: calc(100% - #{7.5rem - ($border-width)});
     }
 
     &--active {
