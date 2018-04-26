@@ -52,13 +52,13 @@
     flex-wrap: wrap;
 
     &--bottom {
-      @include respond-to(medium) {
+      @include respond-to(small) {
         margin-bottom: 0;
       }
     }
 
     &--left {
-      @include respond-to(medium) {
+      @include respond-to(small) {
         padding-left: 0;
       }
     }
