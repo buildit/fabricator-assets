@@ -29,22 +29,25 @@ $header-height: 5.3125rem;
     }
   }
 
+  $button--large: 6.25rem;
+  $button--small: 2.5rem;
+
   &__search {
     position: absolute;
     background: $white;
     height: $header-height;
-    width: calc(100% - #{4rem - ($border-width * 4) - $bootstrap-gutter});
+    width: calc(100% - #{$button--small + $bootstrap-gutter});
     right: 200%;
     padding: 0 $bootstrap-gutter;
     z-index: 1;
     border-right: $border-width solid $light-grey-4;
 
     @include respond-to(small) {
-      width: calc(100% - #{6rem + ($border-width * 3)});
+      width: calc(100% - #{$button--large - $border-width});
     }
 
     @include respond-to(medium) {
-      width: calc(100% - #{7.5rem - ($border-width)});
+      width: calc(100% - #{$button--large + (($bootstrap-gutter * 2) - $border-width)});
     }
 
     &--active {
