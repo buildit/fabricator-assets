@@ -24,7 +24,7 @@
     &:focus {
       border-bottom: $border-width solid $light-1;
       outline: none;
-      transition: $transition;
+      transition: all $transition--medium ease-in-out;
 		}
 	}
 	
@@ -32,7 +32,7 @@
 		top: .75em;
 		position: absolute;
 		color: $dark-grey-1;
-		transition: font-size .1s linear, top .1s linear;
+		transition: font-size $transition--fast linear, top $transition--fast linear;
 		cursor: text;
 	}
 

@@ -27,6 +27,11 @@
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    display: none;
+
+    @include respond-to(medium) {
+      display: block;
+    }
   }
 
   &__tiles {
@@ -47,13 +52,13 @@
     flex-wrap: wrap;
 
     &--bottom {
-      @include respond-to(medium) {
+      @include respond-to(small) {
         margin-bottom: 0;
       }
     }
 
     &--left {
-      @include respond-to(medium) {
+      @include respond-to(small) {
         padding-left: 0;
       }
     }

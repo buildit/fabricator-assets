@@ -1,5 +1,8 @@
 <header class="hpe-header row">
-  <div class="logo">{{> logos.logo-light }}</div>
+  <section class="hpe-header__search">
+    <input type="search" class="hpe-header__search-input" placeholder="Search HPE Marketplace">
+  </section>
+  <div class="hpe-logo">{{> logos.logo-light }}</div>
   <nav class="hpe-nav">
     <div class="hpe-nav__main">
       <a class="hpe-nav__link" href="#">Products & Solutions</a>
@@ -7,9 +10,13 @@
       <a class="hpe-nav__link" href="#">Support</a>
       <a class="hpe-nav__link" href="#">Insights</a>
       <a class="hpe-nav__link" href="#">Shop</a>
+      <a class="hpe-nav__link hpe-nav__responsive" href="#">
+        <span class="hpe-responsive--large">Contact</span>
+        <span class="hpe-responsive--small hpe-nav__link--icon">{{> icons.icon icon="contact"}}</span>
+      </a>
     </div>
     <div class="hpe-nav__tools">
-      <button class="hpe-nav__link hpe-nav__link--icon">
+      <button class="hpe-nav__link hpe-nav__link--icon hpe-nav__search">
         {{> icons.icon icon="search"}}
       </button>
       <a href="" class="hpe-nav__link hpe-nav__link--icon hpe-active ">
@@ -18,8 +25,17 @@
       <a href="" class="hpe-nav__link hpe-nav__link--icon">
         {{> icons.icon icon="user"}}
       </a>
-      <a href="" class="hpe-nav__link hpe-contact">contact</a>
     </div>
+    <button class="hpe-button hpe-button--plain hpe-nav__menu">
+      <div class="hf-hmb-icon">
+        <div class="hf-line"></div>
+        <div class="hf-line"></div>
+        <div class="hf-line"></div>
+      </div>
+      <span class="hpe-nav__menu-label">
+        <span class="hpe-nav__menu-label--inactive">Menu</span>
+        <span class="hpe-nav__menu-label--active">Close</span>
+      </span>
+    </button>
   </nav>
-  </svg>
 </header>

@@ -13,6 +13,18 @@
     padding: 0 $bootstrap-gutter;
   }
 
+  &__column {
+    @include respond-to(medium) {
+      &:first-child {
+        padding-right: $bootstrap-gutter * 3;
+      }
+      
+      &:last-child {
+        padding-left: $bootstrap-gutter * 3;
+      }
+    }
+  }
+
   &__title {
     font-size: 1rem;
     line-height: 1;
