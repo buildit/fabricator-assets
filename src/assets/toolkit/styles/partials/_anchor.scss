@@ -1,0 +1,33 @@
+a, a:visited, a:active {
+  color: $dark-grey-1;
+
+  &:hover {
+    color: $black;
+  }
+}
+
+a.hpe-anchor {
+  font-weight: 600;
+  font-size: 1.1875rem;
+  text-decoration: none;
+
+  &--primary {
+    color: $brand;
+
+    &:hover {
+      color: $brand;
+
+      .hpe-icon {
+        transform: translateX(3px);
+      }
+    }
+  }
+
+  .hpe-icon {
+    position: relative;
+    font-size: 1.2em;
+    bottom: -.325em;
+    margin-right: .75rem;
+    transition: all $transition--normal ease-in-out
+  }
+}
