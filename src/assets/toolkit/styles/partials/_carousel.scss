@@ -76,16 +76,22 @@
     max-width: $ex-large;
     margin: auto;
     color: $white;
-    padding: 0 $bootstrap-gutter;
+    padding: 0 4rem;
 
-    @include respond-to(ex-large) {
-      padding: 0;
+    @include respond-to(medium) {
+      padding: 0 6rem;
+    }
+
+    @media (min-width: $ex-large + 6rem) {
+      padding: 0 $bootstrap-gutter;
     }
   }
 
   &__title,
   &__description {
-    max-width: 75%;
+    @include respond-to(large) {
+      max-width: 75%;
+    }
 
     @include respond-to(large) {
       max-width: 50%;
@@ -94,7 +100,11 @@
 
   &__title {
     line-height: 1;
-    font-size: 2rem;
+    font-size: 1.5rem;
+
+    @include respond-to(medium) {
+      font-size: 2rem;
+    }
 
     @include respond-to(large) {
       font-size: 3rem;
@@ -108,7 +118,7 @@
   }
 
   &__button {
-    $button-size: 4rem;
+    $button-size: 2rem;
 
     position: absolute;
     top: 50%;
@@ -118,6 +128,12 @@
     text-align: center;
     color: $white;
     z-index: 100;
+
+    @include respond-to(medium) {
+      $button-size: 4rem;
+      font-size: $button-size;
+      margin-top: ($button-size / 2) * -1;
+    }
 
     svg {
       margin-right: 0;
