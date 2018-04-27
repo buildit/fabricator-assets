@@ -27,3 +27,7 @@ $('.hpe-carousel__button--next').click(function(){
 $('.hpe-carousel__button--previous').click(function(){
   $(this).siblings('.hpe-carousel__image--active').removeClass('hpe-carousel__image--active').prevAll('.hpe-carousel__image').first().addClass('hpe-carousel__image--active');
 });
+
+$('.hpe-carousel__indicator').click(function(){
+  $(this).prev().addClass('hpe-carousel__image--active').siblings().removeClass('hpe-carousel__image--active');
+});
