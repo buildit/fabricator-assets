@@ -1,0 +1,18 @@
+.hpe-cta-section {
+  max-width: $ex-large;
+  margin: auto;
+  padding-top: $bootstrap-gutter  * 2;
+  padding-bottom: $bootstrap-gutter  * 2;
+  @include stack-row(medium)
+}
+
+.hpe-cta {
+  background-color: $light-grey-1;
+  padding: $bootstrap-gutter * 2;
+  height: 100%;
+  margin-bottom: $bootstrap-gutter * 2;
+
+  @include respond-to(medium) {
+    margin-bottom: 0;
+  }
+}

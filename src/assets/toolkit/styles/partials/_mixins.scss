@@ -34,3 +34,11 @@ $breakpoints: (
     clear: both;
   }
 }
+
+@mixin stack-row($break-point) {
+  display: block;
+
+  @include respond-to($break-point) {
+    display: flex;
+  }
+}
