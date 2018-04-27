@@ -32,6 +32,11 @@
   align-items: center;
   justify-content: center;
   
+  .hpe-icon {
+    bottom: auto;
+    margin: 0;
+  }
+  
   .hpe-button--social--google & {
     background-color: white;
     margin: 0.125rem;

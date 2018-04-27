@@ -1,7 +1,7 @@
 .hpe-cta-section {
-  padding-top: $bootstrap-gutter  * 2;
-  padding-bottom: $bootstrap-gutter  * 2;
-  @include stack-row(medium)
+  padding-top: $bootstrap-gutter * 2;
+  padding-bottom: $bootstrap-gutter * 2;
+  @include stack-row(medium);
 }
 
 .hpe-cta {
@@ -9,8 +9,42 @@
   padding: $bootstrap-gutter * 2;
   height: 100%;
   margin-bottom: $bootstrap-gutter * 2;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 12rem;
 
   @include respond-to(medium) {
+    background-size: 24rem;
+  }
+
+  @include respond-to(ex-large) {
     margin-bottom: 0;
+    background-size: cover;
+  }
+
+  &__content {
+    margin-bottom: 1.5em;
+
+    &--image {
+      @include respond-to(medium) {
+        width: 60%;
+      }
+    }
+  }
+
+  &__heading {
+    font-size: 1.5rem;
+    
+    @include respond-to(medium) {
+      font-size: 2.5rem;
+    }
+}
+
+  &__description {
+    font-size: 1rem;
+    
+    @include respond-to(medium) {
+      font-size: 1.5rem;
+    }
   }
 }

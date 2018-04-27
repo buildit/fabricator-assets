@@ -9,6 +9,7 @@ button, input {
 .hpe-headline {
   font-weight: 100;
   margin: 0 0 1.5rem; 
+  line-height: 1;
 
   &--xlarge {
     font-size: $headline--xlarge;

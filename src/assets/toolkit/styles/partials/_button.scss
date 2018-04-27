@@ -1,4 +1,5 @@
 .hpe-button {
+  display: inline-block;
   background-color: $brand;
   border: $double-border solid $brand;
   border-radius: 0;
@@ -13,14 +14,38 @@
   min-width: 7.5rem;
   transition: 0.1s ease-in-out;
   padding: $button-padding;
+  text-decoration: none;
 
   &--secondary {
     background-color: transparent;
     color: $dark-grey-1;
+    text-align: left;
+  }
+
+  .hpe-icon {
+    position: relative;
+    font-size: 1.2em;
+    bottom: -0.25em;
+    margin-right: 0.75rem;
+    transition: all $transition--normal ease-in-out;
+  }
+
+  &--icon {
+    display: inline-flex;
+    text-align: left;
+    align-items: flex-start;
+
+    .hpe-icon {
+      bottom: -.125em;
+    }
   }
 
   &:hover {
     box-shadow: 0 0 0 $double-border $brand;
+    
+    .hpe-icon {
+      transform: translateX(3px);
+    }
   }
 
   &--plain {
@@ -39,5 +64,4 @@
       box-shadow: none;
     }
   }
-  
 }
