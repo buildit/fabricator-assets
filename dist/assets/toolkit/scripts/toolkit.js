@@ -65,6 +65,14 @@
 	  $('.hpe-header__search').toggleClass('hpe-header__search--active');
 	  $('.hpe-nav__menu').toggleClass('hpe-nav__menu--active');
 	});
+	
+	$('.hpe-carousel__button--next').click(function () {
+	  $(this).siblings('.hpe-carousel__image--active').removeClass('hpe-carousel__image--active').nextAll('.hpe-carousel__image').first().addClass('hpe-carousel__image--active');
+	});
+	
+	$('.hpe-carousel__button--previous').click(function () {
+	  $(this).siblings('.hpe-carousel__image--active').removeClass('hpe-carousel__image--active').prevAll('.hpe-carousel__image').first().addClass('hpe-carousel__image--active');
+	});
 
 /***/ })
 /******/ ]);

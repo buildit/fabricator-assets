@@ -1,0 +1,161 @@
+.hpe-slider {
+  position: relative;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__item {
+    height: 19rem;
+    min-width: 14rem;
+    background-color: $light-grey-2;
+    margin-right: 0.5em;
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    background: transparentize($white, 0.6);
+    font-size: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+
+    svg {
+      margin-right: 0;
+    }
+
+    &--previous {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+}
+
+.hpe-carousel {
+  position: relative;
+  height: 25rem;
+  overflow: hidden;
+  width: calc(100% + #{$bootstrap-gutter * 2});
+  background-color: $dark-grey-4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  @include respond-to(large) {
+    height: 40rem;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: left $transition--normal ease-in-out;
+
+    &--active {
+      left: 0;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    max-width: $ex-large;
+    margin: auto;
+    color: $white;
+    padding: 0 $bootstrap-gutter;
+
+    @include respond-to(ex-large) {
+      padding: 0;
+    }
+  }
+
+  &__title,
+  &__description {
+    max-width: 75%;
+
+    @include respond-to(large) {
+      max-width: 50%;
+    }
+  }
+
+  &__title {
+    line-height: 1;
+    font-size: 2rem;
+
+    @include respond-to(large) {
+      font-size: 3rem;
+    }
+  }
+
+  &__description {
+    @include respond-to(large) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__button {
+    $button-size: 4rem;
+
+    position: absolute;
+    top: 50%;
+    font-size: $button-size;
+    margin-top: ($button-size / 2) * -1;
+    padding: 0.5rem;
+    text-align: center;
+    color: $white;
+    z-index: 100;
+
+    svg {
+      margin-right: 0;
+    }
+
+    &--previous {
+      left: 0;
+
+      .hpe-carousel__image--active:first-of-type ~ & {
+        display: none;
+      }
+    }
+
+    &--next {
+      right: 0;
+      
+      .hpe-carousel__image--active:last-of-type ~ & {
+        display: none;
+      }
+    }
+  }
+
+  &__indicator {
+    display: block;
+    position: relative;
+    height: .5em;
+    width: .5em;
+    background: $white;
+    opacity: .55;
+    margin: 0 .75em 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 100;
+
+    // Active indicator
+    .hpe-carousel__image--active + & {
+      opacity: 1;
+    }
+  }
+  
+}

@@ -22,20 +22,13 @@
 @import 'partials/breadcrumbs';
 @import 'partials/brand-rule';
 @import 'partials/anchor';
-
+@import 'partials/carousel';
 @import 'partials/support';
-
-*, 
-*::before,
-*::after {
-  box-sizing: inherit;
-}
 
 body {
   font-family: $font-family;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
-  box-sizing: border-box;
   margin: 0;
 } 
