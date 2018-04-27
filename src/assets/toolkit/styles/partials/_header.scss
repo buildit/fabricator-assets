@@ -8,8 +8,6 @@ $header-height: 5.3125rem;
   justify-content: space-between;
   align-items: center;
   height: $header-height;
-  margin: 0 auto;
-  max-width: $ex-large;
   padding: 0;
 
   @include respond-to(medium) {
