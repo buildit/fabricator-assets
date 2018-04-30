@@ -4,8 +4,11 @@
     <div class="hpe-featured-product__details">
       <h3 class="hpe-featured-product__name">HPE NewServer 1234 Gen27</h3>
       <p class="hpe-featured-product__description">Compelling short description of this product that articulates how it’s different and worth considering.</p>
-      <p class="hpe-featured-product__feature">Great for virtualization applications up to 1000 users</p>
-      {{> starting-price price="$23,500"}}
+      <p class="hpe-featured-product__feature">
+        {{> icons.icon icon="virtual-machine" }} 
+        Great for virtualization applications up to 1000 users
+      </p>
+      {{> starting-price price="$23,500" class="hpe-featured-product__price"}}
       <ul class="hpe-featured-product__meta">
         <li class="hpe-featured-product__meta-item">
           Save up to 33%

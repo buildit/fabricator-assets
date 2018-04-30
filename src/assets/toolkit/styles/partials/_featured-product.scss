@@ -1,4 +1,6 @@
 .hpe-featured-product {
+  padding: 6rem 0;
+
   &__content {    
     display: flex;
     flex-wrap: wrap;
@@ -6,7 +8,7 @@
     display: flex;
     align-items: flex-end;
     background-repeat: no-repeat;
-    background-position: 20rem 2.5em;
+    background-position: 21rem center;
     background-size: 60%;
     padding: 0 0 ($bootstrap-gutter * 2);
 
@@ -17,13 +19,14 @@
 
   &__heading {
     flex: 0 0 100%;
+    font-size: 2.5rem;
   }
 
   &__details {
     background: transparentize($light-grey-3, 0.5);
     flex: 0 0 25rem;
     max-width: 100%;
-    padding: $bootstrap-gutter;
+    padding: $bootstrap-gutter * 2;
     font-size: 1.125rem;
   }
 
@@ -32,6 +35,22 @@
     padding: 0 ($bootstrap-gutter * 4) ($bootstrap-gutter * 2);
     display: flex;
     align-items: flex-end;
+  }
+
+  &__feature {
+    display: flex;
+    align-items: flex-start;
+    margin: 1.5em 0;
+
+    .hpe-icon {
+      position: relative;
+      margin-right: .5em;
+      bottom: -.125em;
+    }
+  }
+
+  &__price {
+    font-size: 1.875rem;
   }
 
   &__meta {

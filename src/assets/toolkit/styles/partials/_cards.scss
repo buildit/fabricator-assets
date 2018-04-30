@@ -1,4 +1,5 @@
 .hpe-card-list {
+  padding: 6rem 0;
   background: $light-grey-1;
 
   &__content {
@@ -20,6 +21,7 @@
   margin-bottom: $bootstrap-gutter;
   text-align: center;
   height: 100%;
+  margin: 0 0 $bootstrap-gutter;
 
   &__image {
     background-repeat: no-repeat;
