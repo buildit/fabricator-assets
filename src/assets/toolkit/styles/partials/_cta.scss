@@ -1,7 +1,10 @@
 .hpe-cta-section {
   padding-top: $bootstrap-gutter * 2;
-  padding-bottom: $bootstrap-gutter * 2;
   @include stack-row(medium);
+
+  @include respond-to(medium) {
+    padding-bottom: $bootstrap-gutter * 2;
+  }
 }
 
 .hpe-cta {
@@ -19,14 +22,18 @@
 
   @include respond-to(ex-large) {
     margin-bottom: 0;
-    background-size: cover;
+    background-size: 30rem;
   }
 
   &__content {
     margin-bottom: 1.5em;
 
     &--image {
-      padding-right: 10rem;
+      padding-right: 5rem;
+
+      @include respond-to(medium) {
+        padding-right: 10rem;
+      }        
     }
   }
 
