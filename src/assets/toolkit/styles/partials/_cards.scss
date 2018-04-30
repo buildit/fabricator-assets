@@ -17,11 +17,13 @@
 }
 
 .hpe-card {
+  position: relative;
   padding: 3rem 1rem 2rem;
   background: $white;
   margin-top: $bootstrap-gutter;
   margin-bottom: $bootstrap-gutter;
   text-align: center;
+  height: 100%;
 
   &__image {
     background-repeat: no-repeat;
@@ -34,14 +36,35 @@
 
   &__heading {
     font-size: 1.875rem;
+    margin-bottom: .5em;
   }
 
   &__description {
     font-size: 1.125rem;
+    margin: 0 0 1rem;
   }
 
   &__meta {
     font-size: 1.625rem;
     color: $dark-grey-3;
+  }
+}
+
+.hpe-bookmark {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.875rem;
+  color: $dark-4;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    left: -100%;
+
+    &:checked + .hpe-icon {
+      color: $brand;
+      fill: currentColor !important;
+    }
   }
 }
