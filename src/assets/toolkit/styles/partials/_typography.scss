@@ -40,4 +40,12 @@ button, input {
   }
 }
 
+.hpe-section-headline {
+  font-size: 1.5rem;
+    
+  @include respond-to(medium) {
+    font-size: 2.5rem;
+  }
+}
+
 $hpe-font-size-med:	0.9375rem;
