@@ -1,0 +1,32 @@
+.hpe-page-header {
+  position: relative;
+  height: 19rem;
+  color: $white;
+  background-color: $dark-grey-4;
+
+  &__background {
+    position: absolute;
+    opacity: .38;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+   }
+
+  .hpe-headline {
+    max-width: 12em;
+  }
+
+  .hpe-breadcrumbs {
+    top: 0;
+    left: 0;
+    color: $white;
+    position: absolute;
+  }
+}
