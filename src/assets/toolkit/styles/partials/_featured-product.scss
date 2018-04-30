@@ -25,12 +25,12 @@
     background: transparentize($light-grey-3, 0.5);
     flex: 0 0 25rem;
     max-width: 100%;
-    padding: $bootstrap-gutter-double;
+    padding: $bootstrap-gutter-double ($bootstrap-gutter-double * 3) $bootstrap-gutter-double $bootstrap-gutter-double;
     font-size: 1.125rem;
   }
 
   &__product {
-
+    position: relative;
     padding: 0 ($bootstrap-gutter-double * 3) $bootstrap-gutter-double;
     display: flex;
     align-items: flex-end;
@@ -54,6 +54,24 @@
 
   &__price {
     font-size: 1.875rem;
+  }
+
+  &__badge {
+    position: absolute;
+    right: 25%;
+    top: -8rem;
+    background-color: $light-2;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
   }
 
   &__meta {
