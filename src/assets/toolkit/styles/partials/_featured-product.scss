@@ -31,10 +31,14 @@
   }
 
   &__product {
-    flex: 1 1 auto;
-    padding: 0 ($bootstrap-gutter * 4) ($bootstrap-gutter * 2);
+    
+    padding: 0 ($bootstrap-gutter * 6) ($bootstrap-gutter * 2);
     display: flex;
     align-items: flex-end;
+
+    @include respond-to(medium) {
+      flex: 1 1 auto;
+    }
   }
 
   &__feature {
