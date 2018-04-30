@@ -10,7 +10,8 @@ $transition--medium: 0.2s;
 $transition--normal: 0.3s;
 $transition--slow: 0.4s;
 $transparent:rgba(255, 255, 255, 0.9);
-$bootstrap-gutter: 1.25rem / 2;
+$bootstrap-gutter-double: 1.25rem;
+$bootstrap-gutter: $bootstrap-gutter-double / 2;
 $double-border: $border-width * 2;
 
 //buttons

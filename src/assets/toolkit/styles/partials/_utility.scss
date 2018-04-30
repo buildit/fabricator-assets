@@ -1,45 +1,20 @@
-.breakpoint-debug {
-    background-color: teal;
-
-    @include respond-to ('small') {
-        background-color:red;
-    }
-    @include respond-to ('medium') {
-        background-color: blue;
-    }
-    @include respond-to ('large' ) {
-        background-color: yellow;
-    }
-    @include respond-to ('ex-large') {
-        background-color: lime;
-    }
-}
-
-.greybox {
-    // @include greybox();
-}
-
 //hidden content for screenreaders
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0; 
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
-.clearfix {
-    
-}
+.hpe-centered-section {
+  max-width: $ex-large;
 
-.hpe-no-margin {
-    margin: 0px;
-}
-
-.hpe-grid-adjust-padding {
-    padding-left: 0;
-    padding-right: 0;
+  @include respond-to(large) {
+    margin: auto;
+    width: 100%;
+  }
 }

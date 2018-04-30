@@ -8,8 +8,6 @@ $header-height: 5.3125rem;
   justify-content: space-between;
   align-items: center;
   height: $header-height;
-  margin: 0 auto;
-  max-width: $ex-large;
   padding: 0;
 
   @include respond-to(medium) {
@@ -47,7 +45,7 @@ $header-height: 5.3125rem;
     }
 
     @include respond-to(medium) {
-      width: calc(100% - #{$button--large + (($bootstrap-gutter * 2) - ($border-width * 2))});
+      width: calc(100% - #{$button--large + ($bootstrap-gutter-double - ($border-width * 2))});
     }
 
     &--active {

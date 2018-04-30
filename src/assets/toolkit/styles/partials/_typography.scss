@@ -9,6 +9,7 @@ button, input {
 .hpe-headline {
   font-weight: 100;
   margin: 0 0 1.5rem; 
+  line-height: 1;
 
   &--xlarge {
     font-size: $headline--xlarge;
@@ -36,6 +37,14 @@ button, input {
 
   &--caps {
     text-transform: uppercase;
+  }
+}
+
+.hpe-section-headline {
+  font-size: 1.5rem;
+    
+  @include respond-to(medium) {
+    font-size: 2.5rem;
   }
 }
 

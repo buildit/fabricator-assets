@@ -1,0 +1,42 @@
+.hpe-cta-section {
+  padding-top: $bootstrap-gutter-double;
+  @include stack-row(medium);
+
+  @include respond-to(medium) {
+    padding-bottom: $bootstrap-gutter-double;
+  }
+}
+
+.hpe-cta {
+  background-color: $light-grey-1;
+  padding: $bootstrap-gutter-double;
+  height: 100%;
+  margin-bottom: $bootstrap-gutter-double;
+  background-repeat: no-repeat;
+  background-position: right -10rem bottom -3rem;
+  background-size: contain;
+
+  @include respond-to(ex-large) {
+    margin-bottom: 0;
+  }
+
+  &__content {
+    margin-bottom: 1.5em;
+
+    &--image {
+      padding-right: 5rem;
+
+      @include respond-to(medium) {
+        padding-right: 10rem;
+      }        
+    }
+  }
+
+  &__description {
+    font-size: 1rem;
+    
+    @include respond-to(medium) {
+      font-size: 1.5rem;
+    }
+  }
+}

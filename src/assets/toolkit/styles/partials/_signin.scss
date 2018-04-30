@@ -11,6 +11,7 @@
   &__content {
     max-width: $large;
     margin: auto;
+    @include stack-row(medium)
   }
 
   &__form:first-child:last-child {
@@ -34,7 +35,7 @@
     background-color: $transparent;
     padding: 1.5rem;
     height: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: $bootstrap-gutter-double;
 
     @include respond-to(medium) {
       margin-bottom: 0;
