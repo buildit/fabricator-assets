@@ -6,10 +6,11 @@
   &__item {
     display: inline;
 
-    &::after {
+    &:not(:last-child)::after {
       content: "/";
       margin: 0 .25em;
     }
+    
     &--current {
       &::after {
         content: none;
