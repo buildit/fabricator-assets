@@ -26,9 +26,7 @@
     margin-bottom: 1.5em;
 
     &--image {
-      @include respond-to(medium) {
-        width: 60%;
-      }
+      padding-right: 10rem;
     }
   }
 

@@ -105,6 +105,9 @@
 							<a href="atoms.html#buttons">Buttons</a>
 						</li>
 						<li>
+							<a href="atoms.html#card">Card</a>
+						</li>
+						<li>
 							<a href="atoms.html#footer">Footer</a>
 						</li>
 						<li>
@@ -132,6 +135,9 @@
 							<a href="atoms.html#password">Password</a>
 						</li>
 						<li>
+							<a href="atoms.html#starting-price">Starting Price</a>
+						</li>
+						<li>
 							<a href="atoms.html#support">Support</a>
 						</li>
 						<li>
@@ -142,6 +148,9 @@
 				<li>
 					<a href="molecules.html" class="f-menu__heading">Molecules</a>
 					<ul>
+						<li>
+							<a href="molecules.html#card-list">Card List</a>
+						</li>
 						<li>
 							<a href="molecules.html#cta">Cta</a>
 						</li>
@@ -219,6 +228,113 @@
 
 	
 <h1 data-f-toggle="labels">Molecules</h1>
+
+
+<div class="f-item-group" id="card-list">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Card List</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-preview">
+	<div class="hpe-card-list row">
+	<div class="hpe-card-list__content hpe-centered-section">
+		<h2 class="hpe-headline hpe-headline--caps hpe-headline--black">Recently viewed items</h2>
+		<div class="hpe-card-list__cards row">
+			<div class="col-sm-6 col-lg-3">
+				<article class="hpe-card ">
+					<span class="hpe-cared__bookmark"></span>
+					<div class="hpe-card__image" style="background-image: url(/assets/toolkit/images/server1.png)"></div>
+					<h3 class="hpe-card__heading hpe-headline hpe-headline--strong">Altoline 6940 series</h3>
+					<p class="hpe-card__description">Short description that succinctly calls out this series’ core benefit and/or differentiating features</p>
+					<p class="hpe-card__meta">Starting at <strong>$23,500</strong></p>
+					<button class="hpe-button hpe-button--secondary">Shop</button></article>
+			</div>
+			<div class="col-sm-6 col-lg-3">
+				<article class="hpe-card ">
+					<span class="hpe-cared__bookmark"></span>
+					<div class="hpe-card__image" style="background-image: url(/assets/toolkit/images/server2.png)"></div>
+					<h3 class="hpe-card__heading hpe-headline hpe-headline--strong">Altoline 6920 series</h3>
+					<p class="hpe-card__description">Short description that succinctly calls out this series’ core benefit and/or differentiating features</p>
+					<p class="hpe-card__meta">Starting at <strong>$23,500</strong></p>
+					<button class="hpe-button hpe-button--secondary">Shop</button></article>
+			</div>
+			<div class="col-sm-6 col-lg-3">
+				<article class="hpe-card ">
+					<span class="hpe-cared__bookmark"></span>
+					<div class="hpe-card__image" style="background-image: url(/assets/toolkit/images/server2.png)"></div>
+					<h3 class="hpe-card__heading hpe-headline hpe-headline--strong">FlexFabric 14 series</h3>
+					<p class="hpe-card__description">Short description that succinctly calls out this series’ core benefit and/or differentiating features</p>
+					<p class="hpe-card__meta">Starting at <strong>$23,500</strong></p>
+					<button class="hpe-button hpe-button--secondary">Shop</button></article>
+			</div>
+			<div class="col-sm-6 col-lg-3">
+				<article class="hpe-card ">
+					<span class="hpe-cared__bookmark"></span>
+					<div class="hpe-card__image" style="background-image: url(/assets/toolkit/images/server1.png)"></div>
+					<h3 class="hpe-card__heading hpe-headline hpe-headline--strong">Synergy 123</h3>
+					<p class="hpe-card__description">Short description that succinctly calls out this series’ core benefit and/or differentiating features</p>
+					<p class="hpe-card__meta">Starting at <strong>$23,500</strong></p>
+					<button class="hpe-button hpe-button--secondary">Shop</button></article>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;hpe-card-list row&quot;&gt;
+	&lt;div class&#x3D;&quot;hpe-card-list__content hpe-centered-section&quot;&gt;
+		&lt;h2 class&#x3D;&quot;hpe-headline hpe-headline--caps hpe-headline--black&quot;&gt;Recently viewed items&lt;/h2&gt;
+		&lt;div class&#x3D;&quot;hpe-card-list__cards row&quot;&gt;
+			&lt;div class&#x3D;&quot;col-sm-6 col-lg-3&quot;&gt;
+				&lt;article class&#x3D;&quot;hpe-card &quot;&gt;
+					&lt;span class&#x3D;&quot;hpe-cared__bookmark&quot;&gt;&lt;/span&gt;
+					&lt;div class&#x3D;&quot;hpe-card__image&quot; style&#x3D;&quot;background-image: url(/assets/toolkit/images/server1.png)&quot;&gt;&lt;/div&gt;
+					&lt;h3 class&#x3D;&quot;hpe-card__heading hpe-headline hpe-headline--strong&quot;&gt;Altoline 6940 series&lt;/h3&gt;
+					&lt;p class&#x3D;&quot;hpe-card__description&quot;&gt;Short description that succinctly calls out this series’ core benefit and/or differentiating features&lt;/p&gt;
+					&lt;p class&#x3D;&quot;hpe-card__meta&quot;&gt;Starting at &lt;strong&gt;$23,500&lt;/strong&gt;&lt;/p&gt;
+					&lt;button class&#x3D;&quot;hpe-button hpe-button--secondary&quot;&gt;Shop&lt;/button&gt;&lt;/article&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;col-sm-6 col-lg-3&quot;&gt;
+				&lt;article class&#x3D;&quot;hpe-card &quot;&gt;
+					&lt;span class&#x3D;&quot;hpe-cared__bookmark&quot;&gt;&lt;/span&gt;
+					&lt;div class&#x3D;&quot;hpe-card__image&quot; style&#x3D;&quot;background-image: url(/assets/toolkit/images/server2.png)&quot;&gt;&lt;/div&gt;
+					&lt;h3 class&#x3D;&quot;hpe-card__heading hpe-headline hpe-headline--strong&quot;&gt;Altoline 6920 series&lt;/h3&gt;
+					&lt;p class&#x3D;&quot;hpe-card__description&quot;&gt;Short description that succinctly calls out this series’ core benefit and/or differentiating features&lt;/p&gt;
+					&lt;p class&#x3D;&quot;hpe-card__meta&quot;&gt;Starting at &lt;strong&gt;$23,500&lt;/strong&gt;&lt;/p&gt;
+					&lt;button class&#x3D;&quot;hpe-button hpe-button--secondary&quot;&gt;Shop&lt;/button&gt;&lt;/article&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;col-sm-6 col-lg-3&quot;&gt;
+				&lt;article class&#x3D;&quot;hpe-card &quot;&gt;
+					&lt;span class&#x3D;&quot;hpe-cared__bookmark&quot;&gt;&lt;/span&gt;
+					&lt;div class&#x3D;&quot;hpe-card__image&quot; style&#x3D;&quot;background-image: url(/assets/toolkit/images/server2.png)&quot;&gt;&lt;/div&gt;
+					&lt;h3 class&#x3D;&quot;hpe-card__heading hpe-headline hpe-headline--strong&quot;&gt;FlexFabric 14 series&lt;/h3&gt;
+					&lt;p class&#x3D;&quot;hpe-card__description&quot;&gt;Short description that succinctly calls out this series’ core benefit and/or differentiating features&lt;/p&gt;
+					&lt;p class&#x3D;&quot;hpe-card__meta&quot;&gt;Starting at &lt;strong&gt;$23,500&lt;/strong&gt;&lt;/p&gt;
+					&lt;button class&#x3D;&quot;hpe-button hpe-button--secondary&quot;&gt;Shop&lt;/button&gt;&lt;/article&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;col-sm-6 col-lg-3&quot;&gt;
+				&lt;article class&#x3D;&quot;hpe-card &quot;&gt;
+					&lt;span class&#x3D;&quot;hpe-cared__bookmark&quot;&gt;&lt;/span&gt;
+					&lt;div class&#x3D;&quot;hpe-card__image&quot; style&#x3D;&quot;background-image: url(/assets/toolkit/images/server1.png)&quot;&gt;&lt;/div&gt;
+					&lt;h3 class&#x3D;&quot;hpe-card__heading hpe-headline hpe-headline--strong&quot;&gt;Synergy 123&lt;/h3&gt;
+					&lt;p class&#x3D;&quot;hpe-card__description&quot;&gt;Short description that succinctly calls out this series’ core benefit and/or differentiating features&lt;/p&gt;
+					&lt;p class&#x3D;&quot;hpe-card__meta&quot;&gt;Starting at &lt;strong&gt;$23,500&lt;/strong&gt;&lt;/p&gt;
+					&lt;button class&#x3D;&quot;hpe-button hpe-button--secondary&quot;&gt;Shop&lt;/button&gt;&lt;/article&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
 
 
 <div class="f-item-group" id="cta">

@@ -1,0 +1,47 @@
+.hpe-card-list {
+  background: $light-grey-1;
+
+  &__content {
+    margin-top: $bootstrap-gutter;
+    margin-bottom: $bootstrap-gutter;
+    padding: $bootstrap-gutter;
+
+    @include respond-to(medium) {
+      padding: ($bootstrap-gutter * 2);
+    }
+  }
+
+  &__cards {
+    @include stack-row(small);
+  }
+}
+
+.hpe-card {
+  padding: 3rem 1rem 2rem;
+  background: $white;
+  margin-top: $bootstrap-gutter;
+  margin-bottom: $bootstrap-gutter;
+  text-align: center;
+
+  &__image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    height: 8rem;
+    max-width: 14rem;
+    margin: 0 auto 1rem;
+  }
+
+  &__heading {
+    font-size: 1.875rem;
+  }
+
+  &__description {
+    font-size: 1.125rem;
+  }
+
+  &__meta {
+    font-size: 1.625rem;
+    color: $dark-grey-3;
+  }
+}
