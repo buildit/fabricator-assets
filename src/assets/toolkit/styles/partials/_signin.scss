@@ -35,7 +35,7 @@
     background-color: $transparent;
     padding: 1.5rem;
     height: 100%;
-    margin-bottom: $bootstrap-gutter * 2;
+    margin-bottom: $bootstrap-gutter-double;
 
     @include respond-to(medium) {
       margin-bottom: 0;

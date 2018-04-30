@@ -1,17 +1,17 @@
 .hpe-cta-section {
-  padding-top: $bootstrap-gutter * 2;
+  padding-top: $bootstrap-gutter-double;
   @include stack-row(medium);
 
   @include respond-to(medium) {
-    padding-bottom: $bootstrap-gutter * 2;
+    padding-bottom: $bootstrap-gutter-double;
   }
 }
 
 .hpe-cta {
   background-color: $light-grey-1;
-  padding: $bootstrap-gutter * 2;
+  padding: $bootstrap-gutter-double;
   height: 100%;
-  margin-bottom: $bootstrap-gutter * 2;
+  margin-bottom: $bootstrap-gutter-double;
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 12rem;

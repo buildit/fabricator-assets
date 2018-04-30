@@ -10,10 +10,10 @@
     background-repeat: no-repeat;
     background-position: 21rem center;
     background-size: 60%;
-    padding: 0 0 ($bootstrap-gutter * 2);
+    padding: 0 0 $bootstrap-gutter-double;
 
     @include respond-to(ex-large) {
-      padding: 0 $bootstrap-gutter ($bootstrap-gutter * 2);
+      padding: 0 $bootstrap-gutter $bootstrap-gutter-double;
     }
   }
 
@@ -25,13 +25,13 @@
     background: transparentize($light-grey-3, 0.5);
     flex: 0 0 25rem;
     max-width: 100%;
-    padding: $bootstrap-gutter * 2;
+    padding: $bootstrap-gutter-double;
     font-size: 1.125rem;
   }
 
   &__product {
 
-    padding: 0 ($bootstrap-gutter * 6) ($bootstrap-gutter * 2);
+    padding: 0 ($bootstrap-gutter-double * 3) $bootstrap-gutter-double;
     display: flex;
     align-items: flex-end;
 

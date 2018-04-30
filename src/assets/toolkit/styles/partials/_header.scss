@@ -45,7 +45,7 @@ $header-height: 5.3125rem;
     }
 
     @include respond-to(medium) {
-      width: calc(100% - #{$button--large + (($bootstrap-gutter * 2) - ($border-width * 2))});
+      width: calc(100% - #{$button--large + ($bootstrap-gutter-double - ($border-width * 2))});
     }
 
     &--active {
