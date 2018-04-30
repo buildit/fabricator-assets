@@ -5,10 +5,6 @@
     margin-top: $bootstrap-gutter;
     margin-bottom: $bootstrap-gutter;
     padding: $bootstrap-gutter;
-
-    @include respond-to(medium) {
-      padding: ($bootstrap-gutter * 2);
-    }
   }
 
   &__cards {

@@ -23,7 +23,7 @@
     margin-right: .25em;
   }
 
-  &--filled {
+  &--filled[style] {
     fill: currentColor;
     stroke: transparent;
     stroke-width: 0;

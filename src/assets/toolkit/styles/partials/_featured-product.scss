@@ -1,0 +1,51 @@
+.hpe-featured-product {
+  &__content {    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-position: 20rem 2.5em;
+    background-size: 60%;
+    padding: 0 0 ($bootstrap-gutter * 2);
+
+    @include respond-to(ex-large) {
+      padding: 0 $bootstrap-gutter ($bootstrap-gutter * 2);
+    }
+  }
+
+  &__heading {
+    flex: 0 0 100%;
+  }
+
+  &__details {
+    background: transparentize($light-grey-3, 0.5);
+    flex: 0 0 25rem;
+    max-width: 100%;
+    padding: $bootstrap-gutter;
+    font-size: 1.125rem;
+  }
+
+  &__product {
+    flex: 1 1 auto;
+    padding: 0 ($bootstrap-gutter * 4) ($bootstrap-gutter * 2);
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__meta {
+    list-style: none;
+    padding: 0;
+    font-weight: 600;
+
+    &-item {
+      display: inline;
+
+      &:not(:last-child)::after {
+        content: "\2022";
+        padding: 0 0.25em;
+      }
+    }
+  }
+}
