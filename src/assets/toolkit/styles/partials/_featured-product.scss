@@ -1,19 +1,19 @@
 .hpe-featured-product {
   padding: 6rem 0;
 
-  &__content {    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    display: flex;
-    align-items: flex-end;
-    background-repeat: no-repeat;
-    background-position: 21rem center;
-    background-size: 60%;
+  &__content {
     padding: 0 0 $bootstrap-gutter-double;
 
     @include respond-to(ex-large) {
       padding: 0 $bootstrap-gutter $bootstrap-gutter-double;
+    }
+  }
+
+  &__row {
+    flex-direction: column-reverse;
+
+    @include respond-to(medium) {
+      flex-direction: row;
     }
   }
 
@@ -23,20 +23,24 @@
 
   &__details {
     background: transparentize($light-grey-3, 0.5);
-    flex: 0 0 25rem;
-    max-width: 100%;
-    padding: $bootstrap-gutter-double ($bootstrap-gutter-double * 3) $bootstrap-gutter-double $bootstrap-gutter-double;
     font-size: 1.125rem;
+    padding: $bootstrap-gutter-double;
   }
 
   &__product {
-    position: relative;
-    padding: 0 ($bootstrap-gutter-double * 3) $bootstrap-gutter-double;
     display: flex;
+    min-height: 20rem;
     align-items: flex-end;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-bottom: 2rem;
+    background-size: 100%;
 
     @include respond-to(medium) {
-      flex: 1 1 auto;
+      padding-left: 4rem;
+      background-size: cover;
+      background-position: right center;
     }
   }
 
@@ -47,9 +51,13 @@
 
     .hpe-icon {
       position: relative;
-      margin-right: .5em;
-      bottom: -.125em;
+      margin-right: 0.5em;
+      bottom: -0.125em;
     }
+  }
+
+  &__name {
+    font-size: 2rem;
   }
 
   &__price {
@@ -58,20 +66,28 @@
 
   &__badge {
     position: absolute;
-    right: 25%;
-    top: -8rem;
+    right: 2rem;
+    bottom: 4rem;
     background-color: $light-2;
     color: $white;
     text-transform: uppercase;
-    font-size: 1.5rem;
     font-weight: 700;
-    padding: 1rem;
     border-radius: 50%;
-    height: 10rem;
-    width: 10rem;
     text-align: center;
     display: flex;
     align-items: center;
+    height: 6rem;
+    width: 6rem;
+    padding: 0.5rem;
+
+    @include respond-to(medium) {
+      font-size: 1.5rem;
+      right: 6rem;
+      bottom: 0;
+      height: 10rem;
+      width: 10rem;
+      padding: 1rem;
+    }
   }
 
   &__meta {
