@@ -1,0 +1,40 @@
+[
+  {
+    "name": "HPE ProLiant DL360",
+    "description":
+      "Short description that calls out the approach or features that this individual product uses for this need.",
+    "tags": [
+      {
+        "tagline": "Most affordable option",
+        "icon": "money"
+      },
+      {
+        "tagline": "Most affordable option",
+        "icon": "like"
+      }
+    ],
+    "price": "$3,000",
+    "meta": "Leasing options available",
+    "image":
+      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
+  },
+  {
+    "name": "HPE ProLiant DL380",
+    "description":
+      "Short description that calls out the approach or features that this individual product uses for this need.",
+    "tags": [
+      {
+        "tagline": "Affordable",
+        "icon": "money"
+      },
+      {
+        "tagline": "Easy to manage",
+        "icon": "configure"
+      }
+    ],
+    "price": "$3,000",
+    "meta": "Leasing options available",
+    "image":
+      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
+  }
+]
