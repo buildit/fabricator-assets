@@ -1,0 +1,15 @@
+<article class="hpe-product-grid hpe-centered-section">
+  {{#each popular-solutions }}
+  <section class="hpe-product-grid__row row">
+    <div class="hpe-product-grid__about col-md-5">
+      <h3 class="hpe-headline hpe-headline--strong hpe-headline--small">
+        {{this.title}}
+      </h3>
+      <p class="hpe-product-grid__description">{{this.description}}</p>
+    </div>
+    <div class="hpe-product-grid__about col-md-7">
+     {{> product-grid products=this.products }}
+    </div>
+  </section>
+  {{/each }}
+</article>

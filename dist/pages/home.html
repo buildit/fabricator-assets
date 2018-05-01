@@ -74,11 +74,11 @@
               <svg class="hpe-icon">
               <use xlink:href="#icon-search"></use>
             </svg>      </button>
-          <a href="" class="hpe-nav__link hpe-nav__link--icon hpe-active ">
+          <a href="" class="hpe-nav__link hpe-nav__link--icon hpe-active" data-notification="2">
               <svg class="hpe-icon">
               <use xlink:href="#icon-cart"></use>
             </svg>      </a>
-          <a href="" class="hpe-nav__link hpe-nav__link--icon">
+          <a href="" class="hpe-nav__link hpe-nav__link--icon hpe-active" data-notification="56">
               <svg class="hpe-icon">
               <use xlink:href="#icon-user"></use>
             </svg>      </a>
@@ -99,28 +99,28 @@
     <article class="hpe-carousel row">
       <section class="hpe-carousel__image hpe-carousel__image--active" style="background-image: url('/assets/toolkit/images/servers.jpg')">
         <div class="hpe-carousel__content hpe-centered-section">
-          <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title">The new HPE Proliant Gen10 server platform</h1>
+          <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title hpe-page-headline">The new HPE Proliant Gen10 server platform</h1>
           <p class="hpe-carousel__description">Starting as low as $2,270, the Gen10 series delivers the best performance and expandability for your growing operation.</p>
         </div>
       </section>
       <a class="hpe-carousel__indicator"></a>
       <section class="hpe-carousel__image" style="background-image: url('/assets/toolkit/images/signin-bg-large@2x.png')">
         <div class="hpe-carousel__content hpe-centered-section">
-          <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title">The new HPE Proliant Gen10 server platform (2)</h1>
+          <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title hpe-page-headline">The new HPE Proliant Gen10 server platform (2)</h1>
           <p class="hpe-carousel__description">Starting as low as $2,270, the Gen10 series  delivers the best performance and expandability for your growing operation.</p>
         </div>
       </section>
       <a class="hpe-carousel__indicator"></a>
       <section class="hpe-carousel__image" style="background-image: url('/assets/toolkit/images/servers.jpg')">
         <div class="hpe-carousel__content hpe-centered-section">
-          <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title">The new HPE Proliant Gen10 server platform (3)</h1>
+          <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title hpe-page-headline">The new HPE Proliant Gen10 server platform (3)</h1>
           <p class="hpe-carousel__description">Starting as low as $2,270, the Gen10 series  delivers the best performance and expandability for your growing operation.</p>
         </div>
       </section>
       <a class="hpe-carousel__indicator"></a>
       <section class="hpe-carousel__image" style="background-image: url('/assets/toolkit/images/signin-bg-large@2x.png')">
         <div class="hpe-carousel__content">
-          <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title">The new HPE Proliant Gen10 server platform (4)</h1>
+          <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title hpe-page-headline">The new HPE Proliant Gen10 server platform (4)</h1>
           <p class="hpe-carousel__description">Starting as low as $2,270, the Gen10 series  delivers the best performance and expandability for your growing operation.</p>
         </div>
       </section>
@@ -158,8 +158,7 @@
           <div class="hpe-cta">
             <div class="hpe-cta__content">
               <h2 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-section-headline">Deploy with confidence</h2>
-              <p class="hpe-cta__description">Our Pointnext services support a range of planning, implementation, and suport capabilities to help you achieve and maintain
-                operational success.</p>
+              <p class="hpe-cta__description">Our Pointnext services support a range of planning, implementation, and suport capabilities to help you achieve and maintain operational success.</p>
               <a href="" class="hpe-button hpe-button--secondary hpe-button--icon">
                   <svg class="hpe-icon">
                 <use xlink:href="#icon-link-next"></use>
@@ -168,29 +167,33 @@
           </div>  </div>
     </section>    
     <section class="hpe-featured-product">
-      <div class="hpe-featured-product__content hpe-centered-section"  style="background-image: url('/assets/toolkit/images/server-deal.png')">
+      <div class="hpe-featured-product__content hpe-centered-section">
         <h2 class="hpe-headline hpe-headline--caps hpe-headline--black hpe-featured-product__heading hpe-section-headline">Exciting Deals and New Releases</h2>
-        <div class="hpe-featured-product__details">
-          <h3 class="hpe-featured-product__name">HPE NewServer 1234 Gen27</h3>
-          <p class="hpe-featured-product__description">Compelling short description of this product that articulates how it’s different and worth considering.</p>
-          <p class="hpe-featured-product__feature">
-              <svg class="hpe-icon">
-              <use xlink:href="#icon-virtual-machine"></use>
-            </svg>        Great for virtualization applications up to 1000 users
-          </p>
-          <span class="hpe-featured-product__price">Starting at <strong>$23,500</strong></span>      <ul class="hpe-featured-product__meta">
-            <li class="hpe-featured-product__meta-item">
-              Save up to 33%
-            </li>
-            <li class="hpe-featured-product__meta-item">
-              Leasing options available
-            </li>
-          </ul>
-        </div>
-        <div class="hpe-featured-product__product">
-          <a href="" class="hpe-button hpe-button--secondary ">
-            Buy Now
-          </a>      <span class="hpe-featured-product__badge">Deal of the Week</span>
+        <div class="hpe-featured-product__row row">
+          <div class="col-lg-4">
+            <div class="hpe-featured-product__details">
+              <h3 class="hpe-headline hpe-headline--strong hpe-featured-product__name">HPE NewServer 1234 Gen27</h3>
+              <p class="hpe-featured-product__description">Compelling short description of this product that articulates how it’s different and worth considering.</p>
+              <p class="hpe-featured-product__feature">
+                  <svg class="hpe-icon">
+      <use xlink:href="#icon-virtual-machine"></use>
+    </svg> Great for virtualization applications up to 1000 users
+              </p>
+              <span class="hpe-featured-product__price">Starting at <strong>$23,500</strong></span>          <ul class="hpe-featured-product__meta">
+                <li class="hpe-featured-product__meta-item">
+                  Save up to 33%
+                </li>
+                <li class="hpe-featured-product__meta-item">
+                  Leasing options available
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="hpe-featured-product__product col-lg-8" style="background-image: url('/assets/toolkit/images/server-deal.png')">
+            <a href="" class="hpe-button hpe-button--secondary ">
+              Buy Now
+            </a>        <span class="hpe-featured-product__badge">Deal of the Week</span>
+          </div>
         </div>
       </div>
     </section>

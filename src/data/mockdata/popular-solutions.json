@@ -1,0 +1,127 @@
+[
+  {
+    "title": "For virtualised applications",
+    "description":
+      "Short description that calls out the approach that these products use to address this need",
+    "products": [
+      {
+        "name": "Product line",
+        "price": "$23,500",
+        "image":
+          "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
+      },
+      {
+        "name": "Other Product line",
+        "price": "$23,500",
+        "image":
+          "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00028987.png"
+      },
+      {
+        "name": "Greenlake Solution",
+        "price": "$663,500",
+        "image":
+          "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
+      }
+    ]
+  },
+  {
+    "title": "For fast scalability",
+    "description":
+      "Short description that calls out the approach that these products use to address this need",
+    "products": [
+      {
+        "name": "Product line",
+        "price": "$23,500",
+        "image":
+          "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
+      },
+      {
+        "name": "Other Product line",
+        "price": "$23,500",
+        "image":
+          "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00028987.png"
+      },
+      {
+        "name": "Greenlake Solution",
+        "price": "$663,500",
+        "image":
+          "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
+      }
+    ]
+  },
+  {
+    "title": "For long-term storage",
+    "description":
+      "Short description that calls out the approach that these products use to address this need",
+    "products": [
+      {
+        "name": "Product line",
+        "price": "$23,500",
+        "image":
+          "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
+      },
+      {
+        "name": "Other Product line",
+        "price": "$23,500",
+        "image":
+          "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00028987.png"
+      },
+      {
+        "name": "Greenlake Solution",
+        "price": "$663,500",
+        "image":
+          "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
+      }
+    ]
+  },
+  {
+    "title": "For another target outcome",
+    "description":
+      "Short description that calls out the approach that these products use to address this need",
+    "products": [
+      {
+        "name": "Product line",
+        "price": "$3,500",
+        "image":
+          "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
+      },
+      {
+        "name": "Better line",
+        "price": "$13,500",
+        "image":
+          "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00028987.png"
+      },
+      {
+        "name": "Best line",
+        "price": "$663,500",
+        "image":
+          "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
+      }
+    ]
+  },
+  {
+    "title": "For another objective",
+    "description":
+      "Short description that calls out the approach that these products use to address this need",
+    "products": [
+      {
+        "name": "Product line",
+        "price": "$3,500",
+        "image":
+          "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
+      },
+      {
+        "name": "Better Line",
+        "price": "$13,500",
+        "image":
+          "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00028987.png"
+      },
+      {
+        "name": "Best Line",
+        "price": "$663,500",
+        "image":
+          "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
+      }
+    ]
+  }
+]
