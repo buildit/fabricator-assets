@@ -44,6 +44,10 @@
     list-style: none;
     padding: 0;
     columns: 2;
+    
+    a {
+      text-decoration: none;
+    }
   }
 
   &__category-item {
