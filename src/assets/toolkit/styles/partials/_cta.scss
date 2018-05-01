@@ -28,15 +28,29 @@
 
       @include respond-to(medium) {
         padding-right: 10rem;
-      }        
+      }
     }
   }
 
   &__description {
     font-size: 1rem;
-    
+
     @include respond-to(medium) {
       font-size: 1.5rem;
     }
+  }
+
+  &__categories {
+    list-style: none;
+    padding: 0;
+    columns: 2;
+  }
+
+  &__category-item {
+    margin-bottom: 1em;
+    font-size: 1.125em;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
   }
 }
