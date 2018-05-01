@@ -12,7 +12,7 @@
   &__row {
     flex-direction: column-reverse;
 
-    @include respond-to(medium) {
+    @include respond-to(large) {
       flex-direction: row;
     }
   }
