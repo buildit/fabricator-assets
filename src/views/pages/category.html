@@ -1,23 +1,22 @@
 <div class="container-fluid">
 
-    {{> header }}
+    {{> header }} 
     
-    {{> page-header 
+    {{> page-header--image 
         pageTitle="More storage options, with fewer headaches" 
         src="/assets/toolkit/images/server-header.png"
-    }}
-
-    {{> popular-solutions-grid }}
-
-    {{> cta-section-category }}
-
-    {{> featured-product }}
-
-    {{> card-list }}
-
-    {{> breadcrumbs }}
+        pages=links.category 
+    }} 
     
-    {{> support }}
+    {{> popular-solutions-grid }} {{> cta-section-category }} 
+    
+    {{> featured-product }} 
+    
+    {{> card-list }} 
+    
+    {{> breadcrumbs pages=links-category }} 
+    
+    {{> support }} 
     
     {{> footer}}
 

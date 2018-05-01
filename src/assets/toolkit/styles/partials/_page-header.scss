@@ -9,10 +9,16 @@
 
     .hpe-headline {
       max-width: 12em;
+      align-self: center;
+      margin: 3rem 0 1.5rem;
     }
 
     .hpe-breadcrumbs {
       color: $white;
+    }
+
+    .hpe-brand-rule {
+      background-color: $white;
     }
   }
 
@@ -28,15 +34,12 @@
   &__content {
     position: relative;
     z-index: 1;
-    display: flex;
-    align-items: center;
-    height: 100%;
     padding: 0 $bootstrap-gutter;
+    height: 100%;
   }
-
+  
   .hpe-breadcrumbs {
-    top: 0;
-    left: 0;
-    position: absolute;
+    padding: 0;
+    margin: 1.5rem 0;
   }
 }

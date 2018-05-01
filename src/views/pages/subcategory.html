@@ -1,6 +1,20 @@
 <div class="container-fluid">
 
-  {{> header }} {{> page-header pageTitle="Best for virtualization solutions"}} {{> product-list }} {{> featured-product }}
-  {{> breadcrumbs }} {{> support }} {{> footer}}
+  {{> header }} 
+  
+  {{> page-header 
+    pageTitle="Best for virtualization solutions" 
+    pages=links-subcategory
+  }} 
+  
+  {{> product-list }}
+  
+  {{> featured-product }} 
+  
+  {{> breadcrumbs pages=links-subcategory }} 
+  
+  {{> support }} 
+  
+  {{> footer}}
 
 </div>
