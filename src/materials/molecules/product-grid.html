@@ -1,0 +1,9 @@
+<ul class="hpe-product-grid__products row">
+  {{#each products }}
+    <li class="hpe-product-grid__item col-sm-4">
+      <img src="{{this.image}}" alt="{{this.name}}" class="hpe-product-grid__image">  
+      <h4 class="hpe-headline hpe-headline--strong hpe-product-grid__product-name">{{this.name}}</h4>
+      {{> starting-price price=this.price }}
+    </li>
+  {{/each}}
+</ul>

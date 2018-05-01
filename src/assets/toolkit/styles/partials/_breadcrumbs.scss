@@ -2,6 +2,7 @@
   padding: 1rem $bootstrap-gutter;
   list-style: none;
   width: 100%;
+  color: $dark-grey-4;
 
   &__item {
     display: inline;
@@ -20,7 +21,7 @@
   
   &__link {
     text-decoration: none;
-    color: $dark-grey-4;
+    color: currentColor !important;
 
     &:hover {
       color: $black;

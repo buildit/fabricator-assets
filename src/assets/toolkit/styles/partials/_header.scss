@@ -8,11 +8,7 @@ $header-height: 5.3125rem;
   justify-content: space-between;
   align-items: center;
   height: $header-height;
-  padding: 0;
-
-  @include respond-to(medium) {
-    padding: 0 $bootstrap-gutter;
-  }
+  padding: 0 $bootstrap-gutter;
 
   .hpe-logo {
     width: 6.5rem;
@@ -109,6 +105,7 @@ $header-height: 5.3125rem;
     height: 2.125rem;
     display: flex;
     align-items: center;
+    padding-right: .5rem;
   }
 
   &__main {
@@ -156,15 +153,14 @@ $header-height: 5.3125rem;
   position: relative;
 
   &::after {
-    content: "";
+    content: attr(data-notification);
     position: absolute;
-    top: -0.25em;
-    right: -0.25em;
+    top: -.75em;
+    left: 100%;
     display: block;
-    background: $brand;
-    height: 0.25em;
-    width: 0.25em;
-    border-radius: 50%;
+    color: $brand;
+    font-size: .75rem;
+    font-weight: 400;
   }
 }
 
