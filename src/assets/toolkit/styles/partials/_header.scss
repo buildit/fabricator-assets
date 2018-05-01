@@ -8,11 +8,7 @@ $header-height: 5.3125rem;
   justify-content: space-between;
   align-items: center;
   height: $header-height;
-  padding: 0;
-
-  @include respond-to(medium) {
-    padding: 0 $bootstrap-gutter;
-  }
+  padding: 0 $bootstrap-gutter;
 
   .hpe-logo {
     width: 6.5rem;
