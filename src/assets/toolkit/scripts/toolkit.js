@@ -51,7 +51,18 @@ $(".hpe-carousel__indicator").click(function() {
 
 $(".hpe-filter__button").click(function() {
   $(this)
-    .siblings(".hpe-filter")
+    .siblings(".hpe-filter__list")
     .toggleClass("hpe-filter--expanded");
-  console.log("Expand");
+});
+
+$(".hpe-filter__header").click(function() {
+  const thisSection = $(this).next();
+
+  $(this).toggleClass("hpe-filter__header--hidden");
+
+  if (thisSection.attr("aria-hidden") === "true") {
+    thisSection.attr("aria-hidden", false);
+  } else {
+    thisSection.attr("aria-hidden", true);
+  }
 });

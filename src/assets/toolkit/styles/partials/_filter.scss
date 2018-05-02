@@ -7,12 +7,22 @@
 }
 
 .hpe-filter {
-  list-style: none;
-  padding: $border-width 0 0;
-  margin: 0 0 0.5em;
   overflow: hidden;
-  max-height: 8em;
-  transition: height $transition--slow ease-in-out;
+  padding-bottom: 2em;
+
+  &__list {
+    list-style: none;
+    padding: $border-width 0 0;
+    margin: 0 0 0.5em;
+    overflow: hidden;
+    max-height: 8em;
+    transition: height $transition--slow ease-in-out;
+  }
+
+  &[aria-hidden="false"] {
+    height: 0;
+    padding: 0;
+  }
 
   &--expanded {
     max-height: inherit;
@@ -26,8 +36,22 @@
     }
   }
 
-  &-section {
-    margin-bottom: 2rem;
+  &__header {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 1em;
+
+    &--hidden {
+      .hpe-icon {
+        transform: rotate(-90deg);
+      }
+
+      &:hover {
+        .hpe-icon {
+          transform: rotate(-90deg);
+        }
+      }
+    }
   }
 
   &__item {

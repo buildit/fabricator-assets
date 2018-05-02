@@ -50,7 +50,8 @@
         "name": "$26,000 and up",
         "count": 1
       }
-    ]
+    ],
+    "show": true
   },
   {
     "title": "Processor",
@@ -231,7 +232,8 @@
         "name": "AMD",
         "count": 11
       }
-    ]
+    ],
+    "show": false
   },
   {
     "title": "Processor Speed",
@@ -300,7 +302,8 @@
         "name": "3.7 GHz",
         "count": "2"
       }
-    ]
+    ],
+    "show": false
   },
   {
     "title": "Processors, Maximum",
@@ -317,7 +320,8 @@
         "name": "4",
         "count": 4
       }
-    ]
+    ],
+    "show": false
   },
   {
     "title": "Form Factor",
@@ -334,7 +338,8 @@
         "name": "4U",
         "count": 8
       }
-    ]
+    ],
+    "show": false
   },
   {
     "title": "Configurable",
@@ -347,7 +352,8 @@
         "name": "Yes",
         "count": 92
       }
-    ]
+    ],
+    "show": false
   },
   {
     "title": "Retailer",
@@ -364,6 +370,7 @@
         "name": "PCM",
         "count": 79
       }
-    ]
+    ],
+    "show": false
   }
 ]
