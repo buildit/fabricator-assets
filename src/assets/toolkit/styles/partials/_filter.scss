@@ -1,0 +1,36 @@
+.hpe-filter-list {
+  padding: 1rem 0;
+}
+
+.hpe-filter__button--less {
+  display: none;
+}
+
+.hpe-filter {
+  list-style: none;
+  padding: $border-width 0 0;
+  margin: 0 0 0.5em;
+  overflow: hidden;
+  max-height: 8em;
+  transition: height $transition--slow ease-in-out;
+
+  &--expanded {
+    max-height: inherit;
+
+    & ~ .hpe-filter__button--more {
+      display: none;
+    }
+
+    & ~ .hpe-filter__button--less {
+      display: block;
+    }
+  }
+
+  &-section {
+    margin-bottom: 2rem;
+  }
+
+  &__item {
+    margin-bottom: 0.5em;
+  }
+}

@@ -1,0 +1,10 @@
+<section class="hpe-filter-section">
+  <h3 class="hpe-headline hpe-headline--strong">{{filters.title}}</h3>
+  <ul class="hpe-filter">
+    {{#each filters.filters }}
+    <li class="hpe-filter__item">{{> form.checkbox text=this.name }}</li>
+    {{/each}}
+  </ul>
+  {{>buttons.button--noborder text="Show More" class="hpe-filter__button hpe-filter__button--more"}} {{>buttons.button--noborder
+  text="Show Less" class="hpe-filter__button hpe-filter__button--less"}}
+</section>
