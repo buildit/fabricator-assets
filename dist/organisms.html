@@ -224,6 +224,9 @@
 				<li>
 					<a href="organisms.html#signup">Signup</a>
 				</li>
+				<li>
+					<a href="organisms.html#subcategory-guide">Subcategory Guide</a>
+				</li>
 			</ul>
 		</li>
 
@@ -2679,27 +2682,6 @@
 	</div><div class="f-item-preview">
 	<article class="hpe-product-list hpe-centered-section">
 	<div class="row">
-		<div class="col-md-6">
-			<label class="hpe-range__main-label">What is the price range you need
-            to stay within?</label>
-
-			<div class="hpe-range">
-				<div class="hpe-range--handles" data-range-min="1000" data-range-max="100000" data-range-start-min="10000" data-range-start-max="20000">
-				</div>
-				<label class="hpe-range__label hpe-range__label--min">$1,000</label>
-				<label class="hpe-range__label hpe-range__label--max">$100k</label>
-			</div>
-		</div>
-		<div class="col-md-6">
-			<label class="hpe-range__main-label">How quickly is your need growing?</label>
-			<div class="hpe-range">
-				<input type="range" min="" max="" step="">
-				<label class="hpe-range__label hpe-range__label--min">$1,000</label>
-				<label class="hpe-range__label hpe-range__label--max">$100k</label>
-			</div>
-		</div>
-	</div>
-	<div class="row">
 		<aside class="col-md-3">
 			<aside class="hpe-filter-list">
 				<button class="hpe-button hpe-button--plain hpe-filter__header">
@@ -3516,6 +3498,73 @@
 			</aside>
 		</aside>
 		<div class="col-md-9">
+			<section class="hpe-product-list">
+				<div class="hpe-product-list__sliders row">
+					<div class="col-md-6">
+						<label class="hpe-range__main-label">What is the price range you need
+            to stay within?</label>
+
+						<div class="hpe-range">
+							<div class="hpe-range--handles" data-range-min="1000" data-range-max="100000" data-range-start-min="10000" data-range-start-max="20000">
+							</div>
+							<label class="hpe-range__label hpe-range__label--min">$1,000</label>
+							<label class="hpe-range__label hpe-range__label--max">$100k</label>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<label class="hpe-range__main-label">How quickly is your need growing?</label>
+						<div class="hpe-range">
+							<input type="range" min="1" max="7" step="">
+							<label class="hpe-range__label hpe-range__label--min">Slowly</label>
+							<label class="hpe-range__label hpe-range__label--max">Very Quickly</label>
+						</div>
+					</div>
+				</div>
+				<h4 class="hpe-headline hpe-headline--strong">What do you typically need to serve?</h4>
+				<div>
+					<label class="hpe-check-box " for="">
+	<span>
+		<input type="checkbox" id="" tabindex="0" class="hpe-check-box__input" name="" value="on">
+		<span class="hpe-check-box__control">
+
+		</span>
+	</span>
+	<span class="hpe-check-box__label">Media</span>
+</label> <label class="hpe-check-box " for="">
+	<span>
+		<input type="checkbox" id="" tabindex="0" class="hpe-check-box__input" name="" value="on">
+		<span class="hpe-check-box__control">
+
+		</span>
+	</span>
+	<span class="hpe-check-box__label">Application Data</span>
+</label> <label class="hpe-check-box " for="">
+	<span>
+		<input type="checkbox" id="" tabindex="0" class="hpe-check-box__input" name="" value="on">
+		<span class="hpe-check-box__control">
+
+		</span>
+	</span>
+	<span class="hpe-check-box__label">Transaction Data</span>
+</label> <label class="hpe-check-box " for="">
+	<span>
+		<input type="checkbox" id="" tabindex="0" class="hpe-check-box__input" name="" value="on">
+		<span class="hpe-check-box__control">
+
+		</span>
+	</span>
+	<span class="hpe-check-box__label">Server / Database Snapshots</span>
+</label> <label class="hpe-check-box " for="">
+	<span>
+		<input type="checkbox" id="" tabindex="0" class="hpe-check-box__input" name="" value="on">
+		<span class="hpe-check-box__control">
+
+		</span>
+	</span>
+	<span class="hpe-check-box__label">Misc. Files</span>
+</label>
+				</div>
+			</section>
 			<section class="hpe-product-list__row row">
 				<div class="hpe-product-list__image col-md-3">
 					<label class="hpe-bookmark">
@@ -3559,6 +3608,7 @@
             </label> </p>
 				</div>
 			</section>
+
 			<section class="hpe-product-list__row row">
 				<div class="hpe-product-list__image col-md-3">
 					<label class="hpe-bookmark">
@@ -3602,6 +3652,7 @@
             </label> </p>
 				</div>
 			</section>
+
 			<section class="hpe-product-list__row row">
 				<div class="hpe-product-list__image col-md-3">
 					<label class="hpe-bookmark">
@@ -3645,6 +3696,7 @@
             </label> </p>
 				</div>
 			</section>
+
 			<section class="hpe-product-list__row row">
 				<div class="hpe-product-list__image col-md-3">
 					<label class="hpe-bookmark">
@@ -3694,27 +3746,6 @@
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;article class&#x3D;&quot;hpe-product-list hpe-centered-section&quot;&gt;
-	&lt;div class&#x3D;&quot;row&quot;&gt;
-		&lt;div class&#x3D;&quot;col-md-6&quot;&gt;
-			&lt;label class&#x3D;&quot;hpe-range__main-label&quot;&gt;What is the price range you need
-            to stay within?&lt;/label&gt;
-
-			&lt;div class&#x3D;&quot;hpe-range&quot;&gt;
-				&lt;div class&#x3D;&quot;hpe-range--handles&quot; data-range-min&#x3D;&quot;1000&quot; data-range-max&#x3D;&quot;100000&quot; data-range-start-min&#x3D;&quot;10000&quot; data-range-start-max&#x3D;&quot;20000&quot;&gt;
-				&lt;/div&gt;
-				&lt;label class&#x3D;&quot;hpe-range__label hpe-range__label--min&quot;&gt;$1,000&lt;/label&gt;
-				&lt;label class&#x3D;&quot;hpe-range__label hpe-range__label--max&quot;&gt;$100k&lt;/label&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-		&lt;div class&#x3D;&quot;col-md-6&quot;&gt;
-			&lt;label class&#x3D;&quot;hpe-range__main-label&quot;&gt;How quickly is your need growing?&lt;/label&gt;
-			&lt;div class&#x3D;&quot;hpe-range&quot;&gt;
-				&lt;input type&#x3D;&quot;range&quot; min&#x3D;&quot;&quot; max&#x3D;&quot;&quot; step&#x3D;&quot;&quot;&gt;
-				&lt;label class&#x3D;&quot;hpe-range__label hpe-range__label--min&quot;&gt;$1,000&lt;/label&gt;
-				&lt;label class&#x3D;&quot;hpe-range__label hpe-range__label--max&quot;&gt;$100k&lt;/label&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
 	&lt;div class&#x3D;&quot;row&quot;&gt;
 		&lt;aside class&#x3D;&quot;col-md-3&quot;&gt;
 			&lt;aside class&#x3D;&quot;hpe-filter-list&quot;&gt;
@@ -4532,6 +4563,73 @@
 			&lt;/aside&gt;
 		&lt;/aside&gt;
 		&lt;div class&#x3D;&quot;col-md-9&quot;&gt;
+			&lt;section class&#x3D;&quot;hpe-product-list&quot;&gt;
+				&lt;div class&#x3D;&quot;hpe-product-list__sliders row&quot;&gt;
+					&lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+						&lt;label class&#x3D;&quot;hpe-range__main-label&quot;&gt;What is the price range you need
+            to stay within?&lt;/label&gt;
+
+						&lt;div class&#x3D;&quot;hpe-range&quot;&gt;
+							&lt;div class&#x3D;&quot;hpe-range--handles&quot; data-range-min&#x3D;&quot;1000&quot; data-range-max&#x3D;&quot;100000&quot; data-range-start-min&#x3D;&quot;10000&quot; data-range-start-max&#x3D;&quot;20000&quot;&gt;
+							&lt;/div&gt;
+							&lt;label class&#x3D;&quot;hpe-range__label hpe-range__label--min&quot;&gt;$1,000&lt;/label&gt;
+							&lt;label class&#x3D;&quot;hpe-range__label hpe-range__label--max&quot;&gt;$100k&lt;/label&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+						&lt;label class&#x3D;&quot;hpe-range__main-label&quot;&gt;How quickly is your need growing?&lt;/label&gt;
+						&lt;div class&#x3D;&quot;hpe-range&quot;&gt;
+							&lt;input type&#x3D;&quot;range&quot; min&#x3D;&quot;1&quot; max&#x3D;&quot;7&quot; step&#x3D;&quot;&quot;&gt;
+							&lt;label class&#x3D;&quot;hpe-range__label hpe-range__label--min&quot;&gt;Slowly&lt;/label&gt;
+							&lt;label class&#x3D;&quot;hpe-range__label hpe-range__label--max&quot;&gt;Very Quickly&lt;/label&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;h4 class&#x3D;&quot;hpe-headline hpe-headline--strong&quot;&gt;What do you typically need to serve?&lt;/h4&gt;
+				&lt;div&gt;
+					&lt;label class&#x3D;&quot;hpe-check-box &quot; for&#x3D;&quot;&quot;&gt;
+	&lt;span&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;&quot; tabindex&#x3D;&quot;0&quot; class&#x3D;&quot;hpe-check-box__input&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;on&quot;&gt;
+		&lt;span class&#x3D;&quot;hpe-check-box__control&quot;&gt;
+
+		&lt;/span&gt;
+	&lt;/span&gt;
+	&lt;span class&#x3D;&quot;hpe-check-box__label&quot;&gt;Media&lt;/span&gt;
+&lt;/label&gt; &lt;label class&#x3D;&quot;hpe-check-box &quot; for&#x3D;&quot;&quot;&gt;
+	&lt;span&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;&quot; tabindex&#x3D;&quot;0&quot; class&#x3D;&quot;hpe-check-box__input&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;on&quot;&gt;
+		&lt;span class&#x3D;&quot;hpe-check-box__control&quot;&gt;
+
+		&lt;/span&gt;
+	&lt;/span&gt;
+	&lt;span class&#x3D;&quot;hpe-check-box__label&quot;&gt;Application Data&lt;/span&gt;
+&lt;/label&gt; &lt;label class&#x3D;&quot;hpe-check-box &quot; for&#x3D;&quot;&quot;&gt;
+	&lt;span&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;&quot; tabindex&#x3D;&quot;0&quot; class&#x3D;&quot;hpe-check-box__input&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;on&quot;&gt;
+		&lt;span class&#x3D;&quot;hpe-check-box__control&quot;&gt;
+
+		&lt;/span&gt;
+	&lt;/span&gt;
+	&lt;span class&#x3D;&quot;hpe-check-box__label&quot;&gt;Transaction Data&lt;/span&gt;
+&lt;/label&gt; &lt;label class&#x3D;&quot;hpe-check-box &quot; for&#x3D;&quot;&quot;&gt;
+	&lt;span&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;&quot; tabindex&#x3D;&quot;0&quot; class&#x3D;&quot;hpe-check-box__input&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;on&quot;&gt;
+		&lt;span class&#x3D;&quot;hpe-check-box__control&quot;&gt;
+
+		&lt;/span&gt;
+	&lt;/span&gt;
+	&lt;span class&#x3D;&quot;hpe-check-box__label&quot;&gt;Server / Database Snapshots&lt;/span&gt;
+&lt;/label&gt; &lt;label class&#x3D;&quot;hpe-check-box &quot; for&#x3D;&quot;&quot;&gt;
+	&lt;span&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;&quot; tabindex&#x3D;&quot;0&quot; class&#x3D;&quot;hpe-check-box__input&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;on&quot;&gt;
+		&lt;span class&#x3D;&quot;hpe-check-box__control&quot;&gt;
+
+		&lt;/span&gt;
+	&lt;/span&gt;
+	&lt;span class&#x3D;&quot;hpe-check-box__label&quot;&gt;Misc. Files&lt;/span&gt;
+&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/section&gt;
 			&lt;section class&#x3D;&quot;hpe-product-list__row row&quot;&gt;
 				&lt;div class&#x3D;&quot;hpe-product-list__image col-md-3&quot;&gt;
 					&lt;label class&#x3D;&quot;hpe-bookmark&quot;&gt;
@@ -4575,6 +4673,7 @@
             &lt;/label&gt; &lt;/p&gt;
 				&lt;/div&gt;
 			&lt;/section&gt;
+
 			&lt;section class&#x3D;&quot;hpe-product-list__row row&quot;&gt;
 				&lt;div class&#x3D;&quot;hpe-product-list__image col-md-3&quot;&gt;
 					&lt;label class&#x3D;&quot;hpe-bookmark&quot;&gt;
@@ -4618,6 +4717,7 @@
             &lt;/label&gt; &lt;/p&gt;
 				&lt;/div&gt;
 			&lt;/section&gt;
+
 			&lt;section class&#x3D;&quot;hpe-product-list__row row&quot;&gt;
 				&lt;div class&#x3D;&quot;hpe-product-list__image col-md-3&quot;&gt;
 					&lt;label class&#x3D;&quot;hpe-bookmark&quot;&gt;
@@ -4661,6 +4761,7 @@
             &lt;/label&gt; &lt;/p&gt;
 				&lt;/div&gt;
 			&lt;/section&gt;
+
 			&lt;section class&#x3D;&quot;hpe-product-list__row row&quot;&gt;
 				&lt;div class&#x3D;&quot;hpe-product-list__image col-md-3&quot;&gt;
 					&lt;label class&#x3D;&quot;hpe-bookmark&quot;&gt;
@@ -4780,6 +4881,161 @@
 		&lt;/div&gt;
 	&lt;/div&gt;
 	&lt;button class&#x3D;&quot;hpe-button &quot;&gt;Create Account&lt;/button&gt;&lt;/form&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="subcategory-guide">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Subcategory Guide</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-preview">
+	<section class="hpe-product-list">
+	<div class="hpe-product-list__sliders row">
+		<div class="col-md-6">
+			<label class="hpe-range__main-label">What is the price range you need
+            to stay within?</label>
+
+			<div class="hpe-range">
+				<div class="hpe-range--handles" data-range-min="1000" data-range-max="100000" data-range-start-min="10000" data-range-start-max="20000">
+				</div>
+				<label class="hpe-range__label hpe-range__label--min">$1,000</label>
+				<label class="hpe-range__label hpe-range__label--max">$100k</label>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<label class="hpe-range__main-label">How quickly is your need growing?</label>
+			<div class="hpe-range">
+				<input type="range" min="1" max="7" step="">
+				<label class="hpe-range__label hpe-range__label--min">Slowly</label>
+				<label class="hpe-range__label hpe-range__label--max">Very Quickly</label>
+			</div>
+		</div>
+	</div>
+	<h4 class="hpe-headline hpe-headline--strong">What do you typically need to serve?</h4>
+	<div>
+		<label class="hpe-check-box " for="">
+	<span>
+		<input type="checkbox" id="" tabindex="0" class="hpe-check-box__input" name="" value="on">
+		<span class="hpe-check-box__control">
+
+		</span>
+	</span>
+	<span class="hpe-check-box__label">Media</span>
+</label> <label class="hpe-check-box " for="">
+	<span>
+		<input type="checkbox" id="" tabindex="0" class="hpe-check-box__input" name="" value="on">
+		<span class="hpe-check-box__control">
+
+		</span>
+	</span>
+	<span class="hpe-check-box__label">Application Data</span>
+</label> <label class="hpe-check-box " for="">
+	<span>
+		<input type="checkbox" id="" tabindex="0" class="hpe-check-box__input" name="" value="on">
+		<span class="hpe-check-box__control">
+
+		</span>
+	</span>
+	<span class="hpe-check-box__label">Transaction Data</span>
+</label> <label class="hpe-check-box " for="">
+	<span>
+		<input type="checkbox" id="" tabindex="0" class="hpe-check-box__input" name="" value="on">
+		<span class="hpe-check-box__control">
+
+		</span>
+	</span>
+	<span class="hpe-check-box__label">Server / Database Snapshots</span>
+</label> <label class="hpe-check-box " for="">
+	<span>
+		<input type="checkbox" id="" tabindex="0" class="hpe-check-box__input" name="" value="on">
+		<span class="hpe-check-box__control">
+
+		</span>
+	</span>
+	<span class="hpe-check-box__label">Misc. Files</span>
+</label>
+	</div>
+</section>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;section class&#x3D;&quot;hpe-product-list&quot;&gt;
+	&lt;div class&#x3D;&quot;hpe-product-list__sliders row&quot;&gt;
+		&lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+			&lt;label class&#x3D;&quot;hpe-range__main-label&quot;&gt;What is the price range you need
+            to stay within?&lt;/label&gt;
+
+			&lt;div class&#x3D;&quot;hpe-range&quot;&gt;
+				&lt;div class&#x3D;&quot;hpe-range--handles&quot; data-range-min&#x3D;&quot;1000&quot; data-range-max&#x3D;&quot;100000&quot; data-range-start-min&#x3D;&quot;10000&quot; data-range-start-max&#x3D;&quot;20000&quot;&gt;
+				&lt;/div&gt;
+				&lt;label class&#x3D;&quot;hpe-range__label hpe-range__label--min&quot;&gt;$1,000&lt;/label&gt;
+				&lt;label class&#x3D;&quot;hpe-range__label hpe-range__label--max&quot;&gt;$100k&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+			&lt;label class&#x3D;&quot;hpe-range__main-label&quot;&gt;How quickly is your need growing?&lt;/label&gt;
+			&lt;div class&#x3D;&quot;hpe-range&quot;&gt;
+				&lt;input type&#x3D;&quot;range&quot; min&#x3D;&quot;1&quot; max&#x3D;&quot;7&quot; step&#x3D;&quot;&quot;&gt;
+				&lt;label class&#x3D;&quot;hpe-range__label hpe-range__label--min&quot;&gt;Slowly&lt;/label&gt;
+				&lt;label class&#x3D;&quot;hpe-range__label hpe-range__label--max&quot;&gt;Very Quickly&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;h4 class&#x3D;&quot;hpe-headline hpe-headline--strong&quot;&gt;What do you typically need to serve?&lt;/h4&gt;
+	&lt;div&gt;
+		&lt;label class&#x3D;&quot;hpe-check-box &quot; for&#x3D;&quot;&quot;&gt;
+	&lt;span&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;&quot; tabindex&#x3D;&quot;0&quot; class&#x3D;&quot;hpe-check-box__input&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;on&quot;&gt;
+		&lt;span class&#x3D;&quot;hpe-check-box__control&quot;&gt;
+
+		&lt;/span&gt;
+	&lt;/span&gt;
+	&lt;span class&#x3D;&quot;hpe-check-box__label&quot;&gt;Media&lt;/span&gt;
+&lt;/label&gt; &lt;label class&#x3D;&quot;hpe-check-box &quot; for&#x3D;&quot;&quot;&gt;
+	&lt;span&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;&quot; tabindex&#x3D;&quot;0&quot; class&#x3D;&quot;hpe-check-box__input&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;on&quot;&gt;
+		&lt;span class&#x3D;&quot;hpe-check-box__control&quot;&gt;
+
+		&lt;/span&gt;
+	&lt;/span&gt;
+	&lt;span class&#x3D;&quot;hpe-check-box__label&quot;&gt;Application Data&lt;/span&gt;
+&lt;/label&gt; &lt;label class&#x3D;&quot;hpe-check-box &quot; for&#x3D;&quot;&quot;&gt;
+	&lt;span&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;&quot; tabindex&#x3D;&quot;0&quot; class&#x3D;&quot;hpe-check-box__input&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;on&quot;&gt;
+		&lt;span class&#x3D;&quot;hpe-check-box__control&quot;&gt;
+
+		&lt;/span&gt;
+	&lt;/span&gt;
+	&lt;span class&#x3D;&quot;hpe-check-box__label&quot;&gt;Transaction Data&lt;/span&gt;
+&lt;/label&gt; &lt;label class&#x3D;&quot;hpe-check-box &quot; for&#x3D;&quot;&quot;&gt;
+	&lt;span&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;&quot; tabindex&#x3D;&quot;0&quot; class&#x3D;&quot;hpe-check-box__input&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;on&quot;&gt;
+		&lt;span class&#x3D;&quot;hpe-check-box__control&quot;&gt;
+
+		&lt;/span&gt;
+	&lt;/span&gt;
+	&lt;span class&#x3D;&quot;hpe-check-box__label&quot;&gt;Server / Database Snapshots&lt;/span&gt;
+&lt;/label&gt; &lt;label class&#x3D;&quot;hpe-check-box &quot; for&#x3D;&quot;&quot;&gt;
+	&lt;span&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;&quot; tabindex&#x3D;&quot;0&quot; class&#x3D;&quot;hpe-check-box__input&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;on&quot;&gt;
+		&lt;span class&#x3D;&quot;hpe-check-box__control&quot;&gt;
+
+		&lt;/span&gt;
+	&lt;/span&gt;
+	&lt;span class&#x3D;&quot;hpe-check-box__label&quot;&gt;Misc. Files&lt;/span&gt;
+&lt;/label&gt;
+	&lt;/div&gt;
+&lt;/section&gt;</code></pre>
 </div>
 
 
