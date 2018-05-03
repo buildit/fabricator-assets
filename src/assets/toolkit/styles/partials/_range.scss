@@ -14,6 +14,7 @@ $contrast: 5%;
   height: $track-height;
   cursor: pointer;
   animate: $transition--medium;
+  border: 0;
 }
 
 @mixin thumb() {
@@ -27,8 +28,9 @@ $contrast: 5%;
 
 input[type="range"] {
   -webkit-appearance: none;
-  margin: $thumb-height/2 0;
+  margin: 0;
   width: $track-width;
+  height: $track-height;
 
   &:focus {
     outline: none;
@@ -90,7 +92,6 @@ input[type="range"] {
 
   input {
     display: block;
-    margin: 0;
   }
 
   &__label {
@@ -151,7 +152,6 @@ input[type="range"] {
   height: 100%;
   width: 100%;
   -ms-transform-origin: 0 0;
-  -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
 }
 // Offset direction
@@ -252,19 +252,19 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 // Markings;
 .noUi-marker {
   position: absolute;
-  background: #ccc;
+  background: $light-grey-2;
 }
 .noUi-marker-sub {
-  background: #aaa;
+  background: $light-grey-3;
 }
 .noUi-marker-large {
-  background: #aaa;
+  background: $light-grey-3;
 }
 
 // Horizontal layout;
 .noUi-pips-horizontal {
-  padding: 10px 0;
-  height: 80px;
+  padding: 0.625rem 0;
+  height: 50rem;
   top: 100%;
   left: 0;
   width: 100%;
