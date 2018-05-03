@@ -92,6 +92,24 @@
 	    thisSection.attr("aria-hidden", true);
 	  }
 	});
+	
+	// Initialize Input Range
+	
+	$(".hpe-range--handles").each(function (i, obj) {
+	  const thisElement = $(obj);
+	  const minValue = thisElement.attr("data-range-min") ? parseInt(thisElement.attr("data-range-min"), 10) : 0;
+	  const maxValue = thisElement.attr("data-range-max") ? parseInt(thisElement.attr("data-range-max"), 10) : 100;
+	  const minStart = thisElement.attr("data-range-start-min") ? parseInt(thisElement.attr("data-range-start-min"), 10) : 10;
+	  const maxStart = thisElement.attr("data-range-start-max") ? parseInt(thisElement.attr("data-range-start-max"), 10) : 50;
+	
+	  noUiSlider.create(obj, {
+	    range: {
+	      min: minValue,
+	      max: maxValue
+	    },
+	    start: [minStart, maxStart]
+	  });
+	});
 
 /***/ })
 /******/ ]);

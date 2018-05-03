@@ -1,5 +1,14 @@
 <article class="hpe-product-list hpe-centered-section">
   <div class="row">
+    <div class="col-md-6">
+      {{> form.range-handles min="1000" max="100000" startMin="10000" startMax="20000" label="What is the price range you need
+      to stay within?" labelMin="$1,000" labelMax="$100k" }}
+    </div>
+    <div class="col-md-6">
+      {{> form.range label="How quickly is your need growing?" labelMin="$1,000" labelMax="$100k"}}
+    </div>
+  </div>
+  <div class="row">
     <aside class="col-md-3">
       {{> category-filters}}
     </aside>

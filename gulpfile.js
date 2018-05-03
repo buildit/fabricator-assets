@@ -43,6 +43,7 @@ const config = {
     },
     toolkit: {
       src: "./src/assets/toolkit/scripts/toolkit.js",
+      srcScripts: "./src/assets/toolkit/scripts/**/*",
       dest: "dist/assets/toolkit/scripts",
       watch: "src/assets/toolkit/scripts/**/*"
     }
@@ -113,6 +114,13 @@ gulp.task("scripts", done => {
     }
     done();
   });
+});
+
+// libraries
+gulp.task("libraries", () => {
+  return gulp
+    .src(config.scripts.toolkit.srcScripts, !config.scripts.toolkit.src)
+    .pipe(gulp.dest(config.scripts.toolkit.dest));
 });
 
 // Combine config JSON and Generate Sass Variables
@@ -289,6 +297,7 @@ gulp.task("default", ["clean"], () => {
     "jsonsass",
     "icons",
     "scripts",
+    "libraries",
     "images",
     "fonts",
     "styles",
