@@ -31,5 +31,13 @@
     "price": "$2,752.99",
     "image":
       "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/c05084293.png"
+  },
+  {
+    "name": "HPE ProLiant BL660c Gen9 E5-2609v4 1P 16GB-R Server",
+    "description":
+      "Short description that calls out the approach or features that this individual product uses for this need.",
+    "price": "$2,752.99",
+    "image":
+      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00028987.png"
   }
 ]

@@ -1,2 +1,46 @@
-@import "../../../../../node_modules/owl.carousel/src/scss/owl.carousel";
 @import "../../../../../node_modules/owl.carousel/src/scss/owl.theme.default";
+@import "../../../../../node_modules/owl.carousel/src/scss/owl.carousel";
+
+$button-size: 7.5rem;
+
+.owl-carousel {
+  padding: 0 ($button-size - 1rem);
+
+  .owl-nav {
+    font-size: $button-size - 4rem;
+
+    button.owl-prev,
+    button.owl-next {
+      position: absolute;
+      top: 50%;
+      margin-top: ($button-size / 2) * -1;
+      display: block;
+      padding: 1rem !important;
+      height: $button-size;
+      width: $button-size;
+      display: block;
+      background: transparentize($black, 0.25);
+      color: white;
+    }
+  }
+}
+
+.owl-prev {
+  left: 0;
+  text-align: left;
+
+  .hpe-icon {
+    position: relative;
+    top: -0.5em;
+  }
+}
+
+.owl-next {
+  right: 0;
+  text-align: right;
+
+  .hpe-icon {
+    position: relative;
+    top: 0.5em;
+  }
+}

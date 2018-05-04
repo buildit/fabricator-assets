@@ -94,4 +94,19 @@ $(".hpe-range--handles").each(function(i, obj) {
   });
 });
 
-$(".owl-carousel").owlCarousel();
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  nav: true,
+  dots: false,
+  navText: [
+    `
+    <svg class="hpe-icon">
+      <use xlink:href="#icon-link-previous" />
+    </svg>  
+  `,
+    `
+    <svg class="hpe-icon">
+      <use xlink:href="#icon-link-next" />
+    </svg>`
+  ]
+});
