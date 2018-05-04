@@ -1,0 +1,79 @@
+[
+  {
+    "name": "HPE ProLiant DL360",
+    "description":
+      "Short description that calls out the approach or features that this individual product uses for this need.",
+    "tags": [
+      {
+        "tagline": "Most affordable option",
+        "icon": "money"
+      },
+      {
+        "tagline": "Most affordable option",
+        "icon": "like"
+      }
+    ],
+    "price": "$3,000",
+    "meta": "Leasing options available",
+    "image":
+      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
+  },
+  {
+    "name":
+      "HPE ProLiant MicroServer Gen10 X3216 1P 8GB-U 4LFF NHP SATA 200W PS Entry Server",
+    "description":
+      "Short description that calls out the approach or features that this individual product uses for this need.",
+    "tags": [
+      {
+        "tagline": "Affordable",
+        "icon": "money"
+      },
+      {
+        "tagline": "Easy to manage",
+        "icon": "configure"
+      }
+    ],
+    "price": "$344",
+    "meta": "Leasing options available",
+    "image":
+      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00013739.png"
+  },
+  {
+    "name": "HPE ProLiant DL580 Gen9 rack server",
+    "description":
+      "Short description that calls out the approach or features that this individual product uses for this need.",
+    "tags": [
+      {
+        "tagline": "Great for growth",
+        "icon": "money"
+      },
+      {
+        "tagline": "Faster performance",
+        "icon": "configure"
+      }
+    ],
+    "price": "$43,500",
+    "meta": "Leasing options available",
+    "image":
+      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/c04619573.png"
+  },
+  {
+    "name": "HPE ProLiant BL460c Gen9 E5-2640v3 1P 32GB-R P244br Base Server",
+    "description":
+      "Short description that calls out the approach or features that this individual product uses for this need.",
+    "tags": [
+      {
+        "tagline": "Great for growth",
+        "icon": "money"
+      },
+      {
+        "tagline": "Faster performance",
+        "icon": "configure"
+      }
+    ],
+    "price": "$3,870",
+    "meta": "Leasing options available",
+    "image":
+      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/c05084293.png"
+  }
+]

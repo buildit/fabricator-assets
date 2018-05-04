@@ -1,0 +1,376 @@
+[
+  {
+    "title": "Price",
+    "filters": [
+      {
+        "name": "Under $2,000",
+        "count": 10
+      },
+      {
+        "name": "$2,000 - $4,000",
+        "count": 38
+      },
+      {
+        "name": "$4,000 - $6,000",
+        "count": 10
+      },
+      {
+        "name": "$8,000 - $10,000",
+        "count": 10
+      },
+      {
+        "name": "$10,000 - $12,000",
+        "count": 4
+      },
+      {
+        "name": "$12,000 - $14,000",
+        "count": 4
+      },
+      {
+        "name": "$14,000 - $16,000",
+        "count": 2
+      },
+      {
+        "name": "$16,000 - $18,000",
+        "count": 1
+      },
+      {
+        "name": "$18,000 - $20,000",
+        "count": 2
+      },
+      {
+        "name": "$22,000 - $24,000",
+        "count": 2
+      },
+      {
+        "name": "$24,000 - $26,000",
+        "count": 3
+      },
+      {
+        "name": "$26,000 and up",
+        "count": 1
+      }
+    ],
+    "show": true
+  },
+  {
+    "title": "Processor",
+    "filters": [
+      {
+        "name": "Intel",
+        "count": 27
+      },
+      {
+        "name": "Intel® Xeon® E3-1220 v6",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® E5-2603 v4",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® E5-2609 v4",
+        "count": 2
+      },
+      {
+        "name": "Intel® Xeon® E5-2620 v3",
+        "count": 2
+      },
+      {
+        "name": "Intel® Xeon® E5-2620 v4",
+        "count": 8
+      },
+      {
+        "name": "Intel® Xeon® E5-2630 v3",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® E5-2630 v4",
+        "count": 2
+      },
+      {
+        "name": "Intel® Xeon® E5-2640 v4",
+        "count": 3
+      },
+      {
+        "name": "Intel® Xeon® E5-2643 v4",
+        "count": 2
+      },
+      {
+        "name": "Intel® Xeon® E5-2650 v3",
+        "count": 2
+      },
+      {
+        "name": "Intel® Xeon® E5-2650 v4",
+        "count": 2
+      },
+      {
+        "name": "Intel® Xeon® E5-2660 v4",
+        "count": 3
+      },
+      {
+        "name": "Intel® Xeon® E5-2667 v4",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® E5-2670 v3",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® E5-2680 v4",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® E5-2690 v4",
+        "count": 2
+      },
+      {
+        "name": "Intel® Xeon® E5-2697 v4",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® E5-4610 v4",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® E5-4620 v3",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® E5-4620 v4",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® E5-4627 v4",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® E5-4640 v3",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® E5-4655 v4",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® E5-4667 v4",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® E5-4669 v4",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® E7-4809 v4",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® E7-4850 v4",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® E7-8880 v4",
+        "count": 2
+      },
+      {
+        "name": "Intel® Xeon® Scalable 3104",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® Scalable 3106",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® Scalable 4110",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® Scalable 4112",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® Scalable 4114",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® Scalable 4116",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® Scalable 5115",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® Scalable 5118",
+        "count": 2
+      },
+      {
+        "name": "Intel® Xeon® Scalable 5120",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® Scalable 6130",
+        "count": 2
+      },
+      {
+        "name": "Intel® Xeon® Scalable 6132",
+        "count": 2
+      },
+      {
+        "name": "Intel® Xeon® Scalable 6136",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® Scalable 6148",
+        "count": 1
+      },
+      {
+        "name": "Intel® Xeon® Scalable 6154",
+        "count": 1
+      },
+      {
+        "name": "AMD",
+        "count": 11
+      }
+    ],
+    "show": false
+  },
+  {
+    "title": "Processor Speed",
+    "filters": [
+      {
+        "name": "1.7 GHz",
+        "count": "7"
+      },
+      {
+        "name": "1.8 GHz",
+        "count": "1"
+      },
+      {
+        "name": "1.9 GHz",
+        "count": "1"
+      },
+      {
+        "name": "2 GHz",
+        "count": "5"
+      },
+      {
+        "name": "2.1 GHz",
+        "count": "22"
+      },
+      {
+        "name": "2.2 GHz",
+        "count": "12"
+      },
+      {
+        "name": "2.3 GHz",
+        "count": "10"
+      },
+      {
+        "name": "2.4 GHz",
+        "count": "10"
+      },
+      {
+        "name": "2.5 GHz",
+        "count": "2"
+      },
+      {
+        "name": "2.6 GHz",
+        "count": "7"
+      },
+      {
+        "name": "3 GHz",
+        "count": "5"
+      },
+      {
+        "name": "3.2 GHz",
+        "count": "2"
+      },
+      {
+        "name": "3.4 GHz",
+        "count": "2"
+      },
+      {
+        "name": "3.5 GHz",
+        "count": "1"
+      },
+      {
+        "name": "3.6 GHz",
+        "count": "8"
+      },
+      {
+        "name": "3.7 GHz",
+        "count": "2"
+      }
+    ],
+    "show": false
+  },
+  {
+    "title": "Processors, Maximum",
+    "filters": [
+      {
+        "name": "1",
+        "count": 48
+      },
+      {
+        "name": "2",
+        "count": 46
+      },
+      {
+        "name": "4",
+        "count": 4
+      }
+    ],
+    "show": false
+  },
+  {
+    "title": "Form Factor",
+    "filters": [
+      {
+        "name": "1U",
+        "count": 33
+      },
+      {
+        "name": "2U",
+        "count": 61
+      },
+      {
+        "name": "4U",
+        "count": 8
+      }
+    ],
+    "show": false
+  },
+  {
+    "title": "Configurable",
+    "filters": [
+      {
+        "name": "No",
+        "count": 10
+      },
+      {
+        "name": "Yes",
+        "count": 92
+      }
+    ],
+    "show": false
+  },
+  {
+    "title": "Retailer",
+    "filters": [
+      {
+        "name": "HP Inc.",
+        "count": 34
+      },
+      {
+        "name": "Insight",
+        "count": 94
+      },
+      {
+        "name": "PCM",
+        "count": 79
+      }
+    ],
+    "show": false
+  }
+]
