@@ -35,13 +35,13 @@
     align-items: flex-start;
 
     .hpe-icon {
-      bottom: -.125em;
+      bottom: -0.125em;
     }
   }
 
   &:hover {
     box-shadow: 0 0 0 $double-border $brand;
-    
+
     .hpe-icon {
       transform: translateX(3px);
     }
@@ -62,5 +62,9 @@
     &:hover {
       box-shadow: none;
     }
+  }
+
+  &--brand {
+    color: $brand;
   }
 }

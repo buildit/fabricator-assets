@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="">
+
 <head>
 
 	<meta charset="utf-8">
@@ -8,501 +9,503 @@
 
 	<title></title>
 
-	
+
 
 	<!-- toolkit styles -->
 	<link rel="stylesheet" href="../assets/toolkit/styles/toolkit.css">
+
 	<!-- /toolkit styles -->
-	
+
 	<!-- jQuery -->
-	<script   src="http://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
+
+	<!-- Libraries -->
+	<script src="../assets/toolkit/scripts/nouislider/nouislider.min.js"></script>
+
 </head>
+
 <body>
 	<svg class="svg-icon-lib" aria-hidden="true" style="position: absolute;" data-enabled xmlns="http://www.w3.org/2000/svg">
-	<symbol id="icon-bookmark" viewBox="0 0 24 24"><title>icon-bookmark</title><path d="M5 1v21l7-5 7 5V1z"/></symbol>
-	<symbol id="icon-brand-mark" viewBox="0 0 86 25"><title>icon-brand-mark</title><path fill="none" d="M2.5 2.5h81v20h-81z"/></symbol>
-	<symbol id="icon-cart" viewBox="0 0 24 24"><title>icon-cart</title><path d="M5 5h17l-2 9H7L4 2H0m7 12l1 4h13m-2 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM9 23a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></symbol>
-	<symbol id="icon-contact" viewBox="0 0 24 24"><title>icon-contact</title><path fill="none" d="M1 2h21v16h-8l-8 4v-4H1V2zm5 8h1v1H6v-1zm5 0h1v1h-1v-1zm5 0h1v1h-1v-1z"/></symbol>
-	<symbol id="icon-host-maintenance" viewBox="0 0 24 24"><title>icon-host-maintenance</title><path fill="none" d="M14 23l6-6m1-3a2 2 0 1 0 2 2M17 4h1v1h-1V4zm-7 19H3V1h18v10M3 13h14M3 18h10M3 8h18"/></symbol>
-	<symbol id="icon-language" viewBox="0 0 24 24"><title>icon-language</title><path fill="none" stroke="#000" stroke-width="2" d="M12 23c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11zm0 0c3 0 4-5 4-11S15 1 12 1 8 6 8 12s1 11 4 11zM2 16h20M2 8h20"/></symbol>
-	<symbol id="icon-link-next" viewBox="0 0 47 24"><title>icon-link-next</title><path fill="none" d="M0 11.8h43.2M34.2 1L45 11.8 34.2 22.6"/></symbol>
-	<symbol id="icon-link-previous" viewBox="0 0 47 24"><title>icon-link-previous</title><path fill="none" d="M47 11.8H3.8m9-10.8L2 11.8l10.8 10.8"/></symbol>
-	<symbol id="icon-mail" viewBox="0 0 24 24"><title>icon-mail</title><path fill="none" d="M1 5l11 9 11-9M1 20h22V4H1v16z"/></symbol>
-	<symbol id="icon-next" viewBox="0 0 24 24"><title>icon-next</title><path fill="none" d="M7 2l10 10L7 22"/></symbol>
-	<symbol id="icon-platform-google-color" viewBox="0 0 24 24"><title>icon-platform-google-color</title><g fill="none" fill-rule="nonzero"><path fill="#4285F4" d="M23.52 12.273a13.7 13.7 0 0 0-.219-2.454H12v4.641h6.459a5.52 5.52 0 0 1-2.395 3.621v3.012h3.877c2.27-2.089 3.579-5.166 3.579-8.82z"/><path fill="#34A853" d="M12 24c3.24 0 5.956-1.075 7.941-2.907l-3.877-3.012c-1.075.72-2.45 1.147-4.064 1.147-3.125 0-5.77-2.112-6.715-4.948H1.276v3.11A11.996 11.996 0 0 0 12 24z"/><path fill="#FBBC05" d="M5.285 14.28A7.213 7.213 0 0 1 4.91 12c0-.79.136-1.56.376-2.28V6.61H1.276A11.995 11.995 0 0 0 0 12c0 1.936.464 3.77 1.276 5.39l4.01-3.11z"/><path fill="#EA4335" d="M12 4.773c1.761 0 3.344.606 4.587 1.794l3.442-3.44C17.951 1.188 15.235 0 12 0A11.996 11.996 0 0 0 1.276 6.61l4.01 3.11C6.228 6.884 8.874 4.773 12 4.773z"/></g></symbol>
-	<symbol id="icon-platform-google" viewBox="0 0 24 24"><title>icon-platform-google</title><path fill-rule="evenodd" d="M.032 11.4C.136 5.218 5.85-.196 12.064.01c2.978-.138 5.777 1.151 8.057 2.962a42.826 42.826 0 0 1-3.058 3.151c-2.742-1.885-6.64-2.423-9.382-.246-3.922 2.698-4.1 9.07-.328 11.974 3.668 3.311 10.603 1.667 11.616-3.404-2.298-.034-4.602 0-6.9-.074-.005-1.364-.011-2.727-.005-4.09 3.841-.012 7.683-.018 11.53.011.23 3.208-.196 6.623-2.177 9.276-3 4.2-9.025 5.425-13.725 3.626C2.975 21.41-.365 16.453.032 11.4"/></symbol>
-	<symbol id="icon-previous" viewBox="0 0 24 24"><title>icon-previous</title><path fill="none" d="M17 2L7 12l10 10"/></symbol>
-	<symbol id="icon-scorecard" viewBox="0 0 24 24"><title>icon-scorecard</title><path fill="none" d="M9 18v-6m3 6v-5m3 5v-8m2-7h4v20H3V3h4m0-2h10v4H7V1z"/></symbol>
-	<symbol id="icon-search" viewBox="0 0 24 24"><title>icon-search</title><path fill="none" d="M15 15l7 7-7-7zm-5.5 2a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15z"/></symbol>
-	<symbol id="icon-social-facebook" viewBox="0 0 24 24"><title>icon-social-facebook</title><path fill-rule="evenodd" d="M23 0H1a1 1 0 0 0-1 1v22a1 1 0 0 0 1 1h11.75v-9h-3v-3.75h3v-3c0-3.1 1.963-4.625 4.728-4.625 1.324 0 2.463.099 2.794.142v3.24l-1.917.001c-1.504 0-1.855.715-1.855 1.763v2.479h3.75L19.5 15h-3l.06 9H23a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1"/></symbol>
-	<symbol id="icon-social-linkedin-option" viewBox="0 0 24 24"><title>icon-social-linkedin-option</title><path fill-rule="evenodd" d="M22.037 22h-4.152v-6.496c0-1.55-.026-3.542-2.157-3.542-2.16 0-2.49 1.688-2.49 3.43V22H9.09V8.64h3.98v1.827h.058c.553-1.05 1.908-2.158 3.928-2.158 4.204 0 4.98 2.766 4.98 6.364V22zM4.409 6.816A2.407 2.407 0 0 1 2 4.407a2.408 2.408 0 1 1 2.41 2.408zM6.486 22H2.33V8.64h4.156V22z"/></symbol>
-	<symbol id="icon-social-linkedin" viewBox="0 0 24 24"><title>icon-social-linkedin</title><path fill-rule="evenodd" d="M20.452 20.45h-3.56v-5.57c0-1.328-.022-3.036-1.85-3.036-1.851 0-2.134 1.447-2.134 2.942v5.664H9.352V8.997h3.413v1.566h.049c.475-.9 1.636-1.85 3.367-1.85 3.605 0 4.27 2.371 4.27 5.456v6.281zM5.339 7.433a2.063 2.063 0 1 1 0-4.13 2.065 2.065 0 0 1 0 4.13zM7.12 20.45H3.558V8.997H7.12V20.45zM23 0H1a1 1 0 0 0-1 1v22a1 1 0 0 0 1 1h22a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></symbol>
-	<symbol id="icon-social-twitter" viewBox="0 0 24 24"><title>icon-social-twitter</title><path fill-rule="evenodd" d="M24 4.309a9.83 9.83 0 0 1-2.828.775 4.94 4.94 0 0 0 2.165-2.724 9.865 9.865 0 0 1-3.127 1.196 4.925 4.925 0 0 0-8.39 4.49A13.974 13.974 0 0 1 1.671 2.9a4.902 4.902 0 0 0-.667 2.476c0 1.708.869 3.216 2.191 4.099A4.936 4.936 0 0 1 .964 8.86v.06a4.926 4.926 0 0 0 3.95 4.829 4.964 4.964 0 0 1-2.224.085 4.93 4.93 0 0 0 4.6 3.42 9.886 9.886 0 0 1-6.115 2.107c-.398 0-.79-.023-1.175-.068a13.945 13.945 0 0 0 7.548 2.212c9.057 0 14.009-7.503 14.009-14.01 0-.213-.005-.425-.014-.636A10.012 10.012 0 0 0 24 4.309" class="hpe-icon--filled"/></symbol>
-	<symbol id="icon-social-youtube" viewBox="0 0 24 24"><title>icon-social-youtube</title><path fill-rule="evenodd" d="M9.522 15.553V8.81l6.484 3.383-6.484 3.36zM23.76 7.641s-.235-1.654-.954-2.382c-.913-.956-1.936-.96-2.405-1.016C17.043 4 12.005 4 12.005 4h-.01s-5.038 0-8.396.243c-.47.055-1.492.06-2.406 1.016C.474 5.987.24 7.641.24 7.641S0 9.584 0 11.525v1.822c0 1.942.24 3.884.24 3.884s.234 1.653.953 2.382c.914.956 2.113.926 2.647 1.026 1.92.184 8.16.241 8.16.241s5.043-.007 8.401-.25c.47-.056 1.492-.061 2.405-1.017.72-.729.954-2.382.954-2.382s.24-1.942.24-3.885v-1.82c0-1.942-.24-3.885-.24-3.885z" class="hpe-icon--filled"/></symbol>
-	<symbol id="icon-user" viewBox="0 0 24 24"><title>icon-user</title><path d="M8 24v-5m8 5v-5M3 24v-5c0-4.97 4.03-8 9-8s9 3.03 9 8v5m-9-13a5 5 0 1 0 0-10 5 5 0 0 0 0 10z"/></symbol>
-	<symbol id="icon-virtual-machine" viewBox="0 0 24 24"><title>icon-virtual-machine</title><path fill="none" d="M1 23h13V10H1v13zm9-4h13V6H10v13zm-5-5h13V1H5v13z"/></symbol>
-	</svg>
-
-	<div class="container-fluid">
+<symbol id="icon-bookmark" viewBox="0 0 24 24"><title>icon-bookmark</title><path d="M5 1v21l7-5 7 5V1z"/></symbol>
+<symbol id="icon-brand-mark" viewBox="0 0 86 25"><title>icon-brand-mark</title><path fill="none" d="M2.5 2.5h81v20h-81z"/></symbol>
+<symbol id="icon-caret-down" viewBox="0 0 24 24"><title>icon-caret-down</title><path fill="none" d="M22 8L12 20 2 8z"/></symbol>
+<symbol id="icon-cart" viewBox="0 0 24 24"><title>icon-cart</title><path d="M5 5h17l-2 9H7L4 2H0m7 12l1 4h13m-2 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM9 23a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></symbol>
+<symbol id="icon-configure" viewBox="0 0 24 24"><title>icon-configure</title><path fill="none" d="M16 15c4.009-.065 7-3.033 7-7 0-3.012-.997-2.015-2-1-.991.98-3 3-3 3l-4-4s2.02-2.009 3-3c1.015-1.003 1.015-2-1-2-3.967 0-6.947 2.991-7 7 .042.976 0 3 0 3-1.885 1.897-4.34 4.353-6 6-2.932 2.944 1.056 6.932 4 4 1.65-1.662 4.113-4.125 6-6 0 0 2.024-.042 3 0z"/></symbol>
+<symbol id="icon-contact" viewBox="0 0 24 24"><title>icon-contact</title><path fill="none" d="M1 2h21v16h-8l-8 4v-4H1V2zm5 8h1v1H6v-1zm5 0h1v1h-1v-1zm5 0h1v1h-1v-1z"/></symbol>
+<symbol id="icon-host-maintenance" viewBox="0 0 24 24"><title>icon-host-maintenance</title><path fill="none" d="M14 23l6-6m1-3a2 2 0 1 0 2 2M17 4h1v1h-1V4zm-7 19H3V1h18v10M3 13h14M3 18h10M3 8h18"/></symbol>
+<symbol id="icon-language" viewBox="0 0 24 24"><title>icon-language</title><path fill="none" stroke="#000" stroke-width="2" d="M12 23c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11zm0 0c3 0 4-5 4-11S15 1 12 1 8 6 8 12s1 11 4 11zM2 16h20M2 8h20"/></symbol>
+<symbol id="icon-like" viewBox="0 0 24 24"><title>icon-like</title><path fill="none" d="M1 23h19c2 0 3-1 3-3V10h-7V4c0-2-1-3-3-3h-2s-.016 6-.016 7.326C10.984 9.652 10 11 8 11H1v12zm5 0V11"/></symbol>
+<symbol id="icon-link-next" viewBox="0 0 47 24"><title>icon-link-next</title><path fill="none" d="M0 11.8h43.2M34.2 1L45 11.8 34.2 22.6"/></symbol>
+<symbol id="icon-link-previous" viewBox="0 0 47 24"><title>icon-link-previous</title><path fill="none" d="M47 11.8H3.8m9-10.8L2 11.8l10.8 10.8"/></symbol>
+<symbol id="icon-mail" viewBox="0 0 24 24"><title>icon-mail</title><path fill="none" d="M1 5l11 9 11-9M1 20h22V4H1v16z"/></symbol>
+<symbol id="icon-money" viewBox="0 0 24 24"><title>icon-money</title><path fill="none" d="M16 16c0-1.105-3.134-2-7-2s-7 .895-7 2 3.134 2 7 2 7-.895 7-2zM2 16v4.937C2 22.077 5.134 23 9 23s7-.924 7-2.063V16M9 5c-4.418 0-8 .895-8 2s3.582 2 8 2M1 7v5c0 1.013 3.582 2 8 2M23 4c0-1.105-3.1-2-6.923-2-3.824 0-6.923.895-6.923 2s3.1 2 6.923 2S23 5.105 23 4zm-7 12c3.824 0 7-.987 7-2V4M9.154 4v10.166M9 9c0 1.013 3.253 2 7.077 2C19.9 11 23 10.013 23 9"/></symbol>
+<symbol id="icon-next" viewBox="0 0 24 24"><title>icon-next</title><path fill="none" d="M7 2l10 10L7 22"/></symbol>
+<symbol id="icon-platform-google-color" viewBox="0 0 24 24"><title>icon-platform-google-color</title><g fill="none" fill-rule="nonzero"><path fill="#4285F4" d="M23.52 12.273a13.7 13.7 0 0 0-.219-2.454H12v4.641h6.459a5.52 5.52 0 0 1-2.395 3.621v3.012h3.877c2.27-2.089 3.579-5.166 3.579-8.82z"/><path fill="#34A853" d="M12 24c3.24 0 5.956-1.075 7.941-2.907l-3.877-3.012c-1.075.72-2.45 1.147-4.064 1.147-3.125 0-5.77-2.112-6.715-4.948H1.276v3.11A11.996 11.996 0 0 0 12 24z"/><path fill="#FBBC05" d="M5.285 14.28A7.213 7.213 0 0 1 4.91 12c0-.79.136-1.56.376-2.28V6.61H1.276A11.995 11.995 0 0 0 0 12c0 1.936.464 3.77 1.276 5.39l4.01-3.11z"/><path fill="#EA4335" d="M12 4.773c1.761 0 3.344.606 4.587 1.794l3.442-3.44C17.951 1.188 15.235 0 12 0A11.996 11.996 0 0 0 1.276 6.61l4.01 3.11C6.228 6.884 8.874 4.773 12 4.773z"/></g></symbol>
+<symbol id="icon-platform-google" viewBox="0 0 24 24"><title>icon-platform-google</title><path fill-rule="evenodd" d="M.032 11.4C.136 5.218 5.85-.196 12.064.01c2.978-.138 5.777 1.151 8.057 2.962a42.826 42.826 0 0 1-3.058 3.151c-2.742-1.885-6.64-2.423-9.382-.246-3.922 2.698-4.1 9.07-.328 11.974 3.668 3.311 10.603 1.667 11.616-3.404-2.298-.034-4.602 0-6.9-.074-.005-1.364-.011-2.727-.005-4.09 3.841-.012 7.683-.018 11.53.011.23 3.208-.196 6.623-2.177 9.276-3 4.2-9.025 5.425-13.725 3.626C2.975 21.41-.365 16.453.032 11.4"/></symbol>
+<symbol id="icon-previous" viewBox="0 0 24 24"><title>icon-previous</title><path fill="none" d="M17 2L7 12l10 10"/></symbol>
+<symbol id="icon-scorecard" viewBox="0 0 24 24"><title>icon-scorecard</title><path fill="none" d="M9 18v-6m3 6v-5m3 5v-8m2-7h4v20H3V3h4m0-2h10v4H7V1z"/></symbol>
+<symbol id="icon-search" viewBox="0 0 24 24"><title>icon-search</title><path fill="none" d="M15 15l7 7-7-7zm-5.5 2a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15z"/></symbol>
+<symbol id="icon-social-facebook" viewBox="0 0 24 24"><title>icon-social-facebook</title><path fill-rule="evenodd" d="M23 0H1a1 1 0 0 0-1 1v22a1 1 0 0 0 1 1h11.75v-9h-3v-3.75h3v-3c0-3.1 1.963-4.625 4.728-4.625 1.324 0 2.463.099 2.794.142v3.24l-1.917.001c-1.504 0-1.855.715-1.855 1.763v2.479h3.75L19.5 15h-3l.06 9H23a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1"/></symbol>
+<symbol id="icon-social-linkedin-option" viewBox="0 0 24 24"><title>icon-social-linkedin-option</title><path fill-rule="evenodd" d="M22.037 22h-4.152v-6.496c0-1.55-.026-3.542-2.157-3.542-2.16 0-2.49 1.688-2.49 3.43V22H9.09V8.64h3.98v1.827h.058c.553-1.05 1.908-2.158 3.928-2.158 4.204 0 4.98 2.766 4.98 6.364V22zM4.409 6.816A2.407 2.407 0 0 1 2 4.407a2.408 2.408 0 1 1 2.41 2.408zM6.486 22H2.33V8.64h4.156V22z"/></symbol>
+<symbol id="icon-social-linkedin" viewBox="0 0 24 24"><title>icon-social-linkedin</title><path fill-rule="evenodd" d="M20.452 20.45h-3.56v-5.57c0-1.328-.022-3.036-1.85-3.036-1.851 0-2.134 1.447-2.134 2.942v5.664H9.352V8.997h3.413v1.566h.049c.475-.9 1.636-1.85 3.367-1.85 3.605 0 4.27 2.371 4.27 5.456v6.281zM5.339 7.433a2.063 2.063 0 1 1 0-4.13 2.065 2.065 0 0 1 0 4.13zM7.12 20.45H3.558V8.997H7.12V20.45zM23 0H1a1 1 0 0 0-1 1v22a1 1 0 0 0 1 1h22a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></symbol>
+<symbol id="icon-social-twitter" viewBox="0 0 24 24"><title>icon-social-twitter</title><path fill-rule="evenodd" d="M24 4.309a9.83 9.83 0 0 1-2.828.775 4.94 4.94 0 0 0 2.165-2.724 9.865 9.865 0 0 1-3.127 1.196 4.925 4.925 0 0 0-8.39 4.49A13.974 13.974 0 0 1 1.671 2.9a4.902 4.902 0 0 0-.667 2.476c0 1.708.869 3.216 2.191 4.099A4.936 4.936 0 0 1 .964 8.86v.06a4.926 4.926 0 0 0 3.95 4.829 4.964 4.964 0 0 1-2.224.085 4.93 4.93 0 0 0 4.6 3.42 9.886 9.886 0 0 1-6.115 2.107c-.398 0-.79-.023-1.175-.068a13.945 13.945 0 0 0 7.548 2.212c9.057 0 14.009-7.503 14.009-14.01 0-.213-.005-.425-.014-.636A10.012 10.012 0 0 0 24 4.309" class="hpe-icon--filled"/></symbol>
+<symbol id="icon-social-youtube" viewBox="0 0 24 24"><title>icon-social-youtube</title><path fill-rule="evenodd" d="M9.522 15.553V8.81l6.484 3.383-6.484 3.36zM23.76 7.641s-.235-1.654-.954-2.382c-.913-.956-1.936-.96-2.405-1.016C17.043 4 12.005 4 12.005 4h-.01s-5.038 0-8.396.243c-.47.055-1.492.06-2.406 1.016C.474 5.987.24 7.641.24 7.641S0 9.584 0 11.525v1.822c0 1.942.24 3.884.24 3.884s.234 1.653.953 2.382c.914.956 2.113.926 2.647 1.026 1.92.184 8.16.241 8.16.241s5.043-.007 8.401-.25c.47-.056 1.492-.061 2.405-1.017.72-.729.954-2.382.954-2.382s.24-1.942.24-3.885v-1.82c0-1.942-.24-3.885-.24-3.885z" class="hpe-icon--filled"/></symbol>
+<symbol id="icon-user" viewBox="0 0 24 24"><title>icon-user</title><path d="M8 24v-5m8 5v-5M3 24v-5c0-4.97 4.03-8 9-8s9 3.03 9 8v5m-9-13a5 5 0 1 0 0-10 5 5 0 0 0 0 10z"/></symbol>
+<symbol id="icon-virtual-machine" viewBox="0 0 24 24"><title>icon-virtual-machine</title><path fill="none" d="M1 23h13V10H1v13zm9-4h13V6H10v13zm-5-5h13V1H5v13z"/></symbol>
+</svg>  <div class="container-fluid">
 
     <header class="hpe-header hpe-centered-section row">
-      <section class="hpe-header__search">
-        <input type="search" class="hpe-header__search-input" placeholder="Search HPE Marketplace">
-      </section>
-      <div class="hpe-logo"><svg xmlns="http://www.w3.org/2000/svg" width="126" height="48" viewBox="0 0 126 48">
-      <g fill="none" fill-rule="evenodd">
-        <path fill="#333" d="M0,29 L0,17 L3,17 L3,22 L8,22 L8,17 L11,17 L11,29 L8,29 L8,24 L3,24 L3,29 L0,29 Z M16.5,29 C13.5,29 12,27 12,24.5 C12,21.5 14,20 16,20 C19,20 20,22.5 20,24 L20,25 L14.5,25 C14.5,26 15,27 16.5,27 C18,27 18.5,26 18.5,26 L19.5,27.5 C19.5,27.5 18.5,29 16.5,29 Z M17.5,23.5 C17.5,23 17.25,22 16,22 C14.75,22 14.5,23 14.5,23.5 L17.5,23.5 Z M25,28.5 L23,28.5 L20,20 L22.5,20 L24,25 L25.5,20 L27.5,20 L29,25 L30.5,20 L33,20 L30,28.5 L28,28.5 L26.5,24 L25,28.5 Z M34,25.5 L34,17 L37,17 C37,17 37,25 37,26 C37,27 38.5,27 39,26.5 L39,28.5 C39,28.5 38,29 37,29 C34.9791644,29 34,28 34,25.5 Z M45.5,23.5 C45.5,23 45.25,22 44,22 C42.75,22 42.5,23 42.5,23.5 L45.5,23.5 Z M44.5,29 C41.5,29 40,27 40,24.5 C40,21.5 42,20 44,20 C47,20 48,22.5 48,24 L48,25 L42.5,25 C42.5,26 43,27 44.5,27 C46,27 46.5,26 46.5,26 L47.5,27.5 C47.5,27.5 46.5,29 44.5,29 Z M61,20 L61,22 L59,22 L59,26 C59,27 60.5,27 61,26.5 L61,28.5 C61,28.5 60,29 59,29 C57,29 56,28 56,25.5 L56,22 L53,22 L53,26 C53,27 54.5,27 55,26.5 L55,28.5 C55,28.5 54,29 53,29 C51,29 50,28 50,25.5 L50,22 L49,22 L49,20 L50,20 L50,18 L53,18 L53,20 L56,20 L56,18 L59,18 L59,20 L61,20 Z M70,25 C70,25 68,25 68,25 L68.0000001,29 L65,29 L65,17 L70,17 C73.5,17 75,19 75,21 C75,23 73.5,25 70,25 Z M72,21 C72,20 71.5,19.5 69.5,19.5 L68,19.5 L68,22.5 L69.5,22.5 C71.5,22.5 72,22 72,21 Z M78.5,29 C76.4999999,29 75,28 75,26 C75,24 76.5,23 78.5,23 C79.5,23 80.5,23.5 80.5,23.5 C80.5,22.5 80,22 78.5,22 C77,22 76.5,22.5 76.5,22.5 L76,21 C76.5,20.5 77.5,20 78.5,20 C81,20 83,20.5 83,23.5 L82.9999999,29.0000001 L80.9999999,29.0000001 L80.5,28.5 C80.5,28.5 79.5,29 78.5,29 Z M80.5,25.5 C80.5,25.5 80,25 79,25 C78,25 77.5,25.5 77.5,26 C77.5,26.5 78,27 79,27 C80,27 80.5,26.5 80.5,25.5 Z M91,23 C91,23 90,22 89,22 C88,22 86.8571429,22.5 86.8571429,24.5 C86.8571429,26.5 88,27 89,27 C90,27 91,26 91,26 L92,27.5 C92,27.5 91,29 88.5714288,29 C85.5,29 84,27 84,24.5 C84,21.5 86,20 88.5714286,20 C91,20 92,21.5 92,21.5 L91,23 Z M96,25 L96,29 L93.5,29 L93.5,17 L96,17 L96,24 L99,20 L102,20 L98.5,24.5 L102,29 L99,29 L96,25 Z M107.5,25.5 C107.5,25.5 107,25 106,25 C105,25 104.5,25.5 104.5,26 C104.5,26.5 105,27 106,27 C107,27 107.5,26.5 107.5,25.5 Z M105.5,29 C103.5,29 102,28 102,26 C102,24 103.5,23 105.5,23 C106.5,23 107.5,23.5 107.5,23.5 C107.5,22.5 107,22 105.5,22 C104,22 103.5,22.5 103.5,22.5 L103,21 C103.5,20.5 104.5,20 105.5,20 C108,20 110,20.5 110,23.5 L110,29.0000001 L108,29.0000001 L107.5,28.5 C107.5,28.5 106.5,29 105.5,29 Z M114,21.5 C114.5,20.5 115,20 116,20 C116.5,20 117,20.5 117,20.5 L116.5,23 C116.5,23 116,22.5 115.5,22.5 C114.5,22.5 114,23.1685183 114,24 L114,29 L111.5,29 L111.5,20 L114,20 L114,21.5 Z M121,29 C119,29 117.5,27.5 117.5,24.5 C117.5,21.5 119,20 121,20 C122.5,20 123.5,21 123.5,21 L123.5,17.5 L126,17.5 L126,29 L123.5,29 L123.5,28 C123.5,28 122.5,29 121,29 Z M122.5,26.4999999 C123.5,25.9999999 123.5,24.9999999 123.5,24.4999999 C123.5,23.9999999 123.5,23 122.5,22.5 C121.5,22 120,22.5 120,24.5 C120,26.5 121.5,26.9999999 122.5,26.4999999 Z M7,33 L7,35 L2,35 L2,38 L6.5,38 L6.5,40 L2,40 L2,43 L7,43 L7,44.9999998 L0,45 L0,33 L7,33 Z M17,39.5 L17,45 L15,45 L15,39.5 C15,38 14.0298955,37.5 13,37.5 C12,37.5 11,38.5 11,40.5 L11,45 L9,45 L9,36 L11,36 L11,37 C11,37 12,36 13.5,36 C15.5,36 17,37 17,39.5 Z M21,36 L23,36 L23,38 L21,38 L21,42.5 C21,43.5 22.5,43.5 23,43 L23,44.5 C23,44.5 22.5,45 21.5,45 C21,45 19,45 19,42 L19,38 L18,38 L18,36 L19,36 L19,34 L21.0000001,34 L21,36 Z M24,40.5 C24,38 25,36 28,36 C30.5,36 32,38 32,40 L32,41 L26,41 C26,43 27.5,43.5 28.5,43.5 C30,43.5 30.5,42.5 30.5,42.5 L31.5,43.5 C31.5,43.5 30.5,45 28.5,45 C25.5,45 24,43 24,40.5 Z M30,39.5 C30,38 29,37.5 28,37.5 C26.5,37.5 26,38.5 26,39.5 L30,39.5 Z M38,36.0000001 C38.5,36.0000001 39,36.5 39,36.5 L39,38.4999999 C39,38.4999999 38.5,38 37.5,38 C36.5,38 36,38.5 36,40 L36,45.0000001 L34,45.0000001 L34,36.0000001 L36,36.0000001 L36,37.5000001 C36,37.5000001 36.5,36.0000001 38,36.0000001 Z M48.5,40.5 C48.5,43 47.5,45 45,45 C43,45 42,43.5 42,43.5 L42,48 L40,48 L40,36 L42,36 L42,37.5 C42,37.5 43,36 45,36 C47.5,36 48.5,38 48.5,40.5 Z M42,41 C42,42 42.5,43.5 44.5,43.5 C45.5,43.5 46.5,42.5 46.5,40.5 C46.5,38.5 45.5,37.5 44.5,37.5 C43,37.5 42,38.5 42,40 C42,40 42,41 42,41 Z M54,36.0000001 C54.5,36.0000001 55,36.5 55,36.5 L55,38.4999999 C55,38.4999999 54.5,38 53.5,38 C52.5,38 52,38.5 52,40 L52,45.0000001 L50,45.0000001 L50,36.0000001 L52,36.0000001 L52,37.5000001 C52,37.5000001 52.5,36.0000001 54,36.0000001 Z M57,36 L59,36 L59,45 L57,45 L57,36 Z M58,33 C59,33 59,33 59,34.0002128 C59,35.0004257 59,35 58,35 C57,35 57,35.0004257 57,34.0002128 C57,33 57,33 58,33 Z M67.5,37 C67.5,37 66,36 64.5,36 C62.5,36 61,37 61,38.5 C61,41.5 66,40.5 66,42.5 C66,43 65.5,43.5 64,43.5 C62.5,43.5 61.5,43 61.5,43 L61,44 C61,44 62.5,45 64.5,45 C66.5,45 68,44 68,42.5 C68,39.5 63,40 63,38.5 C63,38 63,37.5 65,37.5 C66,37.5 67,38 67,38 L67.5,37 Z M75,39.5 C75,38 74,37.5 73,37.5 C71.5,37.5 71,38.5 71,39.5 L75,39.5 Z M69,40.5 C69,38 70,36 73,36 C75.5,36 77,38 77,40 L77,41 L71,41 C71,43 72.5,43.5 73.5,43.5 C75,43.5 75.5,42.5 75.5,42.5 L76.5,43.5 C76.5,43.5 75.5,45 73.5,45 C70.5,45 69,43 69,40.5 Z"/>
-        <path fill="#01A982" d="M0,12 L40,12 L40,0 L0,0 L0,12 Z M3,3 L37,3 L37,9 L3,9 L3,3 Z"/>
-      </g>
-    </svg></div>
-      <nav class="hpe-nav">
-        <div class="hpe-nav__main">
-          <a class="hpe-nav__link" href="#">Products & Solutions</a>
-          <a class="hpe-nav__link" href="#">Services</a>
-          <a class="hpe-nav__link" href="#">Support</a>
-          <a class="hpe-nav__link" href="#">Insights</a>
-          <a class="hpe-nav__link" href="#">Shop</a>
-          <a class="hpe-nav__link hpe-nav__responsive" href="#">
-            <span class="hpe-responsive--large">Contact</span>
-            <span class="hpe-responsive--small hpe-nav__link--icon">  <svg class="hpe-icon">
-      <use xlink:href="#icon-contact"></use>
-    </svg></span>
-          </a>
-        </div>
-        <div class="hpe-nav__tools">
-          <button class="hpe-nav__link hpe-nav__link--icon hpe-nav__search">
+  <section class="hpe-header__search">
+    <input type="search" class="hpe-header__search-input" placeholder="Search HPE Marketplace">
+  </section>
+  <div class="hpe-logo"><svg xmlns="http://www.w3.org/2000/svg" width="126" height="48" viewBox="0 0 126 48">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#333" d="M0,29 L0,17 L3,17 L3,22 L8,22 L8,17 L11,17 L11,29 L8,29 L8,24 L3,24 L3,29 L0,29 Z M16.5,29 C13.5,29 12,27 12,24.5 C12,21.5 14,20 16,20 C19,20 20,22.5 20,24 L20,25 L14.5,25 C14.5,26 15,27 16.5,27 C18,27 18.5,26 18.5,26 L19.5,27.5 C19.5,27.5 18.5,29 16.5,29 Z M17.5,23.5 C17.5,23 17.25,22 16,22 C14.75,22 14.5,23 14.5,23.5 L17.5,23.5 Z M25,28.5 L23,28.5 L20,20 L22.5,20 L24,25 L25.5,20 L27.5,20 L29,25 L30.5,20 L33,20 L30,28.5 L28,28.5 L26.5,24 L25,28.5 Z M34,25.5 L34,17 L37,17 C37,17 37,25 37,26 C37,27 38.5,27 39,26.5 L39,28.5 C39,28.5 38,29 37,29 C34.9791644,29 34,28 34,25.5 Z M45.5,23.5 C45.5,23 45.25,22 44,22 C42.75,22 42.5,23 42.5,23.5 L45.5,23.5 Z M44.5,29 C41.5,29 40,27 40,24.5 C40,21.5 42,20 44,20 C47,20 48,22.5 48,24 L48,25 L42.5,25 C42.5,26 43,27 44.5,27 C46,27 46.5,26 46.5,26 L47.5,27.5 C47.5,27.5 46.5,29 44.5,29 Z M61,20 L61,22 L59,22 L59,26 C59,27 60.5,27 61,26.5 L61,28.5 C61,28.5 60,29 59,29 C57,29 56,28 56,25.5 L56,22 L53,22 L53,26 C53,27 54.5,27 55,26.5 L55,28.5 C55,28.5 54,29 53,29 C51,29 50,28 50,25.5 L50,22 L49,22 L49,20 L50,20 L50,18 L53,18 L53,20 L56,20 L56,18 L59,18 L59,20 L61,20 Z M70,25 C70,25 68,25 68,25 L68.0000001,29 L65,29 L65,17 L70,17 C73.5,17 75,19 75,21 C75,23 73.5,25 70,25 Z M72,21 C72,20 71.5,19.5 69.5,19.5 L68,19.5 L68,22.5 L69.5,22.5 C71.5,22.5 72,22 72,21 Z M78.5,29 C76.4999999,29 75,28 75,26 C75,24 76.5,23 78.5,23 C79.5,23 80.5,23.5 80.5,23.5 C80.5,22.5 80,22 78.5,22 C77,22 76.5,22.5 76.5,22.5 L76,21 C76.5,20.5 77.5,20 78.5,20 C81,20 83,20.5 83,23.5 L82.9999999,29.0000001 L80.9999999,29.0000001 L80.5,28.5 C80.5,28.5 79.5,29 78.5,29 Z M80.5,25.5 C80.5,25.5 80,25 79,25 C78,25 77.5,25.5 77.5,26 C77.5,26.5 78,27 79,27 C80,27 80.5,26.5 80.5,25.5 Z M91,23 C91,23 90,22 89,22 C88,22 86.8571429,22.5 86.8571429,24.5 C86.8571429,26.5 88,27 89,27 C90,27 91,26 91,26 L92,27.5 C92,27.5 91,29 88.5714288,29 C85.5,29 84,27 84,24.5 C84,21.5 86,20 88.5714286,20 C91,20 92,21.5 92,21.5 L91,23 Z M96,25 L96,29 L93.5,29 L93.5,17 L96,17 L96,24 L99,20 L102,20 L98.5,24.5 L102,29 L99,29 L96,25 Z M107.5,25.5 C107.5,25.5 107,25 106,25 C105,25 104.5,25.5 104.5,26 C104.5,26.5 105,27 106,27 C107,27 107.5,26.5 107.5,25.5 Z M105.5,29 C103.5,29 102,28 102,26 C102,24 103.5,23 105.5,23 C106.5,23 107.5,23.5 107.5,23.5 C107.5,22.5 107,22 105.5,22 C104,22 103.5,22.5 103.5,22.5 L103,21 C103.5,20.5 104.5,20 105.5,20 C108,20 110,20.5 110,23.5 L110,29.0000001 L108,29.0000001 L107.5,28.5 C107.5,28.5 106.5,29 105.5,29 Z M114,21.5 C114.5,20.5 115,20 116,20 C116.5,20 117,20.5 117,20.5 L116.5,23 C116.5,23 116,22.5 115.5,22.5 C114.5,22.5 114,23.1685183 114,24 L114,29 L111.5,29 L111.5,20 L114,20 L114,21.5 Z M121,29 C119,29 117.5,27.5 117.5,24.5 C117.5,21.5 119,20 121,20 C122.5,20 123.5,21 123.5,21 L123.5,17.5 L126,17.5 L126,29 L123.5,29 L123.5,28 C123.5,28 122.5,29 121,29 Z M122.5,26.4999999 C123.5,25.9999999 123.5,24.9999999 123.5,24.4999999 C123.5,23.9999999 123.5,23 122.5,22.5 C121.5,22 120,22.5 120,24.5 C120,26.5 121.5,26.9999999 122.5,26.4999999 Z M7,33 L7,35 L2,35 L2,38 L6.5,38 L6.5,40 L2,40 L2,43 L7,43 L7,44.9999998 L0,45 L0,33 L7,33 Z M17,39.5 L17,45 L15,45 L15,39.5 C15,38 14.0298955,37.5 13,37.5 C12,37.5 11,38.5 11,40.5 L11,45 L9,45 L9,36 L11,36 L11,37 C11,37 12,36 13.5,36 C15.5,36 17,37 17,39.5 Z M21,36 L23,36 L23,38 L21,38 L21,42.5 C21,43.5 22.5,43.5 23,43 L23,44.5 C23,44.5 22.5,45 21.5,45 C21,45 19,45 19,42 L19,38 L18,38 L18,36 L19,36 L19,34 L21.0000001,34 L21,36 Z M24,40.5 C24,38 25,36 28,36 C30.5,36 32,38 32,40 L32,41 L26,41 C26,43 27.5,43.5 28.5,43.5 C30,43.5 30.5,42.5 30.5,42.5 L31.5,43.5 C31.5,43.5 30.5,45 28.5,45 C25.5,45 24,43 24,40.5 Z M30,39.5 C30,38 29,37.5 28,37.5 C26.5,37.5 26,38.5 26,39.5 L30,39.5 Z M38,36.0000001 C38.5,36.0000001 39,36.5 39,36.5 L39,38.4999999 C39,38.4999999 38.5,38 37.5,38 C36.5,38 36,38.5 36,40 L36,45.0000001 L34,45.0000001 L34,36.0000001 L36,36.0000001 L36,37.5000001 C36,37.5000001 36.5,36.0000001 38,36.0000001 Z M48.5,40.5 C48.5,43 47.5,45 45,45 C43,45 42,43.5 42,43.5 L42,48 L40,48 L40,36 L42,36 L42,37.5 C42,37.5 43,36 45,36 C47.5,36 48.5,38 48.5,40.5 Z M42,41 C42,42 42.5,43.5 44.5,43.5 C45.5,43.5 46.5,42.5 46.5,40.5 C46.5,38.5 45.5,37.5 44.5,37.5 C43,37.5 42,38.5 42,40 C42,40 42,41 42,41 Z M54,36.0000001 C54.5,36.0000001 55,36.5 55,36.5 L55,38.4999999 C55,38.4999999 54.5,38 53.5,38 C52.5,38 52,38.5 52,40 L52,45.0000001 L50,45.0000001 L50,36.0000001 L52,36.0000001 L52,37.5000001 C52,37.5000001 52.5,36.0000001 54,36.0000001 Z M57,36 L59,36 L59,45 L57,45 L57,36 Z M58,33 C59,33 59,33 59,34.0002128 C59,35.0004257 59,35 58,35 C57,35 57,35.0004257 57,34.0002128 C57,33 57,33 58,33 Z M67.5,37 C67.5,37 66,36 64.5,36 C62.5,36 61,37 61,38.5 C61,41.5 66,40.5 66,42.5 C66,43 65.5,43.5 64,43.5 C62.5,43.5 61.5,43 61.5,43 L61,44 C61,44 62.5,45 64.5,45 C66.5,45 68,44 68,42.5 C68,39.5 63,40 63,38.5 C63,38 63,37.5 65,37.5 C66,37.5 67,38 67,38 L67.5,37 Z M75,39.5 C75,38 74,37.5 73,37.5 C71.5,37.5 71,38.5 71,39.5 L75,39.5 Z M69,40.5 C69,38 70,36 73,36 C75.5,36 77,38 77,40 L77,41 L71,41 C71,43 72.5,43.5 73.5,43.5 C75,43.5 75.5,42.5 75.5,42.5 L76.5,43.5 C76.5,43.5 75.5,45 73.5,45 C70.5,45 69,43 69,40.5 Z"/>
+    <path fill="#01A982" d="M0,12 L40,12 L40,0 L0,0 L0,12 Z M3,3 L37,3 L37,9 L3,9 L3,3 Z"/>
+  </g>
+</svg></div>
+  <nav class="hpe-nav">
+    <div class="hpe-nav__main">
+      <a class="hpe-nav__link" href="#">Products & Solutions</a>
+      <a class="hpe-nav__link" href="#">Services</a>
+      <a class="hpe-nav__link" href="#">Support</a>
+      <a class="hpe-nav__link" href="#">Insights</a>
+      <a class="hpe-nav__link" href="#">Shop</a>
+      <a class="hpe-nav__link hpe-nav__responsive" href="#">
+        <span class="hpe-responsive--large">Contact</span>
+        <span class="hpe-responsive--small hpe-nav__link--icon">  <svg class="hpe-icon">
+  <use xlink:href="#icon-contact"></use>
+</svg></span>
+      </a>
+    </div>
+    <div class="hpe-nav__tools">
+      <button class="hpe-nav__link hpe-nav__link--icon hpe-nav__search">
+          <svg class="hpe-icon">
+          <use xlink:href="#icon-search"></use>
+        </svg>      </button>
+      <a href="" class="hpe-nav__link hpe-nav__link--icon hpe-active" data-notification="2">
+          <svg class="hpe-icon">
+          <use xlink:href="#icon-cart"></use>
+        </svg>      </a>
+      <a href="" class="hpe-nav__link hpe-nav__link--icon hpe-active" data-notification="56">
+          <svg class="hpe-icon">
+          <use xlink:href="#icon-user"></use>
+        </svg>      </a>
+    </div>
+    <button class="hpe-button hpe-button--plain hpe-nav__menu">
+      <div class="hf-hmb-icon">
+        <div class="hf-line"></div>
+        <div class="hf-line"></div>
+        <div class="hf-line"></div>
+      </div>
+      <span class="hpe-nav__menu-label">
+        <span class="hpe-nav__menu-label--inactive">Menu</span>
+        <span class="hpe-nav__menu-label--active">Close</span>
+      </span>
+    </button>
+  </nav>
+</header> <article class="hpe-carousel row">
+  <section class="hpe-carousel__image hpe-carousel__image--active" style="background-image: url('/assets/toolkit/images/servers.jpg')">
+    <div class="hpe-carousel__content hpe-centered-section">
+      <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title hpe-page-headline">The new HPE Proliant Gen10 server platform</h1>
+      <p class="hpe-carousel__description">Starting as low as $2,270, the Gen10 series delivers the best performance and expandability for your growing operation.</p>
+    </div>
+  </section>
+  <a class="hpe-carousel__indicator"></a>
+  <section class="hpe-carousel__image" style="background-image: url('/assets/toolkit/images/signin-bg-large@2x.png')">
+    <div class="hpe-carousel__content hpe-centered-section">
+      <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title hpe-page-headline">The new HPE Proliant Gen10 server platform (2)</h1>
+      <p class="hpe-carousel__description">Starting as low as $2,270, the Gen10 series  delivers the best performance and expandability for your growing operation.</p>
+    </div>
+  </section>
+  <a class="hpe-carousel__indicator"></a>
+  <section class="hpe-carousel__image" style="background-image: url('/assets/toolkit/images/servers.jpg')">
+    <div class="hpe-carousel__content hpe-centered-section">
+      <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title hpe-page-headline">The new HPE Proliant Gen10 server platform (3)</h1>
+      <p class="hpe-carousel__description">Starting as low as $2,270, the Gen10 series  delivers the best performance and expandability for your growing operation.</p>
+    </div>
+  </section>
+  <a class="hpe-carousel__indicator"></a>
+  <section class="hpe-carousel__image" style="background-image: url('/assets/toolkit/images/signin-bg-large@2x.png')">
+    <div class="hpe-carousel__content">
+      <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title hpe-page-headline">The new HPE Proliant Gen10 server platform (4)</h1>
+      <p class="hpe-carousel__description">Starting as low as $2,270, the Gen10 series  delivers the best performance and expandability for your growing operation.</p>
+    </div>
+  </section>
+  <a class="hpe-carousel__indicator"></a>
+  <button class="hpe-button hpe-button--plain hpe-carousel__button hpe-carousel__button--previous">
+      <svg class="hpe-icon hpe-icon--inline">
+      <use xlink:href="#icon-previous"></use>
+    </svg>  </button>
+  <button class="hpe-button hpe-button--plain hpe-carousel__button hpe-carousel__button--next">
+      <svg class="hpe-icon hpe-icon--inline">
+      <use xlink:href="#icon-next"></use>
+    </svg>  </button>
+</article> <ul class="hpe-breadcrumbs hpe-centered-section">
+  <li class="hpe-breadcrumbs__item">
+    <a href="/" class="hpe-breadcrumbs__link">HPE Marketplace</a>
+  </li>
+  <li class="hpe-breadcrumbs__item">
+    <a href="/" class="hpe-breadcrumbs__link">Home</a>
+  </li>
+   </ul> <section class="hpe-cta-section hpe-centered-section row">
+  <div class="col-md-6">
+    <div class="hpe-cta" style="background-image: url('/assets/toolkit/images/cta-server.png')">
+      <div class="hpe-cta__content hpe-cta__content--image">
+          <h2 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-section-headline">Servers to Power Any Size Workload</h2>
+          <p class="hpe-cta__description">The HPE ProLiant DL380 Gen10 Server delivers the best performance and expandability to grow as your business needs expand.</p>    
+          <a href="" class="hpe-anchor hpe-anchor--primary">
               <svg class="hpe-icon">
-              <use xlink:href="#icon-search"></use>
-            </svg>      </button>
-          <a href="" class="hpe-nav__link hpe-nav__link--icon hpe-active" data-notification="2">
+            <use xlink:href="#icon-link-next"></use>
+          </svg>Read more
+          </a>  </div>
+    </div>  </div>
+  <div class="col-md-6">
+      <div class="hpe-cta">
+        <div class="hpe-cta__content">
+          <h2 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-section-headline">Deploy with confidence</h2>
+          <p class="hpe-cta__description">Our Pointnext services support a range of planning, implementation, and suport capabilities to help you achieve and maintain operational success.</p>
+          <a href="" class="hpe-button hpe-button--secondary hpe-button--icon">
               <svg class="hpe-icon">
-              <use xlink:href="#icon-cart"></use>
-            </svg>      </a>
-          <a href="" class="hpe-nav__link hpe-nav__link--icon hpe-active" data-notification="56">
+            <use xlink:href="#icon-link-next"></use>
+          </svg>Explore PointNext services
+          </a>  </div>
+      </div>  </div>
+</section> <section class="hpe-featured-product">
+  <div class="hpe-featured-product__content hpe-centered-section">
+    <h2 class="hpe-headline hpe-headline--caps hpe-headline--black hpe-featured-product__heading hpe-section-headline">Exciting Deals and New Releases</h2>
+    <div class="hpe-featured-product__row row">
+      <div class="col-lg-4">
+        <div class="hpe-featured-product__details">
+          <h3 class="hpe-headline hpe-headline--strong hpe-featured-product__name">HPE NewServer 1234 Gen27</h3>
+          <p class="hpe-featured-product__description">Compelling short description of this product that articulates how it’s different and worth considering.</p>
+          <p class="hpe-featured-product__feature">
               <svg class="hpe-icon">
-              <use xlink:href="#icon-user"></use>
-            </svg>      </a>
-        </div>
-        <button class="hpe-button hpe-button--plain hpe-nav__menu">
-          <div class="hf-hmb-icon">
-            <div class="hf-line"></div>
-            <div class="hf-line"></div>
-            <div class="hf-line"></div>
-          </div>
-          <span class="hpe-nav__menu-label">
-            <span class="hpe-nav__menu-label--inactive">Menu</span>
-            <span class="hpe-nav__menu-label--active">Close</span>
-          </span>
-        </button>
-      </nav>
-    </header>    
-    <article class="hpe-carousel row">
-      <section class="hpe-carousel__image hpe-carousel__image--active" style="background-image: url('/assets/toolkit/images/servers.jpg')">
-        <div class="hpe-carousel__content hpe-centered-section">
-          <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title hpe-page-headline">The new HPE Proliant Gen10 server platform</h1>
-          <p class="hpe-carousel__description">Starting as low as $2,270, the Gen10 series delivers the best performance and expandability for your growing operation.</p>
-        </div>
-      </section>
-      <a class="hpe-carousel__indicator"></a>
-      <section class="hpe-carousel__image" style="background-image: url('/assets/toolkit/images/signin-bg-large@2x.png')">
-        <div class="hpe-carousel__content hpe-centered-section">
-          <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title hpe-page-headline">The new HPE Proliant Gen10 server platform (2)</h1>
-          <p class="hpe-carousel__description">Starting as low as $2,270, the Gen10 series  delivers the best performance and expandability for your growing operation.</p>
-        </div>
-      </section>
-      <a class="hpe-carousel__indicator"></a>
-      <section class="hpe-carousel__image" style="background-image: url('/assets/toolkit/images/servers.jpg')">
-        <div class="hpe-carousel__content hpe-centered-section">
-          <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title hpe-page-headline">The new HPE Proliant Gen10 server platform (3)</h1>
-          <p class="hpe-carousel__description">Starting as low as $2,270, the Gen10 series  delivers the best performance and expandability for your growing operation.</p>
-        </div>
-      </section>
-      <a class="hpe-carousel__indicator"></a>
-      <section class="hpe-carousel__image" style="background-image: url('/assets/toolkit/images/signin-bg-large@2x.png')">
-        <div class="hpe-carousel__content">
-          <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title hpe-page-headline">The new HPE Proliant Gen10 server platform (4)</h1>
-          <p class="hpe-carousel__description">Starting as low as $2,270, the Gen10 series  delivers the best performance and expandability for your growing operation.</p>
-        </div>
-      </section>
-      <a class="hpe-carousel__indicator"></a>
-      <button class="hpe-button hpe-button--plain hpe-carousel__button hpe-carousel__button--previous">
-          <svg class="hpe-icon hpe-icon--inline">
-          <use xlink:href="#icon-previous"></use>
-        </svg>  </button>
-      <button class="hpe-button hpe-button--plain hpe-carousel__button hpe-carousel__button--next">
-          <svg class="hpe-icon hpe-icon--inline">
-          <use xlink:href="#icon-next"></use>
-        </svg>  </button>
-    </article>    
-    <ul class="hpe-breadcrumbs hpe-centered-section">
-        <li class="hpe-breadcrumbs__item">
-          <a href="/" class="hpe-breadcrumbs__link">HPE Marketplace</a>
-        </li>
-        <li class="hpe-breadcrumbs__item">
-          <a href="#" class="hpe-breadcrumbs__link">Home</a>
-        </li>
-      </ul>
-    <section class="hpe-cta-section hpe-centered-section row">
-      <div class="col-md-6">
-        <div class="hpe-cta" style="background-image: url('/assets/toolkit/images/cta-server.png')">
-          <div class="hpe-cta__content hpe-cta__content--image">
-              <h2 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-section-headline">Servers to Power Any Size Workload</h2>
-              <p class="hpe-cta__description">The HPE ProLiant DL380 Gen10 Server delivers the best performance and expandability to grow as your business needs expand.</p>    
-              <a href="" class="hpe-anchor hpe-anchor--primary">
-                  <svg class="hpe-icon">
-                <use xlink:href="#icon-link-next"></use>
-              </svg>Read more
-              </a>  </div>
-        </div>  </div>
-      <div class="col-md-6">
-          <div class="hpe-cta">
-            <div class="hpe-cta__content">
-              <h2 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-section-headline">Deploy with confidence</h2>
-              <p class="hpe-cta__description">Our Pointnext services support a range of planning, implementation, and suport capabilities to help you achieve and maintain operational success.</p>
-              <a href="" class="hpe-button hpe-button--secondary hpe-button--icon">
-                  <svg class="hpe-icon">
-                <use xlink:href="#icon-link-next"></use>
-              </svg>Explore PointNext services
-              </a>  </div>
-          </div>  </div>
-    </section>    
-    <section class="hpe-featured-product">
-      <div class="hpe-featured-product__content hpe-centered-section">
-        <h2 class="hpe-headline hpe-headline--caps hpe-headline--black hpe-featured-product__heading hpe-section-headline">Exciting Deals and New Releases</h2>
-        <div class="hpe-featured-product__row row">
-          <div class="col-lg-4">
-            <div class="hpe-featured-product__details">
-              <h3 class="hpe-headline hpe-headline--strong hpe-featured-product__name">HPE NewServer 1234 Gen27</h3>
-              <p class="hpe-featured-product__description">Compelling short description of this product that articulates how it’s different and worth considering.</p>
-              <p class="hpe-featured-product__feature">
-                  <svg class="hpe-icon">
-      <use xlink:href="#icon-virtual-machine"></use>
-    </svg> Great for virtualization applications up to 1000 users
-              </p>
-              <span class="hpe-featured-product__price">Starting at <strong>$23,500</strong></span>          <ul class="hpe-featured-product__meta">
-                <li class="hpe-featured-product__meta-item">
-                  Save up to 33%
-                </li>
-                <li class="hpe-featured-product__meta-item">
-                  Leasing options available
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="hpe-featured-product__product col-lg-8" style="background-image: url('/assets/toolkit/images/server-deal.png')">
-            <a href="" class="hpe-button hpe-button--secondary ">
-              Buy Now
-            </a>        <span class="hpe-featured-product__badge">Deal of the Week</span>
-          </div>
+  <use xlink:href="#icon-virtual-machine"></use>
+</svg> Great for virtualization applications up to 1000 users
+          </p>
+          <span class="hpe-featured-product__price">Starting at <strong>$23,500</strong></span>          <ul class="hpe-featured-product__meta">
+            <li class="hpe-featured-product__meta-item">
+              Save up to 33%
+            </li>
+            <li class="hpe-featured-product__meta-item">
+              Leasing options available
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-    <div class="hpe-card-list row">  
-      <div class="hpe-card-list__content hpe-centered-section">
-        <h2 class="hpe-headline hpe-headline--caps hpe-headline--black hpe-headline--small hpe-section-headline">Recently viewed items</h2>
-        <div class="hpe-card-list__cards row">
-          <div class="col-sm-6 col-lg-3">
-              <article class="hpe-card ">
-                <label class="hpe-bookmark">
-                  <input type="checkbox">   <svg class="hpe-icon">
-                  <use xlink:href="#icon-bookmark"></use>
-                </svg>
-                </label>  <div class="hpe-card__image" style="background-image: url(/assets/toolkit/images/server1.png)"></div>
-                <h3 class="hpe-card__heading hpe-headline hpe-headline--strong">Altoline 6940 series</h3>
-                <p class="hpe-card__description">Short description that succinctly calls out this series’ core benefit and/or differentiating features</p>
-                <p class="hpe-card__meta">Starting at <strong>$23,500</strong></p>
-                <a href="" class="hpe-button hpe-button--secondary ">
-                  Shop
-                </a></article>      </div>
-          <div class="col-sm-6 col-lg-3">
-              <article class="hpe-card ">
-                <label class="hpe-bookmark">
-                  <input type="checkbox">   <svg class="hpe-icon">
-                  <use xlink:href="#icon-bookmark"></use>
-                </svg>
-                </label>  <div class="hpe-card__image" style="background-image: url(/assets/toolkit/images/server2.png)"></div>
-                <h3 class="hpe-card__heading hpe-headline hpe-headline--strong">Altoline 6920 series</h3>
-                <p class="hpe-card__description">Short description that succinctly calls out this series’ core benefit and/or differentiating features</p>
-                <p class="hpe-card__meta">Starting at <strong>$23,500</strong></p>
-                <a href="" class="hpe-button hpe-button--secondary ">
-                  Shop
-                </a></article>      </div>
-          <div class="col-sm-6 col-lg-3">
-              <article class="hpe-card ">
-                <label class="hpe-bookmark">
-                  <input type="checkbox">   <svg class="hpe-icon">
-                  <use xlink:href="#icon-bookmark"></use>
-                </svg>
-                </label>  <div class="hpe-card__image" style="background-image: url(/assets/toolkit/images/server2.png)"></div>
-                <h3 class="hpe-card__heading hpe-headline hpe-headline--strong">FlexFabric 14 series</h3>
-                <p class="hpe-card__description">Short description that succinctly calls out this series’ core benefit and/or differentiating features</p>
-                <p class="hpe-card__meta">Starting at <strong>$23,500</strong></p>
-                <a href="" class="hpe-button hpe-button--secondary ">
-                  Shop
-                </a></article>      </div>
-          <div class="col-sm-6 col-lg-3">
-              <article class="hpe-card ">
-                <label class="hpe-bookmark">
-                  <input type="checkbox">   <svg class="hpe-icon">
-                  <use xlink:href="#icon-bookmark"></use>
-                </svg>
-                </label>  <div class="hpe-card__image" style="background-image: url(/assets/toolkit/images/server1.png)"></div>
-                <h3 class="hpe-card__heading hpe-headline hpe-headline--strong">Synergy 123</h3>
-                <p class="hpe-card__description">Short description that succinctly calls out this series’ core benefit and/or differentiating features</p>
-                <p class="hpe-card__meta">Starting at <strong>$23,500</strong></p>
-                <a href="" class="hpe-button hpe-button--secondary ">
-                  Shop
-                </a></article>      </div>
-        </div>
-      </div>
-    </div>    
-    <ul class="hpe-breadcrumbs hpe-centered-section">
-      <li class="hpe-breadcrumbs__item">
-        <a href="/" class="hpe-breadcrumbs__link">Home</a>
-      </li>
-      <li class="hpe-breadcrumbs__item">
-        <a href="#" class="hpe-breadcrumbs__link">Page 2</a>
-      </li>
-      <li class="hpe-breadcrumbs__item">
-        <a href="#" class="hpe-breadcrumbs__link">Page 3</a>
-      </li>
-      <li class="hpe-breadcrumbs__item">
-        <a href="#" class="hpe-breadcrumbs__link">Page 6</a>
-      </li>
-      <li class="hpe-breadcrumbs__item hpe-breadcrumbs__item--current">
-        Current Page</li>
-    </ul>    
-    <div class="hpe-support row">
-      <div class="hpe-support__content hpe-centered-section">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-section-title hpe-support__title">How can we help</h1>
-            <hr class="hpe-brand-rule">        <p class="hpe-support__message">
-              Get advice, answers, and solutions when you need them. For general questions,
-              <a href="tel:16506875817" class="hpe-support__link">call us at +1 (650) 687-5817.</a>
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="hpe-support__image" style="background-image: url(' /assets/toolkit/images/support@2x.png')">
-            </div>
-          </div>
-          <div class="col-md-6 hpe-support__tiles">
-            <div class="hpe-support__tiles row">
-              <div class="col-sm-6">
-                <div class="hpe-support__tile">
-                  <a href="" class="hpe-support__tile-link">
-                    <span class="hpe-support__tile-icon">  <svg class="hpe-icon">
-      <use xlink:href="#icon-contact"></use>
-    </svg></span>
-                    <label class="hpe-support__tile-label">Live Chat</label>
-                  </a>
-                </div>
-              </div>
-              <div class="col-sm-6 hpe-support__tile--left">
-                <div class="hpe-support__tile">
-                  <a href="" class="hpe-support__tile-link">
-                    <span class="hpe-support__tile-icon">  <svg class="hpe-icon">
-      <use xlink:href="#icon-scorecard"></use>
-    </svg></span>
-                    <label class="hpe-support__tile-label">Get a Quote</label>
-                  </a>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="hpe-support__tile hpe-support__tile--bottom">
-                  <a href="" class="hpe-support__tile-link">
-                    <span class="hpe-support__tile-icon">  <svg class="hpe-icon">
-      <use xlink:href="#icon-host-maintenance"></use>
-    </svg></span>
-                    <label class="hpe-support__tile-label">Product Support</label>
-                  </a>
-                </div>
-              </div>
-              <div class="col-sm-6 hpe-support__tile--left">
-                <div class="hpe-support__tile hpe-support__tile--bottom">
-                  <a href="" class="hpe-support__tile-link">
-                    <span class="hpe-support__tile-icon">
-                        <svg class="hpe-icon">
-      <use xlink:href="#icon-mail"></use>
-    </svg></span>
-                    <label class="hpe-support__tile-label">Email Us</label>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-        </div>
+      <div class="hpe-featured-product__product col-lg-8" style="background-image: url('/assets/toolkit/images/server-deal.png')">
+        <a href="" class="hpe-button hpe-button--secondary ">
+          Buy Now
+        </a>        <span class="hpe-featured-product__badge">Deal of the Week</span>
       </div>
     </div>
+  </div>
+</section> <div class="hpe-card-list row">
+  <div class="hpe-card-list__content hpe-centered-section">
+    <h2 class="hpe-headline hpe-headline--caps hpe-headline--black hpe-headline--small hpe-section-headline">Recently viewed items</h2>
+    <div class="hpe-card-list__cards row">
+      <div class="col-sm-6 col-lg-3">
+        <article class="hpe-card ">
+          <label class="hpe-bookmark">
+            <input type="checkbox">   <svg class="hpe-icon">
+            <use xlink:href="#icon-bookmark"></use>
+          </svg>
+          </label>  <div class="hpe-card__image" style="background-image: url(https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00013739.png)"></div>
+          <h3 class="hpe-card__heading hpe-headline hpe-headline--strong">HPE ProLiant MicroServer Gen10 X3216 1P 8GB-U 4LFF NHP SATA 200W PS Entry Server</h3>
+          <p class="hpe-card__description">Short description that calls out the approach or features that this individual product uses for this need.</p>
+          <p class="hpe-card__meta"><span class="">Starting at <strong>$344.00</strong></span></p>
+          <a href="" class="hpe-button hpe-button--secondary ">
+            Shop
+          </a></article>      </div>
+      <div class="col-sm-6 col-lg-3">
+        <article class="hpe-card ">
+          <label class="hpe-bookmark">
+            <input type="checkbox">   <svg class="hpe-icon">
+            <use xlink:href="#icon-bookmark"></use>
+          </svg>
+          </label>  <div class="hpe-card__image" style="background-image: url(https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png)"></div>
+          <h3 class="hpe-card__heading hpe-headline hpe-headline--strong">HPE ProLiant DL380 Gen10 server</h3>
+          <p class="hpe-card__description">with one Intel® Xeon® Silver 4112 processor, 16 GB dual rank memory, P408i-a storage controller, eight large form factor chassis and one 500W power supply</p>
+          <p class="hpe-card__meta"><span class="">Starting at <strong>$2,189.99</strong></span></p>
+          <a href="" class="hpe-button hpe-button--secondary ">
+            Shop
+          </a></article>      </div>
+      <div class="col-sm-6 col-lg-3">
+        <article class="hpe-card ">
+          <label class="hpe-bookmark">
+            <input type="checkbox">   <svg class="hpe-icon">
+            <use xlink:href="#icon-bookmark"></use>
+          </svg>
+          </label>  <div class="hpe-card__image" style="background-image: url(https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00028987.png)"></div>
+          <h3 class="hpe-card__heading hpe-headline hpe-headline--strong">HPE ProLiant ML110 Gen10 tower server</h3>
+          <p class="hpe-card__description">Short description that calls out the approach or features that this individual product uses for this need.</p>
+          <p class="hpe-card__meta"><span class="">Starting at <strong>$999.99</strong></span></p>
+          <a href="" class="hpe-button hpe-button--secondary ">
+            Shop
+          </a></article>      </div>
+      <div class="col-sm-6 col-lg-3">
+        <article class="hpe-card ">
+          <label class="hpe-bookmark">
+            <input type="checkbox">   <svg class="hpe-icon">
+            <use xlink:href="#icon-bookmark"></use>
+          </svg>
+          </label>  <div class="hpe-card__image" style="background-image: url(https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/c05084293.png)"></div>
+          <h3 class="hpe-card__heading hpe-headline hpe-headline--strong">HPE ProLiant BL460c Gen9 E5-2609v4 1P 16GB-R Server</h3>
+          <p class="hpe-card__description">Short description that calls out the approach or features that this individual product uses for this need.</p>
+          <p class="hpe-card__meta"><span class="">Starting at <strong>$2,752.99</strong></span></p>
+          <a href="" class="hpe-button hpe-button--secondary ">
+            Shop
+          </a></article>      </div>
     </div>
-    
-    </div>    
-    <footer class="hpe-footer">
-      <div class="hpe-footer__content hpe-centered-section">
-        <section class="row">
-          <div class="col-md-6 hpe-footer__column">
-            <div class="row">
-              <div class="col-md-6 col-lg-4">
-                <h3 class="hpe-footer__title">Company</h3>
-                <ul class="hpe-footer__list">
-                  <li>
-                    <a href="#" class="hpe-footer__item">About HPE </a>
-                  </li>
-                  <li>
-                    <a href="#" class="hpe-footer__item">Accessibility </a>
-                  </li>
-                  <li>
-                    <a href="#" class="hpe-footer__item">Careers</a>
-                  </li>
-                  <li>
-                    <a href="#" class="hpe-footer__item">Contact Us</a>
-                  </li>
-                  <li>
-                    <a href="#" class="hpe-footer__item">Corporate Responsibility</a>
-                  </li>
-                  <li>
-                    <a href="#" class="hpe-footer__item">Hewlett Packard Labs</a>
-                  </li>
-                  <li>
-                    <a href="#" class="hpe-footer__item">Investor Relations</a>
-                  </li>
-                  <li>
-                    <a href="#" class="hpe-footer__item">Leadership</a>
-                  </li>
-                  <li>
-                    <a href="#" class="hpe-footer__item">Public Policy</a>
-                  </li>
-                </ul>
-                <h3 class="hpe-footer__title">News & Events</h3>
-                <ul class="hpe-footer__list">
-                  <li>
-                    <a href="#" class="hpe-footer__item">Newsroom</a>
-                  </li>
-                  <li>
-                    <a href="#" class="hpe-footer__item">Discover</a>
-                  </li>
-                  <li>
-                    <a href="#" class="hpe-footer__item">Events</a>
-                  </li>
-                </ul>
-                <h3 class="hpe-footer__title">Partners</h3>
-                <ul class="hpe-footer__list">
-                  <li>
-                    <a href="#" class="hpe-footer__item">Partner Programs</a>
-                  </li>
-                  <li>
-                    <a href="#" class="hpe-footer__item">Find a Partner</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <h3 class="hpe-footer__title">Support</h3>
-                <ul class="hpe-footer__list">
-                  <li>
-                    <a href="#" class="hpe-footer__item">Product Support </a>
-                  </li>
-                  <li>
-                    <a href="#" class="hpe-footer__item">Software & Drivers</a>
-                  </li>
-                  <li>
-                    <a href="#" class="hpe-footer__item">Warranty Check</a>
-                  </li>
-                  <li>
-                    <a href="#" class="hpe-footer__item">Enhanced Support Services</a>
-                  </li>
-                  <li>
-                    <a href="#" class="hpe-footer__item">Education and Training</a>
-                  </li>
-                </ul>
-                <h3 class="hpe-footer__title">Communities</h3>
-                <ul class="hpe-footer__list">
-                  <li>
-                    <a href="#" class="hpe-footer__item">HPE Blogs and Forum</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <h3 class="hpe-footer__title">Customer Resources</h3>
-                <ul class="hpe-footer__list">
-                  <li>
-                    <a href="#" class="hpe-footer__item">How to Buy</a>
-                  </li>
-                  <li>
-                    <a href="#" class="hpe-footer__item">Online Stores</a>
-                  </li>
-                  <li>
-                    <a href="#" class="hpe-footer__item">Executive Briefing Center</a>
-                  </li>
-                  <li>
-                    <a href="#" class="hpe-footer__item">Look Up Old HP.com URL</a>
-                  </li>
-                  <li>
-                    <a href="#" class="hpe-footer__item">Email Signup</a>
-                  </li>
-                  <li>
-                    <a href="#" class="hpe-footer__item">Login</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 hpe-footer__column">
-            <h3 class="hpe-footer__title">Follow HPE</h3>
-            <ul class="hpe-footer__list">
-              <li class="hpe-footer__item--social">
-                <a href="#" class="hpe-footer__item">  <svg class="hpe-icon hpe-icon--filled">
-      <use xlink:href="#icon-social-linkedin"></use>
-    </svg></a>
-              </li>
-              <li class="hpe-footer__item--social">
-                <a href="#" class="hpe-footer__item">  <svg class="hpe-icon">
-      <use xlink:href="#icon-social-twitter"></use>
-    </svg></a>
-              </li>
-              <li class="hpe-footer__item--social">
-                <a href="#" class="hpe-footer__item">  <svg class="hpe-icon hpe-icon--filled">
-      <use xlink:href="#icon-social-facebook"></use>
-    </svg></a>
-              </li>
-              <li class="hpe-footer__item--social">
-                <a href="#" class="hpe-footer__item">  <svg class="hpe-icon">
-      <use xlink:href="#icon-social-youtube"></use>
-    </svg></a>
-              </li>
-            </ul>
-          </div>
-          </section>
-          <section class="hpe-footer__language">
-              <svg class="hpe-icon hpe-icon--filled hpe-icon--inline">
-      <use xlink:href="#icon-language"></use>
-    </svg> Untited States (EN)
-          </section>
-          <section class="hpe-footer__legal">
-            <div class="hpe-legal__copyright">
-              &copy; Copyright 2018 Hewlett Packard Enterprise Development LP
-            </div>
-            <ul class="hpe-footer__legal-list">
-              <li class="hpe-footer__legal-item">Terms of Use</li>
-              <li class="hpe-footer__legal-item">Privacy</li>
-              <li class="hpe-footer__legal-item">Report Bug</li>
-            </ul>
-          </section>
-          <section class="hpe-footer__mark">
-              <svg class="hpe-icon hpe-brand-mark">
-              <use xlink:href="#icon-brand-mark"></use>
-            </svg>      </section>
+  </div>
+</div> <ul class="hpe-breadcrumbs hpe-centered-section">
+
+  <li class="hpe-breadcrumbs__item">
+    <a href="/" class="hpe-breadcrumbs__link">HPE Marketplace</a>
+  </li>
+  <li class="hpe-breadcrumbs__item">
+    <a href="#" class="hpe-breadcrumbs__link">Page 1</a>
+  </li>
+  <li class="hpe-breadcrumbs__item">
+    <a href="#" class="hpe-breadcrumbs__link">Page 2</a>
+  </li>
+  <li class="hpe-breadcrumbs__item">
+    <a href="#" class="hpe-breadcrumbs__link">Page 3</a>
+  </li>
+  <li class="hpe-breadcrumbs__item hpe-breadcrumbs__item--current">
+    Current Page</li>
+</ul> <div class="hpe-support row">
+  <div class="hpe-support__content hpe-centered-section">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-section-title hpe-support__title">How can we help</h1>
+        <hr class="hpe-brand-rule">        <p class="hpe-support__message">
+          Get advice, answers, and solutions when you need them. For general questions,
+          <a href="tel:16506875817" class="hpe-support__link">call us at +1 (650) 687-5817.</a>
+        </p>
       </div>
-    </footer>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="hpe-support__image" style="background-image: url(' /assets/toolkit/images/support@2x.png')">
+        </div>
+      </div>
+      <div class="col-md-6 hpe-support__tiles">
+        <div class="hpe-support__tiles row">
+          <div class="col-sm-6">
+            <div class="hpe-support__tile">
+              <a href="" class="hpe-support__tile-link">
+                <span class="hpe-support__tile-icon">  <svg class="hpe-icon">
+  <use xlink:href="#icon-contact"></use>
+</svg></span>
+                <label class="hpe-support__tile-label">Live Chat</label>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 hpe-support__tile--left">
+            <div class="hpe-support__tile">
+              <a href="" class="hpe-support__tile-link">
+                <span class="hpe-support__tile-icon">  <svg class="hpe-icon">
+  <use xlink:href="#icon-scorecard"></use>
+</svg></span>
+                <label class="hpe-support__tile-label">Get a Quote</label>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="hpe-support__tile hpe-support__tile--bottom">
+              <a href="" class="hpe-support__tile-link">
+                <span class="hpe-support__tile-icon">  <svg class="hpe-icon">
+  <use xlink:href="#icon-host-maintenance"></use>
+</svg></span>
+                <label class="hpe-support__tile-label">Product Support</label>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 hpe-support__tile--left">
+            <div class="hpe-support__tile hpe-support__tile--bottom">
+              <a href="" class="hpe-support__tile-link">
+                <span class="hpe-support__tile-icon">
+                    <svg class="hpe-icon">
+  <use xlink:href="#icon-mail"></use>
+</svg></span>
+                <label class="hpe-support__tile-label">Email Us</label>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 </div>
 
+</div> <footer class="hpe-footer">
+  <div class="hpe-footer__content hpe-centered-section">
+    <section class="row">
+      <div class="col-md-6 hpe-footer__column">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <h3 class="hpe-footer__title">Company</h3>
+            <ul class="hpe-footer__list">
+              <li>
+                <a href="#" class="hpe-footer__item">About HPE </a>
+              </li>
+              <li>
+                <a href="#" class="hpe-footer__item">Accessibility </a>
+              </li>
+              <li>
+                <a href="#" class="hpe-footer__item">Careers</a>
+              </li>
+              <li>
+                <a href="#" class="hpe-footer__item">Contact Us</a>
+              </li>
+              <li>
+                <a href="#" class="hpe-footer__item">Corporate Responsibility</a>
+              </li>
+              <li>
+                <a href="#" class="hpe-footer__item">Hewlett Packard Labs</a>
+              </li>
+              <li>
+                <a href="#" class="hpe-footer__item">Investor Relations</a>
+              </li>
+              <li>
+                <a href="#" class="hpe-footer__item">Leadership</a>
+              </li>
+              <li>
+                <a href="#" class="hpe-footer__item">Public Policy</a>
+              </li>
+            </ul>
+            <h3 class="hpe-footer__title">News & Events</h3>
+            <ul class="hpe-footer__list">
+              <li>
+                <a href="#" class="hpe-footer__item">Newsroom</a>
+              </li>
+              <li>
+                <a href="#" class="hpe-footer__item">Discover</a>
+              </li>
+              <li>
+                <a href="#" class="hpe-footer__item">Events</a>
+              </li>
+            </ul>
+            <h3 class="hpe-footer__title">Partners</h3>
+            <ul class="hpe-footer__list">
+              <li>
+                <a href="#" class="hpe-footer__item">Partner Programs</a>
+              </li>
+              <li>
+                <a href="#" class="hpe-footer__item">Find a Partner</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <h3 class="hpe-footer__title">Support</h3>
+            <ul class="hpe-footer__list">
+              <li>
+                <a href="#" class="hpe-footer__item">Product Support </a>
+              </li>
+              <li>
+                <a href="#" class="hpe-footer__item">Software & Drivers</a>
+              </li>
+              <li>
+                <a href="#" class="hpe-footer__item">Warranty Check</a>
+              </li>
+              <li>
+                <a href="#" class="hpe-footer__item">Enhanced Support Services</a>
+              </li>
+              <li>
+                <a href="#" class="hpe-footer__item">Education and Training</a>
+              </li>
+            </ul>
+            <h3 class="hpe-footer__title">Communities</h3>
+            <ul class="hpe-footer__list">
+              <li>
+                <a href="#" class="hpe-footer__item">HPE Blogs and Forum</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <h3 class="hpe-footer__title">Customer Resources</h3>
+            <ul class="hpe-footer__list">
+              <li>
+                <a href="#" class="hpe-footer__item">How to Buy</a>
+              </li>
+              <li>
+                <a href="#" class="hpe-footer__item">Online Stores</a>
+              </li>
+              <li>
+                <a href="#" class="hpe-footer__item">Executive Briefing Center</a>
+              </li>
+              <li>
+                <a href="#" class="hpe-footer__item">Look Up Old HP.com URL</a>
+              </li>
+              <li>
+                <a href="#" class="hpe-footer__item">Email Signup</a>
+              </li>
+              <li>
+                <a href="#" class="hpe-footer__item">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 hpe-footer__column">
+        <h3 class="hpe-footer__title">Follow HPE</h3>
+        <ul class="hpe-footer__list">
+          <li class="hpe-footer__item--social">
+            <a href="#" class="hpe-footer__item">  <svg class="hpe-icon hpe-icon--filled">
+  <use xlink:href="#icon-social-linkedin"></use>
+</svg></a>
+          </li>
+          <li class="hpe-footer__item--social">
+            <a href="#" class="hpe-footer__item">  <svg class="hpe-icon">
+  <use xlink:href="#icon-social-twitter"></use>
+</svg></a>
+          </li>
+          <li class="hpe-footer__item--social">
+            <a href="#" class="hpe-footer__item">  <svg class="hpe-icon hpe-icon--filled">
+  <use xlink:href="#icon-social-facebook"></use>
+</svg></a>
+          </li>
+          <li class="hpe-footer__item--social">
+            <a href="#" class="hpe-footer__item">  <svg class="hpe-icon">
+  <use xlink:href="#icon-social-youtube"></use>
+</svg></a>
+          </li>
+        </ul>
+      </div>
+      </section>
+      <section class="hpe-footer__language">
+          <svg class="hpe-icon hpe-icon--filled hpe-icon--inline">
+  <use xlink:href="#icon-language"></use>
+</svg> Untited States (EN)
+      </section>
+      <section class="hpe-footer__legal">
+        <div class="hpe-legal__copyright">
+          &copy; Copyright 2018 Hewlett Packard Enterprise Development LP
+        </div>
+        <ul class="hpe-footer__legal-list">
+          <li class="hpe-footer__legal-item">Terms of Use</li>
+          <li class="hpe-footer__legal-item">Privacy</li>
+          <li class="hpe-footer__legal-item">Report Bug</li>
+        </ul>
+      </section>
+      <section class="hpe-footer__mark">
+          <svg class="hpe-icon hpe-brand-mark">
+          <use xlink:href="#icon-brand-mark"></use>
+        </svg>      </section>
+  </div>
+</footer>
 
+</div> 
 
 	<!-- toolkit scripts -->
 	<script src="../assets/toolkit/scripts/toolkit.js"></script>
 	<!-- /toolkit scripts -->
 
 </body>
+
 </html>

@@ -1,6 +1,18 @@
 <ul class="hpe-breadcrumbs hpe-centered-section">
+  {{#if pages }}
   <li class="hpe-breadcrumbs__item">
-    <a href="/" class="hpe-breadcrumbs__link">Home</a>
+    <a href="/" class="hpe-breadcrumbs__link">HPE Marketplace</a>
+  </li>
+  {{#each pages }}
+  <li class="hpe-breadcrumbs__item">
+    <a href="{{this.link}}" class="hpe-breadcrumbs__link">{{this.title}}</a>
+  </li>
+  {{/each}} {{else}}
+  <li class="hpe-breadcrumbs__item">
+    <a href="/" class="hpe-breadcrumbs__link">HPE Marketplace</a>
+  </li>
+  <li class="hpe-breadcrumbs__item">
+    <a href="#" class="hpe-breadcrumbs__link">Page 1</a>
   </li>
   <li class="hpe-breadcrumbs__item">
     <a href="#" class="hpe-breadcrumbs__link">Page 2</a>
@@ -8,9 +20,7 @@
   <li class="hpe-breadcrumbs__item">
     <a href="#" class="hpe-breadcrumbs__link">Page 3</a>
   </li>
-  <li class="hpe-breadcrumbs__item">
-    <a href="#" class="hpe-breadcrumbs__link">Page 6</a>
-  </li>
   <li class="hpe-breadcrumbs__item hpe-breadcrumbs__item--current">
     Current Page</li>
+  {{/if}}
 </ul>

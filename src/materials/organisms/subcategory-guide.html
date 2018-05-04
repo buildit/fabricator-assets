@@ -1,0 +1,17 @@
+<section class="hpe-product-list">
+  <div class="hpe-product-list__sliders row">
+    <div class="col-md-6">
+      {{> form.range-handles min="1000" max="100000" startMin="10000" startMax="20000" label="What is the price range you need
+      to stay within?" labelMin="$1,000" labelMax="$100k" }}
+    </div>
+    <div class="col-md-6">
+      {{> form.range label="How quickly is your need growing?" min="1" max="7" labelMin="Slowly" labelMax="Very Quickly"}}
+    </div>
+  </div>
+  <h4 class="hpe-headline hpe-headline--strong">What do you typically need to serve?</h4>
+  <div>
+    {{> form.checkbox text="Media" name="guide1" }} {{> form.checkbox text="Application Data" name="guide2" }} {{> form.checkbox
+    text="Transaction Data" name="guide3" }} {{> form.checkbox text="Server / Database Snapshots" name="guide4" }} {{> form.checkbox
+    text="Misc. Files" name="guide5"}}
+  </div>
+</section>
