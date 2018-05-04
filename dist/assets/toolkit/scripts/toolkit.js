@@ -45,7 +45,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	const owlCarousel = __webpack_require__(2);
-	console.log("Owl", owlCarousel);
+	
 	$(".hpe-input input").focus(function () {
 	  $(this).parent().addClass("hpe-input--active");
 	});
@@ -111,6 +111,8 @@
 	    start: [minStart, maxStart]
 	  });
 	});
+	
+	$(".owl-carousel").owlCarousel();
 
 /***/ }),
 /* 1 */,

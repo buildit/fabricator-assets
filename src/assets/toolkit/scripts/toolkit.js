@@ -93,3 +93,5 @@ $(".hpe-range--handles").each(function(i, obj) {
     start: [minStart, maxStart]
   });
 });
+
+$(".owl-carousel").owlCarousel();
