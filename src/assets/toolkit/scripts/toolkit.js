@@ -1,3 +1,5 @@
+const owlCarousel = require("owl.carousel");
+
 $(".hpe-input input").focus(function() {
   $(this)
     .parent()
