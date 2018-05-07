@@ -2,7 +2,7 @@
   <h2 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-section-headline">{{title}}</h2>
   {{> brand-rule }}
 </header>
-<section class="owl-carousel">
+<section class="owl-carousel hpe-centered-section">
   {{#each carouselData }} {{> card title=this.name src=this.image description=this.description price=this.price buttonText="Shop"
   }} {{/each}}
 </section>

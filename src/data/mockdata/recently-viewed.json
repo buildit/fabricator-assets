@@ -1,7 +1,7 @@
 [
   {
     "name":
-      "HPE ProLiant MicroServer Gen10 X3216 1P 8GB-U 4LFF NHP SATA 200W PS Entry Server",
+      "HPE ProLiant MicroServer Gen10 X3216 Entry Server",
     "description":
       "Short description that calls out the approach or features that this individual product uses for this need.",
     "price": "$344.00",
@@ -25,7 +25,7 @@
       "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00028987.png"
   },
   {
-    "name": "HPE ProLiant BL460c Gen9 E5-2609v4 1P 16GB-R Server",
+    "name": "HPE ProLiant BL460c Gen9 E5-2609v4 Server",
     "description":
       "Short description that calls out the approach or features that this individual product uses for this need.",
     "price": "$2,752.99",
@@ -33,7 +33,7 @@
       "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/c05084293.png"
   },
   {
-    "name": "HPE ProLiant BL660c Gen9 E5-2609v4 1P 16GB-R Server",
+    "name": "HPE ProLiant BL660c Gen9 E5-2609v4 Server",
     "description":
       "Short description that calls out the approach or features that this individual product uses for this need.",
     "price": "$2,752.99",

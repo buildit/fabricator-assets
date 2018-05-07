@@ -125,12 +125,16 @@
 	    <svg class="hpe-icon">
 	      <use xlink:href="#icon-link-next" />
 	    </svg>`],
+	  autoWidth: true,
 	  responsive: {
 	    0: {
 	      items: 1,
 	      nav: true
 	    },
 	    768: {
+	      items: 3
+	    },
+	    1024: {
 	      items: 3
 	    }
 	  }
