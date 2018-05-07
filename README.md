@@ -18,6 +18,14 @@ yarn start
 # Should automatically open your browser to http://localhost:3000 when ready
 ```
 
+### Creating a build
+
+Builds will be dumped in the `dist` folder
+
+```bash
+yarn build
+```
+
 ## Documentation
 
 ### Styles and Sass
