@@ -3,7 +3,7 @@
     "title": "The new HPE Proliant Gen10 server platform",
     "description":
       "Starting as low as $2,270, the Gen10 series delivers the best performance and expandability for your growing operation.",
-    "image:": "/assets/toolkit/images/servers.jpg",
+    "imageURL": "/assets/toolkit/images/servers.jpg",
     "cta-link-primary": "Learn more",
     "cta-link-secondary": "See our solutions"
   }
