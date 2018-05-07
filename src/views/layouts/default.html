@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="">
+
 <head>
 
 	<meta charset="utf-8">
@@ -8,36 +9,31 @@
 
 	<title>{{title}}</title>
 
-	{{#if fabricator}}<link rel="stylesheet" href="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/fabricator/styles/f.css">{{/if}}
+	{{#if fabricator}}
+	<link rel="stylesheet" href="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/fabricator/styles/f.css">{{/if}}
 
 	<!-- toolkit styles -->
 	<link rel="stylesheet" href="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/styles/toolkit.css">
+
 	<!-- /toolkit styles -->
-	
+
 	<!-- jQuery -->
-	<script   src="http://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-	{{> icons.icons-symbol-library }}
-	{{#if fabricator}}
-		{{> f-icons}}
-		{{> f-menu}}
-		<div class="f-container">
-			{{> f-control-bar}}
-	{{/if}}
-
-
-	{% body %}
-
-
-	{{#if fabricator}}
-		</div>
-	<script src="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/fabricator/scripts/f.js"></script>
-	{{/if}}
+	{{> icons.icons-symbol-library }} {{#if fabricator}} {{> f-icons}} {{> f-menu}}
+	<div class="f-container">
+		{{> f-control-bar}} {{/if}} {% body %} {{#if fabricator}}
+	</div>
+	<script src="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/fabricator/scripts/f.js"></script> {{/if}}
 
 	<!-- toolkit scripts -->
 	<script src="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/scripts/toolkit.js"></script>
 	<!-- /toolkit scripts -->
 
 </body>
+
 </html>

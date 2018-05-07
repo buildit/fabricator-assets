@@ -7,6 +7,7 @@ $double-border: $border-width * 2;
     opacity: 0;
     width: 0;
     height: 0;
+    position: absolute;
 
     &:checked + .hpe-check-box__control {
       background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%3E%0D%0A%20%20%3Cpolygon%20fill%3D%22%2301A982%22%20points%3D%226.018%208.449%2012.656%200%2016%202.628%206.264%2015.019%200%208.172%203.138%205.301%22%2F%3E%0D%0A%3C%2Fsvg%3E%0D%0A");

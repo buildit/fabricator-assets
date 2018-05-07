@@ -1,0 +1,43 @@
+[
+  {
+    "name":
+      "HPE ProLiant MicroServer Gen10 X3216 1P 8GB-U 4LFF NHP SATA 200W PS Entry Server",
+    "description":
+      "Short description that calls out the approach or features that this individual product uses for this need.",
+    "price": "$344.00",
+    "image":
+      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00013739.png"
+  },
+  {
+    "name": "HPE ProLiant DL380 Gen10 server",
+    "description":
+      "with one Intel® Xeon® Silver 4112 processor, 16 GB dual rank memory, P408i-a storage controller, eight large form factor chassis and one 500W power supply",
+    "price": "$2,189.99",
+    "image":
+      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
+  },
+  {
+    "name": "HPE ProLiant ML110 Gen10 tower server",
+    "description":
+      "Short description that calls out the approach or features that this individual product uses for this need.",
+    "price": "$999.99",
+    "image":
+      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00028987.png"
+  },
+  {
+    "name": "HPE ProLiant BL460c Gen9 E5-2609v4 1P 16GB-R Server",
+    "description":
+      "Short description that calls out the approach or features that this individual product uses for this need.",
+    "price": "$2,752.99",
+    "image":
+      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/c05084293.png"
+  },
+  {
+    "name": "HPE ProLiant BL660c Gen9 E5-2609v4 1P 16GB-R Server",
+    "description":
+      "Short description that calls out the approach or features that this individual product uses for this need.",
+    "price": "$2,752.99",
+    "image":
+      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00028987.png"
+  }
+]

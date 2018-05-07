@@ -1,0 +1,40 @@
+<article class="hpe-product-list hpe-centered-section">
+  <div class="row">
+    <aside class="col-md-3">
+      {{> category-filters}}
+    </aside>
+    <div class="col-md-9">
+      {{> subcategory-guide }} {{#each subcategory }}
+      <section class="hpe-product-list__row row">
+        <div class="hpe-product-list__image col-md-3">
+          {{> bookmark }}
+          <img src="{{this.image}}" alt="{{this.name}}">
+        </div>
+        <div class="hpe-product-list__about col-md-6">
+          <h3 class="hpe-headline hpe-headline--strong hpe-headline--small">
+            {{this.name}}
+          </h3>
+          <p class="hpe-product-list__description">{{this.description}}</p>
+          {{# each this.tags }}
+          <span class="hpe-product-list__tag">
+            {{> icons.icon icon=this.icon className="hpe-icon--inline" }} {{this.tagline}}
+          </span>
+          {{/each}}
+        </div>
+        <div class="hpe-product-list__meta col-md-3">
+          <p class="hpe-product-list__price">
+            {{> starting-price price=this.price }}
+          </p>
+          <p>
+            {{this.meta}}
+          </p>
+          {{> buttons.button--secondary text="Shop" class="hpe-product-list__button" }}
+          <p>
+            {{> form.checkbox text="Compare" }}
+          </p>
+        </div>
+      </section>
+      {{/each }}
+    </div>
+  </div>
+</article>

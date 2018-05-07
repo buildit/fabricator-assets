@@ -5,8 +5,7 @@
   "license": "MIT",
   "homepage": "http://fbrctr.github.io/",
   "scripts": {
-    "prestart": "npm install",
-    "build": "npm run prestart && gulp",
+    "build": "gulp",
     "start": "gulp --dev",
     "test": "npm run build"
   },
@@ -49,6 +48,7 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-util": "^3.0.7",
     "imports-loader": "^0.6.5",
+    "owl.carousel": "^2.3.4",
     "run-sequence": "^2.2.1",
     "script-loader": "^0.7.0",
     "webpack": "^1.13.1"
@@ -58,7 +58,9 @@
     "gulp-merge-json": "^1.2.1",
     "gulp-svg-symbols": "^3.1.0",
     "gulp-svgmin": "^1.2.4",
+    "hoek": "^5.0.3",
     "lazy-debug-legacy": "^0.0.1",
+    "nouislider": "^11.1.0",
     "path": "^0.12.7"
   }
 }
