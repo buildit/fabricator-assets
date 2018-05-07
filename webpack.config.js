@@ -15,16 +15,19 @@ function getPlugins(isDev) {
   if (isDev) {
     plugins.push(new webpack.NoErrorsPlugin());
   } else {
-    plugins.push(new webpack.optimize.DedupePlugin());
-    plugins.push(
-      new webpack.optimize.UglifyJsPlugin({
-        minimize: true,
-        sourceMap: false,
-        compress: {
-          warnings: false
-        }
-      })
-    );
+    plugins.push(new webpack.NoErrorsPlugin());
+
+    // @TODO This should be turned back on, currently bugged due to the UglifyJS being unable to compiling ECMA v6
+    // plugins.push(new webpack.optimize.DedupePlugin());
+    // plugins.push(
+    //   new webpack.optimize.UglifyJsPlugin({
+    //     minimize: true,
+    //     sourceMap: false,
+    //     compress: {
+    //       warnings: false
+    //     }
+    //   })
+    // );
   }
 
   return plugins;
