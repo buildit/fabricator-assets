@@ -48,13 +48,6 @@ const config = {
       watch: "src/assets/toolkit/scripts/**/*"
     }
   },
-  images: {
-    toolkit: {
-      src: ["src/assets/toolkit/images/**/*"],
-      dest: "dist/assets/toolkit/images",
-      watch: "src/assets/toolkit/images/**/*"
-    }
-  },
   icons: {
     toolkit: {
       src: ["src/assets/toolkit/icons/**/*.svg"],
@@ -184,10 +177,15 @@ gulp.task("styles", ["styles:fabricator", "styles:toolkit"]);
 
 // images
 gulp.task("images", ["favicon"], () => {
-  return gulp
-    .src(config.images.toolkit.src)
-    .pipe(imagemin())
-    .pipe(gulp.dest(config.images.toolkit.dest));
+  let task = gulp.src(config.images.toolkit.src);
+
+  if (!config.dev) {
+    task = task.pipe(imagemin());
+  }
+
+  task = task.pipe(gulp.dest(config.images.toolkit.dest));
+
+  return task;
 });
 
 // icons
@@ -287,6 +285,7 @@ gulp.task("serve", () => {
 gulp.task("default", ["clean"], () => {
   // define build tasks
   const tasks = [
+    "json",
     "jsonsass",
     "icons",
     "scripts",
@@ -297,7 +296,7 @@ gulp.task("default", ["clean"], () => {
   ];
 
   // run build
-  runSequence("json", "jsonsass", "icons", tasks, () => {
+  runSequence(...tasks, () => {
     if (config.dev) {
       gulp.start("serve");
     }
