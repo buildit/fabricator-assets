@@ -1,6 +1,19 @@
 <div class="container-fluid">
 
-    {{> header }} {{> carousel }} {{> breadcrumbs pages=links-home}} {{> carousel-owl }} {{> cta-section-home }} {{> featured-product
-    }} {{> card-list }} {{> breadcrumbs }} {{> support }} {{> footer}}
+    {{> header }} {{> carousel }} 
+    
+    {{> breadcrumbs pages=links-home}} 
+    
+    {{> cta-section-home }} 
+    
+    {{> featured-product }} 
+    
+    {{> carousel-owl title="Your recent items" carouselData=recently-viewed }}
+
+    {{> breadcrumbs }} 
+    
+    {{> support }} 
+    
+    {{> footer}}
 
 </div>
