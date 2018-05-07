@@ -8,6 +8,7 @@ phases:
       - apt-get -y install openssh-client
   pre_build:
     commands:
+      - npm install
       - npm run build
   build:
     commands:
