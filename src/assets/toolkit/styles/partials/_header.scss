@@ -40,19 +40,12 @@ $header-height: 5.3125rem;
     position: absolute;
     background: $white;
     height: $header-height;
-    width: calc(100% - #{$button--small + $bootstrap-gutter});
+    width: 100%;
     right: 200%;
     padding: 0 $bootstrap-gutter;
+    margin: 0 -$bootstrap-gutter;
     z-index: 1;
     border-right: $border-width solid $light-grey-4;
-
-    @include respond-to(small) {
-      width: calc(100% - #{$button--large - ($border-width * 2)});
-    }
-
-    @include respond-to(medium) {
-      width: calc(100% - #{$button--large + ($bootstrap-gutter-double - ($border-width * 2))});
-    }
 
     &--active {
       right: auto;
