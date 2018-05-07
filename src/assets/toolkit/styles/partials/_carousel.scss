@@ -139,7 +139,7 @@ $card-background: transparentize($dark-grey-1, 0.25);
 		z-index: 100;
 
 		@include respond-to(medium) {
-			$button-size: 2rem;
+			$button-size: 1.875rem;
 			font-size: $button-size;
 			margin-top: ($button-size / 2) * -1;
 		}
