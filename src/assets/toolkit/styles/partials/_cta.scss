@@ -11,8 +11,17 @@
   height: 100%;
   margin-bottom: $bootstrap-gutter-double;
 
+  &__image {
+    position: absolute;
+    height: 100%;
+  }
+
   &__content {
 
+    &--wide {
+      width: 50%;
+      float: right;
+    }
   }
 
   &__description {
