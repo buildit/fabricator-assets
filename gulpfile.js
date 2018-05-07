@@ -116,13 +116,6 @@ gulp.task("scripts", done => {
   });
 });
 
-// libraries
-gulp.task("libraries", () => {
-  return gulp
-    .src(config.scripts.toolkit.srcScripts, !config.scripts.toolkit.src)
-    .pipe(gulp.dest(config.scripts.toolkit.dest));
-});
-
 // Combine config JSON and Generate Sass Variables
 gulp.task("json", () => {
   gulp
@@ -297,7 +290,6 @@ gulp.task("default", ["clean"], () => {
     "jsonsass",
     "icons",
     "scripts",
-    "libraries",
     "images",
     "fonts",
     "styles",
