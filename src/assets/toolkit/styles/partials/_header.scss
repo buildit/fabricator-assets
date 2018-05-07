@@ -2,13 +2,23 @@ $nav-padding: 1rem;
 $header-height: 5.3125rem;
 
 .hpe-header {
-  position: relative;
+  position: fixed;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: transparentize($white, .05);
   align-items: center;
   height: $header-height;
   padding: 0 $bootstrap-gutter;
+  box-shadow: $border-width $double-border .25em transparentize($black, .8);
+
+  &__content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;    
+  }
 
   .hpe-logo {
     width: 6.5rem;
@@ -64,7 +74,6 @@ $header-height: 5.3125rem;
 }
 
 .hpe-nav {
-  background-color: $white;
   display: flex;
   align-items: center;
 

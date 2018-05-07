@@ -51,7 +51,7 @@ $card-background: transparentize($dark-grey-1, 0.25);
 	align-items: flex-end;
 
 	@include respond-to(large) {
-		height: 40rem;
+		height: 42rem;
 	}
 
 	&__image {
