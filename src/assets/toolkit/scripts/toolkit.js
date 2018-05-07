@@ -1,3 +1,5 @@
+
+const owlCarousel = require("owl.carousel");
 const noUiSlider = require("../../../../node_modules/nouislider/distribute/nouislider.js");
 
 $(".hpe-input input").focus(function() {
@@ -92,4 +94,30 @@ $(".hpe-range--handles").each(function(i, obj) {
     },
     start: [minStart, maxStart]
   });
+});
+
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  nav: true,
+  dots: false,
+  navText: [
+    `
+    <svg class="hpe-icon">
+      <use xlink:href="#icon-link-previous" />
+    </svg>  
+  `,
+    `
+    <svg class="hpe-icon">
+      <use xlink:href="#icon-link-next" />
+    </svg>`
+  ],
+  responsive: {
+    0: {
+      items: 1,
+      nav: true
+    },
+    768: {
+      items: 3
+    }
+  }
 });

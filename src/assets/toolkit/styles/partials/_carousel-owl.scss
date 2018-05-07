@@ -1,0 +1,72 @@
+@import "../../../../../node_modules/owl.carousel/src/scss/owl.theme.default";
+@import "../../../../../node_modules/owl.carousel/src/scss/owl.carousel";
+
+.owl-carousel {
+  $button-size: 2.5rem;
+
+  padding: 0 $button-size;
+
+  @include respond-to(medium) {
+    $button-size: 7.5rem;
+
+    padding: 0 ($button-size - 1rem);
+  }
+
+  .hpe-card {
+    max-width: 19rem;
+  }
+
+  .owl-nav {
+    font-size: 1.5rem;
+
+    @include respond-to(medium) {
+      $button-size: 7.5rem;
+
+      font-size: $button-size - 4rem;
+    }
+
+    button.owl-prev,
+    button.owl-next {
+      $button-size: 3.5rem;
+
+      position: absolute;
+      top: 50%;
+      display: block;
+      padding: 1rem !important;
+      margin-top: ($button-size / 2) * -1;
+      height: $button-size;
+      width: $button-size;
+      display: block;
+      background: transparentize($black, 0.25);
+      color: white;
+
+      @include respond-to(medium) {
+        $button-size: 7.5rem;
+
+        margin-top: ($button-size / 2) * -1;
+        height: $button-size;
+        width: $button-size;
+      }
+    }
+  }
+}
+
+.owl-prev {
+  left: 0;
+  text-align: left;
+
+  .hpe-icon {
+    position: relative;
+    top: -0.5em;
+  }
+}
+
+.owl-next {
+  right: 0;
+  text-align: right;
+
+  .hpe-icon {
+    position: relative;
+    top: 0.5em;
+  }
+}
