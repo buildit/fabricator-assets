@@ -1,7 +1,4 @@
 <section class="owl-carousel">
-  {{#each recently-viewed }}
-  <div>
-    {{> card title=this.name src=this.image description=this.description price=this.price buttonText="Shop" }}
-  </div>
-  {{/each}}
+  {{#each recently-viewed }} {{> card title=this.name src=this.image description=this.description price=this.price buttonText="Shop"
+  }} {{/each}}
 </section>

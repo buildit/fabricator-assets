@@ -108,5 +108,14 @@ $(".owl-carousel").owlCarousel({
     <svg class="hpe-icon">
       <use xlink:href="#icon-link-next" />
     </svg>`
-  ]
+  ],
+  responsive: {
+    0: {
+      items: 1,
+      nav: true
+    },
+    768: {
+      items: 3
+    }
+  }
 });
