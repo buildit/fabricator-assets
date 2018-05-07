@@ -45,7 +45,6 @@ $header-height: 5.3125rem;
     padding: 0 $bootstrap-gutter;
     margin: 0 -$bootstrap-gutter;
     z-index: 1;
-    border-right: $border-width solid $light-grey-4;
 
     &--active {
       right: auto;
@@ -102,7 +101,6 @@ $header-height: 5.3125rem;
   }
 
   &__tools {
-    border-right: $border-width solid $dark-grey-1;
     padding: 0;
     height: 2.125rem;
     display: flex;
@@ -119,9 +117,15 @@ $header-height: 5.3125rem;
   &__menu {
     position: relative;
     align-self: center;
-    margin-left: 1rem;
     z-index: 2;
     flex: 0 0 auto;
+
+    &::before {
+      content: "";
+      border-left: $border-width solid $dark-grey-1;
+      padding: .5em 0 .5em 1rem;
+      width: $border-width;
+    }
 
     &-label {
       position: relative;
