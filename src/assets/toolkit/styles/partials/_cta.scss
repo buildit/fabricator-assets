@@ -1,6 +1,10 @@
 .hpe-cta-section {
   padding-top: $bootstrap-gutter-double;
-  @include stack-row(medium);
+
+  &__item {
+    padding-top: $bootstrap-gutter;
+    padding-bottom: $bootstrap-gutter;
+  }
 
   @include respond-to(medium) {
     padding-bottom: $bootstrap-gutter-double;
@@ -8,15 +12,25 @@
 }
 
 .hpe-cta {
+  position: relative;
   height: 100%;
-  margin-bottom: $bootstrap-gutter-double;
+  margin-bottom: $bootstrap-gutter;
 
   &__image {
     position: absolute;
     height: 100%;
+    bottom: 0;
+    left: $bootstrap-gutter-double;
+  }
+
+  &--tall-image {
+    .hpe-cta__image {
+      height: calc(100% + 2rem)
+    }
   }
 
   &__content {
+    padding: $bootstrap-gutter;
 
     &--wide {
       width: 50%;
@@ -26,9 +40,17 @@
 
   &__description {
     font-size: 1rem;
+  }
 
-    @include respond-to(medium) {
-      font-size: 1.5rem;
-    }
+  &--dark {
+    color: $white;
+  }
+
+  &--dark1 {
+    background-color: $dark-2;
+  }
+
+  &--dark2 {
+    background-color: $dark-1;
   }
 }
