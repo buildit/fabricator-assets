@@ -1,4 +1,5 @@
 const owlCarousel = require("owl.carousel");
+const noUiSlider = require("../../../../node_modules/nouislider/distribute/nouislider.js");
 
 $(".hpe-input input").focus(function() {
   $(this)
