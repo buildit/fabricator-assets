@@ -2,14 +2,28 @@
 
 ## Quick Start
 
-1. Clone the repo
-2. Install [Homebrew](https://brew.sh)
-3. Optionally, install [Yarn](https://yarnpkg.com/lang/en/docs/install/)
+Requirements:
 
-To run app:
+1. [Node.js](https://nodejs.org/en/), [NVM](https://github.com/creationix/nvm), or [n](https://github.com/tj/n)
+1. [Yarn](https://yarnpkg.com/lang/en/docs/install)
 
-```shell
-$ yarn start
+To run the app:
+
+```bash
+nvm use
+# Or manually change to the node version in `.nvmrc` if not using NVM
+
+yarn install
+yarn start
+# Should automatically open your browser to http://localhost:3000 when ready
+```
+
+### Creating a build
+
+Builds will be dumped in the `dist` folder
+
+```bash
+yarn build
 ```
 
 ## Documentation

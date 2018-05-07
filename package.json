@@ -5,8 +5,12 @@
   "license": "MIT",
   "homepage": "http://fbrctr.github.io/",
   "scripts": {
+<<<<<<< HEAD
     "prestart": "yarn install",
     "build": "npm run prestart && gulp",
+=======
+    "build": "gulp",
+>>>>>>> 2b112ecde9f4a9da7e1a010c6d727cc95950e9a3
     "start": "gulp --dev",
     "test": "npm run build"
   },
