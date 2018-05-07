@@ -1,162 +1,184 @@
+$card-background: transparentize($dark-grey-1, 0.25);
+
 .hpe-slider {
-  position: relative;
+	position: relative;
 
-  &__list {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    width: 100%;
-    overflow: hidden;
-  }
+	&__list {
+		display: flex;
+		list-style: none;
+		padding: 0;
+		width: 100%;
+		overflow: hidden;
+	}
 
-  &__item {
-    height: 19rem;
-    min-width: 14rem;
-    background-color: $light-grey-2;
-    margin-right: 0.5em;
-  }
+	&__item {
+		height: 19rem;
+		min-width: 14rem;
+		background-color: $light-grey-2;
+		margin-right: 0.5em;
+	}
 
-  &__button {
-    position: absolute;
-    top: 50%;
-    background: transparentize($white, 0.6);
-    font-size: 2rem;
-    padding: 0.5rem;
-    text-align: center;
+	&__button {
+		position: absolute;
+		top: 50%;
+		background: transparentize($white, 0.6);
+		font-size: 2rem;
+		padding: 0.5rem;
+		text-align: center;
 
-    svg {
-      margin-right: 0;
-    }
+		svg {
+			margin-right: 0;
+		}
 
-    &--previous {
-      left: 0;
-    }
+		&--previous {
+			left: 0;
+		}
 
-    &--next {
-      right: 0;
-    }
-  }
+		&--next {
+			right: 0;
+		}
+	}
 }
 
 .hpe-carousel {
-  position: relative;
-  height: 25rem;
-  overflow: hidden;
-  width: calc(100% + #{$bootstrap-gutter-double});
-  background-color: $dark-grey-4;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+	position: relative;
+	height: 25rem;
+	overflow: hidden;
+	width: calc(100% + #{$bootstrap-gutter-double});
+	background-color: $dark-grey-4;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 
-  @include respond-to(large) {
-    height: 40rem;
-  }
+	@include respond-to(large) {
+		height: 40rem;
+	}
 
-  &__image {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    left: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: left $transition--normal ease-in-out;
+	&__image {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		left: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		transition: left $transition--normal ease-in-out;
 
-    &--active {
-      left: 0;
-    }
-  }
+		&--active {
+			left: 0;
+		}
+	}
 
-  &__content {
-    width: 100%;
-    color: $white;
-    padding: 0 4rem;
+	&__content {
+		width: 100%;
+		color: $white;
+		padding: 0 5rem;
 
-    @include respond-to(medium) {
-      padding: 0 6rem;
-    }
+		@include respond-to(medium) {
+			padding: 0 8rem;
+		}
 
-    @media (min-width: $ex-large + 6rem) {
-      padding: 0 $bootstrap-gutter;
-    }
-  }
+		@media (min-width: $ex-large + 6rem) {
+			padding: 0 $bootstrap-gutter;
+		}
+	}
 
-  &__title,
-  &__description {
-    @include respond-to(large) {
-      max-width: 75%;
-    }
+	&__card {
+		max-width: 38rem;
+		padding: $bootstrap-gutter;
+		background: $card-background;
+	}
 
-    @include respond-to(large) {
-      max-width: 50%;
-    }
-  }
+	&__description {
+		@include respond-to(large) {
+			font-size: 1.5rem;
+		}
+	}
 
-  &__description {
-    @include respond-to(large) {
-      font-size: 1.5rem;
-    }
-  }
+	&__title {
+		line-height: 0.9;
+	}
 
-  &__button {
-    $button-size: 2rem;
+	&__actions {
+		display: flex;
+		max-width: 38rem;
+	}
 
-    position: absolute;
-    top: 50%;
-    font-size: $button-size;
-    margin-top: ($button-size / 2) * -1;
-    padding: 0.5rem;
-    text-align: center;
-    color: $white;
-    z-index: 100;
+	&__action-button {
+		margin: $border-width $border-width 0 0;
+		background: $card-background;
+		padding: 0.5em 1rem 0.75rem;
 
-    @include respond-to(medium) {
-      $button-size: 4rem;
-      font-size: $button-size;
-      margin-top: ($button-size / 2) * -1;
-    }
+		&:not(:first-child) {
+			flex: 1 1 auto;
+		}
 
-    svg {
-      margin-right: 0;
-    }
+		a.hpe-anchor {
+			color: $white;
+		}
 
-    &--previous {
-      left: 0;
+		.hpe-icon {
+			color: $brand;
+		}
+	}
 
-      .hpe-carousel__image--active:first-of-type ~ & {
-        display: none;
-      }
-    }
+	&__button {
+		$button-size: 2rem;
 
-    &--next {
-      right: 0;
-      
-      .hpe-carousel__image--active:last-of-type ~ & {
-        display: none;
-      }
-    }
-  }
+		position: absolute;
+		top: 50%;
+		font-size: $button-size;
+		margin-top: ($button-size / 2) * -1;
+		padding: 0.5rem;
+		text-align: center;
+		color: $white;
+		z-index: 100;
 
-  &__indicator {
-    display: block;
-    position: relative;
-    height: .5em;
-    width: .5em;
-    background: $white;
-    opacity: .55;
-    margin: 0 .75em 3rem;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 100;
+		@include respond-to(medium) {
+			$button-size: 2rem;
+			font-size: $button-size;
+			margin-top: ($button-size / 2) * -1;
+		}
 
-    // Active indicator
-    .hpe-carousel__image--active + & {
-      opacity: 1;
-    }
-  }
-  
+		svg {
+			margin-right: 0;
+		}
+
+		&--previous {
+			left: 0;
+
+			.hpe-carousel__image--active:first-of-type ~ & {
+				display: none;
+			}
+		}
+
+		&--next {
+			right: 0;
+
+			.hpe-carousel__image--active:last-of-type ~ & {
+				display: none;
+			}
+		}
+	}
+
+	&__indicator {
+		display: block;
+		position: relative;
+		height: 0.25em;
+		width: 2.5em;
+		background: $white;
+		opacity: 0.65;
+		margin: 0 0.25em 2rem;
+		cursor: pointer;
+		z-index: 100;
+
+		// Active indicator
+		.hpe-carousel__image--active + & {
+			opacity: 1;
+		}
+	}
 }
