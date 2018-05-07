@@ -8,7 +8,8 @@ phases:
       - apt-get -y install openssh-client
   pre_build:
     commands:
-      - echo Nothing to do in the pre_build phase...
+      - npm install
+      - npm run build
   build:
     commands:
       - echo Build started on `date`
