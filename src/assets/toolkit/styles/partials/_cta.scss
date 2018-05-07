@@ -18,19 +18,27 @@
 
   &__image {
     position: absolute;
-    height: 100%;
+    max-width: 50%;
     bottom: 0;
-    left: $bootstrap-gutter-double;
+    left: 0;
   }
 
   &--tall-image {
     .hpe-cta__image {
-      height: calc(100% + 2rem)
+      height: calc(100% + 2rem);
+      left: $bootstrap-gutter-double;
     }
+  }
+
+  &--tall {
+    background-color: fuchsia;
+    height: 100%;
+    align-self: flex-end !important;
   }
 
   &__content {
     padding: $bootstrap-gutter;
+    z-index: 1;
 
     &--wide {
       width: 50%;
@@ -44,6 +52,10 @@
 
   &--dark {
     color: $white;
+
+    .hpe-cta__button {
+      color: $white !important;
+    }
   }
 
   &--dark1 {
