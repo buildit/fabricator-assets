@@ -1,5 +1,7 @@
 # Buildit Custom Fabricator for Making Great Living Style Guides
 
+[![Build Status](https://travis-ci.org/buildit/fabricator-assets.svg?branch=master)](https://travis-ci.org/buildit/fabricator-assets)
+
 ## Quick Start
 
 Requirements:
