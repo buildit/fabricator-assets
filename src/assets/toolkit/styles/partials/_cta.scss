@@ -8,28 +8,11 @@
 }
 
 .hpe-cta {
-  background-color: $light-grey-1;
-  padding: $bootstrap-gutter-double;
   height: 100%;
   margin-bottom: $bootstrap-gutter-double;
-  background-repeat: no-repeat;
-  background-position: right -10rem bottom -3rem;
-  background-size: contain;
-
-  @include respond-to(ex-large) {
-    margin-bottom: 0;
-  }
 
   &__content {
-    margin-bottom: 1.5em;
 
-    &--image {
-      padding-right: 5rem;
-
-      @include respond-to(medium) {
-        padding-right: 10rem;
-      }
-    }
   }
 
   &__description {
@@ -38,23 +21,5 @@
     @include respond-to(medium) {
       font-size: 1.5rem;
     }
-  }
-
-  &__categories {
-    list-style: none;
-    padding: 0;
-    columns: 2;
-    
-    a {
-      text-decoration: none;
-    }
-  }
-
-  &__category-item {
-    margin-bottom: 1em;
-    font-size: 1.125em;
-    -webkit-column-break-inside: avoid;
-    page-break-inside: avoid;
-    break-inside: avoid;
   }
 }
