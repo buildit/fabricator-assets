@@ -16,6 +16,11 @@
   padding: $button-padding;
   text-decoration: none;
 
+  &:visited,
+  &:active {
+    color: $white;
+  }
+
   &--secondary {
     background-color: transparent;
     color: $dark-grey-1;
