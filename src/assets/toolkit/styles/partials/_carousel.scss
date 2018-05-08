@@ -42,7 +42,7 @@ $card-background: transparentize($dark-grey-1, 0.25);
 
 .hpe-carousel {
 	position: relative;
-	height: 25rem;
+	height: 35rem;
 	overflow: hidden;
 	width: calc(100% + #{$bootstrap-gutter-double});
 	background-color: $dark-grey-4;
@@ -76,7 +76,7 @@ $card-background: transparentize($dark-grey-1, 0.25);
 	&__content {
 		width: 100%;
 		color: $white;
-		padding: 0 5rem;
+		padding: 0 2rem;
 
 		@include respond-to(medium) {
 			padding: 0 8rem;
@@ -127,13 +127,13 @@ $card-background: transparentize($dark-grey-1, 0.25);
 	}
 
 	&__button {
-		$button-size: 2rem;
+		$button-size: 1.75rem;
 
 		position: absolute;
+		display: block;
 		top: 50%;
 		font-size: $button-size;
 		margin-top: ($button-size / 2) * -1;
-		padding: 0.5rem;
 		text-align: center;
 		color: $white;
 		z-index: 100;
@@ -141,10 +141,11 @@ $card-background: transparentize($dark-grey-1, 0.25);
 		@include respond-to(medium) {
 			$button-size: 1.875rem;
 			font-size: $button-size;
+			padding: 0.5rem;
 			margin-top: ($button-size / 2) * -1;
 		}
 
-		svg {
+		.hpe-icon {
 			margin-right: 0;
 		}
 

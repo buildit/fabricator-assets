@@ -16,7 +16,8 @@ $nav-padding: 1rem;
   &__content {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;    
+    justify-content: space-between;
+    width: 100%;
   }
 
   .hpe-logo {
