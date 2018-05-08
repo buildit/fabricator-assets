@@ -5,16 +5,19 @@
     {{#each solutions }}
     <div class="col-md-3">
       <div class="hpe-solution__image" style="background-image: url('{{this.image}}')"></div>
-      <h3 class="hpe-headline hpe-headline--caps hpe-headline--black hpe-solution__title">{{this.title}}</h3>
-      <ul class="hpe-solution__list">
-        {{#each this.solutionList }}
-        <li class="hpe-solution__item">
-          <a href="{{this.link}}">{{this.name}}</a>
-        </li>
-        {{/each}}
-        <li class="hpe-solution__item"></li>
-      </ul>
-      {{> buttons.anchor-primary--reverse text="More" icon="link-next"}}
+      <div class="hpe-solution__body">
+        <h3 class="hpe-headline hpe-headline--caps hpe-headline--black hpe-solution__title">{{this.title}}</h3>
+        <ul class="hpe-solution__list">
+          {{#each this.solutionList }}
+          <li class="hpe-solution__item">
+            <a href="{{this.link}}">{{this.name}}</a>
+          </li>
+          {{/each}}
+          <li class="hpe-solution__item"></li>
+        </ul>
+        {{> buttons.anchor-primary--reverse text="More" icon="link-next"}}
+
+      </div>
     </div>
     {{/each}}
   </div>
