@@ -104,7 +104,7 @@ gulp.task("serve", () => {
 
   gulp.task(
     "assembler:watch",
-    ["assembler", "json", "jsonsass"],
+    ["assembler"],
     browserSync.reload
   );
   gulp.watch(config.templates.watch, ["assembler:watch"]);
