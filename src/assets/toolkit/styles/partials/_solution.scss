@@ -1,0 +1,29 @@
+.hpe-solution {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__image {
+    background-color: $light-grey-1;
+    background-size: cover;
+    height: 8rem;
+    margin-bottom: $bootstrap-gutter;
+  }
+
+  &__item {
+    margin-bottom: .5em;
+    font-size: 1.25rem;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+  }
+}
