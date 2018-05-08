@@ -37,9 +37,8 @@ $button-offset: $ex-large + 9rem;
       $button-size: 3.5rem;
 
       position: absolute;
-      top: 50%;
-      display: block;
       padding: 1rem !important;
+      top: 50%;
       margin-top: ($button-size / 2) * -1;
       height: $button-size;
       width: $button-size;
@@ -71,7 +70,7 @@ $button-offset: $ex-large + 9rem;
   @media (min-width: $button-offset) {
     $button-size: 7.5rem;
     
-    left: -($button-size - 1rem);
+    left: -($button-size - 2rem);
   }
 }
 
@@ -87,7 +86,7 @@ $button-offset: $ex-large + 9rem;
 	@media (min-width: $button-offset) {
     $button-size: 7.5rem;
     
-    right: -($button-size - 1rem);
+    right: -($button-size - 2rem);
   }
 }
 
@@ -95,4 +94,3 @@ $button-offset: $ex-large + 9rem;
 .owl-item {
   display: flex;
 }
-

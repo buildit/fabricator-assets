@@ -1,45 +1,5 @@
 $card-background: transparentize($dark-grey-1, 0.25);
 
-.hpe-slider {
-	position: relative;
-
-	&__list {
-		display: flex;
-		list-style: none;
-		padding: 0;
-		width: 100%;
-		overflow: hidden;
-	}
-
-	&__item {
-		height: 19rem;
-		min-width: 14rem;
-		background-color: $light-grey-2;
-		margin-right: 0.5em;
-	}
-
-	&__button {
-		position: absolute;
-		top: 50%;
-		background: transparentize($white, 0.6);
-		font-size: 2rem;
-		padding: 0.5rem;
-		text-align: center;
-
-		svg {
-			margin-right: 0;
-		}
-
-		&--previous {
-			left: 0;
-		}
-
-		&--next {
-			right: 0;
-		}
-	}
-}
-
 .hpe-carousel {
 	position: relative;
 	height: 35rem;

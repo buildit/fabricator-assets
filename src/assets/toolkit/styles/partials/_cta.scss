@@ -1,8 +1,15 @@
 .hpe-cta-section {
   padding-top: 2rem;
 
+  &__content,
+  &__group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   &__item {
     padding-bottom: $bootstrap-gutter;
+    flex: 1 1 100%;
 
     @include respond-to(medium) {
       min-height: 20rem;
@@ -65,7 +72,6 @@
 
   &--wide {
     display: flex;
-    align-items: center;
     justify-content: flex-end;
   }
 
