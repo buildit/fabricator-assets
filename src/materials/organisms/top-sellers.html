@@ -1,0 +1,20 @@
+<section class="hpe-top-sellers row">
+  <div class="hpe-top-sellers__content hpe-centered-section">
+    <h2 class="hpe-headline hpe-headline--caps hpe-headline--black hpe-featured-product__heading hpe-section-headline">Top Sellers</h2>
+    {{> brand-rule }}
+    <div class="row">
+     {{#each products-top-sellers }}
+    <div class="hpe-top-sellers__item col-sm-6">
+      <div class="hpe-top-sellers__image">
+        <img src="{{this.image}}" alt="{{this.name}}">
+      </div>
+      <div class="hpe-top-sellers__body">
+        <h4 class="hpe-headline hpe-headline--strong hpe-top-sellers__product-name">{{this.name}}</h4>
+        <p>{{this.description}}</p>
+        {{> starting-price price=this.price }} {{> buttons.anchor-button-primary text="Shop" }}
+      </div>
+    </div>
+    {{/each}}
+    </div>
+  </div>
+</section>

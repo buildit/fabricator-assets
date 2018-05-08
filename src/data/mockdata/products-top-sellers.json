@@ -1,0 +1,26 @@
+[
+  {
+    "name": "HPE ProLiant BL 460c Gen10 server",
+    "description": "A high-density, 4P server with high-performance, scalability, and reliability, in a 2U chassis.",
+    "price": "$23,500",
+    "image": "https://marketplace.hpe.com/api/getImagesCached?fileName=ProLiantDL_BreakingThePlane_2x-md_res3.png"
+  },
+  {
+    "name": "HPE ProLiant BL 460c Gen10 server",
+    "description": "A high-density, 4P server with high-performance, scalability, and reliability, in a 2U chassis.",
+    "price": "$23,500",
+    "image": "https://marketplace.hpe.com/api/getImagesCached?fileName=ML350Ge10i00030406.png"
+  },
+  {
+    "name": "HPE ProLiant BL 460c Gen10 server",
+    "description": "A high-density, 4P server with high-performance, scalability, and reliability, in a 2U chassis.",
+    "price": "$23,500",
+    "image": "https://marketplace.hpe.com/api/getImagesCached?fileName=i000137391.png"
+  },
+  {
+    "name": "HPE ProLiant BL 460c Gen10 server",
+    "description": "A high-density, 4P server with high-performance, scalability, and reliability, in a 2U chassis.",
+    "price": "$23,500",
+    "image": "https://marketplace.hpe.com/api/getImagesCached?fileName=HPE_BL460_Gen9.jpg"
+  }
+]

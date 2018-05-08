@@ -1,0 +1,24 @@
+.hpe-top-sellers {
+  background: $light-grey-1;
+  padding: 4rem 0;
+
+  &__item {
+    background: $white;
+    padding: $bootstrap-gutter-double;
+    display: flex;
+  }
+
+  &__image {
+    flex: 0 0 50%;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }    
+  }
+
+  &__body {
+    padding-left: $bootstrap-gutter-double;
+    text-align: center;
+  }
+}
