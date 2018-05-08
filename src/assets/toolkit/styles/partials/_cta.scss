@@ -1,13 +1,20 @@
 .hpe-cta-section {
-  padding-top: $bootstrap-gutter-double;
+  padding-top: 2rem;
 
   &__item {
-    padding-top: $bootstrap-gutter;
     padding-bottom: $bootstrap-gutter;
+
+    @include respond-to(medium) {
+      min-height: 20rem;
+    }
+
+    &--tall {
+      height: 100%;
+    }
   }
 
   @include respond-to(medium) {
-    padding-bottom: $bootstrap-gutter-double;
+    padding-bottom: $bootstrap-gutter;
   }
 }
 
@@ -25,44 +32,71 @@
 
   &--tall-image {
     .hpe-cta__image {
-      height: calc(100% + 2rem);
+      height: calc(100% + #{$bootstrap-gutter-double});
       left: $bootstrap-gutter-double;
     }
   }
 
-  &--tall {
-    background-color: fuchsia;
-    height: 100%;
-    align-self: flex-end !important;
-  }
-
   &__content {
-    padding: $bootstrap-gutter;
     z-index: 1;
+    padding: $bootstrap-gutter;
 
     &--wide {
       width: 50%;
-      float: right;
+      padding: $bootstrap-gutter-double;
+    }
+
+    &--tall {
+      @include respond-to(medium) {
+        width: calc(100% - #{$bootstrap-gutter-double});
+        height: 100%;
+        padding: $bootstrap-gutter-double;
+      }
     }
   }
 
+  &__title {
+    font-size: 2rem;
+  }
+
   &__description {
-    font-size: 1rem;
+    font-size: 1.125rem;
+  }
+
+  &--wide {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &--tall {
+    @include respond-to(medium) {
+      .hpe-cta__image {
+        max-width: inherit;
+        width: calc(100% + #{$bootstrap-gutter-double});
+        bottom: 2rem;
+      }
+    }
   }
 
   &--dark {
     color: $white;
 
-    .hpe-cta__button {
-      color: $white !important;
+    .hpe-cta__button,
+    svg.hpe-icon {
+      color: $white;
     }
   }
 
   &--dark1 {
-    background-color: $dark-2;
+    background-color: $dark-1;
   }
 
   &--dark2 {
-    background-color: $dark-1;
+    background-color: $dark-2;
+  }
+
+  &--dark3 {
+    background-color: $dark-3;
   }
 }

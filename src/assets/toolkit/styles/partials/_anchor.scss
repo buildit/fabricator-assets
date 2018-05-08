@@ -34,7 +34,10 @@ a.hpe-anchor {
   }
 
   &--reverse {
+    color: $black;
+
     .hpe-icon {
+      color: $brand;
       margin-right: 0;
       margin-left: 0.5rem;
     }
