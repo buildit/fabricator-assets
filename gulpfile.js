@@ -111,7 +111,11 @@ gulp.task("serve", () => {
 
   gulp.task("styles:watch", [styles.taskName]);
   gulp.watch(
-    [config.styles.fabricator.watch, config.styles.toolkit.watch],
+    [
+      config.styles.fabricator.watch,
+      config.styles.toolkit.watch,
+      'src/data/**/*.json',
+    ],
     ["styles:watch"]
   );
 
@@ -135,12 +139,10 @@ gulp.task("serve", () => {
 gulp.task("default", ["clean"], () => {
   // define build tasks
   const tasks = [
-    "icons",
+    ['images', 'icons', 'fonts'],
     scripts.taskName,
-    "images",
-    "fonts",
     styles.taskName,
-    "assembler"
+    "assembler",
   ];
 
   // run build

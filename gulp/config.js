@@ -59,8 +59,9 @@ const config = {
     watch: "src/**/*.{html,md,json,yml}"
   },
   dest: "dist",
+  cache: 'cache',
   variables: {
-    jsonVariables: "src/data/build/variables.json",
+    jsonVariables: "cache/variables.json",
     sassVariables:
       "src/assets/toolkit/styles/partials/build/_import-variables.scss",
     partials: "src/assets/toolkit/styles/partials/build",

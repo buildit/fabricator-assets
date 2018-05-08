@@ -27,26 +27,20 @@ class GulpSyles {
             fileName: "variables.json"
           })
         )
-        .pipe(gulp.dest("src/data/build"));
+        .pipe(gulp.dest(config.cache));
     });
 
     gulp.task("jsonsass", () => {
       return gulp
-          .src([config.variables.jsonVariables])
-          .pipe(
-            jsonToSass({
-              sass: false,
-              ignoreJsonErrors: true
-            })
-          )
-          // .pipe(concat('_import-variables.scss'))
-          .pipe(
-            rename(function (path) {
-              path.basename = "_import-variables";
-              return path;
-            })
-          )
-          .pipe(gulp.dest(config.variables.partials));
+        .src(config.variables.jsonVariables)
+        .pipe(jsonToSass())
+        .pipe(
+          rename(function (path) {
+            path.basename = "_import-variables";
+            return path;
+          })
+        )
+        .pipe(gulp.dest(config.cache));
     });
 
     // styles
