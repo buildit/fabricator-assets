@@ -15,7 +15,11 @@
   }
 
   &__body {
-    padding: 0 $bootstrap-gutter;
+    padding: 0 $bootstrap-gutter 2em;
+    
+    @include respond-to(medium) {
+      padding-bottom: 0;
+    }
   }
 
   &__item {

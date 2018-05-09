@@ -11,12 +11,17 @@
     padding: $bootstrap-gutter-double;
     margin-bottom: $bootstrap-gutter;
     display: flex;
+    flex-wrap: wrap;
     height: calc(100% - #{$bootstrap-gutter});
   }
 
   &__image {
-    flex: 0 0 50%;
-    align-self: center;
+    flex: 0 0 100%;
+
+    @include respond-to(medium) {
+      flex-basis: 50%;
+      align-self: center;
+    }
     
     img {
       width: 100%;
