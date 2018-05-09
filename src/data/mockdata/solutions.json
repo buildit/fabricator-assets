@@ -1,7 +1,7 @@
 [
   {
     "title": "By Business Need",
-    "image": "/assets/toolkit/images/solution1.jpg",
+    "image": "/assets/toolkit/images/solution1.png",
     "solutionList": [
       {
         "name": "Virtualization",
@@ -23,7 +23,7 @@
   },
   {
     "title": "By Business Size",
-    "image": "/assets/toolkit/images/solution2.jpg",
+    "image": "/assets/toolkit/images/solution2.png",
     "solutionList": [
       {
         "name": "Small business",
@@ -41,7 +41,7 @@
   },
   {
     "title": "By Application",
-    "image": "/assets/toolkit/images/solution3.jpg",
+    "image": "/assets/toolkit/images/solution3.png",
     "solutionList": [
       {
         "name": "SAP",
@@ -63,7 +63,7 @@
   },
   {
     "title": "By Industry",
-    "image": "/assets/toolkit/images/solution1.jpg",
+    "image": "/assets/toolkit/images/solution1.png",
     "solutionList": [
       {
         "name": "Healthcare",

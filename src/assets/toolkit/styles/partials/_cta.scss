@@ -73,16 +73,20 @@
   &--wide {
     display: flex;
     justify-content: flex-end;
+
+    &--reverse {
+      flex-direction: row-reverse;
+
+      .hpe-cta__image {
+        right: $bootstrap-gutter-double;
+        left: auto;
+        bottom: -$bootstrap-gutter-double;
+      }
+    }
   }
 
   &--tall {
-    @include respond-to(medium) {
-      .hpe-cta__image {
-        max-width: inherit;
-        width: calc(100% + #{$bootstrap-gutter-double});
-        bottom: 2rem;
-      }
-    }
+    background-size: cover;
   }
 
   &--dark {
