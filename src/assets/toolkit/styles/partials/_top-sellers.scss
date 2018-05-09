@@ -16,10 +16,10 @@
   }
 
   &__image {
-    flex: 0 0 100%;
+    flex: 1 1 100%;
 
     @include respond-to(medium) {
-      flex-basis: 50%;
+      flex: 0 0 50%;
       align-self: center;
     }
     
@@ -32,6 +32,10 @@
   &__body {
     padding-left: $bootstrap-gutter-double;
     text-align: center;
+
+    @include respond-to(medium) {
+      flex: 0 1 50%;
+    }
   }
 
   &__product-name {
