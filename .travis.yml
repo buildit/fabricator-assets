@@ -2,6 +2,14 @@ language: node_js
 install:
 - npm install
 node_js:
-- "node"
+- node
 script:
 - npm run build
+deploy:
+  provider: releases
+  api_key:
+    secure: W1AorRoRZD0gZDrZ5tNPy1wl+xd1ZdsqOg3LqkpF6mN6qGq+RpeGuxLR1CRoFaaHJOE4IwkBkiNhqm8owDU5slI//QTFDvuvXiqVwDwhdSw/DqWUyAKXWLbYsD0aeZ43SjXJfozF8t7ejnaeddFRsvTI1kn4egAMcAZHALevC4j5ZgAi+zp3ItBEg693Shj/jXV0n0cKPRrKX/yeQll39/xd9QIr9CpbTaeRA6/2niKYBBeMeibfGL9GFUTt5FkCUH+sk6nYSNkDwE0mVO9z3dgGBPLRWoefJiBlLOyIGVyasn1WJRWayOgRm3p3jMS/6r1A7PA8eUIpS+D6Mum191CD2dtTrnn8xbJG7fVZT06GNhI+LWFQK3KMKDiKJzfb8qNOjWfFpf3omM7udKk1gngjGDr9M2nKEzDDeHAcsBsh2oTP1zlIaoz722geqP0aWQGoNHGNL2MmcyhDKWD1H4OTaT+FQbc6GAtHdbeZdEBtp5FzYiw7wq7G91AHO12V4NgSehAzV1WnXb7cKZScet0bXGzG5wVrq5jFyx3hSiY3aL4NPCwSowWXlmoUVnvkuSJ9+lITlP5xvGn//rivN3l9bzYhgWqk4kupLMhVBI0IURuwyJNlEtvSQSwaCU+te01yAB0Nf3lIL7HQZDekvn4ZBwD0OprAKU+YFiezWEY=
+  file: dist.zip
+  on:
+    repo: buildit/fabricator-assets
+    branch: master
