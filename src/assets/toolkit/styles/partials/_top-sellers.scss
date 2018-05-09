@@ -1,12 +1,17 @@
 .hpe-top-sellers {
   background: $light-grey-1;
   padding: 4rem 0;
+
+  .col-sm-6:nth-child(even) {
+    padding-left: 0;
+  }
   
   &__item {
     background: $white;
     padding: $bootstrap-gutter-double;
+    margin-bottom: $bootstrap-gutter;
     display: flex;
-    height: 100%;
+    height: calc(100% - #{$bootstrap-gutter};
   }
 
   &__image {
