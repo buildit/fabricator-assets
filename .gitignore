@@ -63,3 +63,4 @@ typings/
 # Custom Rules
 .sass-cache
 dist
+cache
