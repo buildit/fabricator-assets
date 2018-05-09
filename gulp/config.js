@@ -62,10 +62,6 @@ const config = {
   cache: 'cache',
   variables: {
     jsonVariables: "cache/variables.json",
-    sassVariables:
-      "src/assets/toolkit/styles/partials/build/_import-variables.scss",
-    partials: "src/assets/toolkit/styles/partials/build",
-    dataBuild: "src/data/build/"
   }
 };
 
