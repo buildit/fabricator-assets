@@ -1,15 +1,17 @@
 .hpe-top-sellers {
   background: $light-grey-1;
   padding: 4rem 0;
-
+  
   &__item {
     background: $white;
     padding: $bootstrap-gutter-double;
     display: flex;
+    height: 100%;
   }
 
   &__image {
     flex: 0 0 50%;
+    align-self: center;
     
     img {
       width: 100%;
@@ -20,5 +22,23 @@
   &__body {
     padding-left: $bootstrap-gutter-double;
     text-align: center;
+  }
+
+  &__product-name {
+    font-size: 1.5rem;
+  }
+
+  &__description {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__price {
+    font-size: 1.25em;
+    margin-bottom: 1rem;
+  }
+
+  &__button {
+    display: block;
   }
 }

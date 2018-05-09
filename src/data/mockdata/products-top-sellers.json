@@ -1,26 +1,26 @@
 [
   {
-    "name": "HPE ProLiant BL 460c Gen10 server",
-    "description": "A high-density, 4P server with high-performance, scalability, and reliability, in a 2U chassis.",
-    "price": "$23,500",
+    "name": "HPE ProLiant ML150 Gen10 tower server",
+    "description": "with one Intel Xeon Scalable 3104 processor, 8 GB memory, 4 large form factor drive bays, and one 550W ATX power supply",
+    "price": "$999.99",
     "image": "https://marketplace.hpe.com/api/getImagesCached?fileName=ProLiantDL_BreakingThePlane_2x-md_res3.png"
   },
   {
     "name": "HPE ProLiant BL 460c Gen10 server",
-    "description": "A high-density, 4P server with high-performance, scalability, and reliability, in a 2U chassis.",
-    "price": "$23,500",
+    "description": "Modular platform that converges compute, storage, fabric, management, power, and cooling to reduce costs and accelerate operations.",
+    "price": "$6,899.99",
     "image": "https://marketplace.hpe.com/api/getImagesCached?fileName=ML350Ge10i00030406.png"
   },
   {
-    "name": "HPE ProLiant BL 460c Gen10 server",
-    "description": "A high-density, 4P server with high-performance, scalability, and reliability, in a 2U chassis.",
-    "price": "$23,500",
+    "name": "HPE MSA 2052 SAN storage",
+    "description": "with dual controllers and supports small form factor drives",
+    "price": "$8,319.99",
     "image": "https://marketplace.hpe.com/api/getImagesCached?fileName=i000137391.png"
   },
   {
-    "name": "HPE ProLiant BL 460c Gen10 server",
-    "description": "A high-density, 4P server with high-performance, scalability, and reliability, in a 2U chassis.",
-    "price": "$23,500",
+    "name": "HPE ProLiant MicroServer Gen10 server",
+    "description": "Small, quiet, and stylish server ideal as a first server solution for small businesses.",
+    "price": "$344.00",
     "image": "https://marketplace.hpe.com/api/getImagesCached?fileName=HPE_BL460_Gen9.jpg"
   }
 ]

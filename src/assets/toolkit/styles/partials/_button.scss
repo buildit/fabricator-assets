@@ -24,6 +24,11 @@
   &--secondary {
     background-color: transparent;
     color: $dark-grey-1;
+
+    &:visited,
+    &:active {
+      color: $dark-grey-1;
+    }
   }
 
   .hpe-icon {
