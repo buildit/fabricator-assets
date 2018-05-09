@@ -1,13 +1,14 @@
 {
   "name": "fabricator",
-  "version": "1.3.1",
+  "version": "0.0.0-development",
   "description": "A tool for building website UI toolkits",
   "license": "MIT",
   "homepage": "http://fbrctr.github.io/",
   "scripts": {
     "build": "gulp",
     "start": "gulp --dev",
-    "test": "npm run build"
+    "test": "npm run build",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "toolkit",
@@ -51,6 +52,7 @@
     "owl.carousel": "^2.3.4",
     "run-sequence": "^2.2.1",
     "script-loader": "^0.7.0",
+    "semantic-release": "^15.4.0",
     "webpack": "^1.13.1"
   },
   "dependencies": {
