@@ -6,6 +6,7 @@
   "homepage": "http://fbrctr.github.io/",
   "scripts": {
     "build": "gulp",
+    "build-zip": "npm run build && node zip-dist.js",
     "start": "gulp --dev",
     "test": "npm run build"
   },
@@ -61,6 +62,7 @@
     "hoek": "^5.0.3",
     "lazy-debug-legacy": "^0.0.1",
     "nouislider": "^11.1.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "zip-folder": "^1.0.0"
   }
 }
