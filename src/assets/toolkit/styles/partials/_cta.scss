@@ -7,12 +7,19 @@
     flex-wrap: wrap;
   }
 
+  &__group {
+    @include respond-to(medium) {
+      padding-left: 0;
+    }
+  }
+
   &__item {
     padding-bottom: $bootstrap-gutter;
     flex: 1 1 100%;
 
     @include respond-to(medium) {
       min-height: 20rem;
+      padding-right: 0;
     }
 
     &--tall {
@@ -87,6 +94,7 @@
 
   &--tall {
     background-size: cover;
+    padding-left: 0;
   }
 
   &--dark {
