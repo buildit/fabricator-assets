@@ -1,0 +1,82 @@
+[
+  {
+    "title": "By Business Need",
+    "image": "/assets/toolkit/images/solution1.png",
+    "solutionList": [
+      {
+        "name": "Virtualization",
+        "link": "/"
+      },
+      {
+        "name": "Storage/backup",
+        "link": "/"
+      },
+      {
+        "name": "Data processing",
+        "link": "/"
+      },
+      {
+        "name": "Blockchain",
+        "link": "/"
+      }
+    ]
+  },
+  {
+    "title": "By Business Size",
+    "image": "/assets/toolkit/images/solution2.png",
+    "solutionList": [
+      {
+        "name": "Small business",
+        "link": "/"
+      },
+      {
+        "name": "Medium business",
+        "link": "/"
+      },
+      {
+        "name": "Enterprise",
+        "link": "/"
+      }
+    ]
+  },
+  {
+    "title": "By Application",
+    "image": "/assets/toolkit/images/solution3.png",
+    "solutionList": [
+      {
+        "name": "SAP",
+        "link": "/"
+      },
+      {
+        "name": "VMWare",
+        "link": "/"
+      },
+      {
+        "name": "Windows",
+        "link": "/"
+      },
+      {
+        "name": "Hadoop",
+        "link": "/"
+      }
+    ]
+  },
+  {
+    "title": "By Industry",
+    "image": "/assets/toolkit/images/solution1.png",
+    "solutionList": [
+      {
+        "name": "Healthcare",
+        "link": "/"
+      },
+      {
+        "name": "Finance",
+        "link": "/"
+      },
+      {
+        "name": "Oil and gase",
+        "link": "/"
+      }
+    ]
+  }
+]

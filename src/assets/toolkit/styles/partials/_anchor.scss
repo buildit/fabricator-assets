@@ -1,4 +1,6 @@
-a, a:visited, a:active {
+a,
+a:visited,
+a:active {
   color: $dark-grey-1;
 
   &:hover {
@@ -8,7 +10,7 @@ a, a:visited, a:active {
 
 a.hpe-anchor {
   font-weight: 600;
-  font-size: 1.1875rem;
+  font-size: 1.25rem;
   text-decoration: none;
 
   &--primary {
@@ -26,8 +28,18 @@ a.hpe-anchor {
   .hpe-icon {
     position: relative;
     font-size: 1.2em;
-    bottom: -.225em;
-    margin-right: .75rem;
-    transition: all $transition--normal ease-in-out
+    bottom: -0.225em;
+    margin-right: 0.75rem;
+    transition: all $transition--normal ease-in-out;
+  }
+
+  &--reverse {
+    color: $black;
+
+    .hpe-icon {
+      color: $brand;
+      margin-right: 0;
+      margin-left: 0.5rem;
+    }
   }
 }

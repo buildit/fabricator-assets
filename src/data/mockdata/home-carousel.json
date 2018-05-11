@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Infrastructure Security",
+    "description":
+      "Protect your infrastructure by enabling your servers to prevent, detect, and recover from security attacks. Perimeter security is no longer enough.",
+    "imageURL": "/assets/toolkit/images/servers.jpg",
+    "cta-link-primary": "Learn more",
+    "cta-link-secondary": "See our solutions",
+    "class": "hpe-carousel__image--active"
+  },
+  {
+    "title": "The new HPE Proliant Gen11 server platform",
+    "description":
+      "Brief description of what this topic this slide is addressing, articulation capability and/or value.",
+    "imageURL": "/assets/toolkit/images/servers.jpg",
+    "cta-link-primary": "Learn more",
+    "cta-link-secondary": "See our solutions"
+  },
+  {
+    "title": "The new HPE Proliant Gen12 server platform",
+    "description":
+      "Brief description of what this topic this slide is addressing, articulation capability and/or value.",
+    "imageURL": "/assets/toolkit/images/servers.jpg",
+    "cta-link-primary": "Learn more",
+    "cta-link-secondary": "See our solutions"
+  },
+  {
+    "title": "The new HPE Proliant Gen13 server platform",
+    "description":
+      "Brief description of what this topic this slide is addressing, articulation capability and/or value.",
+    "imageURL": "/assets/toolkit/images/servers.jpg",
+    "cta-link-primary": "Learn more",
+    "cta-link-secondary": "See our solutions"
+  }
+]

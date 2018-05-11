@@ -14,8 +14,9 @@
 }
 
 .hpe-card {
-  position: relative;
-  padding: 3rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;  
+  padding: 0 $bootstrap-gutter;
   background: $white;
   margin-top: $bootstrap-gutter;
   margin-bottom: $bootstrap-gutter;
@@ -28,8 +29,16 @@
     background-size: contain;
     background-position: center center;
     height: 8rem;
-    max-width: 14rem;
+    width: 100%;
     margin: 0 auto 1rem;
+    flex: 0 0 8rem;
+  }
+
+  &__body {
+    position: relative;
+    background-color: $light-grey-1;
+    padding: 2em $bootstrap-gutter .5em;
+    height: 100%;
   }
 
   &__heading {
@@ -46,14 +55,20 @@
     font-size: 1.625rem;
     color: $dark-grey-3;
   }
+
+  &__button {
+    width: 100%;
+    text-transform: uppercase;
+  }
 }
 
 .hpe-bookmark {
   position: absolute;
-  top: 1rem;
+  top: -.5rem;
   right: 1rem;
-  font-size: 1.875rem;
-  color: $dark-4;
+  font-size: 2rem;
+  color: $brand;
+  z-index: 1;
 
   input {
     position: absolute;
@@ -63,6 +78,7 @@
     &:checked + .hpe-icon {
       color: $brand;
       fill: currentColor !important;
+      stroke-width: 1 !important;
     }
   }
 }

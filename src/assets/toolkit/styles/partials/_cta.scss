@@ -1,60 +1,146 @@
 .hpe-cta-section {
-  padding-top: $bootstrap-gutter-double;
-  @include stack-row(medium);
+  padding-top: 2rem;
 
-  @include respond-to(medium) {
-    padding-bottom: $bootstrap-gutter-double;
-  }
-}
-
-.hpe-cta {
-  background-color: $light-grey-1;
-  padding: $bootstrap-gutter-double;
-  height: 100%;
-  margin-bottom: $bootstrap-gutter-double;
-  background-repeat: no-repeat;
-  background-position: right -10rem bottom -3rem;
-  background-size: contain;
-
-  @include respond-to(ex-large) {
-    margin-bottom: 0;
+  &__content,
+  &__group {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  &__content {
-    margin-bottom: 1.5em;
+  &__group {
+    @include respond-to(medium) {
+      padding-left: 0;
+    }
+  }
 
-    &--image {
-      padding-right: 5rem;
+  &__item {
+    padding-bottom: $bootstrap-gutter-double * 2;
+    flex: 1 1 100%;
+
+    @include respond-to(ex-large) {
+      min-height: 20rem;
+      padding-right: 0;
+      padding-bottom: $bootstrap-gutter;
+    }
+
+    &--tall {
+      padding: 0 $bootstrap-gutter $bootstrap-gutter;
+      height: 100%;
+    }
+
+    &:nth-child(3) {
+      order: 4;
 
       @include respond-to(medium) {
-        padding-right: 10rem;
+        order: 0;
       }
     }
   }
 
+  @include respond-to(medium) {
+    padding-bottom: $bootstrap-gutter;
+  }
+}
+
+.hpe-cta {
+  position: relative;
+  height: 100%;
+  margin-bottom: $bootstrap-gutter;
+
+  &__image {
+    position: absolute;
+    max-width: 50%;
+    bottom: 0;
+    left: 0;
+  }
+
+  &--tall-image {
+    .hpe-cta__image {
+      height: calc(100% + #{$bootstrap-gutter-double});
+      left: $bootstrap-gutter-double;
+    }
+  }
+
+  &__content {
+    z-index: 1;
+    padding: $bootstrap-gutter;
+
+    &--wide {
+      width: 50%;
+      padding: $bootstrap-gutter-double;
+    }
+
+    &--tall {
+      @include respond-to(medium) {
+        width: calc(100% - #{$bootstrap-gutter-double});
+        height: 100%;
+        padding: $bootstrap-gutter-double;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+  }
+
   &__description {
-    font-size: 1rem;
+    font-size: 1.125rem;
+  }
 
-    @include respond-to(medium) {
-      font-size: 1.5rem;
+  &--wide {
+    display: flex;
+    justify-content: flex-end;
+
+    &--reverse {
+      flex-direction: row-reverse;
+      padding-bottom: $bootstrap-gutter-double;
+
+      @include respond-to(large) {
+        padding-bottom: 0;
+      }
+
+      .hpe-cta__image {
+        right: $bootstrap-gutter-double;
+        left: auto;
+        bottom: -$bootstrap-gutter-double;
+      }
     }
   }
 
-  &__categories {
-    list-style: none;
-    padding: 0;
-    columns: 2;
-    
-    a {
-      text-decoration: none;
+  &--tall {
+    padding: $bootstrap-gutter-double;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+
+    @include respond-to(large) {
+      background-size: cover;
+      padding-left: 0;
     }
   }
 
-  &__category-item {
-    margin-bottom: 1em;
-    font-size: 1.125em;
-    -webkit-column-break-inside: avoid;
-    page-break-inside: avoid;
-    break-inside: avoid;
+  &--dark {
+    color: $white;
+
+    .hpe-cta__button,
+    svg.hpe-icon {
+      color: $white;
+    }
+  }
+
+  &--light1 {
+    background-color: #e2dad7;
+  }
+
+  &--dark1 {
+    background-color: $dark-1;
+  }
+
+  &--dark2 {
+    background-color: $dark-2;
+  }
+
+  &--dark3 {
+    background-color: $dark-3;
   }
 }
