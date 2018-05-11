@@ -1,11 +1,19 @@
+$card-width: 68%;
+
 .hpe-featured-product {
+  position: relative;
   margin-top: 3rem;
   margin-bottom: 3rem;
   background-color: $light-grey-1;
   padding: 2rem $bootstrap-gutter-double;
 
   @include respond-to(ex-large) {
-    padding: 2rem 0;
+    padding: 3rem 0;
+    background: linear-gradient(
+      to right,
+      #{$light-grey-1} #{$card-width},
+      #{$white} #{100% - $card-width}
+    );
   }
 
   &__content {
@@ -19,7 +27,7 @@
   &__row {
     flex-direction: column-reverse;
 
-    @include respond-to(large) {
+    @include respond-to(ex-large) {
       flex-direction: row;
     }
   }
@@ -33,7 +41,7 @@
   }
 
   &__product {
-    min-height: 10rem;
+    min-height: 12rem;
     position: relative;
   }
 
@@ -52,13 +60,12 @@
 
   &__image {
     width: 100%;
-    @include respond-to(large) {
-      position: absolute;
-      left: -15rem;
-    }
+    max-width: 40rem;
 
     @include respond-to(ex-large) {
-      left: -15rem;
+      position: absolute;
+      width: 250%;
+      left: -125%;
     }
   }
 
@@ -73,9 +80,8 @@
 
   &__badge {
     position: absolute;
-    right: 2rem;
-    top: 50%;
-    margin-top: -3rem;
+    top: 12rem;
+    right: 6rem;
     background-color: $light-2;
     color: $white;
     text-transform: uppercase;
@@ -89,13 +95,22 @@
     padding: 0.5rem;
 
     @include respond-to(medium) {
+      right: 40%;
+    }
+    
+    @include respond-to(large) {
       font-size: 1.25rem;
-      left: 10rem;
-      top: 50%;
-      margin-top: -4rem;
       height: 8rem;
       width: 8rem;
       padding: 1rem;
+      margin-right: -2rem;
+      margin-top: 0;
+      right: 50%;
+    }
+
+    @include respond-to(ex-large) {
+      right: 30%;
+      margin-top: 2rem;
     }
   }
 
@@ -103,6 +118,7 @@
     list-style: none;
     padding: 0;
     font-weight: 600;
+    flex: 0 0 100%;
 
     &-item {
       display: inline;
