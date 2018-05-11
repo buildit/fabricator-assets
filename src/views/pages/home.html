@@ -1,6 +1,23 @@
 <div class="container-fluid">
 
-    {{> header }} {{> carousel }} {{> breadcrumbs pages=links-home}} {{> carousel-owl }} {{> cta-section-home }} {{> featured-product
-    }} {{> card-list }} {{> breadcrumbs }} {{> support }} {{> footer}}
+    {{> header }} {{> carousel }} 
+    
+    {{> breadcrumbs pages=links-home}} 
+    
+    {{> find-solution }} 
+
+    {{> cta-section-home }} 
+    
+    {{> featured-product }} 
+    
+    {{> carousel-owl title="Based on Your Interests" carouselData=recently-viewed }}
+
+    {{> top-sellers }} 
+    
+    {{> breadcrumbs pages=links-home }} 
+    
+    {{> support }} 
+    
+    {{> footer}}
 
 </div>

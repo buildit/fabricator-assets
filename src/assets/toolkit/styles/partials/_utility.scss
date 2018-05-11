@@ -13,6 +13,10 @@
 .hpe-centered-section {
   max-width: $ex-large;
 
+  @include respond-to(medium) {
+    padding: 0 $bootstrap-gutter;
+  }
+
   @include respond-to(large) {
     margin: auto;
     width: 100%;

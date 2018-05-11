@@ -1,4 +1,3 @@
-
 const owlCarousel = require("owl.carousel");
 const noUiSlider = require("../../../../node_modules/nouislider/distribute/nouislider.js");
 
@@ -111,6 +110,7 @@ $(".owl-carousel").owlCarousel({
       <use xlink:href="#icon-link-next" />
     </svg>`
   ],
+  autoWidth: true,
   responsive: {
     0: {
       items: 1,
@@ -118,6 +118,9 @@ $(".owl-carousel").owlCarousel({
     },
     768: {
       items: 3
+    },
+    1024: {
+      items: 4
     }
   }
 });

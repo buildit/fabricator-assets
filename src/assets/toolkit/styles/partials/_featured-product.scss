@@ -1,5 +1,20 @@
+$card-width: 68%;
+
 .hpe-featured-product {
-  padding: 6rem 0;
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-color: $light-grey-1;
+  padding: 2rem $bootstrap-gutter-double;
+
+  @include respond-to(ex-large) {
+    padding: 3rem 0;
+    background: linear-gradient(
+      to right,
+      #{$light-grey-1} #{$card-width},
+      #{$white} #{100% - $card-width}
+    );
+  }
 
   &__content {
     padding: 0 0 $bootstrap-gutter-double;
@@ -12,7 +27,7 @@
   &__row {
     flex-direction: column-reverse;
 
-    @include respond-to(large) {
+    @include respond-to(ex-large) {
       flex-direction: row;
     }
   }
@@ -22,26 +37,12 @@
   }
 
   &__details {
-    background: transparentize($light-grey-3, 0.5);
     font-size: 1.125rem;
-    padding: $bootstrap-gutter-double;
   }
 
   &__product {
-    display: flex;
-    min-height: 20rem;
-    align-items: flex-end;
+    min-height: 12rem;
     position: relative;
-    background-repeat: no-repeat;
-    background-position: center center;
-    padding-bottom: 2rem;
-    background-size: 100%;
-
-    @include respond-to(medium) {
-      padding-left: 4rem;
-      background-size: cover;
-      background-position: right center;
-    }
   }
 
   &__feature {
@@ -53,21 +54,34 @@
       position: relative;
       margin-right: 0.5em;
       bottom: -0.125em;
+      color: $brand;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 40rem;
+
+    @include respond-to(ex-large) {
+      position: absolute;
+      width: 250%;
+      left: -125%;
     }
   }
 
   &__name {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   &__price {
     font-size: 1.875rem;
+    color: $dark-grey-1;
   }
 
   &__badge {
     position: absolute;
-    right: 2rem;
-    bottom: 4rem;
+    top: 12rem;
+    right: 6rem;
     background-color: $light-2;
     color: $white;
     text-transform: uppercase;
@@ -81,12 +95,22 @@
     padding: 0.5rem;
 
     @include respond-to(medium) {
-      font-size: 1.5rem;
-      right: 6rem;
-      bottom: 0;
-      height: 10rem;
-      width: 10rem;
+      right: 40%;
+    }
+    
+    @include respond-to(large) {
+      font-size: 1.25rem;
+      height: 8rem;
+      width: 8rem;
       padding: 1rem;
+      margin-right: -2rem;
+      margin-top: 0;
+      right: 50%;
+    }
+
+    @include respond-to(ex-large) {
+      right: 30%;
+      margin-top: 2rem;
     }
   }
 
@@ -94,6 +118,7 @@
     list-style: none;
     padding: 0;
     font-weight: 600;
+    flex: 0 0 100%;
 
     &-item {
       display: inline;
@@ -103,5 +128,11 @@
         padding: 0 0.25em;
       }
     }
+  }
+
+  &__button {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: $bootstrap-gutter-double;
   }
 }

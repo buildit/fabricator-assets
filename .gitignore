@@ -65,3 +65,4 @@ typings/
 dist
 dist.zip
 cache
+.vscode

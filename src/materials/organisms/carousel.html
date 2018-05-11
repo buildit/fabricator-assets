@@ -1,32 +1,24 @@
 <article class="hpe-carousel row">
-  <section class="hpe-carousel__image hpe-carousel__image--active" style="background-image: url('/assets/toolkit/images/servers.jpg')">
+  {{#each home-carousel}}
+  <section class="hpe-carousel__image {{this.class}}" style="background-image: url('{{this.imageURL}}')">
     <div class="hpe-carousel__content hpe-centered-section">
-      <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title hpe-page-headline">The new HPE Proliant Gen10 server platform</h1>
-      <p class="hpe-carousel__description">Starting as low as $2,270, the Gen10 series delivers the best performance and expandability for your growing operation.</p>
+      <div class="hpe-carousel__card">
+        <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title hpe-page-headline">{{this.title}}</h1>
+        {{> brand-rule }}
+        <p class="hpe-carousel__description">{{this.description}}</p>
+      </div>
+      <footer class="hpe-carousel__actions">
+        <div class="hpe-carousel__action-button">
+          {{> buttons.anchor-primary--reverse icon="link-next" text=this.cta-link-primary }}
+        </div>
+        <div class="hpe-carousel__action-button">
+          {{> buttons.anchor-primary--reverse icon="link-next" text=this.cta-link-secondary }}
+        </div>
+      </footer>
     </div>
   </section>
   <a class="hpe-carousel__indicator"></a>
-  <section class="hpe-carousel__image" style="background-image: url('/assets/toolkit/images/signin-bg-large@2x.png')">
-    <div class="hpe-carousel__content hpe-centered-section">
-      <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title hpe-page-headline">The new HPE Proliant Gen10 server platform (2)</h1>
-      <p class="hpe-carousel__description">Starting as low as $2,270, the Gen10 series  delivers the best performance and expandability for your growing operation.</p>
-    </div>
-  </section>
-  <a class="hpe-carousel__indicator"></a>
-  <section class="hpe-carousel__image" style="background-image: url('/assets/toolkit/images/servers.jpg')">
-    <div class="hpe-carousel__content hpe-centered-section">
-      <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title hpe-page-headline">The new HPE Proliant Gen10 server platform (3)</h1>
-      <p class="hpe-carousel__description">Starting as low as $2,270, the Gen10 series  delivers the best performance and expandability for your growing operation.</p>
-    </div>
-  </section>
-  <a class="hpe-carousel__indicator"></a>
-  <section class="hpe-carousel__image" style="background-image: url('/assets/toolkit/images/signin-bg-large@2x.png')">
-    <div class="hpe-carousel__content">
-      <h1 class="hpe-headline hpe-headline--medium hpe-headline--caps hpe-headline--black hpe-carousel__title hpe-page-headline">The new HPE Proliant Gen10 server platform (4)</h1>
-      <p class="hpe-carousel__description">Starting as low as $2,270, the Gen10 series  delivers the best performance and expandability for your growing operation.</p>
-    </div>
-  </section>
-  <a class="hpe-carousel__indicator"></a>
+  {{/each}}
   <button class="hpe-button hpe-button--plain hpe-carousel__button hpe-carousel__button--previous">
     {{> icons.icon icon="previous" className="hpe-icon--inline"}}
   </button>
