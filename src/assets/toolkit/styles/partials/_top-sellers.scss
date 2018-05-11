@@ -1,6 +1,10 @@
 .hpe-top-sellers {
   background: $light-grey-1;
-  padding: 4rem 0;
+  padding: 4rem $bootstrap-gutter;
+
+  @include respond-to(ex-large) {
+    padding: 4rem 0;
+  }
 
   .col-sm-6:nth-child(even) {
     padding-left: 0;
