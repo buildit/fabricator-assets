@@ -14,16 +14,26 @@
   }
 
   &__item {
-    padding-bottom: $bootstrap-gutter;
+    padding-bottom: $bootstrap-gutter-double * 2;
     flex: 1 1 100%;
 
     @include respond-to(medium) {
       min-height: 20rem;
       padding-right: 0;
+      padding-bottom: $bootstrap-gutter;
     }
 
     &--tall {
+      padding: 0 $bootstrap-gutter $bootstrap-gutter;
       height: 100%;
+    }
+
+    &:nth-child(3) {
+      order: 4;
+
+      @include respond-to(medium) {
+        order: 0;
+      }
     }
   }
 
@@ -83,6 +93,11 @@
 
     &--reverse {
       flex-direction: row-reverse;
+      padding-bottom: $bootstrap-gutter-double;
+
+      @include respond-to(large) {
+        padding-bottom: 0;
+      }
 
       .hpe-cta__image {
         right: $bootstrap-gutter-double;
@@ -93,8 +108,15 @@
   }
 
   &--tall {
-    background-size: cover;
-    padding-left: 0;
+    padding: $bootstrap-gutter-double;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+
+    @include respond-to(large) {
+      background-size: cover;
+      padding-left: 0;
+    }
   }
 
   &--dark {
@@ -107,7 +129,7 @@
   }
 
   &--light1 {
-     background-color: #e2dad7;
+    background-color: #e2dad7;
   }
 
   &--dark1 {
