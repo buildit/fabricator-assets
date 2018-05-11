@@ -1,145 +1,145 @@
 $card-background: transparentize($dark-grey-1, 0.25);
 
 .hpe-carousel {
-	position: relative;
-	height: 35rem;
-	overflow: hidden;
-	width: calc(100% + #{$bootstrap-gutter-double});
-	background-color: $dark-grey-4;
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
+  position: relative;
+  height: 35rem;
+  overflow: hidden;
+  width: calc(100% + #{$bootstrap-gutter-double});
+  background-color: $dark-grey-4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 
-	@include respond-to(large) {
-		height: 42rem;
-	}
+  @include respond-to(large) {
+    height: 42rem;
+  }
 
-	&__image {
-		position: absolute;
-		top: 0;
-		height: 100%;
-		width: 100%;
-		left: 100%;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center center;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		transition: left $transition--normal ease-in-out;
+  &__image {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: left $transition--normal ease-in-out;
 
-		&--active {
-			left: 0;
-		}
-	}
+    &--active {
+      left: 0;
+    }
+  }
 
-	&__content {
-		width: 100%;
-		color: $white;
-		padding: 0 2rem;
+  &__content {
+    width: 100%;
+    color: $white;
+    padding: 0 2rem;
 
-		@include respond-to(medium) {
-			padding: 0 8rem;
-		}
+    @include respond-to(medium) {
+      padding: 0 8rem;
+    }
 
-		@media (min-width: $ex-large + 6rem) {
-			padding: 0 $bootstrap-gutter;
-		}
-	}
+    @media (min-width: $ex-large + 6rem) {
+      padding: 0 $bootstrap-gutter;
+    }
+  }
 
-	&__card {
-		max-width: 38rem;
-		padding: $bootstrap-gutter;
-		background: $card-background;
-	}
+  &__card {
+    max-width: 38rem;
+    padding: $bootstrap-gutter;
+    background: $card-background;
+  }
 
-	&__description {
-		@include respond-to(large) {
-			font-size: 1.5rem;
-		}
-	}
+  &__description {
+    @include respond-to(large) {
+      font-size: 1.5rem;
+    }
+  }
 
-	&__title {
-		line-height: 0.9;
-	}
+  &__title {
+    line-height: 0.9;
+  }
 
-	&__actions {
-		display: flex;
-		max-width: 38rem;
-	}
+  &__actions {
+    display: flex;
+    max-width: 38rem;
+  }
 
-	&__action-button {
-		margin: $border-width $border-width 0 0;
-		background: $card-background;
-		padding: 0.5em 1rem 0.75rem;
+  &__action-button {
+    margin: $border-width $border-width 0 0;
+    background: $card-background;
+    padding: 0.5em 1rem 0.75rem;
 
-		&:not(:first-child) {
-			flex: 1 1 auto;
-		}
+    &:not(:first-child) {
+      flex: 1 1 auto;
+    }
 
-		a.hpe-anchor {
-			color: $white;
-		}
+    a.hpe-anchor {
+      color: $white;
+    }
 
-		.hpe-icon {
-			color: $brand;
-		}
-	}
+    .hpe-icon {
+      color: $brand;
+    }
+  }
 
-	&__button {
-		$button-size: 1.75rem;
+  &__button {
+    $button-size: 1.75rem;
 
-		position: absolute;
-		display: block;
-		top: 50%;
-		font-size: $button-size;
-		margin-top: ($button-size / 2) * -1;
-		text-align: center;
-		color: $white;
-		z-index: 100;
+    position: absolute;
+    display: block;
+    top: 50%;
+    font-size: $button-size;
+    margin-top: ($button-size / 2) * -1;
+    text-align: center;
+    color: $white;
+    z-index: 100;
 
-		@include respond-to(medium) {
-			$button-size: 1.875rem;
-			font-size: $button-size;
-			padding: 0.5rem;
-			margin-top: ($button-size / 2) * -1;
-		}
+    @include respond-to(medium) {
+      $button-size: 1.875rem;
+      font-size: $button-size;
+      padding: 0.5rem;
+      margin-top: ($button-size / 2) * -1;
+    }
 
-		.hpe-icon {
-			margin-right: 0;
-		}
+    .hpe-icon {
+      margin-right: 0;
+    }
 
-		&--previous {
-			left: 0;
+    &--previous {
+      left: 0;
 
-			.hpe-carousel__image--active:first-of-type ~ & {
-				display: none;
-			}
-		}
+      .hpe-carousel__image--active:first-of-type ~ & {
+        display: none;
+      }
+    }
 
-		&--next {
-			right: 0;
+    &--next {
+      right: 0;
 
-			.hpe-carousel__image--active:last-of-type ~ & {
-				display: none;
-			}
-		}
-	}
+      .hpe-carousel__image--active:last-of-type ~ & {
+        display: none;
+      }
+    }
+  }
 
-	&__indicator {
-		display: block;
-		position: relative;
-		height: 0.25em;
-		width: 2.5em;
-		background: $white;
-		opacity: 0.65;
-		margin: 0 0.25em 2rem;
-		cursor: pointer;
-		z-index: 100;
+  &__indicator {
+    display: block;
+    position: relative;
+    height: 0.25em;
+    width: 2.5em;
+    background: $white;
+    opacity: 0.65;
+    margin: 0 0.25em 2rem;
+    cursor: pointer;
+    z-index: 100;
 
-		// Active indicator
-		.hpe-carousel__image--active + & {
-			opacity: 1;
-		}
-	}
+    // Active indicator
+    .hpe-carousel__image--active + & {
+      opacity: 1;
+    }
+  }
 }
