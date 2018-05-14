@@ -11,7 +11,8 @@
 
           <form action="" class="form">
             <div class="form-input">
-              {{> form.text-input text="username" id="username"}} {{> form.password text="password" id="password" type="password"}}
+              {{> form.text-input text="Email address" id="username"}} 
+              {{> form.password text="Password" id="password" type="password"}}
             </div>
             {{> buttons.button text="Sign in" class="hpe-signin__button" }}
           </form>
@@ -22,14 +23,14 @@
 
           <div class="hpe-signin__links">
             <a href="#" id="open-forgot-password">Forgot your password?</a>
-            <a href="#">New user?</a>
+            <a href="signup.html">New user?</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  {{> breadcrumbs }} 
+  {{> breadcrumbs pages=links-signin }} 
   
   {{> support }}
   
