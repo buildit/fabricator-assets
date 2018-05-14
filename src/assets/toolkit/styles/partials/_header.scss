@@ -105,7 +105,8 @@ $nav-padding: 1rem;
     height: 2.125rem;
     display: flex;
     align-items: center;
-    padding-right: .5rem;
+    padding-left: 1rem;
+    border-left: $border;
   }
 
   &__main {
@@ -247,4 +248,17 @@ $nav-padding: 1rem;
       }
     }
   }  
+}
+
+.hpe-contact {
+  font-weight: 600;
+  font-size: .9375rem;
+  text-transform: uppercase;
+  background: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2282%22%20height%3D%2240%22%3E%3Cpath%20stroke%3D%22%2301A982%22%20stroke-width%3D%222%22%20d%3D%22M1%201v26h23v10.583L34.568%2027H81V1H1z%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  display: inline-block;
+  padding: .5em .5em 1em;
+  position: relative;
+  bottom: -.125em;
 }
