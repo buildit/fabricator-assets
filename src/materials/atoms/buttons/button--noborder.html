@@ -1,1 +1,6 @@
-<button class="hpe-button hpe-button--plain hpe-button--brand {{class}}">{{text}}</button>
+<button class="hpe-button hpe-button--plain hpe-button--brand {{class}}">
+  {{text}}
+  {{#if icon }}
+    {{> icons.icon icon=icon }}
+  {{/if}}
+</button>
