@@ -49,7 +49,7 @@ class GulpSyles {
         .src(config.styles.fabricator.src)
         .pipe(sourcemaps.init())
         .pipe(sass().on("error", sass.logError))
-        .pipe(prefix(config.styles.browsers))
+        .pipe(prefix(config.styles.autoprefixBrowsers))
         .pipe(gulpif(!config.dev, csso()))
         .pipe(rename("f.css"))
         .pipe(sourcemaps.write())
@@ -66,7 +66,7 @@ class GulpSyles {
             includePaths: "./node_modules"
           }).on("error", sass.logError)
         )
-        .pipe(prefix(config.styles.browsers))
+        .pipe(prefix(config.styles.autoprefixBrowsers))
         .pipe(gulpif(!config.dev, csso()))
         .pipe(gulpif(config.dev, sourcemaps.write()))
         .pipe(gulp.dest(config.styles.toolkit.dest))
