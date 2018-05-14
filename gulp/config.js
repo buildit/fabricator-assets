@@ -3,7 +3,16 @@ const gutil = require("gulp-util");
 const config = {
   dev: gutil.env.dev,
   styles: {
-    browsers: "last 1 version",
+    autoprefixBrowsers: [
+      'ie >= 11',
+      'Firefox ESR',
+      'Edge >= 14',
+      'last 2 Chrome versions',
+      'Safari >= 9',
+      'iOS >= 9',
+      'Android >= 5',
+      'ChromeAndroid >= 5'
+    ],
     fabricator: {
       src: "src/assets/fabricator/styles/fabricator.scss",
       dest: "dist/assets/fabricator/styles",
