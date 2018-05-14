@@ -1,11 +1,7 @@
 .hpe-signin {
   &__wrapper {
     background-size: cover;
-    padding: 3rem 0;
-
-    @include respond-to(medium) {
-      padding: 9rem 0;
-    }    
+    padding: ($header-height + 2rem) 0 2rem;
   }
 
   &__content {
@@ -37,6 +33,10 @@
     padding: 1.5rem;
     height: 100%;
     margin-bottom: $bootstrap-gutter-double;
+
+    &:first-child:last-child {
+      margin-bottom: 0;
+    }
 
     @include respond-to(medium) {
       margin-bottom: 0;
