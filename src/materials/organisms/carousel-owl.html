@@ -1,8 +1,16 @@
 <header class="hpe-centered-section">
   <h2 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-section-headline">{{title}}</h2>
-  {{> brand-rule }}
+  {{#if title }}  
+    {{> brand-rule }}
+  {{/if}}
 </header>
 <section class="owl-carousel hpe-centered-section">
-  {{#each carouselData }} {{> card title=this.name src=this.image description=this.description price=this.price buttonText="Configure & Buy"
-  }} {{/each}}
+  {{#each carouselData }} 
+    {{> card 
+      title=this.name 
+      src=this.image 
+      description=this.description price=this.price 
+      buttonText="Configure & Buy" 
+    }} 
+  {{/each}}
 </section>
