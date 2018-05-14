@@ -40,7 +40,7 @@
     "eslint-plugin-import": "^1.9.2",
     "fabricator-assemble": "^1.1.11",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
+    "gulp-autoprefixer": "^5.0.0",
     "gulp-csso": "^2.0.0",
     "gulp-if": "^2.0.1",
     "gulp-imagemin": "^3.0.1",
