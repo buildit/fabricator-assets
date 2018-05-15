@@ -10,14 +10,14 @@ const sass = require("gulp-sass");
 const sourcemaps = require("gulp-sourcemaps");
 const merge = require("gulp-merge-json");
 const jsonToSass = require("gulp-json-sass");
-const gulpStylelint = require("gulp-stylelint");
+const config = require('./config').data;
 
-class GulpSyles {
+class GulpStyles {
   get taskName () {
     return 'styles';
   }
 
-  constructor (config) {
+  constructor () {
     // Combine config JSON and Generate Sass Variables
     gulp.task("json", () => {
       return gulp
@@ -42,16 +42,6 @@ class GulpSyles {
           })
         )
         .pipe(gulp.dest(config.cache));
-    });
-
-    // Stylelint
-    gulp.task("stylelint", () => {
-      return gulp
-        .src(config.styles.toolkit.watch)
-        .pipe(gulpStylelint({
-            reporters: [{ formatter: "string", console: true, fix: true }]
-          }))
-        .pipe(gulp.dest("src/assets/toolkit/styles"));      
     });
 
     // styles
@@ -91,4 +81,4 @@ class GulpSyles {
   }
 }
 
-module.exports.GulpStyles = GulpSyles;
+module.exports.GulpStyles = GulpStyles;

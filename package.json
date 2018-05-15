@@ -8,6 +8,7 @@
     "build": "gulp",
     "build-zip": "npm run build && node zip-dist.js",
     "start": "gulp --dev",
+    "lint": "gulp lint",
     "test": "npm run build"
   },
   "keywords": [
