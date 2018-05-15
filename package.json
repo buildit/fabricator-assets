@@ -48,6 +48,7 @@
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-util": "^3.0.7",
+    "husky": "^0.14.3",
     "imports-loader": "^0.6.5",
     "owl.carousel": "^2.3.4",
     "run-sequence": "^2.2.1",
