@@ -1,12 +1,25 @@
 <section class="hpe-cta-section hpe-centered-section row">
-  <div class="col-md-6">
-    {{> cta-categories }}
+  <div class="col-md-3">
+      {{> cta 
+        headline="Our Promise"
+        text="Customers look to us for cutting edge solutions backed by quality products. Here are all the benefits of buying from HPE and its partners."
+        buttonText="Learn more"      
+      }}
+  </div>
+  <div class="col-md-3">
+      {{> cta 
+        headline="Comparing the Competition"
+        text="Customers look to us for cutting edge solutions backed by quality products. Here are all the benefits of buying from HPE and its partners."
+        buttonText="Learn more"
+      }}
   </div>
   <div class="col-md-6">
-      {{> cta 
-        headline="Need a hand finding the right solution?"
-        text="A brief description of how we can help you find the perfect solution for your organization"
-        buttonText="Explore storage solutions"      
+      {{> cta-wide 
+        headline="Best in Class Services"
+        text="Rated #1 IT service provider by IT Magazine. Combining our products with PointNext solutions offers you peace of mind."
+        buttonText="Browse"
+        class="hpe-cta--dark hpe-cta--dark2 hpe-cta--wide--reverse hpe-cta--wide--fullbleed"
+        image="/assets/toolkit/images/cta-service.png"
       }}
   </div>
 </section>

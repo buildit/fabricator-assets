@@ -22,3 +22,24 @@
     width: 100%;
   }
 }
+
+.hpe-bg {
+  color: $white;
+  background-color: $dark-grey-1;
+
+  &--dark-1 {
+    background-color: $dark-1;
+  }
+
+  &--dark-2 {
+    background-color: $dark-2;
+  }
+
+  &--dark-3 {
+    background-color: $dark-3;
+  }
+
+  &--dark-4 {
+    background-color: $dark-4;
+  }
+}

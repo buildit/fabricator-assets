@@ -1,127 +1,111 @@
 [
   {
-    "title": "For virtualised applications",
+    "title": "Virtualization Solutions",
     "description":
-      "Short description that calls out the approach that these products use to address this need",
+      "Increase operational efficiency. Run more of your applications on a single server.",
     "products": [
       {
-        "name": "Product line",
-        "price": "$23,500",
+        "name": "Microserver",
+        "price": "$600.00",
         "image":
           "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
       },
       {
-        "name": "Other Product line",
-        "price": "$23,500",
+        "name": "ML30 Server",
+        "price": "$800.00",
         "image":
           "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00028987.png"
       },
       {
-        "name": "Greenlake Solution",
-        "price": "$663,500",
+        "name": "ML110 Server",
+        "price": "$1,000.00",
         "image":
           "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
       }
-    ]
+    ],
+    "primary-cta": "Watch video",
+    "secondary-cta": "Browse",
+    "class": "hpe-bg--dark-2"
   },
   {
-    "title": "For fast scalability",
+    "title": "Storage & Backup Solutions",
     "description":
-      "Short description that calls out the approach that these products use to address this need",
+      "Backup your data and secure it automatically. Safeguard information and improve productivity.",
     "products": [
       {
-        "name": "Product line",
-        "price": "$23,500",
+        "name": "Microserver",
+        "price": "$600.00",
         "image":
           "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
       },
       {
-        "name": "Other Product line",
-        "price": "$23,500",
+        "name": "ML30 Server",
+        "price": "$800.00",
         "image":
           "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00028987.png"
       },
       {
-        "name": "Greenlake Solution",
-        "price": "$663,500",
+        "name": "ML110 Server",
+        "price": "$1,000.00",
         "image":
           "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
       }
-    ]
+    ],
+    "primary-cta": "Browse",
+    "class": "hpe-bg--dark-1"
   },
   {
-    "title": "For long-term storage",
+    "title": "Threat Management Solutions",
     "description":
-      "Short description that calls out the approach that these products use to address this need",
+      "Convert your server into a network edge protection device. Early resolution of network attacks, malware, viruses and phishing scams.",
     "products": [
       {
-        "name": "Product line",
-        "price": "$23,500",
+        "name": "Microserver",
+        "price": "$600.00",
         "image":
           "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
       },
       {
-        "name": "Other Product line",
-        "price": "$23,500",
+        "name": "ML30 Server",
+        "price": "$800.00",
         "image":
           "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00028987.png"
       },
       {
-        "name": "Greenlake Solution",
-        "price": "$663,500",
+        "name": "ML110 Server",
+        "price": "$1,000.00",
         "image":
           "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
       }
-    ]
+    ],
+    "primary-cta": "Browse",
+    "class": "hpe-bg--dark-3"
   },
   {
-    "title": "For another target outcome",
+    "title": "Multi-function Solutions",
     "description":
-      "Short description that calls out the approach that these products use to address this need",
+      "SComfortably run several applications or services on a single server. Consolidate the functions run on several servers and appliances on a single server.",
     "products": [
       {
-        "name": "Product line",
-        "price": "$3,500",
+        "name": "Microserver",
+        "price": "$600.00",
         "image":
           "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
       },
       {
-        "name": "Better line",
-        "price": "$13,500",
+        "name": "ML30 Server",
+        "price": "$800.00",
         "image":
           "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00028987.png"
       },
       {
-        "name": "Best line",
-        "price": "$663,500",
+        "name": "ML110 Server",
+        "price": "$1,000.00",
         "image":
           "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
       }
-    ]
-  },
-  {
-    "title": "For another objective",
-    "description":
-      "Short description that calls out the approach that these products use to address this need",
-    "products": [
-      {
-        "name": "Product line",
-        "price": "$3,500",
-        "image":
-          "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
-      },
-      {
-        "name": "Better Line",
-        "price": "$13,500",
-        "image":
-          "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00028987.png"
-      },
-      {
-        "name": "Best Line",
-        "price": "$663,500",
-        "image":
-          "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
-      }
-    ]
+    ],
+    "primary-cta": "Browse",
+    "class": "hpe-bg--dark-4"
   }
 ]

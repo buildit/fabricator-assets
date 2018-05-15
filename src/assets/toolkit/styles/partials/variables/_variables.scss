@@ -14,6 +14,7 @@ $bootstrap-gutter-double: 1.25rem;
 $bootstrap-gutter: $bootstrap-gutter-double / 2;
 $double-border: $border-width * 2;
 $header-height: 5.3125rem;
+$header-height-offset: $header-height + 2rem;
 
 //buttons
 $button-padding: .375rem 1.375rem;

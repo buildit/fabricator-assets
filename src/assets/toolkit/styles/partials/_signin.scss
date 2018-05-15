@@ -1,7 +1,7 @@
 .hpe-signin {
   &__wrapper {
     background-size: cover;
-    padding: ($header-height + 2rem) 0 2rem;
+    padding: $header-height-offset 0 2rem;
   }
 
   &__content {

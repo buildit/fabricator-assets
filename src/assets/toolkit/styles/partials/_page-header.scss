@@ -1,17 +1,17 @@
 .hpe-page-header {
   position: relative;
   height: 10rem;
-  padding: $header-height;
+  padding: $header-height-offset 0 0;
 
   &--image {
     color: $white;
     background-color: $dark-grey-4;
-    height: 19rem;
+    height: 15rem;
 
     .hpe-headline {
-      max-width: 12em;
       align-self: center;
-      margin: 3rem 0 1.5rem;
+      padding: .75rem;
+      background-color: transparentize($dark-grey-1, .25);
     }
 
     .hpe-breadcrumbs {
