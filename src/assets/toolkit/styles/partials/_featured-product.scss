@@ -9,11 +9,7 @@ $card-width: 68%;
 
   @include respond-to(ex-large) {
     padding: 3rem 0;
-    background: linear-gradient(
-      to right,
-      #{$light-grey-1} #{$card-width},
-      #{$white} #{100% - $card-width}
-    );
+    background: linear-gradient(to right, #{$light-grey-1} #{$card-width}, #{$white} #{100% - $card-width});
   }
 
   &__content {
@@ -97,7 +93,7 @@ $card-width: 68%;
     @include respond-to(medium) {
       right: 40%;
     }
-    
+
     @include respond-to(large) {
       font-size: 1.25rem;
       height: 8rem;

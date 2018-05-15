@@ -17,10 +17,12 @@ const webpackConfig = require("./webpack.config")(config);
 // Load classes for initialization
 const GulpStyles = require('./gulp/styles').GulpStyles;
 const GulpScripts = require('./gulp/scripts').GulpScripts;
+const GulpStylelint = require('./gulp/stylelint').GulpStylelint;
 
 // Initialize objects with dependencies
-const styles = new GulpStyles(config);
+const styles = new GulpStyles();
 const scripts = new GulpScripts(webpackConfig);
+const lint = new GulpStylelint();
 
 // clean
 gulp.task("clean", del.bind(null, [config.dest]));

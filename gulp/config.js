@@ -32,7 +32,6 @@ const config = {
     },
     toolkit: {
       src: "./src/assets/toolkit/scripts/toolkit.js",
-      srcScripts: "./src/assets/toolkit/scripts/**/*",
       dest: "dist/assets/toolkit/scripts",
       watch: "src/assets/toolkit/scripts/**/*"
     }
