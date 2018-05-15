@@ -27,5 +27,9 @@
     } ],
     "string-quotes": "double",
     "unit-whitelist": ["em", "rem", "vh", "deg", "%", "s"]
-  }
+  },
+
+  "ignoreFiles": [
+    "src/assets/toolkit/styles/partials/bootstrap/**/*"
+  ]
 }
