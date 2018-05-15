@@ -15,7 +15,7 @@
     "font-family-name-quotes": "always-where-required",
     "font-weight-notation": "numeric",
     "indentation": [2, {
-      "except": ["value"]
+      "except": ["value", "inside-parens", "param"]
     }],
     "max-empty-lines": 1,
     "max-nesting-depth": 4,
