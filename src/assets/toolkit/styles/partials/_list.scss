@@ -1,31 +1,31 @@
 .list {
-    ul {
-        list-style-type: none;
-        margin: 0px;
-        overflow: auto;
-        padding: 0px;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
 
-        li {
-            border-top: 1px solid rgba(0,0,0,0.15);
-            padding: 18px 24px;
+    li {
+      border-top: $border solid rgba(0, 0, 0, 0.15);
+      padding: 1.125em 1.5em;
 
-            flex-direction: row;
-            display: flex;
-            background-position: center center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            justify-content: space-between;
-            align-items: center;
+      flex-direction: row;
+      display: flex;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      justify-content: space-between;
+      align-items: center;
 
-            span {
-                &:last-child {
-                    color: $dark-grey-4;
-                }
-            }
-
-           &:last-child {
-                border-bottom: 1px solid rgba(0,0,0,0.15);
-           }
+      span {
+        &:last-child {
+          color: $dark-grey-4;
         }
+      }
+
+      &:last-child {
+        border-bottom: $border solid rgba(0, 0, 0, 0.15);
+      }
     }
+  }
 }

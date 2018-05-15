@@ -9,7 +9,7 @@
   .col-sm-6:nth-child(even) {
     padding-left: 0;
   }
-  
+
   &__item {
     background: $white;
     padding: $bootstrap-gutter-double;
@@ -26,11 +26,11 @@
       flex: 0 0 50%;
       align-self: center;
     }
-    
+
     img {
       width: 100%;
       height: auto;
-    }    
+    }
   }
 
   &__body {

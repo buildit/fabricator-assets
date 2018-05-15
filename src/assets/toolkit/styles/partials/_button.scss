@@ -5,7 +5,7 @@
   border-radius: 0;
   color: $white;
   font-size: 1.1875rem;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.04167em;
   font-weight: 600;
   cursor: pointer;
@@ -53,7 +53,7 @@
     box-shadow: 0 0 0 $double-border $brand;
 
     .hpe-icon {
-      transform: translateX(3px);
+      transform: translateX(.1875rem);
     }
   }
 
