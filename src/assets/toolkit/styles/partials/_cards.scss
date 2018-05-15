@@ -39,9 +39,11 @@
   }
 
   &__body {
+    display: flex;
+    flex-direction: column;
     position: relative;
     background-color: $light-grey-1;
-    padding: 2em $bootstrap-gutter 0.5em;
+    padding: $bootstrap-gutter-double;
     height: 100%;
   }
 
@@ -53,6 +55,7 @@
   &__description {
     font-size: 1.125rem;
     margin: 0 0 1rem;
+    flex: 1 1 50%;
   }
 
   &__meta {
