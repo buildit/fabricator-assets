@@ -10,6 +10,7 @@ const sass = require("gulp-sass");
 const sourcemaps = require("gulp-sourcemaps");
 const merge = require("gulp-merge-json");
 const jsonToSass = require("gulp-json-sass");
+const gulpStylelint = require("gulp-stylelint");
 
 class GulpSyles {
   get taskName () {
@@ -60,6 +61,11 @@ class GulpSyles {
     gulp.task("styles:toolkit", () => {
       return gulp
         .src(config.styles.toolkit.src)
+        .pipe(gulpStylelint({
+          reporters: [
+            { formatter: 'string', console: true, fix: true }
+          ]
+        }))        
         .pipe(gulpif(config.dev, sourcemaps.init()))
         .pipe(
           sass({
