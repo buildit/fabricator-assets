@@ -70,6 +70,10 @@
     }
 
     &--tall {
+      .hpe-cta__image {
+        height: 100%;
+      }
+
       @include respond-to(medium) {
         width: calc(100% - #{$bootstrap-gutter-double});
         height: 100%;
@@ -90,6 +94,12 @@
     display: flex;
     justify-content: flex-end;
 
+    .hpe-cta__image {
+      background-repeat: no-repeat;
+      width: 50%;
+      background-size: contain;
+    }
+
     &--reverse {
       flex-direction: row-reverse;
       padding-bottom: $bootstrap-gutter-double;
@@ -100,8 +110,20 @@
 
       .hpe-cta__image {
         right: $bootstrap-gutter-double;
+        height: calc(100% - #{$bootstrap-gutter-double});
         left: auto;
         bottom: -$bootstrap-gutter-double;
+      }
+    }
+
+    &--fullbleed {
+      .hpe-cta__image {
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 50%;
+        background-position: center center;
+        background-size: cover;
       }
     }
   }
