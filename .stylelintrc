@@ -21,7 +21,6 @@
     "max-nesting-depth": 3,
     "no-eol-whitespace": true,
     "no-extra-semicolons": true,
-    "no-missing-end-of-source-newline": true,
     "rule-empty-line-before": [ "always", {
       "except": ["first-nested"],
       "ignore": ["after-comment"]

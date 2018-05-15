@@ -44,6 +44,16 @@ class GulpSyles {
         .pipe(gulp.dest(config.cache));
     });
 
+    // Stylelint
+    gulp.task("stylelint", () => {
+      return gulp
+        .src(config.styles.toolkit.watch)
+        .pipe(gulpStylelint({
+            reporters: [{ formatter: "string", console: true, fix: true }]
+          }))
+        .pipe(gulp.dest("src/assets/toolkit/styles"));      
+    });
+
     // styles
     gulp.task("styles:fabricator", () => {
       return gulp
@@ -61,11 +71,6 @@ class GulpSyles {
     gulp.task("styles:toolkit", () => {
       return gulp
         .src(config.styles.toolkit.src)
-        .pipe(gulpStylelint({
-          reporters: [
-            { formatter: 'string', console: true, fix: true }
-          ]
-        }))        
         .pipe(gulpif(config.dev, sourcemaps.init()))
         .pipe(
           sass({
@@ -81,7 +86,7 @@ class GulpSyles {
 
     // Bundled styles into a singular task
     gulp.task(this.taskName, (callback) => {
-      return runSequence('json', 'jsonsass', ["styles:fabricator", "styles:toolkit"], callback);
+      return runSequence('json', 'jsonsass', 'stylelint', ["styles:fabricator", "styles:toolkit"], callback);
     });
   }
 }
