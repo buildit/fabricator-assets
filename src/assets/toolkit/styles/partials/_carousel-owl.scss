@@ -100,7 +100,11 @@ $button-offset: $ex-large + 11rem;
 .hpe-category-carousel {
   .owl-stage-outer {
     background-color: $dark-grey-1;
-    background-image: linear-gradient(-180deg, rgba(119,142,156,0.90) 1%, rgba(66,85,99,0.90) 100%);    
+    background-image: linear-gradient(
+      -180deg,
+      rgba(119, 142, 156, 0.9) 1%,
+      rgba(66, 85, 99, 0.9) 100%
+    );
   }
 
   .hpe-card {
