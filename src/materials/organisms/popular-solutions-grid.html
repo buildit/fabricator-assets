@@ -1,15 +1,22 @@
-<article class="hpe-product-grid hpe-centered-section">
-  {{#each popular-solutions }}
-  <section class="hpe-product-grid__row row">
-    <div class="hpe-product-grid__about col-md-5">
-      <h3 class="hpe-headline hpe-headline--strong hpe-headline--small">
-        {{this.title}}
-      </h3>
-      <p class="hpe-product-grid__description">{{this.description}}</p>
-    </div>
-    <div class="hpe-product-grid__about col-md-7">
-     {{> product-grid products=this.products }}
-    </div>
-  </section>
-  {{/each }}
+<article class="hpe-product-grid row">
+  <div class="hpe-centered-section">
+    <h2 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-section-headline">Popular Solutions</h2>
+    {{> brand-rule }} {{#each popular-solutions }}
+    <section class="hpe-product-grid__row row">
+      <div class="hpe-product-grid__about hpe-bg {{this.class}} col-md-3">
+        <h3 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-headline--small hpe-product-grid__section-title">
+          {{this.title}}
+        </h3>
+        <p class="hpe-product-grid__description">{{this.description}}</p>
+        {{> buttons.anchor-primary--reverse text=this.primary-cta icon="link-next" class="hpe-product-grid__link" }}
+          {{#if this.secondary-cta }}
+            {{> buttons.anchor-primary--reverse text=this.secondary-cta icon="link-next" class="hpe-product-grid__link" }}
+          {{/if}}
+      </div>
+      <div class="col-md-9">
+        {{> product-grid products=this.products }}
+      </div>
+    </section>
+    {{/each }}
+  </div>
 </article>
