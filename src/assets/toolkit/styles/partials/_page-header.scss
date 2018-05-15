@@ -1,7 +1,7 @@
 .hpe-page-header {
   position: relative;
   height: 10rem;
-  padding: ($header-height + 2rem) 0 0;
+  padding: $header-height-offset 0 0;
 
   &--image {
     color: $white;
