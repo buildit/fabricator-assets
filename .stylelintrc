@@ -25,6 +25,6 @@
       "ignore": ["after-comment"]
     } ],
     "string-quotes": "double",
-    "unit-whitelist": ["em", "rem", "%", "s"]
+    "unit-whitelist": ["em", "rem", "vh", "deg", "%", "s"]
   }
 }

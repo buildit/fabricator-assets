@@ -7,11 +7,11 @@ $nav-padding: 1rem;
   left: 0;
   z-index: 100;
   width: 100%;
-  background-color: transparentize($white, .05);
+  background-color: transparentize($white, 0.05);
   align-items: center;
   height: $header-height;
   padding: 0 $bootstrap-gutter;
-  box-shadow: $border-width $double-border .25em transparentize($black, .8);
+  box-shadow: $border-width $double-border 0.25em transparentize($black, 0.8);
 
   &__content {
     display: flex;
@@ -50,7 +50,7 @@ $nav-padding: 1rem;
       right: auto;
     }
   }
-  
+
   &__search-input {
     font-weight: 200;
     border: 0;
@@ -83,7 +83,7 @@ $nav-padding: 1rem;
       font-size: 1rem;
       padding: 0;
       position: relative;
-      bottom: -.125rem;
+      bottom: -0.125rem;
     }
   }
 
@@ -105,7 +105,7 @@ $nav-padding: 1rem;
     height: 2.125rem;
     display: flex;
     align-items: center;
-    padding-right: .5rem;
+    padding-right: 0.5rem;
   }
 
   &__main {
@@ -123,7 +123,7 @@ $nav-padding: 1rem;
     &::before {
       content: "";
       border-left: $border-width solid $dark-grey-1;
-      padding: .5em 0 .5em 1rem;
+      padding: 0.5em 0 0.5em 1rem;
       width: $border-width;
     }
 
@@ -139,9 +139,9 @@ $nav-padding: 1rem;
         position: absolute;
         left: 0;
         top: 0;
-        transition: opacity .1s linear;
+        transition: opacity 0.1s linear;
       }
-      
+
       &--active {
         opacity: 0;
       }
@@ -161,11 +161,11 @@ $nav-padding: 1rem;
   &::after {
     content: attr(data-notification);
     position: absolute;
-    top: -.75em;
+    top: -0.75em;
     left: 100%;
     display: block;
     color: $brand;
-    font-size: .75rem;
+    font-size: 0.75rem;
     font-weight: 400;
   }
 }
@@ -186,8 +186,7 @@ $nav-padding: 1rem;
   height: $double-border;
   display: block;
   position: absolute;
-  transition: top $transition--slow ease-in-out, bottom $transition--slow ease-in-out,
-    transform $transition--slow ease-in-out, opacity $transition--slow ease-in-out;
+  transition: top $transition--slow ease-in-out, bottom $transition--slow ease-in-out, transform $transition--slow ease-in-out, opacity $transition--slow ease-in-out;
 
   &:first-child {
     top: 0;
@@ -208,7 +207,7 @@ $nav-padding: 1rem;
 .hpe-nav__menu--active {
   .hf-line {
     &:first-child {
-      top: .5rem;
+      top: 0.5rem;
       transform: rotate(-45deg);
     }
 
@@ -217,7 +216,7 @@ $nav-padding: 1rem;
     }
 
     &:last-of-type {
-      bottom: .5rem;
+      bottom: 0.5rem;
       transform: rotate(45deg);
     }
   }
@@ -232,13 +231,13 @@ $nav-padding: 1rem;
 }
 
 .hpe-nav__responsive {
-  .hpe-responsive {    
+  .hpe-responsive {
     &--small {
       @include respond-to(medium) {
         display: none;
       }
     }
-  
+
     &--large {
       display: none;
 
@@ -246,5 +245,5 @@ $nav-padding: 1rem;
         display: inline-block;
       }
     }
-  }  
+  }
 }
