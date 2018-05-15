@@ -1,7 +1,7 @@
 .hpe-solution {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  
+
   &__list {
     list-style: none;
     padding: 0;
@@ -17,14 +17,14 @@
 
   &__body {
     padding: 0 $bootstrap-gutter 2em;
-    
+
     @include respond-to(medium) {
       padding-bottom: 0;
     }
   }
 
   &__item {
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
     font-size: 1.25rem;
 
     a {

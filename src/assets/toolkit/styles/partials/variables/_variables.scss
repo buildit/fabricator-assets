@@ -1,6 +1,6 @@
 // Don't add variables to these partials. They are designed to work with JSON to Sass build process.
-@import 'default-variables';
-@import '../../../../../../cache/import-variables';
+@import "default-variables";
+@import "../../../../../../cache/import-variables";
 
 // Carry on These variables can not be touched...
 
@@ -16,4 +16,4 @@ $double-border: $border-width * 2;
 $header-height: 5.3125rem;
 
 //buttons
-$button-padding: 6px 22px;
+$button-padding: .375rem 1.375rem;

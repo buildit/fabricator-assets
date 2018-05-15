@@ -19,7 +19,7 @@ $double-border: $border-width * 2;
 
   &__control {
     position: relative;
-    top: -1px;
+    top: -$border-width;
     display: inline-block;
     width: 1.5em;
     height: 1.5em;
@@ -74,6 +74,6 @@ $double-border: $border-width * 2;
         border-color: $black;
         margin-left: 1.5em;
       }
-    }    
+    }
   }
 }

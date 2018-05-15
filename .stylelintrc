@@ -11,14 +11,13 @@
     "declaration-block-no-redundant-longhand-properties": true,
     "declaration-block-semicolon-newline-after": "always",
     "declaration-block-trailing-semicolon": "always",
-    "declaration-no-important": true,
     "font-family-name-quotes": "always-where-required",
     "font-weight-notation": "numeric",
     "indentation": [2, {
       "except": ["value"]
     }],
     "max-empty-lines": 1,
-    "max-nesting-depth": 3,
+    "max-nesting-depth": 4,
     "no-eol-whitespace": true,
     "no-extra-semicolons": true,
     "rule-empty-line-before": [ "always", {

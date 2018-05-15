@@ -1,14 +1,19 @@
-h1, h2, h2, h4, h5 {
+h1,
+h2,
+h2,
+h4,
+h5 {
   font-weight: 100;
 }
 
-button, input {
+button,
+input {
   font-family: $font-family;
 }
 
 .hpe-headline {
   font-weight: 100;
-  margin: 0 0 1.5rem; 
+  margin: 0 0 1.5rem;
   line-height: 1;
 
   &--xlarge {
@@ -26,14 +31,14 @@ button, input {
   &--small {
     font-size: $headline--small;
   }
-  
+
   &--strong {
     font-weight: 600;
-  }  
+  }
 
   &--black {
     font-weight: 900;
-  }  
+  }
 
   &--caps {
     text-transform: uppercase;
@@ -42,7 +47,6 @@ button, input {
 
 .hpe-section-headline {
   font-size: 1.5rem;
-    
   @include respond-to(medium) {
     font-size: 2.5rem;
   }
@@ -61,4 +65,4 @@ button, input {
   }
 }
 
-$hpe-font-size-med:	0.9375rem;
+$hpe-font-size-med: 0.9375rem;

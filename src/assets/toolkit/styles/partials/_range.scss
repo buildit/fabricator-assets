@@ -44,8 +44,7 @@ input[type="range"] {
   &::-webkit-slider-thumb {
     @include thumb();
     -webkit-appearance: none;
-    margin-top: ((-$track-border-width * 2 + $track-height) / 2) -
-      ($thumb-height / 2);
+    margin-top: ((-$track-border-width * 2 + $track-height) / 2) - ($thumb-height / 2);
   }
 
   &:focus::-webkit-slider-runnable-track {
@@ -56,6 +55,7 @@ input[type="range"] {
     @include track();
     background: $track-color;
   }
+
   &::-moz-range-thumb {
     @include thumb();
   }
@@ -71,15 +71,19 @@ input[type="range"] {
   &::-ms-fill-lower {
     background: darken($track-color, $contrast);
   }
+
   &::-ms-fill-upper {
     background: $track-color;
   }
+
   &::-ms-thumb {
     @include thumb();
   }
+
   &:focus::-ms-fill-lower {
     background: $track-color;
   }
+
   &:focus::-ms-fill-upper {
     background: lighten($track-color, $contrast);
   }
@@ -126,10 +130,12 @@ input[type="range"] {
   -moz-user-select: none;
   user-select: none;
 }
+
 .noUi-target {
   position: relative;
   direction: ltr;
 }
+
 .noUi-base,
 .noUi-connects {
   width: 100%;
@@ -137,11 +143,13 @@ input[type="range"] {
   position: relative;
   z-index: 1;
 }
+
 // Wrapper for all connect elements.
 .noUi-connects {
   overflow: hidden;
   z-index: 0;
 }
+
 .noUi-connect,
 .noUi-origin {
   will-change: transform;
@@ -164,17 +172,21 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-origin {
 .noUi-vertical .noUi-origin {
   width: 0;
 }
+
 .noUi-horizontal .noUi-origin {
   height: 0;
 }
+
 .noUi-handle {
   position: absolute;
 }
+
 .noUi-state-tap .noUi-connect,
 .noUi-state-tap .noUi-origin {
   -webkit-transition: transform 0.3s;
   transition: transform 0.3s;
 }
+
 .noUi-state-drag * {
   cursor: inherit !important;
 }
@@ -183,6 +195,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-origin {
 .noUi-horizontal {
   height: $track-height;
 }
+
 .noUi-horizontal .noUi-handle {
   width: $thumb-width;
   height: $thumb-height;
@@ -209,9 +222,11 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .noUi-draggable {
   cursor: ew-resize;
 }
+
 .noUi-vertical .noUi-draggable {
   cursor: ns-resize;
 }
+
 .noUi-handle {
   border-radius: 50%;
   background: $brand;
@@ -226,6 +241,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 [disabled] .noUi-connect {
   background: $light-grey-4;
 }
+
 [disabled].noUi-target,
 [disabled].noUi-handle,
 [disabled] .noUi-handle {
@@ -244,6 +260,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   white-space: nowrap;
   text-align: center;
 }
+
 .noUi-value-sub {
   color: $light-grey-3;
   font-size: 0.75rem;
@@ -254,9 +271,11 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   position: absolute;
   background: $light-grey-2;
 }
+
 .noUi-marker-sub {
   background: $light-grey-3;
 }
+
 .noUi-marker-large {
   background: $light-grey-3;
 }
@@ -269,20 +288,25 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   left: 0;
   width: 100%;
 }
+
 .noUi-value-horizontal {
   transform: translate(-50%, 50%);
 }
+
 .noUi-rtl .noUi-value-horizontal {
   transform: translate(50%, 50%);
 }
+
 .noUi-marker-horizontal.noUi-marker {
   margin-left: -$border-width;
   width: $double-border;
   height: 0.3125rem;
 }
+
 .noUi-marker-horizontal.noUi-marker-sub {
   height: 0.75rem;
 }
+
 .noUi-marker-horizontal.noUi-marker-large {
   height: 1rem;
 }
@@ -297,6 +321,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   text-align: center;
   white-space: nowrap;
 }
+
 .noUi-horizontal .noUi-tooltip {
   transform: translate(-50%, 0);
   left: 50%;
