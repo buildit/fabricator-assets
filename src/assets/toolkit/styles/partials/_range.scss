@@ -188,7 +188,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-origin {
 }
 
 .noUi-state-drag * {
-  cursor: inherit !important;
+  cursor: inherit !important; /* stylelint-disable-line declaration-no-important */
 }
 
 // Slider size and handle placement;

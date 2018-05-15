@@ -43,7 +43,7 @@
     }
 
     &--button {
-      padding-top: 4em !important;
+      padding-top: 4em !important; /* stylelint-disable-line declaration-no-important */
       box-shadow: 1em 1em 2em transparentize($black, 0.8);
     }
   }
@@ -113,7 +113,7 @@
     position: absolute;
     top: $bootstrap-gutter / 2;
     right: $bootstrap-gutter / 2;
-    color: $dark-grey-1 !important;
-    font-size: 1.5rem !important;
+    color: $dark-grey-1 !important; /* stylelint-disable-line declaration-no-important */
+    font-size: 1.5rem !important; /* stylelint-disable-line declaration-no-important */
   }
 }

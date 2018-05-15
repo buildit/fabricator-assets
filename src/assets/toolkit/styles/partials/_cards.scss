@@ -77,8 +77,8 @@
 
     &:checked + .hpe-icon {
       color: $brand;
-      fill: currentColor !important;
-      stroke-width: 1 !important;
+      fill: currentColor !important; /* stylelint-disable-line declaration-no-important */
+      stroke-width: 1 !important; /* stylelint-disable-line declaration-no-important */
     }
   }
 }

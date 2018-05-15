@@ -11,6 +11,7 @@
     "declaration-block-no-redundant-longhand-properties": true,
     "declaration-block-semicolon-newline-after": "always",
     "declaration-block-trailing-semicolon": "always",
+    "declaration-no-important": true,
     "font-family-name-quotes": "always-where-required",
     "font-weight-notation": "numeric",
     "indentation": [2, {

@@ -71,7 +71,7 @@
   }
 
   &__tile-link {
-    color: $white !important;
+    color: $white !important; /* stylelint-disable-line declaration-no-important */
     text-decoration: none;
   }
 
