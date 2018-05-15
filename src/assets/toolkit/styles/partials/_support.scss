@@ -1,11 +1,11 @@
 .hpe-support {
   background: $light-grey-1;
-  
+
   &__content {
     width: 100%;
     padding: 4.5rem $bootstrap-gutter 0;
   }
-  
+
   &__title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -34,10 +34,9 @@
   }
 
   &__tiles {
-
     @include respond-to(medium) {
       margin-left: -$bootstrap-gutter;
-    }    
+    }
   }
 
   &__tile {
@@ -68,11 +67,11 @@
     display: block;
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    line-height: .5;
+    line-height: 0.5;
   }
 
   &__tile-link {
-    color: $white !important;
+    color: $white !important; /* stylelint-disable-line declaration-no-important */
     text-decoration: none;
   }
 

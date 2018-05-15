@@ -11,7 +11,7 @@
     .hpe-headline {
       align-self: center;
       padding: .75rem;
-      background-color: transparentize($dark-grey-1, .25)
+      background-color: transparentize($dark-grey-1, .25);
     }
 
     .hpe-breadcrumbs {
@@ -37,5 +37,5 @@
     z-index: 1;
     padding: 0 $bootstrap-gutter;
     height: 100%;
-  }  
+  }
 }

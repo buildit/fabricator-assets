@@ -2,10 +2,10 @@
 //These are to be used with respond-to mixin. They are defined based on layout, not device.
 //Default is 100% width, mobile style. Breakpoints override "mobile first" styles.
 $breakpoints: (
-  'small' : $small, 
-  'medium' : $medium, 
-  'large' : $large, 
-  'ex-large' : $ex-large
+"small": $small,
+"medium": $medium,
+"large": $large,
+"ex-large": $ex-large
 );
 // http://www.sitepoint.com/managing-responsive-breakpoints-sass/
 @mixin respond-to($breakpoint) {
@@ -22,8 +22,7 @@ $breakpoints: (
 
   // If the key doesn't exist in the map
   @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        + "Please make sure it is defined in `$breakpoints` map.";
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. " + "Please make sure it is defined in `$breakpoints` map.";
   }
 }
 

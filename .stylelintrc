@@ -1,0 +1,35 @@
+{
+  "rules": {
+    "block-no-empty": true,
+    "block-closing-brace-newline-after": "always",
+    "color-no-invalid-hex": true,
+    "comment-empty-line-before": [ "always", {
+      "ignore": ["stylelint-commands", "after-comment"]
+    } ],
+    "declaration-colon-space-after": "always",
+    "declaration-block-no-duplicate-properties": true,
+    "declaration-block-no-redundant-longhand-properties": true,
+    "declaration-block-semicolon-newline-after": "always",
+    "declaration-block-trailing-semicolon": "always",
+    "declaration-no-important": true,
+    "font-family-name-quotes": "always-where-required",
+    "font-weight-notation": "numeric",
+    "indentation": [2, {
+      "except": ["param", "value"]
+    }],
+    "max-empty-lines": 1,
+    "max-nesting-depth": 4,
+    "no-eol-whitespace": true,
+    "no-extra-semicolons": true,
+    "rule-empty-line-before": [ "always", {
+      "except": ["first-nested"],
+      "ignore": ["after-comment"]
+    } ],
+    "string-quotes": "double",
+    "unit-whitelist": ["em", "rem", "vh", "deg", "%", "s"]
+  },
+
+  "ignoreFiles": [
+    "src/assets/toolkit/styles/partials/bootstrap/**/*"
+  ]
+}
