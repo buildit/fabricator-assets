@@ -1,0 +1,10 @@
+<section class="owl-carousel hpe-centered-section hpe-category-carousel">
+  {{#each carouselData }} 
+    {{> card--category 
+      title=this.title 
+      src=this.image 
+      description=this.description price=this.price 
+      buttonText="Configure & Buy" 
+    }} 
+  {{/each}}
+</section>

@@ -5,7 +5,7 @@
   background: $light-grey-1;
 
   &__row {
-    margin-bottom: 3em;
+    margin-bottom: $bootstrap-gutter-double;
     background-color: $white;
 
     &:nth-child(even) {
