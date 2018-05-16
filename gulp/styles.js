@@ -10,13 +10,14 @@ const sass = require("gulp-sass");
 const sourcemaps = require("gulp-sourcemaps");
 const merge = require("gulp-merge-json");
 const jsonToSass = require("gulp-json-sass");
+const config = require('./config').data;
 
-class GulpSyles {
+class GulpStyles {
   get taskName () {
     return 'styles';
   }
 
-  constructor (config) {
+  constructor () {
     // Combine config JSON and Generate Sass Variables
     gulp.task("json", () => {
       return gulp
@@ -49,7 +50,7 @@ class GulpSyles {
         .src(config.styles.fabricator.src)
         .pipe(sourcemaps.init())
         .pipe(sass().on("error", sass.logError))
-        .pipe(prefix(config.styles.browsers))
+        .pipe(prefix(config.styles.autoprefixBrowsers))
         .pipe(gulpif(!config.dev, csso()))
         .pipe(rename("f.css"))
         .pipe(sourcemaps.write())
@@ -66,7 +67,7 @@ class GulpSyles {
             includePaths: "./node_modules"
           }).on("error", sass.logError)
         )
-        .pipe(prefix(config.styles.browsers))
+        .pipe(prefix(config.styles.autoprefixBrowsers))
         .pipe(gulpif(!config.dev, csso()))
         .pipe(gulpif(config.dev, sourcemaps.write()))
         .pipe(gulp.dest(config.styles.toolkit.dest))
@@ -75,9 +76,9 @@ class GulpSyles {
 
     // Bundled styles into a singular task
     gulp.task(this.taskName, (callback) => {
-      return runSequence('json', 'jsonsass', ["styles:fabricator", "styles:toolkit"], callback);
+      return runSequence('json', 'jsonsass', 'stylelint', ["styles:fabricator", "styles:toolkit"], callback);
     });
   }
 }
 
-module.exports.GulpStyles = GulpSyles;
+module.exports.GulpStyles = GulpStyles;

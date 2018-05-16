@@ -8,6 +8,7 @@
     "build": "gulp",
     "build-zip": "npm run build && node zip-dist.js",
     "start": "gulp --dev",
+    "lint": "gulp lint",
     "test": "npm run build"
   },
   "keywords": [
@@ -40,18 +41,20 @@
     "eslint-plugin-import": "^1.9.2",
     "fabricator-assemble": "^1.1.11",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
+    "gulp-autoprefixer": "^5.0.0",
     "gulp-csso": "^2.0.0",
     "gulp-if": "^2.0.1",
     "gulp-imagemin": "^3.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylelint": "^7.0.0",
     "gulp-util": "^3.0.7",
     "imports-loader": "^0.6.5",
     "owl.carousel": "^2.3.4",
     "run-sequence": "^2.2.1",
     "script-loader": "^0.7.0",
+    "stylelint": "^9.2.0",
     "webpack": "^1.13.1"
   },
   "dependencies": {

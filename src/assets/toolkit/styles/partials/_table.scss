@@ -2,23 +2,24 @@
   border-collapse: collapse;
   max-width: 100%;
   width: 100%;
-  
+
   th {
-    border-bottom: 1px solid rgba(0,0,0,0.15);
+    border-bottom: $border-width solid rgba(0, 0, 0, 0.15);
     font-weight: 100;
-    padding: 11px 12px;
+    padding: 0.75rem;
     text-align: left;
 
     &:first-child {
-      padding-left: 24px;
+      padding-left: 1.5rem;
     }
   }
+
   td {
-    padding: 11px 12px;
+    padding: 0.75rem;
     text-align: left;
 
     &:first-child {
-      padding-left: 24px;
+      padding-left: 1.5rem;
     }
   }
 }

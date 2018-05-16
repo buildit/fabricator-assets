@@ -1,17 +1,13 @@
 .hpe-signin {
   &__wrapper {
     background-size: cover;
-    padding: 3rem 0;
-
-    @include respond-to(medium) {
-      padding: 9rem 0;
-    }    
+    padding: $header-height-offset 0 2rem;
   }
 
   &__content {
     max-width: $large;
     margin: auto;
-    @include stack-row(medium)
+    @include stack-row(medium);
   }
 
   &__form:first-child:last-child {
@@ -32,13 +28,23 @@
   }
 
   &__section {
+    position: relative;
     background-color: $transparent;
     padding: 1.5rem;
     height: 100%;
     margin-bottom: $bootstrap-gutter-double;
 
+    &:first-child:last-child {
+      margin-bottom: 0;
+    }
+
     @include respond-to(medium) {
       margin-bottom: 0;
+    }
+
+    &--button {
+      padding-top: 4em !important; /* stylelint-disable-line declaration-no-important */
+      box-shadow: 1em 1em 2em transparentize($black, 0.8);
     }
   }
 
@@ -59,9 +65,9 @@
     margin: 0 0 4rem;
     font-size: 1.875rem;
   }
-  
+
   &__links {
-    margin: 2rem auto;
+    margin: 2rem 0 0;
     display: flex;
     justify-content: space-between;
 
@@ -73,10 +79,11 @@
       text-decoration: none;
     }
   }
-  
+
   &__button {
     max-width: auto;
     width: 100%;
+    text-transform: uppercase;
   }
 
   &__social {
@@ -100,6 +107,13 @@
         }
       }
     }
-  }  
-}
+  }
 
+  &__close {
+    position: absolute;
+    top: $bootstrap-gutter / 2;
+    right: $bootstrap-gutter / 2;
+    color: $dark-grey-1 !important; /* stylelint-disable-line declaration-no-important */
+    font-size: 1.5rem !important; /* stylelint-disable-line declaration-no-important */
+  }
+}

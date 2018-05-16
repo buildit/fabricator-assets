@@ -1,7 +1,7 @@
 @import "../../../../../node_modules/owl.carousel/src/scss/owl.theme.default";
 @import "../../../../../node_modules/owl.carousel/src/scss/owl.carousel";
 
-$button-offset: $ex-large + 9rem;
+$button-offset: $ex-large + 11rem;
 
 .owl-carousel {
   $button-size: 2.5rem;
@@ -11,14 +11,18 @@ $button-offset: $ex-large + 9rem;
 
   @include respond-to(medium) {
     $button-size: 7.5rem;
-
     padding: 0 ($button-size - 1rem);
+  }
+
+  @include respond-to(ex-large) {
+    $button-size: 7.5rem;
+    padding: 0 ($button-size - 5rem);
   }
 
   @media (min-width: $button-offset) {
     padding: 0;
   }
- 
+
   .hpe-card {
     width: 19rem;
   }
@@ -37,7 +41,7 @@ $button-offset: $ex-large + 9rem;
       $button-size: 3.5rem;
 
       position: absolute;
-      padding: 1rem !important;
+      padding: 1rem !important; /* stylelint-disable-line declaration-no-important */
       top: 50%;
       margin-top: ($button-size / 2) * -1;
       height: $button-size;
@@ -53,7 +57,7 @@ $button-offset: $ex-large + 9rem;
         margin-top: ($button-size / 2) * -1;
         height: $button-size;
         width: $button-size;
-      }      
+      }
     }
   }
 }
@@ -69,7 +73,6 @@ $button-offset: $ex-large + 9rem;
 
   @media (min-width: $button-offset) {
     $button-size: 7.5rem;
-    
     left: -($button-size - 2rem);
   }
 }
@@ -82,15 +85,14 @@ $button-offset: $ex-large + 9rem;
     position: relative;
     top: 0.5em;
   }
-  
-	@media (min-width: $button-offset) {
+
+  @media (min-width: $button-offset) {
     $button-size: 7.5rem;
-    
     right: -($button-size - 2rem);
   }
 }
 
-.owl-stage, 
+.owl-stage,
 .owl-item {
   display: flex;
 }

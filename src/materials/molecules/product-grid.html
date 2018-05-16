@@ -4,6 +4,7 @@
       <img src="{{this.image}}" alt="{{this.name}}" class="hpe-product-grid__image">  
       <h4 class="hpe-headline hpe-headline--strong hpe-product-grid__product-name">{{this.name}}</h4>
       {{> starting-price price=this.price }}
+      {{> buttons.anchor-button text="Configure & Buy" class="hpe-product-grid__button" }}
     </li>
   {{/each}}
 </ul>
