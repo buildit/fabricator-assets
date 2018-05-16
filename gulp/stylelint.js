@@ -17,7 +17,7 @@ class GulpStylelint {
             {
               formatter: "string",
               console: true,
-              fix: true,
+              fix: false,
             }
           ],
           debug: true
