@@ -1,7 +1,7 @@
 {{!-- Parameters: id, text --}}
 
 {{#if text }}
-	{{> form.input id=id text=text type="email" }}	
+	{{> form.input id=id text=text type="email" }}
 {{ else }}
-	{{> form.input id="password-input" text="Password input" type="password" }}
+	{{> form.input id="email-input" text="Email input" type="email" }}
 {{/if}}
