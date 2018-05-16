@@ -34,10 +34,16 @@
     flex: 0 0 8rem;
   }
 
+  &__link {
+    text-decoration: none;
+  }
+
   &__body {
+    display: flex;
+    flex-direction: column;
     position: relative;
     background-color: $light-grey-1;
-    padding: 2em $bootstrap-gutter 0.5em;
+    padding: 2.5rem $bootstrap-gutter-double $bootstrap-gutter-double;
     height: 100%;
   }
 
@@ -49,6 +55,7 @@
   &__description {
     font-size: 1.125rem;
     margin: 0 0 1rem;
+    flex: 1 1 50%;
   }
 
   &__meta {

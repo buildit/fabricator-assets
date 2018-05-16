@@ -1,0 +1,43 @@
+[
+  {
+    "name":
+      "HPE ProLiant ML110 Gen10 tower server",
+    "description":
+      "with one Intel Xeon Scalable 3104 processor, 8 GB memory, 4 large form factor drive bays, and one 550W ATX power supply",
+    "price": "$999.99",
+    "image":
+      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00013739.png"
+  },
+  {
+    "name": "HPE StoreEasy 1850 storage",
+    "description":
+      "Modular platform that converges compute, storage, fabric, management, power, and cooling to reduce costs and accelerate...",
+    "price": "$6,899.99",
+    "image":
+      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
+  },
+  {
+    "name": "HPE ProLiant MicroServer Gen10 server",
+    "description":
+      "Small, quiet, and stylish server ideal as a first server solution for small businesses.",
+    "price": "$344.00",
+    "image":
+      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00028987.png"
+  },
+  {
+    "name": "HPE ProLiant BL460c Gen9 E5-2609v4 Server",
+    "description":
+      "Short description that calls out the approach or features that this individual product uses for this need.",
+    "price": "$2,752.99",
+    "image":
+      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/c05084293.png"
+  },
+  {
+    "name": "HPE OfficeConnect 1820 switch",
+    "description":
+      "with 24 1GbE ports and 2 SFP ports",
+    "price": "$2,752.99",
+    "image":
+      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00028987.png"
+  }
+]
