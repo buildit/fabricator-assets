@@ -9,6 +9,9 @@
       {{#each subcategory }}
         <section class="hpe-product-list__row row">
           <div class="hpe-product-list__image col-md-3">
+            {{#if this.discount }}
+              <span class="hpe-product-list__discount">Save {{ this.discount }}</span>
+            {{/if}}
             {{> bookmark }}
             <img src="{{this.image}}" alt="{{this.name}}">
           </div>

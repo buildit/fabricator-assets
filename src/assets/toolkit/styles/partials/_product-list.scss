@@ -13,11 +13,10 @@
     position: relative;
     display: flex;
     align-items: center;
-    padding-top: 2rem;
     padding-right: $bootstrap-gutter-double;
 
     img {
-      width: 100%;
+      width: 200%;
     }
 
     .hpe-bookmark {
@@ -68,7 +67,15 @@
     margin: 0;
   }
 
-  &__sliders {
-    margin-bottom: 1.5rem;
+  &__discount {
+    position: absolute;
+    padding: .5em .75em;
+    background-color: $dark-1;
+    color: $white;
+    top: 0;
+    left: 0;
+    border-right: $double-border currentColor solid;
+    border-bottom: $double-border currentColor solid;
+    font-weight: 600;
   }
 }
