@@ -176,17 +176,19 @@ $nav-padding: 1rem;
 }
 
 .hpe-active {
+  $notification-size: 0.3125rem;
   position: relative;
 
   &::after {
-    content: attr(data-notification);
+    content: "";
     position: absolute;
-    top: -0.75em;
-    left: 100%;
+    top: -0.25rem;
+    right: -0.25rem;
     display: block;
-    color: $brand;
-    font-size: 0.75rem;
-    font-weight: 400;
+    background-color: $brand;
+    height: $notification-size;
+    width: $notification-size;
+    border-radius: 50%;
   }
 }
 
