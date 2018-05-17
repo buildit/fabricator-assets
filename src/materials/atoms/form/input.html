@@ -1,12 +1,27 @@
-{{!-- Parameters: class, id, text, type --}}
+{{!-- Parameters: class, id, text, type, icon --}}
 
 <div class="hpe-input {{class}}">
-	{{#if id}}
-		<label for="{{id}}" class="hpe-input__label">{{text}}</label>
-		<input type={{type}} id="{{id}}"/>
-	{{else}}
-		<label for="textInput" class="hpe-input__label">Text Label</label>
-		<input type="text" id="textInput"/>
-	{{/if}}
-	<p class="hpe-input__error-message">{{errorText}}</p>
+  {{#if id}}
+    <label for="{{id}}" class="hpe-input__label">
+      {{#if icon}}
+        {{> icons.icon icon=icon className="hpe-icon--inline" }}
+      {{/if}}
+
+      {{text}}
+    </label>
+
+    <input type={{type}} id="{{id}}"/>
+  {{else}}
+    <label for="textInput" class="hpe-input__label">
+      {{#if icon}}
+        {{> icons.icon icon=icon className="hpe-icon--inline" }}
+      {{/if}}
+
+      Text Label
+    </label>
+
+    <input type="text" id="textInput"/>
+  {{/if}}
+
+  <p class="hpe-input__error-message">{{errorText}}</p>
 </div>

@@ -1,8 +1,16 @@
 <article class="hpe-product-list hpe-centered-section">
   <div class="row">
     <aside class="col-md-3">
+
+      <form action="" class="form">
+        <div class="form-input">
+          {{> form.search id="search" text="Keyword search" }}
+        </div>
+      </form>
+
       {{> category-filters}}
     </aside>
+
     <div class="col-md-9">
       {{> subcategory-guide }} 
       
