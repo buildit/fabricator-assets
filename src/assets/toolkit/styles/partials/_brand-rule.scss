@@ -1,8 +1,23 @@
 .hpe-brand-rule {
-  background: $brand;
-  margin: 0 0 1.75rem;
-  height: 0.3125rem;
-  width: 5rem;
-  border: 0;
-  display: block;
+  &::after {
+    content: "";
+    background: $brand;
+    margin: 1.25rem 0 2rem;
+    height: 0.3125rem;
+    width: 5rem;
+    border: 0;
+    display: block;
+  }
+
+  &--light {
+    &::after {
+      background-color: $light-grey-4;
+    }
+  }
+
+  &--inverse {
+    &::after {
+      background-color: $white;
+    }
+  }
 }
