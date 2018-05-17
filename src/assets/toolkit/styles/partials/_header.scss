@@ -1,4 +1,4 @@
-$nav-padding: 1rem;
+$nav-padding: 0.5rem;
 
 .hpe-header {
   position: fixed;
@@ -87,7 +87,6 @@ $nav-padding: 1rem;
     color: $dark-grey-1;
     font-weight: 200;
     font-size: 1.25em;
-    margin: 0 $nav-padding 0 0;
     text-decoration: none;
     vertical-align: middle;
 
@@ -131,6 +130,25 @@ $nav-padding: 1rem;
   &__main {
     @include respond-to(small) {
       display: inline-block;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding: 0.325rem 0.5rem;
+    margin-right: $nav-padding;
+    border: $border-width transparent solid;
+
+    .hpe-nav__link {
+      margin-right: 0;
+    }
+
+    &--active {
+      border-color: $brand;
+
+      .hpe-popover {
+        display: block;
+      }
     }
   }
 

@@ -134,3 +134,8 @@ $("#close-forgot-password").click(function(){
   $("#forgot-password-modal").removeClass("hpe-modal--active");
   $("body").removeClass("hpe-body-noscroll");
 });
+
+// Toggle Header Sign in Popover
+$("#header-sign-in").click(function () {
+  $(this).parent().toggleClass("hpe-nav__item--active");
+});
