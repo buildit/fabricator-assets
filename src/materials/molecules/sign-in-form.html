@@ -1,0 +1,18 @@
+<h1 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-brand-rule hpe-signin__title">Sign in to your account</h1>
+<form action="" class="form">
+  <div class="form-input">
+    {{> form.text-input text="Email address" id="username"}} 
+    {{> form.password text="Password" id="password" type="password"}}
+  </div>
+  {{> buttons.button text="Sign in" class="hpe-signin__button" }}
+</form>
+
+<div class="hpe-signin__social">
+  {{> buttons.button--signin-linkedin}} 
+  {{> buttons.button--signin-google}}
+</div>
+
+<div class="hpe-signin__links">
+  <a href="#" id="open-forgot-password">Forgot your password?</a>
+  <a href="signup.html">New user?</a>
+</div>
