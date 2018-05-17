@@ -1,7 +1,7 @@
 const gutil = require("gulp-util");
 const glob = require("glob");
 
-const jsFiles = glob.sync('src/assets/toolkit/scripts/**/*')
+const jsFiles = glob.sync('src/assets/toolkit/scripts/**/*.js')
   .map((path) => `./${path}`);
 
 const config = {
