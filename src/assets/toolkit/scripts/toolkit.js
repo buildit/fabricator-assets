@@ -15,14 +15,12 @@ $(".hpe-input input").focusout(function() {
   }
 });
 
-$(".hpe-nav__menu").click(function() {
-  $(this).toggleClass("hpe-nav__menu--active");
+$(".hpe-header__search-button").click(function() {
   $(".hpe-header__search").removeClass("hpe-header__search--active");
 });
 
 $(".hpe-nav__search").click(function() {
   $(".hpe-header__search").toggleClass("hpe-header__search--active");
-  $(".hpe-nav__menu").toggleClass("hpe-nav__menu--active");
 });
 
 $(".hpe-carousel__button--next").click(function() {

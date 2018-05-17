@@ -46,6 +46,10 @@ $nav-padding: 1rem;
     margin: 0 -$bootstrap-gutter;
     z-index: 1;
 
+    .hpe-centered-section {
+      display: flex;
+    }
+
     &--active {
       right: auto;
     }
@@ -54,7 +58,8 @@ $nav-padding: 1rem;
   &__search-input {
     font-weight: 200;
     border: 0;
-    width: 100%;
+    flex: 1 1 100%;
+    max-width: $medium + 3rem;
     font-size: 1.125rem;
     padding: 1rem 0;
     height: $header-height;
@@ -62,6 +67,13 @@ $nav-padding: 1rem;
     @include respond-to(small) {
       font-size: 1.5rem;
     }
+  }
+
+  &__search-button {
+    flex: 0 0 auto;
+    color: $dark-grey-4;
+    font-size: 4rem;
+    margin-right: $bootstrap-gutter-double;
   }
 }
 
@@ -85,6 +97,12 @@ $nav-padding: 1rem;
       position: relative;
       bottom: -0.125rem;
     }
+
+    &--status {
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
   }
 
   &__main {
@@ -106,7 +124,7 @@ $nav-padding: 1rem;
     display: flex;
     align-items: center;
     padding-left: 1rem;
-    padding-right: .5rem;
+    padding-right: 0.5rem;
     border-left: $border;
   }
 
@@ -188,7 +206,10 @@ $nav-padding: 1rem;
   height: $double-border;
   display: block;
   position: absolute;
-  transition: top $transition--slow ease-in-out, bottom $transition--slow ease-in-out, transform $transition--slow ease-in-out, opacity $transition--slow ease-in-out;
+  transition: top $transition--slow ease-in-out,
+    bottom $transition--slow ease-in-out,
+    transform $transition--slow ease-in-out,
+    opacity $transition--slow ease-in-out;
 
   &:first-child {
     top: 0;
@@ -252,13 +273,13 @@ $nav-padding: 1rem;
 
 .hpe-contact {
   font-weight: 600;
-  font-size: .9375rem;
   text-transform: uppercase;
-  background: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2282%22%20height%3D%2240%22%3E%3Cpath%20stroke%3D%22%2301A982%22%20stroke-width%3D%222%22%20d%3D%22M1%201v26h23v10.583L34.568%2027H81V1H1z%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+  background: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2282%22%20height%3D%2240%22%3E%3Cpath%20stroke%3D%22%2301A982%22%20stroke-width%3D%222%22%20d%3D%22M1%201v26h23v10.583L34.568%2027H81V1H1z%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E")
+    no-repeat;
   background-size: contain;
   background-position: center bottom;
   display: inline-block;
-  padding: .5em .5em 1em;
+  padding: 0.5em 0.5em 1em;
   position: relative;
-  bottom: -.125em;
+  bottom: -0.25em;
 }
