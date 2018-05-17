@@ -120,7 +120,7 @@ $nav-padding: 1rem;
     position: relative;
     align-self: center;
     z-index: 2;
-    flex: 0 0 auto;
+    flex: 0 0 100%;
 
     &::before {
       content: "";

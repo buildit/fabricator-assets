@@ -1,17 +1,15 @@
-<section class="hpe-product-list">
-  <div class="hpe-product-list__sliders row">
-    <div class="col-md-6">
-      {{> form.range-handles min="1000" max="100000" startMin="10000" startMax="20000" label="What is the price range you need
-      to stay within?" labelMin="$1,000" labelMax="$100k" }}
-    </div>
-    <div class="col-md-6">
-      {{> form.range label="How quickly is your need growing?" min="1" max="7" labelMin="Slowly" labelMax="Very Quickly"}}
-    </div>
-  </div>
-  <h4 class="hpe-headline hpe-headline--strong">What do you typically need to serve?</h4>
-  <div>
-    {{> form.checkbox text="Media" name="guide1" }} {{> form.checkbox text="Application Data" name="guide2" }} {{> form.checkbox
-    text="Transaction Data" name="guide3" }} {{> form.checkbox text="Server / Database Snapshots" name="guide4" }} {{> form.checkbox
-    text="Misc. Files" name="guide5"}}
+<section class="hpe-guided-filter row">
+  <header class="hpe-guided-filter__title">
+    <h3 class="hpe-headline hpe-headline--black hpe-headline--caps hpe-guided-filter__heading">Not sure where to start?</h3>
+    <p>Answer these quick questions and we'll point you to the right server.</p>
+  </header>
+  <div class="hpe-guided-filter__question">
+    <h3 class="hpe-headline hpe-headline--strong hpe-guided-filter__question-heading">What operating system will you use?</h3>
+    <p class="hpe-guided-filter__instructions">(Select One)</p>
+    {{> form.radio text="Windows" name="guided1" group="filter-guided"}}
+    {{> form.radio text="Linux" name="guided2" group="filter-guided"}}
+    <footer class="hpe-guided-filter__footer">
+      {{> buttons.anchor-primary--reverse text="Skip Question" icon="link-next"}}
+    </footer>    
   </div>
 </section>
