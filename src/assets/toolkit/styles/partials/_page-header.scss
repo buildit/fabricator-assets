@@ -10,16 +10,12 @@
 
     .hpe-headline {
       align-self: center;
-      padding: .75rem;
-      background-color: transparentize($dark-grey-1, .25);
+      padding: 0.75rem;
+      background-color: transparentize($dark-grey-1, 0.25);
     }
 
     .hpe-breadcrumbs {
       color: $white;
-    }
-
-    .hpe-brand-rule {
-      background-color: $white;
     }
   }
 

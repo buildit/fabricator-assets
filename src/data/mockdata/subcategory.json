@@ -16,7 +16,8 @@
     "price": "$3,000",
     "meta": "Leasing options available",
     "image":
-      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00022694.png"
+      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00035556.png",
+    "discount": "33%"
   },
   {
     "name":
@@ -36,7 +37,8 @@
     "price": "$344",
     "meta": "Leasing options available",
     "image":
-      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00013739.png"
+      "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/i00013739.png",
+    "discount": "15%"
   },
   {
     "name": "HPE ProLiant DL580 Gen9 rack server",

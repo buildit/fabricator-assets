@@ -1,4 +1,4 @@
-{
+  {
   "rules": {
     "block-no-empty": true,
     "block-closing-brace-newline-after": "always",
@@ -15,13 +15,13 @@
     "font-family-name-quotes": "always-where-required",
     "font-weight-notation": "numeric",
     "indentation": [2, {
-      "except": ["param", "value"],
       "ignore": ["inside-parens"]
     }],
     "max-empty-lines": 1,
     "max-nesting-depth": 4,
     "no-eol-whitespace": true,
     "no-extra-semicolons": true,
+    "number-leading-zero": "always",
     "rule-empty-line-before": [ "always", {
       "except": ["first-nested"],
       "ignore": ["after-comment"]
