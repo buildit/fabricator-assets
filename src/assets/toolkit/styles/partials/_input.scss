@@ -83,3 +83,9 @@
 :-moz-placeholder {
   color: $dark-grey-1;
 }
+
+// Safari Speciifc Search Input Clear
+input[type=search] {
+  border-radius: 0;
+  -webkit-appearance: none;
+}
