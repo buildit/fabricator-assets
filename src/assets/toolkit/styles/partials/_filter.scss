@@ -42,6 +42,10 @@
     font-weight: 700;
     margin-bottom: 1em;
 
+    .hpe-icon {
+      transform: rotate(0deg);
+    }
+
     &--hidden {
       .hpe-icon {
         transform: rotate(-90deg);
