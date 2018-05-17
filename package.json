@@ -58,6 +58,7 @@
     "webpack": "^1.13.1"
   },
   "dependencies": {
+    "glob": "^7.1.2",
     "gulp-json-sass": "^0.0.2",
     "gulp-merge-json": "^1.2.1",
     "gulp-svg-symbols": "^3.1.0",

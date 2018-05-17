@@ -51,12 +51,6 @@ $(".hpe-carousel__indicator").click(function() {
     .removeClass("hpe-carousel__image--active");
 });
 
-$(".hpe-filter__button").click(function() {
-  $(this)
-    .siblings(".hpe-filter__list")
-    .toggleClass("hpe-filter--expanded");
-});
-
 $(".hpe-filter__header").click(function() {
   const thisSection = $(this).next();
 
@@ -125,13 +119,13 @@ $(".owl-carousel").owlCarousel({
   }
 });
 
-// Open Forgot Passowrd 
+// Open Forgot Passowrd
 $("#open-forgot-password").click(function(){
   $("#forgot-password-modal").addClass("hpe-modal--active");
   $("body").addClass("hpe-body-noscroll");
 });
 
-// Close Forgot Passowrd 
+// Close Forgot Passowrd
 $("#close-forgot-password").click(function(){
   $("#forgot-password-modal").removeClass("hpe-modal--active");
   $("body").removeClass("hpe-body-noscroll");

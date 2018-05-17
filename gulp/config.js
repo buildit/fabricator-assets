@@ -1,4 +1,8 @@
 const gutil = require("gulp-util");
+const glob = require("glob");
+
+const jsFiles = glob.sync('src/assets/toolkit/scripts/**/*')
+  .map((path) => `./${path}`);
 
 const config = {
   dev: gutil.env.dev,
@@ -31,9 +35,9 @@ const config = {
       watch: "src/assets/fabricator/scripts/**/*"
     },
     toolkit: {
-      src: "./src/assets/toolkit/scripts/toolkit.js",
-      dest: "dist/assets/toolkit/scripts",
-      watch: "src/assets/toolkit/scripts/**/*"
+      src: jsFiles,
+      dest: "dist/assets/toolkit/scripts/toolkit.js",
+      watch: "src/assets/toolkit/scripts/**/*.js"
     }
   },
   icons: {
