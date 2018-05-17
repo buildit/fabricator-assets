@@ -36,7 +36,7 @@
     }
 
     .hpe-icon {
-      opacity: .3;
+      opacity: 0.3;
     }
   }
 
@@ -55,7 +55,7 @@
 
   &__price {
     font-size: 1.25rem;
-    margin: 0 0 .25rem;
+    margin: 0 0 0.25rem;
   }
 
   &__button {
@@ -69,7 +69,7 @@
 
   &__discount {
     position: absolute;
-    padding: .5em .75em;
+    padding: 0.5em 0.75em;
     background-color: $dark-1;
     color: $white;
     top: 0;
