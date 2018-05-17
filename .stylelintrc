@@ -1,4 +1,4 @@
-{
+  {
   "rules": {
     "block-no-empty": true,
     "block-closing-brace-newline-after": "always",
@@ -22,6 +22,7 @@
     "max-nesting-depth": 4,
     "no-eol-whitespace": true,
     "no-extra-semicolons": true,
+    "number-leading-zero": "always",
     "rule-empty-line-before": [ "always", {
       "except": ["first-nested"],
       "ignore": ["after-comment"]

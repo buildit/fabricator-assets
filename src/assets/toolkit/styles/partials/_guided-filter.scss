@@ -1,6 +1,7 @@
 .hpe-guided-filter {
   margin-bottom: 3rem;
-  background: $brand url("/assets/toolkit/images/guided-background.png") no-repeat;
+  background: $brand url("/assets/toolkit/images/guided-background.png")
+  no-repeat;
   background-size: cover;
 
   &__title,
@@ -16,7 +17,7 @@
 
   &__heading {
     font-size: 2rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
   &__question {
@@ -26,13 +27,13 @@
 
     &-heading {
       font-size: 1.5rem;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
   }
 
   &__instructions {
     color: $dark-grey-4;
-    margin: .5rem 0 1rem;
+    margin: 0.5rem 0 1rem;
   }
 
   &__footer {

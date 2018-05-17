@@ -17,13 +17,16 @@
       {{#each subcategory }}
         <section class="hpe-product-list__row row">
           <div class="hpe-product-list__image col-md-3">
+            {{#if this.discount }}
+              <span class="hpe-product-list__discount">Save {{ this.discount }}</span>
+            {{/if}}
             {{> bookmark }}
             <img src="{{this.image}}" alt="{{this.name}}">
           </div>
-          <div class="hpe-product-list__about col-md-6">
-            <h3 class="hpe-headline hpe-headline--strong hpe-headline--small">
+          <div class="hpe-product-list__about col-md-9">
+            <h4 class="hpe-headline hpe-headline--strong hpe-headline--small hpe-product-list__name">
               {{this.name}}
-            </h3>
+            </h4>
             <p class="hpe-product-list__description">{{this.description}}</p>
             
             {{# each this.tags }}
@@ -31,18 +34,20 @@
                 {{> icons.icon icon=this.icon className="hpe-icon--inline" }} {{this.tagline}}
               </span>
             {{/each}}
-          </div>
-          <div class="hpe-product-list__meta col-md-3">
-            <p class="hpe-product-list__price">
-              {{> starting-price price=this.price }}
-            </p>
-            <p>
-              {{this.meta}}
-            </p>
-            {{> buttons.button--secondary text="Shop" class="hpe-product-list__button" }}
-            <p>
-              {{> form.checkbox text="Compare" }}
-            </p>
+            
+            <div class="hpe-product-list__meta row">
+              <div class="col-sm-6">
+                <p class="hpe-product-list__price">
+                  {{> starting-price price=this.price }}
+                </p>
+                <p class="hpe-product-list__options">
+                  {{this.meta}}
+                </p>
+              </div>
+              <div class="col-sm-6 hpe-product-list__button">
+                {{> buttons.button--secondary text="Customize & Buy"}}
+              </div>
+            </div>
           </div>
         </section>
       {{/each }}
