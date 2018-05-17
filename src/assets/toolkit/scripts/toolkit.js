@@ -51,18 +51,6 @@ $(".hpe-carousel__indicator").click(function() {
     .removeClass("hpe-carousel__image--active");
 });
 
-$(".hpe-filter__header").click(function() {
-  const thisSection = $(this).next();
-
-  $(this).toggleClass("hpe-filter__header--hidden");
-
-  if (thisSection.attr("aria-hidden") === "true") {
-    thisSection.attr("aria-hidden", false);
-  } else {
-    thisSection.attr("aria-hidden", true);
-  }
-});
-
 // Initialize Input Range
 
 $(".hpe-range--handles").each(function(i, obj) {
