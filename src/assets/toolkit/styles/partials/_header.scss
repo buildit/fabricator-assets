@@ -90,6 +90,10 @@ $nav-padding: 0.5rem;
     text-decoration: none;
     vertical-align: middle;
 
+    &:focus {
+      outline: none;
+    }
+
     &--icon {
       font-size: 1rem;
       padding: 0;
