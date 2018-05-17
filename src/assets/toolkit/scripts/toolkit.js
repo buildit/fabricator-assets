@@ -123,19 +123,20 @@ $(".owl-carousel").owlCarousel({
   }
 });
 
-// Open Forgot Passowrd 
-$("#open-forgot-password").click(function(){
+// Open Forgot Passowrd
+$("#open-forgot-password").click(function() {
   $("#forgot-password-modal").addClass("hpe-modal--active");
   $("body").addClass("hpe-body-noscroll");
 });
 
-// Close Forgot Passowrd 
-$("#close-forgot-password").click(function(){
+// Close Forgot Passowrd
+$("#close-forgot-password").click(function() {
   $("#forgot-password-modal").removeClass("hpe-modal--active");
   $("body").removeClass("hpe-body-noscroll");
 });
 
 // Toggle Header Sign in Popover
-$("#header-sign-in").click(function () {
-  $(this).parent().toggleClass("hpe-nav__item--active");
+$(".hpe-nav__item").click(function() {
+  $(".hpe-nav__item").removeClass("hpe-nav__item--active");
+  $(this).toggleClass("hpe-nav__item--active");
 });
