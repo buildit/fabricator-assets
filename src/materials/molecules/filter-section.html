@@ -1,12 +1,17 @@
 <button class="hpe-button hpe-button--plain hpe-filter__header">
-  {{> icons.icon icon="caret-down"}} {{filters.title}}
+  {{> icons.icon icon="caret-down" class="hpe-filter__icon"}}
+  {{filters.title}}
 </button>
+
 <section class="hpe-filter" aria-hidden="{{this.show}}">
   <ul class="hpe-filter__list">
     {{#each filters.filters }}
-    <li class="hpe-filter__item">{{> form.checkbox text=this.name }}</li>
+      <li class="hpe-filter__item">
+        {{> form.checkbox text=this.name }}
+      </li>
     {{/each}}
   </ul>
-  {{>buttons.button--noborder text="Show More" class="hpe-filter__button hpe-filter__button--more"}} {{>buttons.button--noborder
-  text="Show Less" class="hpe-filter__button hpe-filter__button--less"}}
+
+  {{>buttons.button--noborder text="Show More" class="hpe-filter__button hpe-filter__button--more"}}
+  {{>buttons.button--noborder text="Show Less" class="hpe-filter__button hpe-filter__button--less"}}
 </section>
